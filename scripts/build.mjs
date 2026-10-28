@@ -44,6 +44,8 @@ function copyStatic() {
     ['src/popup/popup.html', 'popup.html'],
     ['src/popup/popup.css', 'popup.css'],
     ['src/content/content.css', 'content.css'],
+    ['src/welcome/welcome.html', 'welcome.html'],
+    ['src/welcome/welcome.css', 'welcome.css'],
   ];
   mkdirSync(join(dist, 'icons'), { recursive: true });
   for (const [from, to] of copies) copyFileSync(join(root, from), join(dist, to));
@@ -63,6 +65,8 @@ const options = {
   entryPoints: {
     content: join(root, 'src/content/index.ts'),
     popup: join(root, 'src/popup/popup.ts'),
+    welcome: join(root, 'src/welcome/welcome.ts'),
+    background: join(root, 'src/background.ts'),
   },
   outdir: dist,
   bundle: true,

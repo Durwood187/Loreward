@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Welcome to SpoilerShield</title>
+  <link rel="stylesheet" href="welcome.css" />
+</head>
+<body>
+  <main>
+    <header>
+      <img src="icons/icon48.png" alt="" width="40" height="40" />
+      <h1>Welcome to SpoilerShield</h1>
+    </header>
+    <p class="lede">Tell us what you're reading. We'll blur anything online that could spoil what comes next.</p>
+
+    <section class="card">
+      <h2><span class="step">1</span> Pick your series and the book you're on</h2>
+      <div class="pickers">
+        <div>
+          <label for="series">Series</label>
+          <select id="series"></select>
+        </div>
+        <div>
+          <label for="book">Book you're reading now</label>
+          <select id="book" disabled></select>
+        </div>
+      </div>
+      <p class="saved" id="saved" hidden>✓ Saved. You're protected on Reddit and Google search.</p>
+      <p class="hint">You can change this any time from the toolbar icon.</p>
+    </section>
+
+    <section class="card">
+      <h2><span class="step">2</span> What the blur labels mean</h2>
+      <ul class="legend">
+        <li><span class="pill term">Spoilers past <em>your book</em></span> Names something from a later book.</li>
+        <li><span class="pill later">May spoil books after <em>your book</em></span> Talks about a later book.</li>
+        <li><span class="pill current">May spoil <em>your book</em></span> Talks about the book you're reading. Could give away its ending.</li>
+        <li><span class="pill maybe">May contain spoilers for <em>the series</em></span> An AI answer on a search about your series. Google's AI answers spoil by describing what happens, so we hold them back until you click.</li>
+      </ul>
+      <p class="hint">Click any blurred item to reveal just that one. Nothing is ever deleted.</p>
+    </section>
+
+    <section class="card">
+      <h2><span class="step">3</span> Pin it</h2>
+      <p>Click the puzzle-piece icon in Chrome's toolbar and pin SpoilerShield. From there you can switch it off for a site, or reveal everything on a page.</p>
+    </section>
+
+    <p class="privacy">Everything stays on your device: no accounts, no tracking, no data sent anywhere.</p>
+  </main>
+  <script src="welcome.js"></script>
+</body>
+</html>

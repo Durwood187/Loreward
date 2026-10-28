@@ -60,6 +60,12 @@ for a later-book name.
 - [ ] "load more comments": new comments are checked.
 - [ ] Click to reveal doesn't follow the link.
 
+### First run
+
+- [ ] Remove the extension, load it again: a **welcome tab** opens by itself.
+- [ ] Picking a series + book there shows "✓ Saved", and Reddit/Google blur immediately (no reload needed).
+- [ ] Reloading an already-installed extension does **not** open the welcome tab again.
+
 ### Popup
 
 - [ ] Series → book → the blur updates **without reloading** the page.

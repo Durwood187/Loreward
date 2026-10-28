@@ -3,6 +3,7 @@
 
 import { ALL_SERIES } from '../generated/series-index';
 import { loadSettings, saveSettings, findSeries, maxActiveSeries, type Settings } from '../core/settings';
+import { renderPickers, pickSeries, pickBook } from '../ui/pickers';
 import type { Request, StatusReply, RevealAllReply } from '../core/messages';
 
 const $ = <T extends HTMLElement>(id: string) => document.getElementById(id) as T;
@@ -20,30 +21,14 @@ const revealBtn = $<HTMLButtonElement>('reveal-all');
 let settings: Settings;
 let site: StatusReply | null = null;
 
-function option(value: string, label: string): HTMLOptionElement {
-  const o = document.createElement('option');
-  o.value = value;
-  o.textContent = label;
-  return o;
-}
-
 function render() {
   document.body.classList.toggle('off', !settings.enabled);
   enabledEl.checked = settings.enabled;
 
   // v1 UI edits one series slot. With isPro, more slots become possible later.
+  renderPickers(seriesEl, bookEl, settings);
   const current = settings.active[0];
-  seriesEl.replaceChildren(option('', 'Choose a series…'), ...ALL_SERIES.map((s) => option(s.id, s.name)));
-  seriesEl.value = current?.seriesId ?? '';
-
   const series = current ? findSeries(current.seriesId) : undefined;
-  bookEl.disabled = !series;
-  bookEl.replaceChildren(
-    ...(series
-      ? series.books.map((b) => option(String(b.index), `${b.index}. ${b.title}${b.kind === 'novella' ? ' (novella)' : ''}`))
-      : [option('', 'Choose a series first')]),
-  );
-  if (series && current) bookEl.value = String(current.currentBook);
 
   draftNote.hidden = !series || series.verified;
   tierNote.hidden = ALL_SERIES.length < 2 || maxActiveSeries(settings.isPro) > 1;
@@ -84,16 +69,11 @@ async function refreshSite() {
 
 enabledEl.addEventListener('change', () => save({ enabled: enabledEl.checked }));
 
-seriesEl.addEventListener('change', () => {
-  const id = seriesEl.value;
-  // Free tier: picking a series replaces the current one.
-  save({ active: id ? [{ seriesId: id, currentBook: 1 }] : [] });
-});
+seriesEl.addEventListener('change', () => save(pickSeries(seriesEl.value)));
 
 bookEl.addEventListener('change', () => {
-  const current = settings.active[0];
-  if (!current) return;
-  save({ active: [{ ...current, currentBook: Number(bookEl.value) }, ...settings.active.slice(1)] });
+  const patch = pickBook(settings, Number(bookEl.value));
+  if (patch) save(patch);
 });
 
 siteEnabled.addEventListener('change', () => {
