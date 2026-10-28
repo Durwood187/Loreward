@@ -1,1 +1,415 @@
-{"id":"stormlight","name":"placeholder","verified":false,"books":[],"allowlist":[],"terms":[]}
+{
+  "$schema": "../schema.json",
+  "id": "stormlight",
+  "name": "The Stormlight Archive (compatible)",
+  "verified": false,
+  "books": [
+    {
+      "index": 1,
+      "title": "The Way of Kings",
+      "kind": "novel"
+    },
+    {
+      "index": 2,
+      "title": "Words of Radiance",
+      "kind": "novel"
+    },
+    {
+      "index": 3,
+      "title": "Edgedancer",
+      "kind": "novella"
+    },
+    {
+      "index": 4,
+      "title": "Oathbringer",
+      "kind": "novel"
+    },
+    {
+      "index": 5,
+      "title": "Dawnshard",
+      "kind": "novella"
+    },
+    {
+      "index": 6,
+      "title": "Rhythm of War",
+      "kind": "novel"
+    },
+    {
+      "index": 7,
+      "title": "Wind and Truth",
+      "kind": "novel"
+    }
+  ],
+  "allowlist": [
+    "Radiant",
+    "Radiants",
+    "Honor",
+    "Storm",
+    "Storms",
+    "Stormfather",
+    "Light",
+    "Shard",
+    "Shards",
+    "Singer",
+    "Singers",
+    "Words",
+    "Truth",
+    "Wind"
+  ],
+  "terms": [
+    {
+      "term": "Lift",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "high",
+      "notes": "Interlude character. Also an everyday word: 'Lift' at the start of a sentence will match."
+    },
+    {
+      "term": "Eshonai",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "notes": "Prologue/interlude POV. Check whether she's named anywhere in book 1."
+    },
+    {
+      "term": "Venli",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium"
+    },
+    {
+      "term": "Stormform",
+      "aliases": [
+        "storm form"
+      ],
+      "introducedIn": 2,
+      "type": "concept",
+      "confidence": "medium"
+    },
+    {
+      "term": "Everstorm",
+      "introducedIn": 2,
+      "type": "event",
+      "confidence": "high"
+    },
+    {
+      "term": "Nightblood",
+      "introducedIn": 2,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "high",
+      "notes": "Also appears in a different series by the same author; readers of that book will see blurs."
+    },
+    {
+      "term": "Zahel",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high"
+    },
+    {
+      "term": "Mraize",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high"
+    },
+    {
+      "term": "Ghostbloods",
+      "aliases": [
+        "Ghostblood"
+      ],
+      "introducedIn": 2,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "low",
+      "notes": "May already be mentioned in book 1. Verify."
+    },
+    {
+      "term": "Tyn",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "high"
+    },
+    {
+      "term": "Veil",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "high",
+      "notes": "Persona name. Everyday word, so case-sensitive; 'Veil' capitalized mid-sentence is rare outside the books."
+    },
+    {
+      "term": "Helaran",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "notes": "Name may already appear in book 1. Verify."
+    },
+    {
+      "term": "Rlain",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium"
+    },
+    {
+      "term": "Oathgate",
+      "introducedIn": 2,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "notes": "Possibly mentioned in book 1. Verify."
+    },
+    {
+      "term": "Pattern",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "notes": "Spren named in book 2. Everyday word: expect false positives when 'Pattern' starts a sentence."
+    },
+    {
+      "term": "Battle of Narak",
+      "introducedIn": 2,
+      "type": "event",
+      "confidence": "medium"
+    },
+    {
+      "term": "Diagram",
+      "introducedIn": 2,
+      "type": "concept",
+      "caseSensitive": true,
+      "confidence": "low",
+      "notes": "Could be hinted at the end of book 1. Everyday word; case-sensitive."
+    },
+    {
+      "term": "Ulim",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "low"
+    },
+    {
+      "term": "Sylphrena",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "low",
+      "notes": "Full name of a book-1 character; unsure which book first uses it."
+    },
+    {
+      "term": "Unmade",
+      "introducedIn": 2,
+      "type": "concept",
+      "caseSensitive": true,
+      "confidence": "low",
+      "notes": "Could be book 4 instead. Lowercase 'unmade' is an ordinary word, so case-sensitive."
+    },
+    {
+      "term": "Wyndle",
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "notes": "Might be named in book 2's interlude instead. Verify."
+    },
+    {
+      "term": "Evi",
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "high"
+    },
+    {
+      "term": "Rathalas",
+      "introducedIn": 4,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "high"
+    },
+    {
+      "term": "Nergaoul",
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high"
+    },
+    {
+      "term": "Yelig-nar",
+      "aliases": [
+        "Yelignar"
+      ],
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium"
+    },
+    {
+      "term": "Sja-anat",
+      "aliases": [
+        "Sja anat",
+        "Sjaanat"
+      ],
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "low",
+      "notes": "Possibly referenced in book 2. Verify."
+    },
+    {
+      "term": "Ba-Ado-Mishram",
+      "aliases": [
+        "Mishram"
+      ],
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "low"
+    },
+    {
+      "term": "Fused",
+      "introducedIn": 4,
+      "type": "concept",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "notes": "Lowercase 'fused' is an ordinary word, so case-sensitive."
+    },
+    {
+      "term": "Voidspren",
+      "introducedIn": 4,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "low"
+    },
+    {
+      "term": "Battle of Thaylen Field",
+      "aliases": [
+        "Thaylen Field"
+      ],
+      "introducedIn": 4,
+      "type": "event",
+      "confidence": "high"
+    },
+    {
+      "term": "Glys",
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium"
+    },
+    {
+      "term": "Timbre",
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "notes": "Lowercase 'timbre' is an ordinary word."
+    },
+    {
+      "term": "Testament",
+      "introducedIn": 4,
+      "type": "concept",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "notes": "Shardblade name. Will also match 'Old Testament' / 'New Testament'."
+    },
+    {
+      "term": "Leshwi",
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "low",
+      "notes": "Might only be named in book 6."
+    },
+    {
+      "term": "Sibling",
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "low",
+      "notes": "Tower spren. Everyday word even capitalized; high false-positive risk. Consider removing."
+    },
+    {
+      "term": "Cultivation",
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "low",
+      "notes": "Shard name; may be mentioned earlier. Lowercase 'cultivation' is ordinary."
+    },
+    {
+      "term": "Chiri-Chiri",
+      "aliases": [
+        "Chiri Chiri"
+      ],
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "low"
+    },
+    {
+      "term": "Akinah",
+      "introducedIn": 5,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "medium"
+    },
+    {
+      "term": "Raboniel",
+      "aliases": [
+        "Lady of Pains"
+      ],
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high"
+    },
+    {
+      "term": "Mayalaran",
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "low",
+      "notes": "Adolin's spren's full name. Short form 'Maya' left out: it's a common real-world name."
+    },
+    {
+      "term": "Warlight",
+      "introducedIn": 6,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "high"
+    },
+    {
+      "term": "Towerlight",
+      "introducedIn": 6,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "high"
+    },
+    {
+      "term": "Anti-Stormlight",
+      "aliases": [
+        "anti-Light",
+        "antilight",
+        "anti-Voidlight"
+      ],
+      "introducedIn": 6,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "high"
+    },
+    {
+      "term": "Contest of Champions",
+      "introducedIn": 6,
+      "type": "event",
+      "confidence": "low",
+      "notes": "Could be set up at the end of book 4. Verify."
+    }
+  ]
+}
