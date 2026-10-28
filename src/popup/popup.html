@@ -1,5 +1,47 @@
 <!doctype html>
 <html lang="en">
-<head><meta charset="utf-8" /><link rel="stylesheet" href="popup.css" /><title>SpoilerShield</title></head>
-<body><main><h1>SpoilerShield</h1><p>Setup coming soon.</p></main><script src="popup.js"></script></body>
+<head>
+  <meta charset="utf-8" />
+  <title>SpoilerShield</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header>
+    <img src="icons/icon32.png" alt="" width="20" height="20" />
+    <h1>SpoilerShield</h1>
+    <label class="switch" title="Turn the shield on or off everywhere">
+      <input type="checkbox" id="enabled" />
+      <span class="slider" aria-hidden="true"></span>
+      <span class="sr-only">Shield on</span>
+    </label>
+  </header>
+
+  <section>
+    <label for="series">Series</label>
+    <select id="series"></select>
+
+    <label for="book">Book you're reading now</label>
+    <select id="book" disabled></select>
+    <p class="hint" id="book-hint">Anything introduced after this book gets blurred.</p>
+
+    <p class="note" id="draft-note" hidden>Draft term list: not yet reviewed, so some spoilers may slip through.</p>
+    <p class="note" id="tier-note" hidden>The free version shields one series at a time.</p>
+  </section>
+
+  <section id="site" class="site">
+    <p id="site-status" class="hint">Checking this page…</p>
+    <div id="site-controls" hidden>
+      <label class="row">
+        <span>Shield on <strong id="site-name"></strong></span>
+        <span class="switch">
+          <input type="checkbox" id="site-enabled" />
+          <span class="slider" aria-hidden="true"></span>
+        </span>
+      </label>
+      <button id="reveal-all" type="button">Reveal all on this page</button>
+    </div>
+  </section>
+
+  <script src="popup.js"></script>
+</body>
 </html>

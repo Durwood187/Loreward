@@ -1,1 +1,36 @@
-body { font: 14px system-ui, sans-serif; width: 300px; margin: 0; padding: 12px; }
+:root {
+  --bg: #ffffff; --fg: #1b1d2a; --muted: #5d6275; --line: #e3e5ee;
+  --accent: #34408c; --accent-fg: #ffffff; --note-bg: #fff6e0; --note-fg: #6b4e00;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #1d1f29; --fg: #eceef6; --muted: #a2a7ba; --line: #343748;
+          --accent: #8f9cf2; --accent-fg: #11131b; --note-bg: #3a3220; --note-fg: #f2d790; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; width: 300px; background: var(--bg); color: var(--fg);
+       font: 13px/1.4 system-ui, -apple-system, "Segoe UI", sans-serif; }
+header { display: flex; align-items: center; gap: 8px; padding: 12px 14px; border-bottom: 1px solid var(--line); }
+h1 { font-size: 15px; margin: 0; flex: 1; }
+section { padding: 12px 14px; }
+section + section { border-top: 1px solid var(--line); }
+label { display: block; font-weight: 600; margin: 0 0 4px; }
+select { width: 100%; padding: 6px 8px; margin-bottom: 10px; font: inherit; color: var(--fg);
+         background: var(--bg); border: 1px solid var(--line); border-radius: 6px; }
+select:disabled { opacity: .55; }
+.hint { color: var(--muted); margin: -4px 0 0; font-size: 12px; }
+.note { background: var(--note-bg); color: var(--note-fg); padding: 6px 8px; border-radius: 6px; margin: 10px 0 0; font-size: 12px; }
+.row { display: flex; align-items: center; justify-content: space-between; font-weight: 400; margin-bottom: 10px; }
+button { width: 100%; padding: 7px 10px; font: inherit; font-weight: 600; cursor: pointer;
+         color: var(--accent-fg); background: var(--accent); border: 0; border-radius: 6px; }
+button:disabled { opacity: .5; cursor: default; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+/* Toggle switch */
+.switch { position: relative; display: inline-block; width: 34px; height: 20px; margin: 0; flex: none; }
+.switch input { opacity: 0; width: 0; height: 0; }
+.slider { position: absolute; inset: 0; background: var(--line); border-radius: 20px; transition: background .15s; cursor: pointer; }
+.slider::before { content: ""; position: absolute; width: 14px; height: 14px; left: 3px; top: 3px;
+                  background: #fff; border-radius: 50%; transition: transform .15s; }
+.switch input:checked + .slider { background: var(--accent); }
+.switch input:checked + .slider::before { transform: translateX(14px); }
+.switch input:focus-visible + .slider { outline: 2px solid var(--accent); outline-offset: 2px; }
+body.off section:first-of-type { opacity: .5; }
