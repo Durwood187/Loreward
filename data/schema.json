@@ -116,6 +116,10 @@
             ],
             "description": "How sure we are about introducedIn. Every term still needs human review."
           },
+          "wikiChecked": {
+            "type": "boolean",
+            "description": "True when introducedIn was checked against the series wiki's 'Introduced In' field."
+          },
           "notes": {
             "type": "string",
             "description": "Reviewer notes: why this book, known false-positive risks."

@@ -21,6 +21,8 @@ export interface Term {
   caseSensitive?: boolean;
   /** How sure we are about introducedIn. Every term needs human review before release. */
   confidence: Confidence;
+  /** True when introducedIn was checked against the series wiki. */
+  wikiChecked?: boolean;
   notes?: string;
 }
 

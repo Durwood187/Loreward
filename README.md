@@ -39,7 +39,7 @@ permission justifications.
 
 ## About the term data
 
-`data/series/stormlight.json` is an **unreviewed draft** (`"verified": false`).
-The term list and its book assignments were drafted by an AI and are often
-wrong. Every term has a `confidence` field, and every term needs a human check
-before release.
+`data/series/stormlight.json` was drafted by an AI and checked against the Coppermind wiki
+where possible (each term has `wikiChecked` and a `confidence`). It's still marked
+`"verified": false` until the open questions in `docs/term-review.md` are settled.
+The goal is a useful shield (about 90% right), not a perfect one.

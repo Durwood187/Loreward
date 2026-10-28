@@ -91,12 +91,41 @@
   ],
   "terms": [
     {
-      "term": "Lift",
+      "term": "Battle of Narak",
+      "introducedIn": 2,
+      "type": "event",
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "'Second Battle of Narak' is Wind and Truth (7) and contains this phrase; needs its own term at 7."
+    },
+    {
+      "term": "Chiri-Chiri",
       "introducedIn": 2,
       "type": "character",
-      "caseSensitive": true,
+      "caseSensitive": false,
       "confidence": "high",
-      "notes": "Interlude character. Also an everyday word: 'Lift' at the start of a sentence will match. Capitalized only: lowercase uses never match. Still matches when the word starts a sentence."
+      "wikiChecked": true,
+      "notes": "Re-check: moved 4->2. Rysn's larkin from the WoR interlude."
+    },
+    {
+      "term": "Cryptic",
+      "aliases": [
+        "Cryptics"
+      ],
+      "introducedIn": 2,
+      "type": "concept",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Seen as symbolheads in WoK; the name surfaces in WoR."
+    },
+    {
+      "term": "Dullform",
+      "introducedIn": 2,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false
     },
     {
       "term": "Eshonai",
@@ -104,51 +133,36 @@
       "type": "character",
       "caseSensitive": false,
       "confidence": "medium",
-      "notes": "Prologue/interlude POV. Check whether she's named anywhere in book 1."
-    },
-    {
-      "term": "Venli",
-      "introducedIn": 2,
-      "type": "character",
-      "caseSensitive": false,
-      "confidence": "medium"
-    },
-    {
-      "term": "Stormform",
-      "aliases": [
-        "storm form"
-      ],
-      "introducedIn": 2,
-      "type": "concept",
-      "confidence": "medium"
+      "wikiChecked": true,
+      "notes": "Kept at 2 per later-book rule."
     },
     {
       "term": "Everstorm",
       "introducedIn": 2,
       "type": "event",
-      "confidence": "high"
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Foretold in WoK death rattles but named/arrives in WoR."
     },
     {
-      "term": "Nightblood",
+      "term": "Eylita Tavinar",
+      "aliases": [
+        "Eylita"
+      ],
       "introducedIn": 2,
-      "type": "concept",
+      "type": "character",
       "caseSensitive": false,
       "confidence": "high",
-      "notes": "Also appears in a different series by the same author; readers of that book will see blurs."
+      "wikiChecked": true
     },
     {
-      "term": "Zahel",
+      "term": "Gawx",
       "introducedIn": 2,
       "type": "character",
       "caseSensitive": false,
-      "confidence": "high"
-    },
-    {
-      "term": "Mraize",
-      "introducedIn": 2,
-      "type": "character",
-      "caseSensitive": false,
-      "confidence": "high"
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Later name Yanagawn deliberately left out; it belongs to a later book."
     },
     {
       "term": "Ghostbloods",
@@ -158,23 +172,17 @@
       "introducedIn": 2,
       "type": "concept",
       "caseSensitive": false,
-      "confidence": "low",
-      "notes": "May already be mentioned in book 1. Verify."
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Wiki infobox has no Introduced In field."
     },
     {
-      "term": "Tyn",
-      "introducedIn": 2,
-      "type": "character",
-      "caseSensitive": true,
-      "confidence": "high"
-    },
-    {
-      "term": "Veil",
+      "term": "Graves",
       "introducedIn": 2,
       "type": "character",
       "caseSensitive": true,
       "confidence": "high",
-      "notes": "Persona name. Everyday word, so case-sensitive; 'Veil' capitalized mid-sentence is rare outside the books."
+      "wikiChecked": true
     },
     {
       "term": "Helaran",
@@ -182,146 +190,403 @@
       "type": "character",
       "caseSensitive": false,
       "confidence": "medium",
-      "notes": "Name may already appear in book 1. Verify."
+      "wikiChecked": true,
+      "notes": "Kept at 2 per later-book rule."
     },
     {
-      "term": "Rlain",
+      "term": "Iyatil",
       "introducedIn": 2,
       "type": "character",
       "caseSensitive": false,
-      "confidence": "medium"
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Jaxlim",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Lift",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Malise Gevelmar",
+      "aliases": [
+        "Malise"
+      ],
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Shallan's stepmother (flashbacks)."
+    },
+    {
+      "term": "Mateform",
+      "introducedIn": 2,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Mraize",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Mrall",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Narak",
+      "aliases": [
+        "Stormseat"
+      ],
+      "introducedIn": 2,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "No Introduced In field. Note the Second Battle of Narak is book 7."
+    },
+    {
+      "term": "Nazh",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Nightblood",
+      "introducedIn": 2,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Non-Stormlight intro (Warbreaker); first Stormlight appearance WoR ch.88."
+    },
+    {
+      "term": "Nimbleform",
+      "introducedIn": 2,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false
     },
     {
       "term": "Oathgate",
       "introducedIn": 2,
       "type": "concept",
-      "caseSensitive": false,
       "confidence": "medium",
-      "notes": "Possibly mentioned in book 1. Verify."
+      "wikiChecked": false,
+      "notes": "Wiki has no field and cites WoK for general history; the term itself surfaces in WoR."
+    },
+    {
+      "term": "Palona",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
     },
     {
       "term": "Pattern",
       "introducedIn": 2,
       "type": "character",
       "caseSensitive": true,
-      "confidence": "medium",
-      "notes": "Spren named in book 2. Everyday word: expect false positives when 'Pattern' starts a sentence. Capitalized only: lowercase uses never match. Still matches when the word starts a sentence."
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Seen unnamed in WoK; named in WoR."
     },
     {
-      "term": "Battle of Narak",
+      "term": "Relis Ruthar",
+      "aliases": [
+        "Relis"
+      ],
       "introducedIn": 2,
-      "type": "event",
-      "confidence": "medium"
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Relu-na",
+      "introducedIn": 2,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Talik's island (greatshell) from Rysn's WoR interlude; per Talik wiki page."
+    },
+    {
+      "term": "Rlain",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": false,
+      "notes": "Was 'Shen' in WoK; true name revealed WoR ch.52. No Introduced In field."
+    },
+    {
+      "term": "Stormform",
+      "introducedIn": 2,
+      "type": "concept",
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Talik",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
     },
     {
       "term": "the Diagram",
-      "introducedIn": 2,
-      "type": "concept",
-      "caseSensitive": true,
-      "confidence": "low",
-      "notes": "Could be hinted at the end of book 1. Matched only as the capitalized phrase 'the Diagram' / 'The Diagram'.",
       "aliases": [
         "The Diagram"
-      ]
-    },
-    {
-      "term": "Ulim",
-      "introducedIn": 2,
-      "type": "character",
-      "caseSensitive": false,
-      "confidence": "low"
-    },
-    {
-      "term": "Sylphrena",
-      "introducedIn": 2,
-      "type": "character",
-      "caseSensitive": false,
-      "confidence": "low",
-      "notes": "Full name of a book-1 character; unsure which book first uses it."
-    },
-    {
-      "term": "Unmade",
+      ],
       "introducedIn": 2,
       "type": "concept",
       "caseSensitive": true,
-      "confidence": "low",
-      "notes": "Could be book 4 instead. Lowercase 'unmade' is an ordinary word, so case-sensitive."
+      "confidence": "high",
+      "wikiChecked": false,
+      "notes": "WoR Part Five epigraphs are quoted from the Diagram; Taravangian interlude also in WoR."
     },
     {
-      "term": "Wyndle",
-      "introducedIn": 3,
+      "term": "Thude",
+      "introducedIn": 2,
       "type": "character",
       "caseSensitive": false,
-      "confidence": "medium",
-      "notes": "Might be named in book 2's interlude instead. Verify."
+      "confidence": "high",
+      "wikiChecked": true
     },
     {
-      "term": "Evi",
-      "introducedIn": 4,
+      "term": "Turinad Sebarial",
+      "aliases": [
+        "Sebarial"
+      ],
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Tyn",
+      "introducedIn": 2,
       "type": "character",
       "caseSensitive": true,
-      "confidence": "high"
+      "confidence": "high",
+      "wikiChecked": true
     },
     {
-      "term": "Rathalas",
-      "introducedIn": 4,
-      "type": "place",
-      "caseSensitive": false,
-      "confidence": "high"
-    },
-    {
-      "term": "Nergaoul",
-      "introducedIn": 4,
+      "term": "Vathah",
+      "introducedIn": 2,
       "type": "character",
       "caseSensitive": false,
-      "confidence": "high"
+      "confidence": "high",
+      "wikiChecked": true
     },
     {
-      "term": "Yelig-nar",
-      "aliases": [
-        "Yelignar"
-      ],
-      "introducedIn": 4,
+      "term": "Veil",
+      "introducedIn": 2,
       "type": "character",
-      "caseSensitive": false,
-      "confidence": "medium"
-    },
-    {
-      "term": "Sja-anat",
-      "aliases": [
-        "Sja anat",
-        "Sjaanat"
-      ],
-      "introducedIn": 4,
-      "type": "character",
-      "caseSensitive": false,
-      "confidence": "low",
-      "notes": "Possibly referenced in book 2. Verify."
-    },
-    {
-      "term": "Ba-Ado-Mishram",
-      "aliases": [
-        "Mishram"
-      ],
-      "introducedIn": 4,
-      "type": "character",
-      "caseSensitive": false,
-      "confidence": "low"
-    },
-    {
-      "term": "Fused",
-      "introducedIn": 4,
-      "type": "concept",
       "caseSensitive": true,
-      "confidence": "medium",
-      "notes": "Lowercase 'fused' is an ordinary word, so case-sensitive."
+      "confidence": "high",
+      "wikiChecked": false,
+      "notes": "Shallan persona, first in WoR."
+    },
+    {
+      "term": "Venli",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
     },
     {
       "term": "Voidspren",
-      "introducedIn": 4,
+      "introducedIn": 2,
       "type": "concept",
       "caseSensitive": false,
-      "confidence": "low"
+      "confidence": "high",
+      "wikiChecked": false,
+      "notes": "No field; earliest citation WoR epilogue."
+    },
+    {
+      "term": "Warform",
+      "introducedIn": 2,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Listener forms are named starting in WoR."
+    },
+    {
+      "term": "Workform",
+      "introducedIn": 2,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Wyndle",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Corrected 3 -> 2. Edgedancer is where he becomes prominent."
+    },
+    {
+      "term": "Ym",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "WoR interlude I-2. Two letters; keep case-sensitive."
+    },
+    {
+      "term": "Zahel",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": false,
+      "notes": "Wiki page not fetched; WoR ch.16 summary confirms appearance."
+    },
+    {
+      "term": "Arshqqam",
+      "aliases": [
+        "the Stump"
+      ],
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Orphanage matron in Yeddaw; secretly a nascent Truthwatcher. Bare 'Stump' deliberately not an alias."
+    },
+    {
+      "term": "Ghenna",
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Tashikki scribe at the Grand Indicium."
+    },
+    {
+      "term": "Grand Indicium",
+      "aliases": [
+        "the Indicium"
+      ],
+      "introducedIn": 3,
+      "type": "place",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Tashikki information center in Yeddaw; listed in the Edgedancer summary. Not individually fetched."
+    },
+    {
+      "term": "Hauka",
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Azish guard captain."
+    },
+    {
+      "term": "I will listen to those who have been ignored",
+      "aliases": [
+        "listen to those who have been ignored"
+      ],
+      "introducedIn": 3,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Lift's Edgedancer Third Ideal, sworn at Edgedancer's climax. From memory."
+    },
+    {
+      "term": "Nin",
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Alias of Nale (Nale/Nalan itself is book 1). Wiki gives no first use of 'Nin'; Edgedancer summary uses it, and OB ch.106 cites it. If wrong, the later book (4) is the safe fallback."
+    },
+    {
+      "term": "Tashi's Light Orphanage",
+      "aliases": [
+        "Tashi's Light"
+      ],
+      "introducedIn": 3,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": false,
+      "notes": "No Introduced In field; only appears in Edgedancer."
+    },
+    {
+      "term": "Yeddaw",
+      "introducedIn": 3,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": false,
+      "notes": "Infobox has no Introduced In field; article cites only Edgedancer."
+    },
+    {
+      "term": "Ashertmarn",
+      "aliases": [
+        "Heart of the Revel"
+      ],
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Captain Azure",
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Vivenna (Warbreaker) appears as Azure in OB. Don't add 'Vivenna': it would blur Warbreaker discussion. Bare \"Azure\" left out: matches Microsoft Azure and the colour."
+    },
+    {
+      "term": "Ba-Ado-Mishram",
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
     },
     {
       "term": "Battle of Thaylen Field",
@@ -330,14 +595,345 @@
       ],
       "introducedIn": 4,
       "type": "event",
-      "confidence": "high"
+      "confidence": "high",
+      "wikiChecked": false
+    },
+    {
+      "term": "Celebrant",
+      "introducedIn": 4,
+      "type": "place",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": false
+    },
+    {
+      "term": "Chemoarish",
+      "aliases": [
+        "Dustmother"
+      ],
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Cult of Moments",
+      "introducedIn": 4,
+      "type": "concept",
+      "confidence": "high",
+      "wikiChecked": false,
+      "notes": "No infobox field; OB-only content."
+    },
+    {
+      "term": "Envoyform",
+      "introducedIn": 4,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "No field on the forms page; earliest envoyform cites are OB (Venli)."
+    },
+    {
+      "term": "Evi",
+      "aliases": [
+        "Evi Kholin"
+      ],
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Wiki infobox has no Introduced In. Dalinar's wife's name is hidden from him in WoK; the name and her story come with the OB flashbacks."
+    },
+    {
+      "term": "Fused",
+      "introducedIn": 4,
+      "type": "concept",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": false
+    },
+    {
+      "term": "Gavinor",
+      "aliases": [
+        "Gav"
+      ],
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Elhokar's son. No infobox field. 'Gav' alias is risky; drop it if it over-blurs."
     },
     {
       "term": "Glys",
       "introducedIn": 4,
       "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Hadinar",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Wall Guard (wiki 'First Appeared')."
+    },
+    {
+      "term": "Hessi",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Author of Mythica (OB epigraphs)."
+    },
+    {
+      "term": "Hmalka",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Rysn's superior at the Gemstone Reserve. No infobox field."
+    },
+    {
+      "term": "I am Unity",
+      "introducedIn": 4,
+      "type": "concept",
+      "confidence": "high",
+      "wikiChecked": false,
+      "notes": "Dalinar's climax line at Thaylen Field. Not wiki-checked."
+    },
+    {
+      "term": "Ishnah",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Ithi",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Kholinar Soulcaster. Minor."
+    },
+    {
+      "term": "Ivory",
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Jenin",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "One of Dalinar's elites (wiki 'First Appeared'). Minor."
+    },
+    {
+      "term": "Kalanor",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Kaza",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Kdralk",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Khen",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Kmakl",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Leshwi",
+      "introducedIn": 4,
+      "type": "character",
       "caseSensitive": false,
-      "confidence": "medium"
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Liss",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "low",
+      "wikiChecked": false,
+      "notes": "The assassin Dalinar hires in the OB flashbacks. Not wiki-checked: the page didn't surface."
+    },
+    {
+      "term": "Malata",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "mistspren",
+      "introducedIn": 4,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Truthwatcher spren (Glys's kind). Wiki fetch failed."
+    },
+    {
+      "term": "Mythica",
+      "aliases": [
+        "Hessi's Mythica"
+      ],
+      "introducedIn": 4,
+      "type": "concept",
+      "confidence": "high",
+      "wikiChecked": false,
+      "notes": "OB Part epigraph source on the Unmade. Wiki fetch failed."
+    },
+    {
+      "term": "Nergaoul",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "The Thrill itself is WoK; the Unmade name is OB."
+    },
+    {
+      "term": "Notum",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Oroden",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Kaladin's baby brother."
+    },
+    {
+      "term": "Rathalas",
+      "aliases": [
+        "the Rift",
+        "Rathalathar"
+      ],
+      "introducedIn": 4,
+      "type": "place",
+      "confidence": "high",
+      "wikiChecked": false,
+      "notes": "No infobox field; content is all OB flashbacks. 'the Rift' alias should match capitalized only."
+    },
+    {
+      "term": "Sah",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Wiki 'First Appeared'. Short; caseSensitive."
+    },
+    {
+      "term": "Shaday",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Highlord in the Kholin army. Minor."
+    },
+    {
+      "term": "Siege of Kholinar",
+      "aliases": [
+        "Battle of Kholinar",
+        "Fall of Kholinar"
+      ],
+      "introducedIn": 4,
+      "type": "event",
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Sja-anat",
+      "aliases": [
+        "Taker of Secrets"
+      ],
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Sylphrena",
+      "aliases": [
+        "Ancient Daughter"
+      ],
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "low",
+      "wikiChecked": true,
+      "notes": "CORRECTED from 2 to 4 (later-book rule); not confirmed."
+    },
+    {
+      "term": "Tanalan",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Tezim",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": false,
+      "notes": "Tukari god-priest (secretly Ishar). Wiki: alias first cited in OB ch24 (Ishar's letter)."
+    },
+    {
+      "term": "Thaylen Gemstone Reserve",
+      "aliases": [
+        "Gemstone Reserve"
+      ],
+      "introducedIn": 4,
+      "type": "place",
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Rysn's OB interlude. Not wiki-checked (search budget ran out)."
+    },
+    {
+      "term": "the Sibling",
+      "aliases": [
+        "The Sibling"
+      ],
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Phrase only; bare 'Sibling' is an everyday word."
     },
     {
       "term": "Timbre",
@@ -345,110 +941,862 @@
       "type": "character",
       "caseSensitive": true,
       "confidence": "medium",
-      "notes": "Lowercase 'timbre' is an ordinary word."
+      "wikiChecked": true
     },
     {
-      "term": "Testament",
+      "term": "Toh",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Evi's brother. Short name; caseSensitive."
+    },
+    {
+      "term": "Ulim",
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "CORRECTED from 2 to 4: wiki says Oathbringer (interludes I-3, I-6). Venli's spren is unnamed in WoR."
+    },
+    {
+      "term": "Unmade",
       "introducedIn": 4,
       "type": "concept",
       "caseSensitive": true,
       "confidence": "medium",
-      "notes": "Shardblade name. Will also match 'Old Testament' / 'New Testament'. Capitalized only: lowercase uses never match. Still matches when the word starts a sentence."
+      "wikiChecked": false,
+      "notes": "No infobox field; the group name is prominent from OB on."
     },
     {
-      "term": "Leshwi",
-      "introducedIn": 4,
-      "type": "character",
-      "caseSensitive": false,
-      "confidence": "low",
-      "notes": "Might only be named in book 6."
-    },
-    {
-      "term": "the Sibling",
+      "term": "Vyre",
       "introducedIn": 4,
       "type": "character",
       "caseSensitive": true,
-      "confidence": "low",
-      "notes": "Tower spren. Matched only as the capitalized phrase 'the Sibling' / 'The Sibling' to avoid everyday uses of 'sibling'.",
-      "aliases": [
-        "The Sibling"
-      ]
+      "confidence": "high",
+      "wikiChecked": false,
+      "notes": "Moash's new name, given at the end of OB after Kholinar. Wiki doesn't give the book explicitly."
     },
     {
-      "term": "Cultivation",
-      "introducedIn": 4,
-      "type": "character",
-      "caseSensitive": true,
-      "confidence": "low",
-      "notes": "Shard name; may be mentioned earlier. Lowercase 'cultivation' is ordinary."
-    },
-    {
-      "term": "Chiri-Chiri",
+      "term": "Yelig-nar",
       "aliases": [
-        "Chiri Chiri"
+        "Blightwind"
       ],
       "introducedIn": 4,
       "type": "character",
-      "caseSensitive": false,
-      "confidence": "low"
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Yixli",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Wiki 'First Appeared' field. The voidspren leading Kaladin's parshmen."
     },
     {
       "term": "Akinah",
       "introducedIn": 5,
       "type": "place",
       "caseSensitive": false,
-      "confidence": "medium"
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Re-checked existing entry: kept at 5."
     },
     {
-      "term": "Raboniel",
+      "term": "Alalhawithador",
+      "introducedIn": 5,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Aggressive Sleepless swarm ('Third')."
+    },
+    {
+      "term": "Drlwan",
+      "introducedIn": 5,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Captain of the Wandersail."
+    },
+    {
+      "term": "hordeling",
+      "introducedIn": 5,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Individual creatures in a Sleepless swarm. The Sleepless themselves are cited from WoK, so they are excluded. No standalone wiki page for this term."
+    },
+    {
+      "term": "Kstled",
+      "introducedIn": 5,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Wandersail man-at-arms, Drlwan's brother."
+    },
+    {
+      "term": "Nikliasorm",
       "aliases": [
-        "Lady of Pains"
+        "Nikli"
+      ],
+      "introducedIn": 5,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Sleepless disguised as an Aimian crew member."
+    },
+    {
+      "term": "Wandersail",
+      "introducedIn": 5,
+      "type": "concept",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Blurring it would also hide discussion of Wit's WoK story; using the later book per the rule. Consider dropping it."
+    },
+    {
+      "term": "Yelamaiszin",
+      "introducedIn": 5,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "First Sleepless swarm. Its title 'First' is far too generic to use as an alias."
+    },
+    {
+      "term": "Zyardil",
+      "introducedIn": 5,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Sleepless."
+    },
+    {
+      "term": "Amuna",
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Anti-Stormlight",
+      "aliases": [
+        "anti-Light",
+        "anti-Voidlight",
+        "Anti-Voidlight"
+      ],
+      "introducedIn": 6,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": false,
+      "notes": "Wiki Anti-Light page failed to load; confident from memory (Navani/Raboniel research)."
+    },
+    {
+      "term": "Archinal",
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Godeke's cultivationspren; checked on Ukrainian Coppermind."
+    },
+    {
+      "term": "Blended",
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Inkspren at Lasting Integrity."
+    },
+    {
+      "term": "Contest of Champions",
+      "aliases": [
+        "contest of champions"
+      ],
+      "introducedIn": 6,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Kept at 6."
+    },
+    {
+      "term": "Darcira",
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Checked on Ukrainian Coppermind."
+    },
+    {
+      "term": "Dreaming-though-Awake",
+      "aliases": [
+        "Dreaming though Awake"
       ],
       "introducedIn": 6,
       "type": "character",
       "caseSensitive": false,
-      "confidence": "high"
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "The Stump's mistspren."
+    },
+    {
+      "term": "Dul",
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Formless",
+      "introducedIn": 6,
+      "type": "concept",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": false,
+      "notes": "Shallan's third persona; wiki page cites RoW."
+    },
+    {
+      "term": "Fourth Bridge",
+      "introducedIn": 6,
+      "type": "concept",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Navani's flying ship; no book field."
+    },
+    {
+      "term": "Lasting Integrity",
+      "introducedIn": 6,
+      "type": "place",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": false,
+      "notes": "Honorspren fortress. Case-sensitive since 'lasting integrity' is an ordinary phrase."
+    },
+    {
+      "term": "Lezian",
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Lifelight",
+      "introducedIn": 6,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "No book field; may be named earlier (Dawnshard?). Chose later book."
+    },
+    {
+      "term": "Lusintia",
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
     },
     {
       "term": "Mayalaran",
       "introducedIn": 6,
       "type": "character",
       "caseSensitive": false,
-      "confidence": "low",
-      "notes": "Adolin's spren's full name. Short form 'Maya' left out: it's a common real-world name."
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Wiki infobox has no Introduced In. Alias 'Maya' deliberately omitted (common real name)."
     },
     {
-      "term": "Warlight",
+      "term": "Mazish",
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Melishi",
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Bondsmith who imprisoned Ba-Ado-Mishram; no book field. Chose later book."
+    },
+    {
+      "term": "Noril",
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "No book field; Hearthstone refugee in RoW opening."
+    },
+    {
+      "term": "Occupation of Urithiru",
+      "aliases": [
+        "Siege of Urithiru",
+        "invasion of Urithiru"
+      ],
+      "introducedIn": 6,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Odium Taravangian",
+      "aliases": [
+        "Taravangian-Odium",
+        "Odium-Taravangian"
+      ],
       "introducedIn": 6,
       "type": "concept",
       "caseSensitive": false,
-      "confidence": "high"
+      "confidence": "high",
+      "wikiChecked": false,
+      "notes": "Taravangian takes up the Shard of Odium at the end of book 6."
+    },
+    {
+      "term": "Raboniel",
+      "aliases": [
+        "Lady of Wishes",
+        "Lady of Pains"
+      ],
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Wiki field is 'First Appeared'."
+    },
+    {
+      "term": "Radathavian",
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "low",
+      "wikiChecked": false,
+      "notes": "No book field; coalition officer. Could be book 4; chose later book."
+    },
+    {
+      "term": "raysium",
+      "introducedIn": 6,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Rhythm of Peace",
+      "introducedIn": 6,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Not wiki-checked."
+    },
+    {
+      "term": "Sekeir",
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Ancient honorspren leader of Lasting Integrity."
+    },
+    {
+      "term": "Shuanor",
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "low",
+      "wikiChecked": false,
+      "notes": "No book field; Urithiru soldier. Chose later book."
+    },
+    {
+      "term": "Shumin",
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Stargyle",
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Teofil",
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Testament",
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "The Dog and the Dragon",
+      "aliases": [
+        "Dog and the Dragon"
+      ],
+      "introducedIn": 6,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Hoid's story told to Shallan. Not wiki-checked."
+    },
+    {
+      "term": "the Mink",
+      "aliases": [
+        "Dieno enne Calah",
+        "Dieno"
+      ],
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Case-sensitive (animal/fur)."
+    },
+    {
+      "term": "the Pursuer",
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Title of Lezian; case-sensitive to avoid generic 'pursuer'."
     },
     {
       "term": "Towerlight",
       "introducedIn": 6,
       "type": "concept",
       "caseSensitive": false,
-      "confidence": "high"
+      "confidence": "high",
+      "wikiChecked": false,
+      "notes": "Wiki has no Introduced In; known in-world for millennia but first shown in RoW."
     },
     {
-      "term": "Anti-Stormlight",
+      "term": "Tshadr",
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "No Introduced In field; killed in the occupation of Urithiru."
+    },
+    {
+      "term": "Ua'pam",
       "aliases": [
-        "anti-Light",
-        "antilight",
-        "anti-Voidlight"
+        "Uapam"
       ],
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Unativi",
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Velat",
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Vienta",
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Sigzil's spren."
+    },
+    {
+      "term": "Warlight",
       "introducedIn": 6,
       "type": "concept",
       "caseSensitive": false,
-      "confidence": "high"
+      "confidence": "high",
+      "wikiChecked": false,
+      "notes": "Wiki has no Introduced In; all citations are Rhythm of War."
     },
     {
-      "term": "Contest of Champions",
+      "term": "Yunfah",
       "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Abidi",
+      "aliases": [
+        "Abidi the Monarch"
+      ],
+      "introducedIn": 7,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Heavenly One killed by Adolin in Azimir"
+    },
+    {
+      "term": "Aleen",
+      "introducedIn": 7,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Shallan's Ghostblood disguise name; wiki page surfaced in an 'Introduced in Wind and Truth' search but fetch failed"
+    },
+    {
+      "term": "Battle of Azimir",
+      "aliases": [
+        "Siege of Azimir"
+      ],
+      "introducedIn": 7,
       "type": "event",
-      "confidence": "low",
-      "notes": "Could be set up at the end of book 4. Verify."
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": false,
+      "notes": "Fan-coined name per wiki"
+    },
+    {
+      "term": "Blade of Memories",
+      "introducedIn": 7,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": false,
+      "notes": "Azish Shardblade; wiki cites only WaT"
+    },
+    {
+      "term": "Cleansing of Shinovar",
+      "introducedIn": 7,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": false,
+      "notes": "Wiki event page has no infobox field; content is all WaT"
+    },
+    {
+      "term": "Clearmount",
+      "introducedIn": 7,
+      "type": "place",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Szeth's hometown"
+    },
+    {
+      "term": "Deti",
+      "introducedIn": 7,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Sigzil's squire, dies at Narak; not wiki-fetched"
+    },
+    {
+      "term": "Dustbringer monastery",
+      "introducedIn": 7,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Shin Honorblade monastery visited in the Cleansing; wiki page uncited"
+    },
+    {
+      "term": "Elid",
+      "aliases": [
+        "Elid-daughter-Zeenid"
+      ],
+      "introducedIn": 7,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Szeth's sister; Dustbringer Honorbearer"
+    },
+    {
+      "term": "Ethenia",
+      "introducedIn": 7,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Leyten's honorspren"
+    },
+    {
+      "term": "Fifth Ideal",
+      "aliases": [
+        "Windrunner Fifth Ideal"
+      ],
+      "introducedIn": 7,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Not wiki-fetched; Wikipedia plot summary confirms Kaladin swears it"
+    },
+    {
+      "term": "Focused One",
+      "introducedIn": 7,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "New Fused type (dense bodies); wiki page fetch failed"
+    },
+    {
+      "term": "Gezamal Kushkam",
+      "introducedIn": 7,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": false,
+      "notes": "Unoathed member; verified via uk.coppermind.net/wiki/Gezamal_Kushkam"
+    },
+    {
+      "term": "Herald Kaladin",
+      "aliases": [
+        "Kaladin the Herald",
+        "Herald of Honor"
+      ],
+      "introducedIn": 7,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Kaladin takes Jezrien's place in the reforged Oathpact"
+    },
+    {
+      "term": "Honorbearer",
+      "aliases": [
+        "Honorbearers"
+      ],
+      "introducedIn": 7,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Shin Honorblade wielders, turned Fused by Ishar"
+    },
+    {
+      "term": "Kaminah",
+      "introducedIn": 7,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Adolin's aide in Azimir"
+    },
+    {
+      "term": "Lieke",
+      "introducedIn": 7,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Ghostblood operative"
+    },
+    {
+      "term": "Molli",
+      "introducedIn": 7,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Szeth's family sheep; not wiki-checked"
+    },
+    {
+      "term": "Moss-son-Farrier",
+      "introducedIn": 7,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": false,
+      "notes": "Lightweaver Honorbearer; bare 'Moss' omitted (everyday word); not wiki-fetched"
+    },
+    {
+      "term": "Neziham",
+      "introducedIn": 7,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Azish Shardbearer"
+    },
+    {
+      "term": "Pozen",
+      "aliases": [
+        "Pozen-son-Nash"
+      ],
+      "introducedIn": 7,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Elsecaller Honorbearer, Szeth's trainer"
+    },
+    {
+      "term": "Retribution",
+      "aliases": [
+        "Shard of Retribution"
+      ],
+      "introducedIn": 7,
+      "type": "concept",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": false,
+      "notes": "Taravangian's merged Shard (Honor+Odium)"
+    },
+    {
+      "term": "Rit-daughter-Clutio",
+      "introducedIn": 7,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Stoneward Honorbearer; bare 'Rit' omitted as too short"
+    },
+    {
+      "term": "Second Battle of Narak",
+      "introducedIn": 7,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": false,
+      "notes": "Fan-coined name; Sigzil vs El on the Shattered Plains"
+    },
+    {
+      "term": "Shalash's ribbon",
+      "introducedIn": 7,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Used by Dalinar/Navani to manipulate Connection; per wiki Wind page"
+    },
+    {
+      "term": "Sivi-daughter-Sivi",
+      "aliases": [
+        "Sivi"
+      ],
+      "introducedIn": 7,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": false,
+      "notes": "Willshaper Honorbearer; wiki page exists but fetch failed"
+    },
+    {
+      "term": "Stormfall",
+      "introducedIn": 7,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": false,
+      "notes": "Climax: Retribution ascends, highstorm merged into Everstorm; wiki cites WaT ch.129+"
+    },
+    {
+      "term": "Terushal",
+      "introducedIn": 7,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Thunderclast at Azimir"
+    },
+    {
+      "term": "Unoathed",
+      "introducedIn": 7,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Deadeye-Shardbearer group founded by Adolin"
+    },
+    {
+      "term": "Vallano",
+      "aliases": [
+        "Neturo-son-Vallano"
+      ],
+      "introducedIn": 7,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Szeth's grandfather; wiki lists no Introduced In, only named in WaT as far as known"
+    },
+    {
+      "term": "Xorm",
+      "introducedIn": 7,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Deadeye spren bonded to Yanagawn"
+    },
+    {
+      "term": "Zarb Kushkam",
+      "introducedIn": 7,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Commandant of Azimir's Imperial Guard; bare 'Kushkam' omitted (shared family name)"
+    },
+    {
+      "term": "Zeenid",
+      "aliases": [
+        "Zeenid-daughter-Beth"
+      ],
+      "introducedIn": 7,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Szeth's mother"
     }
   ]
 }
