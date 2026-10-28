@@ -9,10 +9,19 @@ v1: one series (compatible with *The Stormlight Archive*), one site (Reddit).
 
 ## Setup
 
+First time only (the dev tools couldn't be installed while scaffolding, so
+they aren't pinned in `package.json` yet; this adds them and writes the lockfile):
+
 ```bash
-npm install
+npm install --save-dev esbuild typescript vitest jsdom @types/chrome
+```
+
+Then, as usual:
+
+```bash
 npm run build      # outputs dist/
 npm test           # matcher + adapter tests (Vitest)
+npm run typecheck  # TypeScript type check
 ```
 
 Load it in Chrome: `chrome://extensions` → turn on **Developer mode** →
