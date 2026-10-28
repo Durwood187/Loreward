@@ -10,19 +10,20 @@
 - Payments via ExtensionPay once a second series exists (Pro = more than one series).
 - YouTube adapter (next site after Reddit + Google).
 
-## Series order (Eric, Oct 2026)
+## Series order (revised Oct 2026)
+Ongoing series (new books coming, active fandoms) first; long-finished classics last.
 1. The Stormlight Archive ✅
 2. Mistborn
-3. Rest of the Cosmere
-4. Dungeon Crawler Carl
-5. Harry Potter
-6. Eragon (Inheritance Cycle)
-7. Percy Jackson
-8. Sword of Truth
-9. Codex Alera
-10. Fourth Wing (The Empyrean)
-11. Red Rising
-12. Empire of the Vampire
+3. Rest of the Cosmere (each book/series gets its own progress setting)
+4. Fourth Wing (The Empyrean). Eric hasn't read it, so the review list leans on the wiki check.
+5. Dungeon Crawler Carl
+6. Red Rising
+7. Empire of the Vampire
+8. Harry Potter
+9. Eragon (Inheritance Cycle)
+10. Percy Jackson
+11. Sword of Truth
+12. Codex Alera
 13. The Lord of the Rings
 
 Each series: AI-drafted terms per book, checked against the series wiki, short review list of
