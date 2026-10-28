@@ -25,12 +25,16 @@ const onBook = (n: number) => [{ bookTitle: `Book ${n} Title`, matcher: compileM
 
 const BLOCKED = ['post-title-spoiler', 'post-body-spoiler', 'c-reply-spoiler', 'c-parent-spoiler'];
 const SAFE = ['post-safe', 'c-parent-safe', 'c-reply-safe', 'c-false-positive'];
+// New Reddit only: posts the author tagged as spoilers.
+const TAGGED_BLOCKED = ['tagged-title-spoiler'];
+const TAGGED_SAFE = ['tagged-body-spoiler'];
 
 /** The element the shield treats as the unit for a fixture item. */
 function unitOf(name: string): Element {
   const el = document.querySelector(`[data-test="${name}"]`)!;
   if (el.matches(redditAdapter.unitSelector)) return el;
-  return el.querySelector(':scope > [slot="comment"]:not(.ss-label), :scope > .entry')!;
+  // A comment's own body is the first one inside it (replies come after).
+  return el.querySelector('[slot="comment"]:not(.ss-label), :scope > .entry')!;
 }
 const stateOf = (name: string) => unitOf(name).getAttribute('data-ss-state');
 const click = (el: Element) => el.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true, composed: true }));
@@ -45,10 +49,28 @@ describe('Reddit adapter host matching', () => {
   });
 });
 
+describe('new Reddit spoiler-tagged posts', () => {
+  let shield: Shield;
+  beforeEach(() => {
+    useDocument(loadFixture('reddit-new.html'));
+    shield = new Shield(redditAdapter, document);
+    shield.configure(onBook(1), true);
+  });
+  afterEach(() => shield.stop());
+
+  it('leaves a tagged post alone when only its hidden body has the spoiler (Reddit already covers it)', () => {
+    for (const name of TAGGED_SAFE) expect([name, stateOf(name)]).toEqual([name, null]);
+  });
+  it('still blurs a tagged post whose visible title has the spoiler', () => {
+    for (const name of TAGGED_BLOCKED) expect([name, stateOf(name)]).toEqual([name, 'blocked']);
+  });
+});
+
 describe.each([
-  ['new Reddit', 'reddit-new.html'],
-  ['old Reddit', 'reddit-old.html'],
-])('%s', (_label, fixture) => {
+  // [name, fixture, extra blurred units beyond BLOCKED (tagged posts, new Reddit only)]
+  ['new Reddit', 'reddit-new.html', TAGGED_BLOCKED.length],
+  ['old Reddit', 'reddit-old.html', 0],
+])('%s', (_label, fixture, extra) => {
   let shield: Shield;
 
   beforeEach(() => {
@@ -68,7 +90,7 @@ describe.each([
   });
 
   it('counts blurred units', () => {
-    expect(shield.blockedCount()).toBe(BLOCKED.length);
+    expect(shield.blockedCount()).toBe(BLOCKED.length + extra);
   });
 
   it('puts a label in front of each blurred unit without naming the term', () => {
@@ -77,7 +99,7 @@ describe.each([
     expect(label.classList.contains('ss-label')).toBe(true);
     expect(label.textContent).toBe('Possible spoiler past Book 1 Title — click to reveal');
     expect(label.textContent).not.toContain('Raboniel');
-    expect(document.querySelectorAll('.ss-label')).toHaveLength(BLOCKED.length);
+    expect(document.querySelectorAll('.ss-label')).toHaveLength(BLOCKED.length + extra);
   });
 
   it('gives labels the unit\'s slot so they render inside custom elements', () => {
@@ -115,7 +137,7 @@ describe.each([
   });
 
   it('reveal all clears every blur on the page', () => {
-    expect(shield.revealAll()).toBe(BLOCKED.length);
+    expect(shield.revealAll()).toBe(BLOCKED.length + extra);
     expect(shield.blockedCount()).toBe(0);
     expect(document.querySelectorAll('.ss-label')).toHaveLength(0);
   });
@@ -144,7 +166,7 @@ describe.each([
     const copy = safe.cloneNode(true) as Element;
     copy.setAttribute('data-test', 'added');
     copy.querySelectorAll('[data-test]').forEach((el) => el.removeAttribute('data-test'));
-    const text = copy.querySelector(':scope > [slot="comment"] p, :scope > .entry .md p')!;
+    const text = copy.querySelector('[slot="comment"] p, :scope > .entry .md p')!;
     text.textContent = 'The Everstorm arrives';
     safe.parentElement!.append(copy);
     expect(stateOf('added')).toBe(null); // not yet: scans are batched

@@ -27,28 +27,68 @@
         <div slot="text-body"><div class="md"><p>What if the Everstorm is connected?</p></div></div>
       </shreddit-post>
     </article>
+    <!-- Author-tagged spoiler posts: Reddit hides the body itself. -->
+    <article>
+      <shreddit-post data-test="tagged-body-spoiler" id="t3_tb" spoiler="" post-title="Thoughts after my reread" permalink="/r/x/comments/tb/">
+        <h1 slot="title">Thoughts after my reread</h1>
+        <div slot="post-flair">Discussion</div>
+        <shreddit-post-text-body slot="text-body"><div class="md"><p>The Everstorm reveal hit hard.</p></div></shreddit-post-text-body>
+      </shreddit-post>
+    </article>
+    <article>
+      <shreddit-post data-test="tagged-title-spoiler" id="t3_tt" spoiler="" post-title="Raboniel is the best villain" permalink="/r/x/comments/tt/">
+        <h1 slot="title">Raboniel is the best villain</h1>
+        <shreddit-post-text-body slot="text-body"><div class="md"><p>Fight me.</p></div></shreddit-post-text-body>
+      </shreddit-post>
+    </article>
   </main>
 
+  <!-- Comment markup mirrors the live site (Oct 2026): the body sits inside <details>, replies follow it. -->
   <shreddit-comment-tree id="comments">
     <shreddit-comment data-test="c-parent-safe" thingid="t1_a" author="reader1" depth="0">
-      <div slot="commentMeta">reader1 · 2h</div>
-      <div slot="comment" id="t1_a-comment-rtjson-content" class="md"><p>Bridge Four forever.</p></div>
-      <shreddit-comment data-test="c-reply-spoiler" thingid="t1_b" author="reader2" depth="1" slot="children">
-        <div slot="commentMeta">reader2 · 1h</div>
-        <div slot="comment" id="t1_b-comment-rtjson-content" class="md"><p>Wait until you meet the Lady of Pains.</p></div>
+      <details open class="relative bg-transparent p-0 m-0">
+        <summary><div slot="commentMeta">reader1 · 2h</div></summary>
+        <div><div>
+          <div slot="comment" id="t1_a-comment-rtjson-content" class="md"><p>Bridge Four forever.</p></div>
+      <shreddit-comment data-test="c-reply-spoiler" thingid="t1_b" author="reader2" depth="1" slot="children-t1_a-0">
+        <details open class="relative bg-transparent p-0 m-0">
+          <summary><div slot="commentMeta">reader2 · 2h</div></summary>
+          <div><div>
+            <div slot="comment" id="t1_b-comment-rtjson-content" class="md"><p>Wait until you meet the Lady of Pains.</p></div>
+          </div></div>
+        </details>
+        <faceplate-perfmark></faceplate-perfmark>
       </shreddit-comment>
+        </div></div>
+      </details>
+      <faceplate-perfmark></faceplate-perfmark>
     </shreddit-comment>
     <shreddit-comment data-test="c-parent-spoiler" thingid="t1_c" author="reader3" depth="0">
-      <div slot="commentMeta">reader3 · 3h</div>
-      <div slot="comment" id="t1_c-comment-rtjson-content" class="md"><p>Evi's chapters wrecked me.</p></div>
-      <shreddit-comment data-test="c-reply-safe" thingid="t1_d" author="reader4" depth="1" slot="children">
-        <div slot="commentMeta">reader4 · 2h</div>
-        <div slot="comment" id="t1_d-comment-rtjson-content" class="md"><p>Same here.</p></div>
+      <details open class="relative bg-transparent p-0 m-0">
+        <summary><div slot="commentMeta">reader3 · 2h</div></summary>
+        <div><div>
+          <div slot="comment" id="t1_c-comment-rtjson-content" class="md"><p>Evi's chapters wrecked me.</p></div>
+      <shreddit-comment data-test="c-reply-safe" thingid="t1_d" author="reader4" depth="1" slot="children-t1_c-0">
+        <details open class="relative bg-transparent p-0 m-0">
+          <summary><div slot="commentMeta">reader4 · 2h</div></summary>
+          <div><div>
+            <div slot="comment" id="t1_d-comment-rtjson-content" class="md"><p>Same here.</p></div>
+          </div></div>
+        </details>
+        <faceplate-perfmark></faceplate-perfmark>
       </shreddit-comment>
+        </div></div>
+      </details>
+      <faceplate-perfmark></faceplate-perfmark>
     </shreddit-comment>
     <shreddit-comment data-test="c-false-positive" thingid="t1_e" author="reader5" depth="0">
-      <div slot="commentMeta">reader5 · 4h</div>
-      <div slot="comment" id="t1_e-comment-rtjson-content" class="md"><p>That veil scene was evil, and the pattern of the plot is great.</p></div>
+      <details open class="relative bg-transparent p-0 m-0">
+        <summary><div slot="commentMeta">reader5 · 2h</div></summary>
+        <div><div>
+          <div slot="comment" id="t1_e-comment-rtjson-content" class="md"><p>That veil scene was evil, and the pattern of the plot is great.</p></div>
+        </div></div>
+      </details>
+      <faceplate-perfmark></faceplate-perfmark>
     </shreddit-comment>
   </shreddit-comment-tree>
 </shreddit-app>
