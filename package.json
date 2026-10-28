@@ -1,0 +1,14 @@
+{
+  "name": "spoilershield",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Chrome extension that blurs possible book-series spoilers based on how far you've read.",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "watch": "node scripts/build.mjs --watch",
+    "test": "vitest run",
+    "typecheck": "node scripts/build.mjs --gen-only && tsc --noEmit",
+    "icons": "python3 scripts/make-icons.py"
+  }
+}
