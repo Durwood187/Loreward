@@ -33,6 +33,9 @@ icon on the extension's card.
 | `scripts/build.mjs` | The whole build: bundles data, bundles scripts with esbuild, copies files to `dist/`. |
 | `tests/` | Vitest tests; `tests/fixtures/` holds saved HTML so adapters can be tested offline. |
 
+See `TESTING.md` for the manual checklist and `PERMISSIONS.md` for the store-listing
+permission justifications.
+
 ## About the term data
 
 `data/series/stormlight.json` is an **unreviewed draft** (`"verified": false`).
