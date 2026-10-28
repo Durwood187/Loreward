@@ -47,6 +47,11 @@ for a later-book name.
 - [ ] **No flash:** on a hard reload of a spoiler-heavy thread, spoiler text isn't readable before the blur appears. A brief flicker is acceptable; readable text is not.
 - [ ] **Performance:** scrolling a 500+ comment thread feels as smooth as with the extension off.
 
+- [ ] **Book names** (set the popup to book 2): a post or comment naming *Words of Radiance* gets the
+      **amber** "May spoil Words of Radiance (the book you're reading)" label; one naming a later book
+      ("Rhythm of War", or "RoW" inside the series subreddit) gets "May spoil books after…".
+- [ ] Posts naming only earlier books stay readable.
+
 ### Reddit, old design (old.reddit.com)
 
 - [ ] Listing page: spoiler titles are blurred.

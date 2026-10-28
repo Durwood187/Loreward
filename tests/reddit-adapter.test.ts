@@ -3,7 +3,7 @@
 // Runs the real Shield + Reddit adapter against saved Reddit pages, offline.
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
-import { compileMatcher } from '../src/core/matcher';
+import { compileMatcher, compileRelevance, compileBookMentions } from '../src/core/matcher';
 import type { SeriesData } from '../src/core/types';
 import { redditAdapter } from '../src/content/adapters/reddit';
 import { Shield } from '../src/content/shield';
@@ -182,5 +182,61 @@ describe.each([
     p.append(document.createTextNode(' Also: Evi.'));
     await wait(250);
     expect(stateOf('c-reply-safe')).toBe('blocked');
+  });
+});
+
+describe.each([
+  ['new Reddit', 'reddit-new.html'],
+  ['old Reddit', 'reddit-old.html'],
+])('%s: posts and comments that name a book (reader is on book 2)', (_label, fixture) => {
+  const named: SeriesData = {
+    ...series,
+    keywords: ['Stormlight', 'Kaladin'],
+    books: [
+      { index: 1, title: 'The Way of Kings', aliases: ['WoK'] },
+      { index: 2, title: 'Words of Radiance', aliases: ['WoR'] },
+      { index: 3, title: 'Oathbringer', aliases: ['OB'] },
+      { index: 4, title: 'Rhythm of War', aliases: ['RoW'] },
+    ],
+  };
+  const onBook2 = [{
+    bookTitle: 'Words of Radiance', currentBook: 2, seriesName: 'Test',
+    matcher: compileMatcher(named, 2), isRelevant: compileRelevance(named), booksMentioned: compileBookMentions(named),
+  }];
+  let shield: Shield;
+  /** Loads the fixture with new text in the "c-parent-safe" comment, as if on the given page. */
+  function load(commentText: string, path: string) {
+    useDocument(loadFixture(fixture));
+    unitOf('c-parent-safe').querySelector('p')!.textContent = commentText;
+    const context = redditAdapter.pageContext!({ pathname: path } as Location);
+    shield = new Shield(redditAdapter, document, () => context);
+    shield.configure(onBook2, true);
+  }
+  const kind = () => unitOf('c-parent-safe').previousElementSibling?.getAttribute('data-kind') ?? null;
+  afterEach(() => shield.stop());
+
+  it('a comment about the current book gets the amber "this book" label', () => {
+    load('The ending of Words of Radiance destroyed me', '/r/Fantasy/comments/abc/best_endings/');
+    expect(kind()).toBe('current');
+  });
+  it('a comment naming a later book gets "May spoil books after…"', () => {
+    load('Wait until Rhythm of War', '/r/Fantasy/comments/abc/x/');
+    expect(kind()).toBe('later');
+  });
+  it('in a series subreddit, bare abbreviations count', () => {
+    load('RoW changes everything', '/r/Stormlight_Archive/comments/abc/x/');
+    expect(kind()).toBe('later');
+  });
+  it('outside a series subreddit, bare abbreviations alone do not count', () => {
+    load('My OB said everything looks fine', '/r/BabyBumps/comments/abc/x/');
+    expect(kind()).toBe(null);
+  });
+  it('earlier books only: left alone', () => {
+    load('The Way of Kings was a slow start', '/r/Stormlight_Archive/comments/abc/x/');
+    expect(kind()).toBe(null);
+  });
+  it('reads the subreddit from the page address', () => {
+    expect(redditAdapter.pageContext!({ pathname: '/r/Stormlight_Archive/comments/1x/i_cant_understand/' } as Location))
+      .toBe(' r Stormlight Archive comments 1x i cant understand ');
   });
 });
