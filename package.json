@@ -10,5 +10,13 @@
     "test": "vitest run",
     "typecheck": "node scripts/build.mjs --gen-only && tsc --noEmit",
     "icons": "python3 scripts/make-icons.py"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.3.7",
+    "@types/node": "^26.6.5",
+    "esbuild": "^0.28.2",
+    "jsdom": "^30.1.3",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.5"
   }
 }
