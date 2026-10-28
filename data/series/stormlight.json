@@ -3,7 +3,7 @@
   "id": "stormlight",
   "name": "The Stormlight Archive (compatible)",
   "shortName": "The Stormlight Archive",
-  "verified": false,
+  "verified": true,
   "books": [
     {
       "index": 1,
@@ -305,15 +305,6 @@
       "caseSensitive": false,
       "confidence": "high",
       "wikiChecked": true
-    },
-    {
-      "term": "Pattern",
-      "introducedIn": 2,
-      "type": "character",
-      "caseSensitive": true,
-      "confidence": "high",
-      "wikiChecked": true,
-      "notes": "Seen unnamed in WoK; named in WoR."
     },
     {
       "term": "Relis Ruthar",
@@ -1060,7 +1051,7 @@
       "caseSensitive": true,
       "confidence": "medium",
       "wikiChecked": false,
-      "notes": "Blurring it would also hide discussion of Wit's WoK story; using the later book per the rule. Consider dropping it."
+      "notes": "Blurring it would also hide discussion of Wit's WoK story; using the later book per the rule. Consider dropping it. Kept on purpose (Eric, Oct 2026): also blurs talk of Wit's book-1 story for early readers."
     },
     {
       "term": "Yelamaiszin",

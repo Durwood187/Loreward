@@ -180,13 +180,13 @@ describe('robustness', () => {
 });
 
 describe('everyday-word terms in the real series data', () => {
-  // Guards the review decisions for Sibling, Diagram, Testament, Pattern and Lift.
+  // Guards the review decisions for Sibling, Diagram, Testament, Lift, and dropping Pattern.
   const real: SeriesData = JSON.parse(readFileSync(join(__dirname, '..', 'data', 'series', 'stormlight.json'), 'utf8'));
   const m = compileMatcher(real, 1);
   it.each([
     'my sibling and I', 'My Sibling is visiting', 'a sibling rivalry',
     'draw a diagram', 'This Diagram shows the flow',
-    'a testament to her skill', 'a nice pattern', 'give me a lift',
+    'a testament to her skill', 'a nice pattern', 'Pattern matching in Rust', 'give me a lift',
   ])('ignores everyday use: %s', (text) => {
     expect(m.findSpoiler(text)).toBeNull();
   });
@@ -194,7 +194,6 @@ describe('everyday-word terms in the real series data', () => {
     ['what does the Sibling want', 'the Sibling'],
     ['The Sibling withdrew', 'the Sibling'],
     ["the Diagram's plan", 'the Diagram'],
-    ['Shallan and Pattern', 'Pattern'],
     ['I love Lift', 'Lift'],
     ['he drew Testament', 'Testament'],
   ])('matches the capitalized name: %s', (text, term) => {

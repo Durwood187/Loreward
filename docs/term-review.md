@@ -1,6 +1,6 @@
 # Stormlight term list: review notes
 
-**Status:** 184 terms, drafted by AI and checked against the Coppermind wiki where possible
+**Status (verified):** 184 terms, drafted by AI and checked against the Coppermind wiki where possible
 (105 confirmed by the wiki's "Introduced In" field; most others matched against the books the wiki
 cites). Target: about 90% right. A few misses are acceptable.
 
@@ -23,14 +23,16 @@ Terms per book: Words of Radiance 43, Edgedancer 8, Oathbringer 50, Dawnshard 9,
 - **Azure** → only the phrase "Captain Azure" (bare word hits Microsoft Azure).
 - Restored the capitalized aliases "The Sibling" / "The Diagram" (lost in the redraft; a test now guards them).
 
-## Your calls (4)
+## Decided by Eric (Oct 2026)
 
-1. **Rule 2 above**: OK as the blanket rule?
-2. **Everyday words kept, capitalized-only**: Pattern, Lift, Veil, Fused, Retribution, Graves, Ivory,
-   Cryptic, Celebrant, Blended, Formless, Nin, "the Stump". In 5.6 MB of ordinary English text only
-   **Pattern** (66 hits, mostly table headings) and **Lift** (4) misfired. Keep both, or drop Pattern?
-3. **Testament → Rhythm of War** rests on memory only (the wiki points at an unnamed earlier appearance).
-4. **Wandersail → Dawnshard** will also blur talk of Wit's book-1 story for early readers. Keep?
+1. Rule 2 ("mentioned early, matters later" → the book where it matters): **agreed**.
+2. **Pattern: dropped.** It was the only term that misfired in ordinary text (table headings).
+   Pattern-the-spren is no longer blurred for book-1 readers. That's an accepted miss.
+3. **Testament → Rhythm of War** stays. If the name is really revealed earlier, the only effect is
+   over-blurring for Oathbringer readers (the safe side of rule 1).
+4. **Wandersail → Dawnshard: kept**, even though it also blurs talk of Wit's book-1 story.
+
+With these settled, the file is marked `"verified": true`.
 
 ## Judgment cases (applied with rule 2)
 
