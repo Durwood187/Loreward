@@ -1,7 +1,7 @@
 // Content script entry point: runs on supported sites at document_start.
 // Wires settings (chrome.storage) and popup messages to the Shield.
 
-import { compileMatcher, compileRelevance } from '../core/matcher';
+import { compileMatcher, compileRelevance, compileBookMentions } from '../core/matcher';
 import { loadSettings, onSettingsChanged, effectiveActive, findSeries } from '../core/settings';
 import type { Request, StatusReply, RevealAllReply } from '../core/messages';
 import { adapterForHost } from './adapters';
@@ -19,6 +19,8 @@ if (adapter) {
       const series = findSeries(seriesId)!;
       return {
         bookTitle: series.books[currentBook - 1].title,
+        currentBook,
+        booksMentioned: compileBookMentions(series),
         seriesName: series.shortName ?? series.name,
         matcher: compileMatcher(series, currentBook),
         isRelevant: compileRelevance(series),

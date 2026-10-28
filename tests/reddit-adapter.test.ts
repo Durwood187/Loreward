@@ -21,7 +21,10 @@ const series: SeriesData = {
     { term: 'Raboniel', aliases: ['Lady of Pains'], introducedIn: 6, type: 'character', confidence: 'high' },
   ],
 };
-const onBook = (n: number) => [{ bookTitle: `Book ${n} Title`, seriesName: 'Test', matcher: compileMatcher(series, n), isRelevant: () => false }];
+const onBook = (n: number) => [{
+  bookTitle: `Book ${n} Title`, currentBook: n, seriesName: 'Test',
+  matcher: compileMatcher(series, n), isRelevant: () => false, booksMentioned: () => new Set<number>(),
+}];
 
 const BLOCKED = ['post-title-spoiler', 'post-body-spoiler', 'c-reply-spoiler', 'c-parent-spoiler'];
 const SAFE = ['post-safe', 'c-parent-safe', 'c-reply-safe', 'c-false-positive'];

@@ -73,12 +73,19 @@ for a later-book name.
 
 ### Google search (www.google.com/search)
 
-Labels: **solid** "Spoilers past *book*" = a later-book name appears. **Outlined**
-"May contain spoilers for *series*" = an AI answer on a series-related search.
+Labels (strongest first):
+- **solid** "Spoilers past *book*": a name/term from a later book appears.
+- **outlined** "May spoil books after *book*": a later book's title or abbreviation (WoR, RoW…) appears.
+- **amber** "May spoil *book* (the book you're reading)": your current book is named.
+- **outlined** "May contain spoilers for *series*": an AI answer on a series search, naming no book.
 
 - [ ] Series search ("what happens to kaladin in wind and truth"): the **AI Overview** is blurred with the outlined label, and no words show while it types out.
 - [ ] Unrelated search ("how tall is the eiffel tower"): the AI Overview shows normally.
-- [ ] **Regular results** with a later-book name are blurred (solid label); others are untouched.
+- [ ] **Regular results** with a later-book name are blurred (solid label).
+- [ ] Set to book 2, search "words of radiance chapter 86": results about it get the **amber** label.
+- [ ] Same search: a result naming a later book (e.g. "Wind and Truth", "RoW") gets "May spoil books after…".
+- [ ] Results naming only earlier books stay readable.
+- [ ] Unrelated search with a look-alike abbreviation ("ob gyn near me") is untouched.
 - [ ] **People also ask:** questions with a later-book name are blurred; other questions are readable.
 - [ ] Opening a question: its answer appears **already blurred** (no flash), with a label. Closed questions show no labels.
 - [ ] Revealing a question does **not** reveal its answer.

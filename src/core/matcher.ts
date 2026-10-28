@@ -150,3 +150,35 @@ export function compileRelevance(series: SeriesData): (text: string) => boolean 
     return re.test(text.normalize('NFC'));
   };
 }
+
+/**
+ * Builds a check for "which books of the series does this text name?".
+ * Titles match case-insensitively (with or without a leading "The");
+ * abbreviations from each book's `aliases` (e.g. "WoR") match case-sensitively,
+ * since short all-caps strings are easy to collide with otherwise.
+ */
+export function compileBookMentions(series: SeriesData): (text: string) => Set<number> {
+  const folded = new Map<string, number>();
+  const exact = new Map<string, number>();
+  for (const b of series.books) {
+    for (const t of [b.title, b.title.replace(/^the\s+/i, '')]) folded.set(normalizeSpaces(t).toLowerCase(), b.index);
+    for (const a of b.aliases ?? []) exact.set(normalizeSpaces(a), b.index);
+  }
+  const foldedRe = buildRegex([...folded.keys()], false);
+  const exactRe = buildRegex([...exact.keys()], true);
+  return (text: string) => {
+    const found = new Set<number>();
+    if (!text) return found;
+    const normalized = text.normalize('NFC');
+    for (const [re, lookup, fold] of [[foldedRe, folded, true], [exactRe, exact, false]] as const) {
+      if (!re) continue;
+      re.lastIndex = 0;
+      for (const m of normalized.matchAll(re)) {
+        const key = normalizeSpaces(m[1]);
+        const index = lookup.get(fold ? key.toLowerCase() : key);
+        if (index) found.add(index);
+      }
+    }
+    return found;
+  };
+}

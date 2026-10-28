@@ -57,6 +57,13 @@
               "novel",
               "novella"
             ]
+          },
+          "aliases": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Abbreviations fans use for this book (e.g. 'WoR'). Matched case-sensitively, whole words, and only on search pages."
           }
         }
       }

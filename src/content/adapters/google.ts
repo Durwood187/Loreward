@@ -13,22 +13,25 @@
 // The question and answer are separate units on purpose: revealing a
 // question must not also reveal its answer.
 //
-// AI answers get stricter treatment (see aiAnswerSelector in types.ts).
+// AI answers get stricter treatment (see aiAnswerSelector in types.ts), and
+// every unit here also uses the book-name rule (see bookMentionSelector).
 
 import type { SiteAdapter } from './types';
 
 const AI_ANSWERS = ['#eKIzJc', '.related-question-pair [jsname="NRdf4c"]'];
+const UNITS = [
+  ...AI_ANSWERS,
+  '.related-question-pair [role="button"][aria-expanded]',
+  '[jscontroller="SC7lYd"]',
+].join(', ');
 
 export const googleAdapter: SiteAdapter = {
   id: 'google',
   name: 'Google Search',
   matchesHost: (host) => host === 'www.google.com' || host === 'google.com',
-  unitSelector: [
-    ...AI_ANSWERS,
-    '.related-question-pair [role="button"][aria-expanded]',
-    '[jscontroller="SC7lYd"]',
-  ].join(', '),
+  unitSelector: UNITS,
   aiAnswerSelector: AI_ANSWERS.join(', '),
+  bookMentionSelector: UNITS,
   /** The search box text, so we know whether this search is about a series. */
   pageContext: (loc) => new URL(loc.href).searchParams.get('q') ?? '',
 };

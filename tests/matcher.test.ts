@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { compileMatcher, compileRelevance } from '../src/core/matcher';
+import { compileMatcher, compileRelevance, compileBookMentions } from '../src/core/matcher';
 import type { SeriesData } from '../src/core/types';
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
@@ -217,4 +217,31 @@ describe('compileRelevance (is a search about the series?)', () => {
     'storm forecast indianapolis', // allowlisted word alone doesn't count
     'kaladinx',                    // whole words only
   ])('unrelated: %s', (q) => expect(about(q)).toBe(false));
+});
+
+describe('compileBookMentions (which books does this text name?)', () => {
+  const s: SeriesData = {
+    ...series,
+    books: [
+      { index: 1, title: 'The Way of Kings', aliases: ['WoK'] },
+      { index: 2, title: 'Words of Radiance', aliases: ['WoR'] },
+      { index: 3, title: 'Oathbringer' },
+    ],
+  };
+  const books = compileBookMentions(s);
+  const named = (t: string) => [...books(t)].sort();
+  it('finds full titles in any case, with or without "The"', () => {
+    expect(named('I loved the way of kings')).toEqual([1]);
+    expect(named('WORDS OF RADIANCE chapter 86')).toEqual([2]);
+  });
+  it('finds every book named, not just the first', () => {
+    expect(named('Way of Kings vs Oathbringer vs WoR')).toEqual([1, 2, 3]);
+  });
+  it('matches abbreviations case-sensitively and as whole words', () => {
+    expect(named('WoR spoilers')).toEqual([2]);
+    expect(named('wor spoilers, WoRx, WoK2')).toEqual([]);
+  });
+  it('handles possessives', () => {
+    expect(named("Oathbringer's ending")).toEqual([3]);
+  });
 });

@@ -9,6 +9,8 @@ export interface Book {
   index: number;
   title: string;
   kind?: 'novel' | 'novella';
+  /** Abbreviations fans use, e.g. "WoR". Matched case-sensitively. */
+  aliases?: string[];
 }
 
 export interface Term {

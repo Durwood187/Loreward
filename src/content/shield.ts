@@ -2,12 +2,15 @@
 // ones that may spoil, and watches for new content (infinite scroll, lazy
 // loading, single-page navigation).
 //
-// Two reasons to blur, each with its own label:
-//   "term"   the text mentions a name/term from a later book (strong label)
-//   "maybe"  an AI-written answer on a page about the series, with no term
-//            match. AI answers spoil with facts about early characters
-//            ("Kaladin becomes…"), which name matching can't catch, so on
-//            series-related pages they stay blurred until clicked (soft label).
+// Reasons to blur, strongest first; each has its own label (see LABELS):
+//   "term"     the text names a term from a later book (hard: solid label)
+//   "later"    the text names a later BOOK, e.g. "Wind and Truth" (soft)
+//   "current"  the text names the book being read now (soft, amber): a blurb
+//              about its chapter 86 spoils a reader on chapter 40
+//   "maybe"    an AI-written answer on a page about the series, naming no
+//              book. AI answers spoil with facts about early characters
+//              ("Kaladin becomes…"), which name matching can't catch (soft).
+// The book-name rules apply only where the adapter opts in (search pages).
 //
 // State lives on the elements themselves as data-ss-state:
 //   "blocked"  blurred, with a "click to reveal" label in front of it
@@ -22,6 +25,10 @@ import type { SiteAdapter } from './adapters/types';
 export interface ActiveMatcher {
   /** Title of the book the reader is on, used in the label ("past Oathbringer"). */
   bookTitle: string;
+  /** Index of the book the reader is on. */
+  currentBook: number;
+  /** Which books of the series does this text name? */
+  booksMentioned: (text: string) => Set<number>;
   /** Series name for the soft label ("may contain spoilers for …"). */
   seriesName: string;
   matcher: CompiledMatcher;
@@ -29,7 +36,15 @@ export interface ActiveMatcher {
   isRelevant: (text: string) => boolean;
 }
 
-type Verdict = { kind: 'term' | 'maybe'; text: string } | null;
+type Kind = 'term' | 'later' | 'current' | 'maybe';
+type Verdict = { kind: Kind; text: string } | null;
+
+const LABELS: Record<Kind, (m: ActiveMatcher) => string> = {
+  term: (m) => `Spoilers past ${m.bookTitle} — click to reveal`,
+  later: (m) => `May spoil books after ${m.bookTitle} — click to reveal`,
+  current: (m) => `May spoil ${m.bookTitle} (the book you're reading) — click to reveal`,
+  maybe: (m) => `May contain spoilers for ${m.seriesName} — click to reveal`,
+};
 
 const STATE = 'data-ss-state';
 const LABEL_CLASS = 'ss-label';
@@ -135,19 +150,29 @@ export class Shield {
   }
 
   private judge(unit: Element, text: string): Verdict {
-    for (const { matcher, bookTitle } of this.matchers) {
-      // Never put the matched term in the label: that would be the spoiler.
-      if (matcher.findSpoiler(text)) return { kind: 'term', text: `Spoilers past ${bookTitle} — click to reveal` };
+    const verdict = (kind: Kind, m: ActiveMatcher) => ({ kind, text: LABELS[kind](m) });
+    // Labels never name the matched term or book: that would be the spoiler.
+    for (const m of this.matchers) {
+      if (m.matcher.findSpoiler(text)) return verdict('term', m);
+    }
+    const books = this.adapter.bookMentionSelector;
+    if (books && unit.matches(books)) {
+      const context = this.pageContext();
+      for (const m of this.matchers) {
+        // Only on pages/units about the series, so "OB" in "OB/GYN" never counts.
+        if (!m.isRelevant(context) && !m.isRelevant(text)) continue;
+        const named = [...m.booksMentioned(text)];
+        if (named.some((b) => b > m.currentBook)) return verdict('later', m);
+        if (named.includes(m.currentBook)) return verdict('current', m);
+      }
     }
     const ai = this.adapter.aiAnswerSelector;
     // Empty AI containers (not loaded / not expanded yet) are left alone;
     // they're checked the moment text arrives (see onMutations).
     if (ai && unit.matches(ai) && text.trim()) {
       const context = this.pageContext();
-      for (const { isRelevant, seriesName } of this.matchers) {
-        if (isRelevant(context) || isRelevant(text)) {
-          return { kind: 'maybe', text: `May contain spoilers for ${seriesName} — click to reveal` };
-        }
+      for (const m of this.matchers) {
+        if (m.isRelevant(context) || m.isRelevant(text)) return verdict('maybe', m);
       }
     }
     return null;
@@ -170,7 +195,7 @@ export class Shield {
       this.labels.set(unit, label);
       this.unitForLabel.set(label, unit);
     }
-    // An AI answer can start as "maybe" and become "term" as it types out.
+    // An AI answer can start as "maybe" and become "later"/"term" as it types out.
     label.setAttribute('data-kind', verdict.kind);
     label.firstElementChild!.textContent = verdict.text;
   }
@@ -238,9 +263,26 @@ export class Shield {
   }
 }
 
+/** Tags that flow inside a line of text; any other element starts a new block. */
+const INLINE = new Set(['a', 'abbr', 'b', 'bdi', 'cite', 'code', 'em', 'font', 'i', 'kbd', 'label', 'mark', 'q', 's', 'small', 'span', 'strong', 'sub', 'sup', 'time', 'u', 'var']);
+
+/** True if going from text node `a` to text node `b` crosses the edge of a block element. */
+function crossesBlock(a: Node, b: Node): boolean {
+  for (const [from, to] of [[a, b], [b, a]] as const) {
+    for (let el = from.parentElement; el && !el.contains(to); el = el.parentElement) {
+      if (!INLINE.has(el.localName)) return true;
+    }
+  }
+  return false;
+}
+
 /**
- * The unit's text, skipping code the reader never sees: inline <style> and
- * <script> blocks (Google embeds CSS inside its AI Overview, for example).
+ * The unit's text as a reader would see it:
+ * - skips code the reader never sees (inline <style>/<script>; Google embeds CSS in answers)
+ * - puts a space between separate blocks. Pages often have no whitespace between elements,
+ *   so a site name followed by a heading would otherwise read "example.comWords of Radiance"
+ *   and hide the title from whole-word matching. Inline formatting is left joined
+ *   ("Kal<b>adin</b>" stays "Kaladin").
  */
 export function readableText(root: Element): string {
   const doc = root.ownerDocument;
@@ -249,6 +291,11 @@ export function readableText(root: Element): string {
       node.parentElement?.closest('style, script, noscript, template') ? 2 /* FILTER_REJECT */ : 1 /* FILTER_ACCEPT */,
   });
   let text = '';
-  for (let n = walker.nextNode(); n; n = walker.nextNode()) text += n.textContent;
+  let prev: Node | null = null;
+  for (let n = walker.nextNode(); n; n = walker.nextNode()) {
+    if (prev && crossesBlock(prev, n)) text += ' ';
+    text += n.textContent;
+    prev = n;
+  }
   return text;
 }

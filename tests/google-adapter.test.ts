@@ -3,7 +3,7 @@
 // Runs the real Shield + Google adapter against a saved Google results page, offline.
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
-import { compileMatcher, compileRelevance } from '../src/core/matcher';
+import { compileMatcher, compileRelevance, compileBookMentions } from '../src/core/matcher';
 import type { SeriesData } from '../src/core/types';
 import { googleAdapter } from '../src/content/adapters/google';
 import { Shield } from '../src/content/shield';
@@ -23,9 +23,11 @@ const series: SeriesData = {
 };
 const matchers = [{
   bookTitle: 'Book 1 Title',
+  currentBook: 1,
   seriesName: 'Test Series',
   matcher: compileMatcher(series, 1),
   isRelevant: compileRelevance(series),
+  booksMentioned: compileBookMentions(series),
 }];
 
 const SERIES_QUERY = 'what happens to kaladin in wind and truth';
@@ -173,5 +175,86 @@ describe('Google, unrelated search', () => {
     shield.configure(matchers, false);
     expect(document.querySelectorAll('[data-ss-state="blocked"]')).toHaveLength(0);
     expect(document.querySelectorAll('.ss-label')).toHaveLength(0);
+  });
+});
+
+describe('Google, results that name a book (reader is on book 2)', () => {
+  const named: SeriesData = {
+    ...series,
+    books: [
+      { index: 1, title: 'The Way of Kings', aliases: ['WoK'] },
+      { index: 2, title: 'Words of Radiance', aliases: ['WoR', 'WOR'] },
+      { index: 3, title: 'Oathbringer', aliases: ['OB'] },
+      { index: 4, title: 'Wind and Truth', aliases: ['WaT'] },
+    ],
+  };
+  const onBook2 = [{
+    bookTitle: 'Words of Radiance', currentBook: 2, seriesName: 'Test Series',
+    matcher: compileMatcher(named, 2), isRelevant: compileRelevance(named), booksMentioned: compileBookMentions(named),
+  }];
+  let shield: Shield;
+
+  /** Builds a results page with one regular result per text. */
+  function page(texts: string[], query: string) {
+    useDocument(`<!doctype html><html><body><div id="rso">${texts
+      .map((t, i) => `<div data-rpos="${i}"><div jscontroller="SC7lYd" data-test="r${i}"><h3>${t}</h3></div></div>`)
+      .join('')}</div></body></html>`);
+    shield = new Shield(googleAdapter, document, () => query);
+    shield.configure(onBook2, true);
+  }
+  const kindOf = (i: number) => labelOf(el(`r${i}`))?.getAttribute('data-kind') ?? null;
+  afterEach(() => shield.stop());
+
+  it('marks results about the current book as "this book" (amber label)', () => {
+    page(['Words of Radiance: Chapter 86 | Wiki', 'WOR: Chapter 86 Epigraph (spoilers)'], 'words of radiance chapter 86');
+    expect([kindOf(0), kindOf(1)]).toEqual(['current', 'current']);
+    expect(labelOf(el('r0'))!.textContent).toBe("May spoil Words of Radiance (the book you're reading) — click to reveal");
+  });
+
+  it('marks results about later books as "future books"', () => {
+    page(['Chapter 86 | Wind and Truth', 'Oathbringer ending explained', 'Is OB better than WoR?'], 'kaladin chapter 86');
+    expect([kindOf(0), kindOf(1), kindOf(2)]).toEqual(['later', 'later', 'later']);
+    expect(labelOf(el('r0'))!.textContent).toBe('May spoil books after Words of Radiance — click to reveal');
+  });
+
+  it('a later book wins over the current book when both are named', () => {
+    page(['Words of Radiance vs Wind and Truth'], 'stormlight');
+    expect(kindOf(0)).toBe('later');
+  });
+
+  it('leaves results that only name earlier books alone', () => {
+    page(['The Way of Kings audiobook review', 'Is WoK worth it?'], 'way of kings audiobook');
+    expect([kindOf(0), kindOf(1)]).toEqual([null, null]);
+  });
+
+  it('a later-book term still gets the hard label', () => {
+    page(['Words of Radiance: where Raboniel fits in'], 'words of radiance');
+    expect(kindOf(0)).toBe('term');
+  });
+
+  it('ignores abbreviations on unrelated searches ("OB/GYN")', () => {
+    page(['Find an OB/GYN near you', 'OB clinic hours'], 'ob gyn near me');
+    expect([kindOf(0), kindOf(1)]).toEqual([null, null]);
+  });
+
+  it('abbreviations are case-sensitive ("row" is not Rhythm of War)', () => {
+    page(['Words of Radiance row of seats'], 'words of radiance');
+    // "Words of Radiance" (current) is named, "wat"/"ob" lowercase never are.
+    expect(kindOf(0)).toBe('current');
+    page(['what about ob and wat'], 'stormlight');
+    expect(kindOf(0)).toBe(null);
+  });
+});
+
+describe('reading text from pages with no whitespace between elements', () => {
+  it('separates blocks, so a title right after a site name is still a whole word', async () => {
+    const { readableText } = await import('../src/content/shield');
+    useDocument('<!doctype html><html><body><div id="x"><span>example.com</span><h3>Words of Radiance</h3><div>Raboniel</div></div></body></html>');
+    expect(readableText(document.getElementById('x')!)).toBe('example.com Words of Radiance Raboniel');
+  });
+  it('keeps words split by inline formatting together', async () => {
+    const { readableText } = await import('../src/content/shield');
+    useDocument('<!doctype html><html><body><div id="x">Kal<b>adin</b>\'s <em>bridge</em>crew</div></body></html>');
+    expect(readableText(document.getElementById('x')!)).toBe("Kaladin's bridgecrew");
   });
 });

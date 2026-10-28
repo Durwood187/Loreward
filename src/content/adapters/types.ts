@@ -22,6 +22,12 @@ export interface SiteAdapter {
    * without a term match, because they spoil with facts, not just names.
    */
   aiAnswerSelector?: string;
+  /**
+   * Units where naming a book counts: a unit that names the reader's current
+   * book or a later one is blurred (soft label). Used on search pages, where
+   * results about a book usually describe its plot.
+   */
+  bookMentionSelector?: string;
   /** Text that says what the whole page is about, e.g. the search query. */
   pageContext?(location: Location): string;
 }
