@@ -1,0 +1,161 @@
+// @vitest-environment jsdom
+//
+// Runs the real Shield + Reddit adapter against saved Reddit pages, offline.
+
+import { describe, it, expect, beforeEach, afterEach } from 'vitest';
+import { compileMatcher } from '../src/core/matcher';
+import type { SeriesData } from '../src/core/types';
+import { redditAdapter } from '../src/content/adapters/reddit';
+import { Shield } from '../src/content/shield';
+import { loadFixture, useDocument } from './helpers/fixture';
+
+// A small stand-in series so these tests don't change when the real term list is reviewed.
+const series: SeriesData = {
+  id: 'test', name: 'Test', verified: true, allowlist: [],
+  books: [1, 2, 3, 4, 5, 6].map((index) => ({ index, title: `Book ${index} Title` })),
+  terms: [
+    { term: 'Everstorm', introducedIn: 2, type: 'event', confidence: 'high' },
+    { term: 'Evi', introducedIn: 4, type: 'character', confidence: 'high' },
+    { term: 'Veil', introducedIn: 2, type: 'character', confidence: 'high' },
+    { term: 'Pattern', introducedIn: 2, type: 'character', confidence: 'high' },
+    { term: 'Raboniel', aliases: ['Lady of Pains'], introducedIn: 6, type: 'character', confidence: 'high' },
+  ],
+};
+const onBook = (n: number) => [{ bookTitle: `Book ${n} Title`, matcher: compileMatcher(series, n) }];
+
+const BLOCKED = ['post-title-spoiler', 'post-body-spoiler', 'c-reply-spoiler', 'c-parent-spoiler'];
+const SAFE = ['post-safe', 'c-parent-safe', 'c-reply-safe', 'c-false-positive'];
+
+/** The element the shield treats as the unit for a fixture item. */
+function unitOf(name: string): Element {
+  const el = document.querySelector(`[data-test="${name}"]`)!;
+  if (el.matches(redditAdapter.unitSelector)) return el;
+  return el.querySelector(':scope > [slot="comment"]:not(.ss-label), :scope > .entry')!;
+}
+const stateOf = (name: string) => unitOf(name).getAttribute('data-ss-state');
+const click = (el: Element) => el.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true, composed: true }));
+const wait = (ms: number) => new Promise((r) => setTimeout(r, ms));
+
+describe('Reddit adapter host matching', () => {
+  it.each(['reddit.com', 'www.reddit.com', 'old.reddit.com', 'sh.reddit.com', 'new.reddit.com'])('runs on %s', (host) => {
+    expect(redditAdapter.matchesHost(host)).toBe(true);
+  });
+  it.each(['notreddit.com', 'reddit.com.example.org', 'example.com'])('does not run on %s', (host) => {
+    expect(redditAdapter.matchesHost(host)).toBe(false);
+  });
+});
+
+describe.each([
+  ['new Reddit', 'reddit-new.html'],
+  ['old Reddit', 'reddit-old.html'],
+])('%s', (_label, fixture) => {
+  let shield: Shield;
+
+  beforeEach(() => {
+    useDocument(loadFixture(fixture));
+    shield = new Shield(redditAdapter, document);
+    shield.configure(onBook(1), true);
+    shield.start();
+  });
+  afterEach(() => shield.stop());
+
+  it('blurs units that mention later-book terms', () => {
+    for (const name of BLOCKED) expect([name, stateOf(name)]).toEqual([name, 'blocked']);
+  });
+
+  it('leaves safe units alone, including parents of spoiler replies and lowercase lookalikes', () => {
+    for (const name of SAFE) expect([name, stateOf(name)]).toEqual([name, null]);
+  });
+
+  it('counts blurred units', () => {
+    expect(shield.blockedCount()).toBe(BLOCKED.length);
+  });
+
+  it('puts a label in front of each blurred unit without naming the term', () => {
+    const unit = unitOf('post-title-spoiler');
+    const label = unit.previousElementSibling!;
+    expect(label.classList.contains('ss-label')).toBe(true);
+    expect(label.textContent).toBe('Possible spoiler past Book 1 Title — click to reveal');
+    expect(label.textContent).not.toContain('Raboniel');
+    expect(document.querySelectorAll('.ss-label')).toHaveLength(BLOCKED.length);
+  });
+
+  it('gives labels the unit\'s slot so they render inside custom elements', () => {
+    const unit = unitOf('c-reply-spoiler');
+    expect(unit.previousElementSibling!.getAttribute('slot')).toBe(unit.getAttribute('slot'));
+  });
+
+  it('reveals only the clicked unit and stops the click reaching the site', () => {
+    let siteSawClick = false;
+    document.addEventListener('click', () => (siteSawClick = true));
+    const notPrevented = click(unitOf('post-body-spoiler'));
+    expect(notPrevented).toBe(false);
+    expect(siteSawClick).toBe(false);
+    expect(stateOf('post-body-spoiler')).toBe('revealed');
+    expect(stateOf('post-title-spoiler')).toBe('blocked');
+    expect(unitOf('post-body-spoiler').previousElementSibling?.classList.contains('ss-label') ?? false).toBe(false);
+  });
+
+  it('reveals when the label itself is clicked', () => {
+    const label = unitOf('c-parent-spoiler').previousElementSibling!;
+    click(label.querySelector('button')!);
+    expect(stateOf('c-parent-spoiler')).toBe('revealed');
+  });
+
+  it('never treats its own labels as content units', () => {
+    // Labels borrow the unit's slot, so they can match the unit selector.
+    shield.configure(onBook(1), true);
+    for (const label of document.querySelectorAll('.ss-label')) {
+      expect(label.hasAttribute('data-ss-state')).toBe(false);
+    }
+  });
+
+  it('lets clicks on safe units through', () => {
+    expect(click(unitOf('post-safe'))).toBe(true);
+  });
+
+  it('reveal all clears every blur on the page', () => {
+    expect(shield.revealAll()).toBe(BLOCKED.length);
+    expect(shield.blockedCount()).toBe(0);
+    expect(document.querySelectorAll('.ss-label')).toHaveLength(0);
+  });
+
+  it('turning the shield off removes all blurs and labels', () => {
+    shield.configure(onBook(1), false);
+    expect(shield.blockedCount()).toBe(0);
+    expect(document.querySelectorAll('.ss-label')).toHaveLength(0);
+  });
+
+  it('moving to a later book unblurs terms the reader has now reached', () => {
+    shield.configure(onBook(4), true);
+    expect(stateOf('post-body-spoiler')).toBe(null); // Everstorm, book 2
+    expect(stateOf('c-parent-spoiler')).toBe(null); // Evi, book 4
+    expect(stateOf('post-title-spoiler')).toBe('blocked'); // Raboniel, book 6
+  });
+
+  it('keeps revealed units revealed when settings change', () => {
+    click(unitOf('post-title-spoiler'));
+    shield.configure(onBook(2), true);
+    expect(stateOf('post-title-spoiler')).toBe('revealed');
+  });
+
+  it('checks content added later (infinite scroll)', async () => {
+    const safe = document.querySelector('[data-test="c-parent-safe"]')!;
+    const copy = safe.cloneNode(true) as Element;
+    copy.setAttribute('data-test', 'added');
+    copy.querySelectorAll('[data-test]').forEach((el) => el.removeAttribute('data-test'));
+    const text = copy.querySelector(':scope > [slot="comment"] p, :scope > .entry .md p')!;
+    text.textContent = 'The Everstorm arrives';
+    safe.parentElement!.append(copy);
+    expect(stateOf('added')).toBe(null); // not yet: scans are batched
+    await wait(250);
+    expect(stateOf('added')).toBe('blocked');
+  });
+
+  it('rechecks a unit whose text loads after it appears', async () => {
+    const p = unitOf('c-reply-safe').querySelector('p')!;
+    p.append(document.createTextNode(' Also: Evi.'));
+    await wait(250);
+    expect(stateOf('c-reply-safe')).toBe('blocked');
+  });
+});

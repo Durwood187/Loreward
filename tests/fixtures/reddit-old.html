@@ -1,0 +1,70 @@
+<!--
+  Hand-written fixture mirroring old.reddit.com's structure, trimmed to what
+  the adapter relies on. Replace with a real saved page when you can.
+-->
+<!doctype html>
+<html><head><meta charset="utf-8"><title>old reddit</title></head>
+<body>
+<div id="siteTable" class="sitetable linklisting">
+  <div class="thing link" data-test="post-safe" data-fullname="t3_safe">
+    <div class="midcol"><div class="arrow up"></div><div class="score">42</div></div>
+    <div class="entry">
+      <div class="top-matter">
+        <p class="title"><a class="title" href="/r/x/comments/safe/">Just finished book one, wow</a></p>
+        <p class="tagline">submitted 2 hours ago by <a class="author">reader1</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="thing link" data-test="post-title-spoiler" data-fullname="t3_title">
+    <div class="entry">
+      <div class="top-matter"><p class="title"><a class="title" href="/r/x/comments/title/">Raboniel’s plan explained</a></p></div>
+    </div>
+  </div>
+  <div class="thing link self" data-test="post-body-spoiler" data-fullname="t3_body">
+    <div class="entry">
+      <div class="top-matter"><p class="title"><a class="title" href="/r/x/comments/body/">Theory thread</a></p></div>
+      <div class="expando"><form class="usertext"><div class="usertext-body"><div class="md"><p>What if the Everstorm is connected?</p></div></div></form></div>
+    </div>
+  </div>
+</div>
+
+<div class="commentarea">
+  <div class="sitetable nestedlisting">
+    <div class="thing comment" data-test="c-parent-safe" data-fullname="t1_a">
+      <div class="entry">
+        <p class="tagline"><a class="author">reader1</a></p>
+        <form class="usertext"><div class="usertext-body"><div class="md"><p>Bridge Four forever.</p></div></div></form>
+      </div>
+      <div class="child"><div class="sitetable listing">
+        <div class="thing comment" data-test="c-reply-spoiler" data-fullname="t1_b">
+          <div class="entry">
+            <p class="tagline"><a class="author">reader2</a></p>
+            <form class="usertext"><div class="usertext-body"><div class="md"><p>Wait until you meet the Lady of Pains.</p></div></div></form>
+          </div>
+          <div class="child"></div>
+        </div>
+      </div></div>
+    </div>
+    <div class="thing comment" data-test="c-parent-spoiler" data-fullname="t1_c">
+      <div class="entry">
+        <p class="tagline"><a class="author">reader3</a></p>
+        <form class="usertext"><div class="usertext-body"><div class="md"><p>Evi's chapters wrecked me.</p></div></div></form>
+      </div>
+      <div class="child"><div class="sitetable listing">
+        <div class="thing comment" data-test="c-reply-safe" data-fullname="t1_d">
+          <div class="entry">
+            <p class="tagline"><a class="author">reader4</a></p>
+            <form class="usertext"><div class="usertext-body"><div class="md"><p>Same here.</p></div></div></form>
+          </div>
+          <div class="child"></div>
+        </div>
+      </div></div>
+    </div>
+    <div class="thing comment" data-test="c-false-positive" data-fullname="t1_e">
+      <div class="entry">
+        <form class="usertext"><div class="usertext-body"><div class="md"><p>That veil scene was evil, and the pattern of the plot is great.</p></div></div></form>
+      </div>
+    </div>
+  </div>
+</div>
+</body></html>

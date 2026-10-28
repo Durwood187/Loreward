@@ -1,0 +1,55 @@
+<!--
+  Hand-written fixture mirroring new Reddit's (shreddit) structure, trimmed to
+  what the adapter relies on. Replace with a real saved page once you can
+  ("Save Page As… → Webpage, HTML only"), keeping the data-test ids below.
+-->
+<!doctype html>
+<html><head><meta charset="utf-8"><title>r/Stormlight_Archive</title></head>
+<body>
+<shreddit-app>
+  <main id="feed">
+    <article>
+      <shreddit-post data-test="post-safe" id="t3_safe" post-title="Just finished book one, wow" permalink="/r/x/comments/safe/">
+        <a slot="full-post-link" href="/r/x/comments/safe/">link</a>
+        <a slot="title" id="post-title-t3_safe" href="/r/x/comments/safe/">Just finished book one, wow</a>
+        <div slot="text-body"><div class="md"><p>Kaladin is the best.</p></div></div>
+      </shreddit-post>
+    </article>
+    <article>
+      <!-- Spoiler only in the title attribute (feed cards often look like this) -->
+      <shreddit-post data-test="post-title-spoiler" id="t3_title" post-title="Raboniel deserved better" permalink="/r/x/comments/title/">
+        <a slot="full-post-link" href="/r/x/comments/title/">link</a>
+      </shreddit-post>
+    </article>
+    <article>
+      <shreddit-post data-test="post-body-spoiler" id="t3_body" post-title="Theory thread" permalink="/r/x/comments/body/">
+        <a slot="title" href="/r/x/comments/body/">Theory thread</a>
+        <div slot="text-body"><div class="md"><p>What if the Everstorm is connected?</p></div></div>
+      </shreddit-post>
+    </article>
+  </main>
+
+  <shreddit-comment-tree id="comments">
+    <shreddit-comment data-test="c-parent-safe" thingid="t1_a" author="reader1" depth="0">
+      <div slot="commentMeta">reader1 · 2h</div>
+      <div slot="comment" id="t1_a-comment-rtjson-content" class="md"><p>Bridge Four forever.</p></div>
+      <shreddit-comment data-test="c-reply-spoiler" thingid="t1_b" author="reader2" depth="1" slot="children">
+        <div slot="commentMeta">reader2 · 1h</div>
+        <div slot="comment" id="t1_b-comment-rtjson-content" class="md"><p>Wait until you meet the Lady of Pains.</p></div>
+      </shreddit-comment>
+    </shreddit-comment>
+    <shreddit-comment data-test="c-parent-spoiler" thingid="t1_c" author="reader3" depth="0">
+      <div slot="commentMeta">reader3 · 3h</div>
+      <div slot="comment" id="t1_c-comment-rtjson-content" class="md"><p>Evi's chapters wrecked me.</p></div>
+      <shreddit-comment data-test="c-reply-safe" thingid="t1_d" author="reader4" depth="1" slot="children">
+        <div slot="commentMeta">reader4 · 2h</div>
+        <div slot="comment" id="t1_d-comment-rtjson-content" class="md"><p>Same here.</p></div>
+      </shreddit-comment>
+    </shreddit-comment>
+    <shreddit-comment data-test="c-false-positive" thingid="t1_e" author="reader5" depth="0">
+      <div slot="commentMeta">reader5 · 4h</div>
+      <div slot="comment" id="t1_e-comment-rtjson-content" class="md"><p>That veil scene was evil, and the pattern of the plot is great.</p></div>
+    </shreddit-comment>
+  </shreddit-comment-tree>
+</shreddit-app>
+</body></html>
