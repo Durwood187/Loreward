@@ -63,7 +63,7 @@
       "type": "character",
       "caseSensitive": true,
       "confidence": "high",
-      "notes": "Interlude character. Also an everyday word: 'Lift' at the start of a sentence will match."
+      "notes": "Interlude character. Also an everyday word: 'Lift' at the start of a sentence will match. Capitalized only: lowercase uses never match. Still matches when the word starts a sentence."
     },
     {
       "term": "Eshonai",
@@ -172,7 +172,7 @@
       "type": "character",
       "caseSensitive": true,
       "confidence": "medium",
-      "notes": "Spren named in book 2. Everyday word: expect false positives when 'Pattern' starts a sentence."
+      "notes": "Spren named in book 2. Everyday word: expect false positives when 'Pattern' starts a sentence. Capitalized only: lowercase uses never match. Still matches when the word starts a sentence."
     },
     {
       "term": "Battle of Narak",
@@ -181,12 +181,15 @@
       "confidence": "medium"
     },
     {
-      "term": "Diagram",
+      "term": "the Diagram",
       "introducedIn": 2,
       "type": "concept",
       "caseSensitive": true,
       "confidence": "low",
-      "notes": "Could be hinted at the end of book 1. Everyday word; case-sensitive."
+      "notes": "Could be hinted at the end of book 1. Matched only as the capitalized phrase 'the Diagram' / 'The Diagram'.",
+      "aliases": [
+        "The Diagram"
+      ]
     },
     {
       "term": "Ulim",
@@ -317,7 +320,7 @@
       "type": "concept",
       "caseSensitive": true,
       "confidence": "medium",
-      "notes": "Shardblade name. Will also match 'Old Testament' / 'New Testament'."
+      "notes": "Shardblade name. Will also match 'Old Testament' / 'New Testament'. Capitalized only: lowercase uses never match. Still matches when the word starts a sentence."
     },
     {
       "term": "Leshwi",
@@ -328,12 +331,15 @@
       "notes": "Might only be named in book 6."
     },
     {
-      "term": "Sibling",
+      "term": "the Sibling",
       "introducedIn": 4,
       "type": "character",
       "caseSensitive": true,
       "confidence": "low",
-      "notes": "Tower spren. Everyday word even capitalized; high false-positive risk. Consider removing."
+      "notes": "Tower spren. Matched only as the capitalized phrase 'the Sibling' / 'The Sibling' to avoid everyday uses of 'sibling'.",
+      "aliases": [
+        "The Sibling"
+      ]
     },
     {
       "term": "Cultivation",
