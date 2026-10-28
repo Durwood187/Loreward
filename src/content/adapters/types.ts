@@ -16,4 +16,12 @@ export interface SiteAdapter {
   unitSelector: string;
   /** The text to check for a unit. Defaults to its textContent. */
   getText?(unit: Element): string;
+  /**
+   * Units that are AI-written answers (must also match unitSelector). On a
+   * page about the reader's series, these stay blurred until clicked even
+   * without a term match, because they spoil with facts, not just names.
+   */
+  aiAnswerSelector?: string;
+  /** Text that says what the whole page is about, e.g. the search query. */
+  pageContext?(location: Location): string;
 }

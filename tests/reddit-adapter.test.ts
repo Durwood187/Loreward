@@ -21,7 +21,7 @@ const series: SeriesData = {
     { term: 'Raboniel', aliases: ['Lady of Pains'], introducedIn: 6, type: 'character', confidence: 'high' },
   ],
 };
-const onBook = (n: number) => [{ bookTitle: `Book ${n} Title`, matcher: compileMatcher(series, n) }];
+const onBook = (n: number) => [{ bookTitle: `Book ${n} Title`, seriesName: 'Test', matcher: compileMatcher(series, n), isRelevant: () => false }];
 
 const BLOCKED = ['post-title-spoiler', 'post-body-spoiler', 'c-reply-spoiler', 'c-parent-spoiler'];
 const SAFE = ['post-safe', 'c-parent-safe', 'c-reply-safe', 'c-false-positive'];
@@ -97,7 +97,7 @@ describe.each([
     const unit = unitOf('post-title-spoiler');
     const label = unit.previousElementSibling!;
     expect(label.classList.contains('ss-label')).toBe(true);
-    expect(label.textContent).toBe('Possible spoiler past Book 1 Title — click to reveal');
+    expect(label.textContent).toBe('Spoilers past Book 1 Title — click to reveal');
     expect(label.textContent).not.toContain('Raboniel');
     expect(document.querySelectorAll('.ss-label')).toHaveLength(BLOCKED.length + extra);
   });

@@ -19,6 +19,7 @@
 // the live-site checklist.
 
 import type { SiteAdapter } from './types';
+import { readableText } from '../shield';
 
 export const redditAdapter: SiteAdapter = {
   id: 'reddit',
@@ -39,10 +40,9 @@ export const redditAdapter: SiteAdapter = {
       // The author tagged this as a spoiler, so Reddit already hides the body
       // behind its own cover. Only check what Reddit leaves visible (title and
       // flair); otherwise the reader has to click through two covers.
-      const visible = [...unit.querySelectorAll('[slot="title"], [slot="post-flair"]')]
-        .map((el) => el.textContent ?? '');
+      const visible = [...unit.querySelectorAll('[slot="title"], [slot="post-flair"]')].map(readableText);
       return [title, ...visible].join('\n');
     }
-    return `${title}\n${unit.textContent ?? ''}`;
+    return `${title}\n${readableText(unit)}`;
   },
 };

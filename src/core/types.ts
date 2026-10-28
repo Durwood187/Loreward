@@ -27,6 +27,8 @@ export interface Term {
 export interface SeriesData {
   id: string;
   name: string;
+  /** Plain series name for on-page labels (defaults to name). */
+  shortName?: string;
   /** False until a human has reviewed every term. The popup shows a "draft" note while false. */
   verified: boolean;
   books: Book[];

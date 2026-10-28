@@ -2,6 +2,13 @@
 // ones that may spoil, and watches for new content (infinite scroll, lazy
 // loading, single-page navigation).
 //
+// Two reasons to blur, each with its own label:
+//   "term"   the text mentions a name/term from a later book (strong label)
+//   "maybe"  an AI-written answer on a page about the series, with no term
+//            match. AI answers spoil with facts about early characters
+//            ("Kaladin becomes…"), which name matching can't catch, so on
+//            series-related pages they stay blurred until clicked (soft label).
+//
 // State lives on the elements themselves as data-ss-state:
 //   "blocked"  blurred, with a "click to reveal" label in front of it
 //   "revealed" the reader clicked it; never re-blurred on this page
@@ -15,8 +22,14 @@ import type { SiteAdapter } from './adapters/types';
 export interface ActiveMatcher {
   /** Title of the book the reader is on, used in the label ("past Oathbringer"). */
   bookTitle: string;
+  /** Series name for the soft label ("may contain spoilers for …"). */
+  seriesName: string;
   matcher: CompiledMatcher;
+  /** Is this text about the series at all? (keywords, titles, any term) */
+  isRelevant: (text: string) => boolean;
 }
+
+type Verdict = { kind: 'term' | 'maybe'; text: string } | null;
 
 const STATE = 'data-ss-state';
 const LABEL_CLASS = 'ss-label';
@@ -41,6 +54,8 @@ export class Shield {
   constructor(
     private readonly adapter: SiteAdapter,
     private readonly doc: Document = document,
+    /** Page-level text that says what the page is about (e.g. the search query). */
+    private readonly pageContext: () => string = () => adapter.pageContext?.(doc.location) ?? '',
   ) {}
 
   /** Applies new settings and rescans the whole page. Revealed units stay revealed. */
@@ -110,36 +125,54 @@ export class Shield {
 
   private check(unit: Element): void {
     if (unit.getAttribute(STATE) === 'revealed') return;
-    const text = this.adapter.getText ? this.adapter.getText(unit) : (unit.textContent ?? '');
+    const text = this.adapter.getText ? this.adapter.getText(unit) : readableText(unit);
     if (this.checkedText.get(unit) === text) return;
     this.checkedText.set(unit, text);
 
-    for (const { matcher, bookTitle } of this.matchers) {
-      if (matcher.findSpoiler(text)) {
-        this.block(unit, bookTitle);
-        return;
-      }
-    }
-    this.unblock(unit);
+    const verdict = this.judge(unit, text);
+    if (verdict) this.block(unit, verdict);
+    else this.unblock(unit);
   }
 
-  private block(unit: Element, bookTitle: string): void {
+  private judge(unit: Element, text: string): Verdict {
+    for (const { matcher, bookTitle } of this.matchers) {
+      // Never put the matched term in the label: that would be the spoiler.
+      if (matcher.findSpoiler(text)) return { kind: 'term', text: `Spoilers past ${bookTitle} — click to reveal` };
+    }
+    const ai = this.adapter.aiAnswerSelector;
+    // Empty AI containers (not loaded / not expanded yet) are left alone;
+    // they're checked the moment text arrives (see onMutations).
+    if (ai && unit.matches(ai) && text.trim()) {
+      const context = this.pageContext();
+      for (const { isRelevant, seriesName } of this.matchers) {
+        if (isRelevant(context) || isRelevant(text)) {
+          return { kind: 'maybe', text: `May contain spoilers for ${seriesName} — click to reveal` };
+        }
+      }
+    }
+    return null;
+  }
+
+  private block(unit: Element, verdict: NonNullable<Verdict>): void {
     unit.setAttribute(STATE, 'blocked');
-    if (this.labels.has(unit)) return;
-    const label = this.doc.createElement('div');
-    label.className = LABEL_CLASS;
-    // Inside custom elements, children only render if they sit in a named
-    // slot, so the label borrows the unit's slot.
-    const slot = unit.getAttribute('slot');
-    if (slot) label.setAttribute('slot', slot);
-    const button = this.doc.createElement('button');
-    button.type = 'button';
-    // Deliberately never shows the matched term: that would be the spoiler.
-    button.textContent = `Possible spoiler past ${bookTitle} — click to reveal`;
-    label.append(button);
-    unit.before(label);
-    this.labels.set(unit, label);
-    this.unitForLabel.set(label, unit);
+    let label = this.labels.get(unit);
+    if (!label) {
+      label = this.doc.createElement('div');
+      label.className = LABEL_CLASS;
+      // Inside custom elements, children only render if they sit in a named
+      // slot, so the label borrows the unit's slot.
+      const slot = unit.getAttribute('slot');
+      if (slot) label.setAttribute('slot', slot);
+      const button = this.doc.createElement('button');
+      button.type = 'button';
+      label.append(button);
+      unit.before(label);
+      this.labels.set(unit, label);
+      this.unitForLabel.set(label, unit);
+    }
+    // An AI answer can start as "maybe" and become "term" as it types out.
+    label.setAttribute('data-kind', verdict.kind);
+    label.firstElementChild!.textContent = verdict.text;
   }
 
   private unblock(unit: Element): void {
@@ -178,20 +211,44 @@ export class Shield {
   };
 
   private onMutations(mutations: MutationRecord[]): void {
+    const ai = this.adapter.aiAnswerSelector;
+    let urgent = false;
     for (const m of mutations) {
       for (const node of m.addedNodes) {
-        if (node.nodeType === Node.TEXT_NODE) {
-          if (node.parentElement) this.pending.add(node.parentElement);
-        } else if (node.nodeType === Node.ELEMENT_NODE && !(node as Element).classList.contains(LABEL_CLASS)) {
-          this.pending.add(node);
-        }
+        let el: Element | null = null;
+        if (node.nodeType === Node.TEXT_NODE) el = node.parentElement;
+        else if (node.nodeType === Node.ELEMENT_NODE && !(node as Element).classList.contains(LABEL_CLASS)) el = node as Element;
+        if (!el) continue;
+        this.pending.add(el);
+        // AI answers are scanned right away, not after the pause: observer
+        // callbacks run before the browser paints, so the first words never show.
+        if (ai && !urgent && (el.closest(ai) || el.querySelector(ai))) urgent = true;
       }
     }
     if (this.pending.size === 0) return;
+    if (urgent) {
+      this.flush();
+      return;
+    }
     const now = Date.now();
     if (!this.firstPendingAt) this.firstPendingAt = now;
     if (this.timer) clearTimeout(this.timer);
     const wait = now - this.firstPendingAt >= MAX_WAIT_MS ? 0 : DEBOUNCE_MS;
     this.timer = setTimeout(() => this.flush(), wait);
   }
+}
+
+/**
+ * The unit's text, skipping code the reader never sees: inline <style> and
+ * <script> blocks (Google embeds CSS inside its AI Overview, for example).
+ */
+export function readableText(root: Element): string {
+  const doc = root.ownerDocument;
+  const walker = doc.createTreeWalker(root, 4 /* NodeFilter.SHOW_TEXT */, {
+    acceptNode: (node) =>
+      node.parentElement?.closest('style, script, noscript, template') ? 2 /* FILTER_REJECT */ : 1 /* FILTER_ACCEPT */,
+  });
+  let text = '';
+  for (let n = walker.nextNode(); n; n = walker.nextNode()) text += n.textContent;
+  return text;
 }

@@ -25,6 +25,10 @@
       "type": "string",
       "description": "Display name shown in the popup. Describe compatibility in plain text; avoid trademarked words in the extension's own branding."
     },
+    "shortName": {
+      "type": "string",
+      "description": "Plain series name used in on-page labels, e.g. 'May contain spoilers for …'. Defaults to name."
+    },
     "verified": {
       "type": "boolean",
       "description": "Set to true only after a human has reviewed every term. While false, the popup shows a 'draft term list' note."

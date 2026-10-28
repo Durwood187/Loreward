@@ -38,3 +38,19 @@
 }
 .ss-label > button:hover { background: #26306e; }
 .ss-label > button:focus-visible { outline: 2px solid #8f9cf2; outline-offset: 2px; }
+
+/* Soft label: an AI answer on a series-related page, with no term match.
+   Outlined instead of solid, so "may contain" reads weaker than "spoilers past". */
+.ss-label[data-kind="maybe"] > button {
+  background: #ffffff;
+  color: #34408c;
+  box-shadow: 0 0 0 1.5px #34408c, 0 1px 4px rgba(0, 0, 0, .2);
+}
+.ss-label[data-kind="maybe"] > button:hover { background: #eef0fb; }
+
+/* Google "People also ask": Google pre-fills closed answers with hidden text.
+   Those stay blurred as a safety net, but their label would float over the
+   next question, so hide it until the question is opened. */
+.related-question-pair:has([role="button"][aria-expanded="false"]) .ss-label:has(+ [jsname="NRdf4c"]) {
+  display: none !important;
+}

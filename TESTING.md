@@ -10,6 +10,7 @@ npm test
 - `tests/series-data.test.ts`: sanity checks on every file in `data/series/`.
 - `tests/settings.test.ts`: the free/pro series gate and settings cleanup.
 - `tests/reddit-adapter.test.ts`: the real shield on saved Reddit pages (offline).
+- `tests/google-adapter.test.ts`: the real shield on a saved Google results page (offline).
 
 ### Refreshing the Reddit fixtures
 
@@ -70,6 +71,21 @@ for a later-book name.
 - [ ] DevTools → Network on a Reddit page: the extension makes **no** requests.
 - [ ] `chrome://extensions` → Details: the only permissions listed are storage and reddit.com.
 
-### YouTube, Google, Goodreads
+### Google search (www.google.com/search)
+
+Labels: **solid** "Spoilers past *book*" = a later-book name appears. **Outlined**
+"May contain spoilers for *series*" = an AI answer on a series-related search.
+
+- [ ] Series search ("what happens to kaladin in wind and truth"): the **AI Overview** is blurred with the outlined label, and no words show while it types out.
+- [ ] Unrelated search ("how tall is the eiffel tower"): the AI Overview shows normally.
+- [ ] **Regular results** with a later-book name are blurred (solid label); others are untouched.
+- [ ] **People also ask:** questions with a later-book name are blurred; other questions are readable.
+- [ ] Opening a question: its answer appears **already blurred** (no flash), with a label. Closed questions show no labels.
+- [ ] Revealing a question does **not** reveal its answer.
+- [ ] Clicking a blurred result reveals it and does **not** open the link.
+- [ ] Popup on a Google results page says "Shield on Google Search", and switching it off clears blurs on Google only.
+- [ ] Other Google pages (Gmail, Maps, google.com home page) are untouched.
+
+### YouTube, Goodreads
 
 Not supported yet. Checklists get added with each adapter.
