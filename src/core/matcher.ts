@@ -127,3 +127,26 @@ export function compileMatcher(series: SeriesData, currentBook: number): Compile
     },
   };
 }
+
+/**
+ * Builds a check for "is this text about the series at all?", e.g. a search
+ * query. True if it mentions any keyword, book title (with or without a
+ * leading "The"), or term from any book. Always case-insensitive, whole words.
+ * Allowlisted words don't count on their own.
+ */
+export function compileRelevance(series: SeriesData): (text: string) => boolean {
+  const allow = new Set(series.allowlist.map((w) => w.toLowerCase()));
+  const words = [
+    ...(series.keywords ?? []),
+    ...series.books.flatMap((b) => [b.title, b.title.replace(/^the\s+/i, '')]),
+    ...series.terms.flatMap((t) => [t.term, ...(t.aliases ?? [])]),
+  ]
+    .map(normalizeSpaces)
+    .filter((w) => w && !allow.has(w.toLowerCase()));
+  const re = buildRegex(words, false);
+  return (text: string) => {
+    if (!re || !text) return false;
+    re.lastIndex = 0;
+    return re.test(text.normalize('NFC'));
+  };
+}

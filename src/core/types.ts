@@ -32,5 +32,10 @@ export interface SeriesData {
   books: Book[];
   /** Common words that must never match on their own, even if listed as a term or alias. */
   allowlist: string[];
+  /**
+   * Words that show a search is about this series (series name, main
+   * characters, places). Book titles and all terms count automatically.
+   */
+  keywords?: string[];
   terms: Term[];
 }

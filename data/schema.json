@@ -3,49 +3,128 @@
   "title": "SpoilerShield series file",
   "description": "One file per series in data/series/. Adding a file and rebuilding adds the series; no code changes needed.",
   "type": "object",
-  "required": ["id", "name", "verified", "books", "allowlist", "terms"],
+  "required": [
+    "id",
+    "name",
+    "verified",
+    "books",
+    "allowlist",
+    "terms"
+  ],
   "additionalProperties": false,
   "properties": {
-    "$schema": { "type": "string" },
-    "id": { "type": "string", "pattern": "^[a-z0-9-]+$", "description": "Stable id saved in user settings. Never change it after release." },
-    "name": { "type": "string", "description": "Display name shown in the popup. Describe compatibility in plain text; avoid trademarked words in the extension's own branding." },
-    "verified": { "type": "boolean", "description": "Set to true only after a human has reviewed every term. While false, the popup shows a 'draft term list' note." },
+    "$schema": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "Stable id saved in user settings. Never change it after release."
+    },
+    "name": {
+      "type": "string",
+      "description": "Display name shown in the popup. Describe compatibility in plain text; avoid trademarked words in the extension's own branding."
+    },
+    "verified": {
+      "type": "boolean",
+      "description": "Set to true only after a human has reviewed every term. While false, the popup shows a 'draft term list' note."
+    },
     "books": {
       "type": "array",
       "minItems": 1,
       "description": "Books in reading order. index starts at 1 and counts up by 1. Novellas get their own index.",
       "items": {
         "type": "object",
-        "required": ["index", "title"],
+        "required": [
+          "index",
+          "title"
+        ],
         "additionalProperties": false,
         "properties": {
-          "index": { "type": "integer", "minimum": 1 },
-          "title": { "type": "string" },
-          "kind": { "enum": ["novel", "novella"] }
+          "index": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "title": {
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "novel",
+              "novella"
+            ]
+          }
         }
       }
     },
     "allowlist": {
       "type": "array",
-      "items": { "type": "string" },
+      "items": {
+        "type": "string"
+      },
       "description": "Common words that never match on their own (compared case-insensitively). A multi-word term containing one of them still matches as a whole phrase."
     },
     "terms": {
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["term", "introducedIn", "type", "confidence"],
+        "required": [
+          "term",
+          "introducedIn",
+          "type",
+          "confidence"
+        ],
         "additionalProperties": false,
         "properties": {
-          "term": { "type": "string", "description": "Main spelling." },
-          "aliases": { "type": "array", "items": { "type": "string" }, "description": "Other spellings or names. Plurals and possessives ('s) are handled automatically; don't list them." },
-          "introducedIn": { "type": "integer", "minimum": 1, "description": "Book index where knowing this term becomes a spoiler. Blurred when this is greater than the reader's current book." },
-          "type": { "enum": ["character", "place", "event", "concept"] },
-          "caseSensitive": { "type": "boolean", "description": "Defaults to true for character/place, false for event/concept. Set true for names that are also everyday words (e.g. 'Veil'); set false for distinctive names fans often type in lowercase." },
-          "confidence": { "enum": ["high", "medium", "low"], "description": "How sure we are about introducedIn. Every term still needs human review." },
-          "notes": { "type": "string", "description": "Reviewer notes: why this book, known false-positive risks." }
+          "term": {
+            "type": "string",
+            "description": "Main spelling."
+          },
+          "aliases": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Other spellings or names. Plurals and possessives ('s) are handled automatically; don't list them."
+          },
+          "introducedIn": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "Book index where knowing this term becomes a spoiler. Blurred when this is greater than the reader's current book."
+          },
+          "type": {
+            "enum": [
+              "character",
+              "place",
+              "event",
+              "concept"
+            ]
+          },
+          "caseSensitive": {
+            "type": "boolean",
+            "description": "Defaults to true for character/place, false for event/concept. Set true for names that are also everyday words (e.g. 'Veil'); set false for distinctive names fans often type in lowercase."
+          },
+          "confidence": {
+            "enum": [
+              "high",
+              "medium",
+              "low"
+            ],
+            "description": "How sure we are about introducedIn. Every term still needs human review."
+          },
+          "notes": {
+            "type": "string",
+            "description": "Reviewer notes: why this book, known false-positive risks."
+          }
         }
       }
+    },
+    "keywords": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Words that show a search or page is about this series (series name, main characters, places). Matched case-insensitively as whole words. Book titles and every term are included automatically, so don't repeat them. Used to decide when to hold back AI answers on search pages."
     }
   }
 }

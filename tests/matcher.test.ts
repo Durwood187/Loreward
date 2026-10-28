@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { compileMatcher } from '../src/core/matcher';
+import { compileMatcher, compileRelevance } from '../src/core/matcher';
 import type { SeriesData } from '../src/core/types';
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
@@ -200,4 +200,22 @@ describe('everyday-word terms in the real series data', () => {
   ])('matches the capitalized name: %s', (text, term) => {
     expect(m.findSpoiler(text)?.term).toBe(term);
   });
+});
+
+describe('compileRelevance (is a search about the series?)', () => {
+  const s: SeriesData = { ...series, keywords: ['Kaladin', 'Stormlight Archive'] };
+  const about = compileRelevance(s);
+  it.each([
+    'what happens to kaladin in wind and truth',
+    'KALADIN fourth ideal',
+    'stormlight archive book order',
+    'book 3 title ending',    // a book title ("Book 3")
+    'who is raboniel',        // a term, any book, any case
+    'evi dalinar wife',       // terms count even from early books
+  ])('related: %s', (q) => expect(about(q)).toBe(true));
+  it.each([
+    'how tall is the eiffel tower',
+    'storm forecast indianapolis', // allowlisted word alone doesn't count
+    'kaladinx',                    // whole words only
+  ])('unrelated: %s', (q) => expect(about(q)).toBe(false));
 });
