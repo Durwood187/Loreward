@@ -1,5 +1,5 @@
 {
-  "name": "spoilershield",
+  "name": "loreward",
   "version": "0.1.0",
   "private": true,
   "description": "Chrome extension that blurs possible book-series spoilers based on how far you've read.",

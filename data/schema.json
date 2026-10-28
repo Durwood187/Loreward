@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "SpoilerShield series file",
+  "title": "Loreward series file",
   "description": "One file per series in data/series/. Adding a file and rebuilding adds the series; no code changes needed.",
   "type": "object",
   "required": [

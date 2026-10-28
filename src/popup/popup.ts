@@ -63,7 +63,7 @@ async function refreshSite() {
   site = await sendToTab<StatusReply>({ type: 'ss:getStatus' });
   siteControls.hidden = !site;
   siteStatus.hidden = !!site;
-  if (!site) siteStatus.textContent = "SpoilerShield doesn't run on this page.";
+  if (!site) siteStatus.textContent = "Loreward doesn't run on this page.";
   render();
 }
 

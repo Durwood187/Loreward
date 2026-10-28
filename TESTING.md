@@ -73,7 +73,7 @@ for a later-book name.
 - [ ] Master switch off: every blur disappears. On: they come back.
 - [ ] "Shield on Reddit" off: blurs disappear on Reddit only. The setting survives a browser restart.
 - [ ] "Reveal all on this page (N)": the count matches the blurred items, and clicking it clears them.
-- [ ] On a non-Reddit tab, the popup says "SpoilerShield doesn't run on this page."
+- [ ] On a non-Reddit tab, the popup says "Loreward doesn't run on this page."
 - [ ] "Draft term list" note shows while `verified` is false.
 - [ ] Dark mode: the popup is readable.
 

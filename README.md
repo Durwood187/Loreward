@@ -1,4 +1,4 @@
-# SpoilerShield (working name)
+# Loreward
 
 A Chrome extension (Manifest V3) for fantasy readers. You pick a series and the
 book you're on, and it blurs posts and comments on supported sites that mention

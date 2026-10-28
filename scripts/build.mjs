@@ -1,4 +1,4 @@
-// Build script for the SpoilerShield extension.
+// Build script for the Loreward extension.
 //
 // What it does, in order:
 //   1. Reads every JSON file in data/series/ and writes src/generated/series-index.ts,
