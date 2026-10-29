@@ -4,7 +4,7 @@
 Pick your series and the book you're on, and Loreward blurs anything online that could spoil
 what comes next. Everything runs in your browser ([privacy policy](PRIVACY.md)).
 
-*Chrome Web Store link: coming soon.*
+**[Add Loreward to Chrome](https://chromewebstore.google.com/detail/loreward-book-spoiler-shi/lelhddhefkgdnhgkogijjikmabfhicda)** (free)
 
 - **Sites:** Reddit (new and old), Google search (results, AI Overview, People also ask).
 - **Series:** The Stormlight Archive. More are planned (see `docs/ROADMAP.md`).

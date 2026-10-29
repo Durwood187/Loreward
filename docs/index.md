@@ -14,6 +14,6 @@ Click any blurred item to reveal just that one.
 - Series: **The Stormlight Archive**, with more on the way
 - **Private**: runs entirely in your browser. No accounts, no tracking ([privacy policy](https://github.com/<your-username>/Loreward/blob/main/PRIVACY.md))
 
-**[Add Loreward to Chrome](STORE_LINK)** (free)
+**[Add Loreward to Chrome](https://chromewebstore.google.com/detail/loreward-book-spoiler-shi/lelhddhefkgdnhgkogijjikmabfhicda)** (free)
 
 Read: [How to stop Google's AI from spoiling books](stop-google-ai-spoilers)

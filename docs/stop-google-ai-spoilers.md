@@ -49,7 +49,7 @@ and which book you're on. On Google, it:
 
 It does the same for Reddit posts and comments. Everything runs in your browser; nothing is sent anywhere.
 
-**[Add Loreward to Chrome](STORE_LINK)**. Currently supports *The Stormlight Archive*, with *Mistborn* next.
+**[Add Loreward to Chrome](https://chromewebstore.google.com/detail/loreward-book-spoiler-shi/lelhddhefkgdnhgkogijjikmabfhicda)**. Currently supports *The Stormlight Archive*, with *Mistborn* next.
 
 ---
 
