@@ -63,9 +63,9 @@ Loreward is an independent project and isn't affiliated with any author or publi
 
 **Small promo tile** (440×280): `docs/store/promo-small-440x280.png`
 
-**Official URL / Homepage URL:** https://github.com/<your-username>/Loreward
+**Homepage URL:** https://durwood187.github.io/Loreward/ (once GitHub Pages is on; until then https://github.com/Durwood187/Loreward)
 
-**Support URL:** https://github.com/<your-username>/Loreward/issues
+**Support URL:** https://github.com/Durwood187/Loreward/issues
 
 ---
 
@@ -88,7 +88,7 @@ Loreward is an independent project and isn't affiliated with any author or publi
 
 **Certifications:** tick all three (no selling data, no unrelated use, no creditworthiness/lending use).
 
-**Privacy policy URL:** https://github.com/<your-username>/Loreward/blob/main/PRIVACY.md
+**Privacy policy URL:** https://github.com/Durwood187/Loreward/blob/main/PRIVACY.md
 
 ---
 

@@ -17,10 +17,10 @@ The listing text you'll paste is in `docs/store/listing.md`, and the images are 
 2. In Terminal:
    ```bash
    cd ~/"Spoiler Shield"
-   git remote add origin https://github.com/<your-username>/Loreward.git
+   git remote add origin https://github.com/Durwood187/Loreward.git
    git push -u origin main
    ```
-3. Check that `https://github.com/<your-username>/Loreward/blob/main/PRIVACY.md` opens.
+3. Check that `https://github.com/Durwood187/Loreward/blob/main/PRIVACY.md` opens.
    That's your privacy policy URL.
 
 ## Part 3: Final checks (about 15 minutes)
@@ -48,7 +48,7 @@ The listing text you'll paste is in `docs/store/listing.md`, and the images are 
 
 1. Dashboard → **New item** → upload `loreward-0.1.0.zip`.
 2. **Store listing** tab: paste and upload everything from `docs/store/listing.md` (description,
-   category, icon, screenshots, promo tile, homepage and support URLs). Replace `<your-username>`.
+   category, icon, screenshots, promo tile, homepage and support URLs).
 3. **Privacy practices** tab: paste the single-purpose text and the permission justifications,
    answer "No remote code", tick no data types, tick the three certifications, and paste the
    privacy policy URL.
@@ -87,9 +87,8 @@ The listing text you'll paste is in `docs/store/listing.md`, and the images are 
 The `docs/` folder doubles as a small public site: a landing page and the
 "How to stop Google's AI from spoiling books" article, which can bring in readers through Google search.
 
-1. Replace `STORE_LINK` and `<your-username>` in `docs/index.md` and `docs/stop-google-ai-spoilers.md`
-   (Claude can do this once you share the links).
+1. ✅ Store link and GitHub username are already filled in.
 2. On GitHub: **Settings → Pages → Build and deployment → Deploy from a branch** → `main` / `/docs` → Save.
-3. After a minute or two, the site is at `https://<your-username>.github.io/Loreward/`, and the article
+3. After a minute or two, the site is at `https://durwood187.github.io/Loreward/`, and the article
    at `.../stop-google-ai-spoilers`.
 4. Put the site address in the Chrome listing's **Homepage URL**.
