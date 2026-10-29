@@ -1,0 +1,1828 @@
+{
+  "$schema": "../schema.json",
+  "id": "mistborn",
+  "name": "Mistborn (compatible)",
+  "shortName": "Mistborn",
+  "verified": false,
+  "books": [
+    {
+      "index": 1,
+      "title": "The Final Empire",
+      "kind": "novel",
+      "aliases": [
+        "TFE"
+      ]
+    },
+    {
+      "index": 2,
+      "title": "The Well of Ascension",
+      "kind": "novel",
+      "aliases": [
+        "WoA"
+      ]
+    },
+    {
+      "index": 3,
+      "title": "The Hero of Ages",
+      "kind": "novel",
+      "aliases": [
+        "HoA"
+      ]
+    },
+    {
+      "index": 4,
+      "title": "The Alloy of Law",
+      "kind": "novel",
+      "aliases": [
+        "AoL"
+      ]
+    },
+    {
+      "index": 5,
+      "title": "Shadows of Self",
+      "kind": "novel",
+      "aliases": [
+        "SoS"
+      ]
+    },
+    {
+      "index": 6,
+      "title": "The Bands of Mourning",
+      "kind": "novel",
+      "aliases": [
+        "BoM"
+      ]
+    },
+    {
+      "index": 7,
+      "title": "Mistborn: Secret History",
+      "kind": "novella",
+      "aliases": []
+    },
+    {
+      "index": 8,
+      "title": "The Lost Metal",
+      "kind": "novel",
+      "aliases": [
+        "TLM"
+      ]
+    }
+  ],
+  "allowlist": [
+    "Ash",
+    "Mist",
+    "Mists",
+    "Steel",
+    "Iron",
+    "Tin",
+    "Pewter",
+    "Brass",
+    "Copper",
+    "Bronze",
+    "Zinc",
+    "Gold",
+    "Atium",
+    "Shard",
+    "Lord",
+    "Ruler",
+    "Hero",
+    "Survivor",
+    "Preservation",
+    "Ruin",
+    "Harmony",
+    "Law",
+    "Metal"
+  ],
+  "keywords": [
+    "Mistborn",
+    "Sanderson",
+    "Brandon Sanderson",
+    "Cosmere",
+    "Scadrial",
+    "Kelsier",
+    "Elend",
+    "Sazed",
+    "Lord Ruler",
+    "Luthadel",
+    "Allomancy",
+    "Allomancer",
+    "Feruchemy",
+    "Feruchemist",
+    "Hemalurgy",
+    "Steel Inquisitor",
+    "kandra",
+    "koloss",
+    "skaa",
+    "Elendel",
+    "Waxillium",
+    "Marasi",
+    "Steris"
+  ],
+  "terms": [
+    {
+      "term": "Allrianne",
+      "aliases": [
+        "Allrianne Cett"
+      ],
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Ashweather Cett",
+      "aliases": [
+        "Cett",
+        "Lord Cett"
+      ],
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Duralumin",
+      "introducedIn": 2,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Emperor Venture",
+      "aliases": [
+        "Emperor Elend"
+      ],
+      "introducedIn": 2,
+      "type": "concept",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Ferson Penrod",
+      "aliases": [
+        "Penrod",
+        "Lord Penrod",
+        "King Penrod"
+      ],
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Gneorndin",
+      "aliases": [
+        "Gneorndin Cett"
+      ],
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Heir of the Survivor",
+      "aliases": [
+        "Lady Heir"
+      ],
+      "introducedIn": 2,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Holy First Witness",
+      "introducedIn": 2,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Survivorist title for Sazed."
+    },
+    {
+      "term": "Janarle",
+      "aliases": [
+        "Lord Janarle"
+      ],
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Checked on it.coppermind."
+    },
+    {
+      "term": "mist spirit",
+      "aliases": [
+        "mist ghost"
+      ],
+      "introducedIn": 2,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Philen Frandeu",
+      "aliases": [
+        "Philen"
+      ],
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Siege of Luthadel",
+      "introducedIn": 2,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": false
+    },
+    {
+      "term": "Terris Synod",
+      "aliases": [
+        "Keeper Synod"
+      ],
+      "introducedIn": 2,
+      "type": "concept",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Tindwyl",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Urteau",
+      "introducedIn": 2,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Vin Venture",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Vin's married name; marriage happens in book 2."
+    },
+    {
+      "term": "Zane",
+      "aliases": [
+        "Zane Venture"
+      ],
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Wiki alias 'The Watcher' omitted (too generic)."
+    },
+    {
+      "term": "Aradan Yomen",
+      "aliases": [
+        "Yomen",
+        "King Yomen",
+        "Last Obligator"
+      ],
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Beldre",
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Blessing of Presence",
+      "aliases": [
+        "Blessing of Potency",
+        "Blessing of Awareness",
+        "Blessing of Stability"
+      ],
+      "introducedIn": 3,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Compounding",
+      "introducedIn": 3,
+      "type": "concept",
+      "caseSensitive": true,
+      "confidence": "low",
+      "wikiChecked": false
+    },
+    {
+      "term": "Coup of Urteau",
+      "introducedIn": 3,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Durn",
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Checked on it.coppermind."
+    },
+    {
+      "term": "Fadrex City",
+      "aliases": [
+        "Fadrex"
+      ],
+      "introducedIn": 3,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Fatren",
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "First Contract",
+      "introducedIn": 3,
+      "type": "concept",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "First Generation",
+      "aliases": [
+        "Second Generation"
+      ],
+      "introducedIn": 3,
+      "type": "concept",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Kandra generations; capitalized-only to avoid generic use."
+    },
+    {
+      "term": "Haddek",
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Hemalurgy",
+      "aliases": [
+        "Hemalurgic",
+        "Hemalurgist",
+        "Hemalurgic spike"
+      ],
+      "introducedIn": 3,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Kandra Homeland",
+      "introducedIn": 3,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "KanPaar",
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Lerasium",
+      "introducedIn": 3,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "MeLaan",
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Also major in Era 2; first appears book 3."
+    },
+    {
+      "term": "Quellion",
+      "aliases": [
+        "the Citizen"
+      ],
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "'the Citizen' kept case-sensitive (capital C)."
+    },
+    {
+      "term": "Siege of Fadrex City",
+      "aliases": [
+        "Siege of Fadrex"
+      ],
+      "introducedIn": 3,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Slowswift",
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "storage cavern",
+      "aliases": [
+        "Lord Ruler's cache"
+      ],
+      "introducedIn": 3,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Survivor of the Flames",
+      "aliases": [
+        "Survivor of Flames"
+      ],
+      "introducedIn": 3,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Spook's title."
+    },
+    {
+      "term": "Trustwarren",
+      "introducedIn": 3,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Vetitan",
+      "introducedIn": 3,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Vin's earring",
+      "introducedIn": 3,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Allomancer Jak",
+      "aliases": [],
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Ascendant Warrior",
+      "aliases": [
+        "the Ascendant Warrior"
+      ],
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Era 2 title of book-1 Vin."
+    },
+    {
+      "term": "Bloody Tan",
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Catacendre",
+      "introducedIn": 4,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Edwarn Ladrian",
+      "aliases": [
+        "Uncle Edwarn",
+        "Edwarn"
+      ],
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Alive-as-Mister-Suit reveal is the AoL epilogue."
+    },
+    {
+      "term": "Elendel",
+      "aliases": [
+        "Elendel Basin",
+        "the Basin"
+      ],
+      "introducedIn": 4,
+      "type": "place",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Distinct whole word from 'Elend' (book 1). Drop 'the Basin' if too broad."
+    },
+    {
+      "term": "Faceless Immortals",
+      "aliases": [
+        "Faceless Immortal"
+      ],
+      "introducedIn": 4,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Era 2 name for the kandra."
+    },
+    {
+      "term": "Ferring",
+      "aliases": [
+        "Ferrings"
+      ],
+      "introducedIn": 4,
+      "type": "concept",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Era 2 term for single-power Feruchemist; not wiki-checked."
+    },
+    {
+      "term": "Field of Rebirth",
+      "introducedIn": 4,
+      "type": "place",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Hazekiller",
+      "aliases": [
+        "hazekiller rounds"
+      ],
+      "introducedIn": 4,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "House Ladrian",
+      "introducedIn": 4,
+      "type": "concept",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Ironeyes",
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Later-era alias of book-1 Marsh."
+    },
+    {
+      "term": "Jackstom Harms",
+      "aliases": [
+        "Lord Harms"
+      ],
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Lessie",
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Wax's dead wife; her true identity is a book-5 term (Paalm)."
+    },
+    {
+      "term": "Lord Mistborn",
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Era 2 title of Spook."
+    },
+    {
+      "term": "Marasi Colms",
+      "aliases": [
+        "Marasi"
+      ],
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Miles Hundredlives",
+      "aliases": [
+        "Miles Dagouter",
+        "Hundredlives"
+      ],
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Bare 'Miles' deliberately not an alias."
+    },
+    {
+      "term": "Mister Suit",
+      "aliases": [
+        "Mr. Suit",
+        "Mr Suit"
+      ],
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Pathian",
+      "aliases": [
+        "Pathians",
+        "Pathism"
+      ],
+      "introducedIn": 4,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Avoid 'the Path' (everyday)."
+    },
+    {
+      "term": "Pulser",
+      "introducedIn": 4,
+      "type": "concept",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Cadmium Misting (Marasi)."
+    },
+    {
+      "term": "Ranette",
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Speed bubble",
+      "aliases": [
+        "speed bubbles"
+      ],
+      "introducedIn": 4,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Steris Harms",
+      "aliases": [
+        "Steris"
+      ],
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Sterrion",
+      "introducedIn": 4,
+      "type": "concept",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Gunsmith brand of Wax's revolvers; not wiki-checked."
+    },
+    {
+      "term": "The Roughs",
+      "aliases": [
+        "the Roughs"
+      ],
+      "introducedIn": 4,
+      "type": "place",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "The Set",
+      "aliases": [
+        "the Set"
+      ],
+      "introducedIn": 4,
+      "type": "concept",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Tillaume",
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Trell",
+      "aliases": [
+        "Trellism",
+        "Trellist"
+      ],
+      "introducedIn": 6,
+      "type": "concept",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Twinborn",
+      "introducedIn": 4,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Waxillium Ladrian",
+      "aliases": [
+        "Waxillium",
+        "Lord Waxillium",
+        "Lord Ladrian"
+      ],
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Words of Founding",
+      "aliases": [
+        "The Words of Founding"
+      ],
+      "introducedIn": 4,
+      "type": "concept",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Claude Aradel",
+      "aliases": [
+        "Aradel",
+        "Constable-General Aradel"
+      ],
+      "introducedIn": 5,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Clotide",
+      "introducedIn": 5,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Minor domestic worker."
+    },
+    {
+      "term": "Daughnin",
+      "introducedIn": 5,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Criminal brought in by Captain Reddi (a SoS character)."
+    },
+    {
+      "term": "Dowser Maline",
+      "aliases": [
+        "Maline"
+      ],
+      "introducedIn": 5,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Smuggler killed at Winsting's auction."
+    },
+    {
+      "term": "Drim",
+      "introducedIn": 5,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Innate's security chief, killed by Bleeder."
+    },
+    {
+      "term": "Father Bin",
+      "introducedIn": 5,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Survivorist priest murdered by Paalm."
+    },
+    {
+      "term": "Granite Joe",
+      "introducedIn": 5,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "low",
+      "wikiChecked": true,
+      "notes": "Listed on SoS book page; role not checked."
+    },
+    {
+      "term": "Hemalurgic earring",
+      "aliases": [
+        "Wax's earring",
+        "Waxillium's earring"
+      ],
+      "introducedIn": 5,
+      "type": "concept",
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Wikipedia SoS summary lists it; not wiki-infobox-checked."
+    },
+    {
+      "term": "Idashwy",
+      "introducedIn": 5,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Terris Steelrunner murdered by Bleeder."
+    },
+    {
+      "term": "Lady Remin",
+      "aliases": [
+        "Remin"
+      ],
+      "introducedIn": 5,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Guest at Lady ZoBell's party (SoS event)."
+    },
+    {
+      "term": "Lady ZoBell",
+      "aliases": [
+        "ZoBell"
+      ],
+      "introducedIn": 5,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Larskpur",
+      "introducedIn": 5,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Pathian missionary Bleeder impersonates."
+    },
+    {
+      "term": "Lieutenant Ahlstrom",
+      "aliases": [
+        "Ahlstrom"
+      ],
+      "introducedIn": 5,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Marasi runs into his workspace chasing Aradel; Marasi joined the constables in SoS."
+    },
+    {
+      "term": "Lieutenant Javies",
+      "aliases": [
+        "Javies"
+      ],
+      "introducedIn": 5,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Leads Fourth Octant team during Innate's speech (SoS events)."
+    },
+    {
+      "term": "Longard Street",
+      "introducedIn": 5,
+      "type": "place",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Protest site during Innate's speech; cited on Javies page."
+    },
+    {
+      "term": "Maindew",
+      "introducedIn": 5,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Corporal in Aradel's precinct (Aradel is a SoS character)."
+    },
+    {
+      "term": "Paalm",
+      "aliases": [
+        "Bleeder",
+        "the Bleeder"
+      ],
+      "introducedIn": 5,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Major identity reveal. 'Bleeder' is a capitalized everyday word; keep case-sensitive if split out."
+    },
+    {
+      "term": "Reddi",
+      "aliases": [
+        "Captain Reddi"
+      ],
+      "introducedIn": 5,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Not wiki-checked."
+    },
+    {
+      "term": "Replar Innate",
+      "aliases": [
+        "Governor Innate",
+        "Governor Replar"
+      ],
+      "introducedIn": 5,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Paalm also impersonates him (an alias on Paalm's infobox)."
+    },
+    {
+      "term": "Taudr",
+      "introducedIn": 5,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Constable who resents Marasi's promotion."
+    },
+    {
+      "term": "The Marksman",
+      "aliases": [
+        "Marksman"
+      ],
+      "introducedIn": 5,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Steel Misting bank robber tied to the Set; wiki alias 'Marks' omitted (everyday word)."
+    },
+    {
+      "term": "Vwafendal",
+      "introducedIn": 5,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Terris Synod elder; Wax and Telsin's grandmother."
+    },
+    {
+      "term": "Winsting Innate",
+      "aliases": [
+        "Winsting"
+      ],
+      "introducedIn": 5,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Winsting Innate's auction",
+      "aliases": [
+        "Winsting's auction"
+      ],
+      "introducedIn": 5,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Allik Neverfar",
+      "aliases": [
+        "Allik"
+      ],
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Asinthew",
+      "introducedIn": 6,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Wax's Terris name; seen in BoM summary/Vwafendal page."
+    },
+    {
+      "term": "Bands of Mourning",
+      "aliases": [
+        "the Bands of Mourning"
+      ],
+      "introducedIn": 6,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Also the book title."
+    },
+    {
+      "term": "Bloodmaker",
+      "aliases": [
+        "Bloodmakers"
+      ],
+      "introducedIn": 6,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Southern term for Hemalurgists; from BoM summary."
+    },
+    {
+      "term": "Brunstell",
+      "introducedIn": 6,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Malwish airship that crashed at Dulsing."
+    },
+    {
+      "term": "Connection medallion",
+      "aliases": [
+        "warming medallion",
+        "Southern medallion"
+      ],
+      "introducedIn": 6,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "From BoM summary."
+    },
+    {
+      "term": "Dechamp",
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Night gravekeeper helping search for ReLuur's spike."
+    },
+    {
+      "term": "Deniers of Masks",
+      "introducedIn": 6,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Devlin Airs",
+      "aliases": [],
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "New Seran information broker. Alias 'Devlin' is a common surname; drop if noisy."
+    },
+    {
+      "term": "Dulsing",
+      "introducedIn": 6,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Set's research compound; book from summary."
+    },
+    {
+      "term": "Ettmetal",
+      "introducedIn": 6,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Forch",
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Terris Twinborn Wax kills in the BoM prologue."
+    },
+    {
+      "term": "Gave Entrone",
+      "aliases": [
+        "Lord Entrone",
+        "Mayor Entrone"
+      ],
+      "introducedIn": 6,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Becomes Bilming mayor in book 8."
+    },
+    {
+      "term": "Irich",
+      "introducedIn": 6,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "From BoM summary; not fetched."
+    },
+    {
+      "term": "Ironstand",
+      "introducedIn": 6,
+      "type": "place",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Town on the Elendel-New Seran line where the train attack happens. Verified via it.coppermind mirror."
+    },
+    {
+      "term": "Jordis",
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Southern airship captain of the Brunstell."
+    },
+    {
+      "term": "Kelesina Shores",
+      "aliases": [
+        "Lady Kelesina",
+        "Kelesina"
+      ],
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Khriss",
+      "aliases": [
+        "Khrissalla"
+      ],
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Wiki infobox says BoM; she also appears in Secret History (7). Cross-Cosmere."
+    },
+    {
+      "term": "Kwashim",
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Malwish",
+      "aliases": [
+        "Malwish Consortium"
+      ],
+      "introducedIn": 6,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Southern nation; not fetched individually."
+    },
+    {
+      "term": "New Seran",
+      "introducedIn": 6,
+      "type": "place",
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Not fetched; city central to book 6."
+    },
+    {
+      "term": "Nightstreet Gang",
+      "aliases": [
+        "Nightstreet"
+      ],
+      "introducedIn": 6,
+      "type": "concept",
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Gang that attacks Wax's train near Ironstand."
+    },
+    {
+      "term": "Primer cube",
+      "aliases": [
+        "primer cubes"
+      ],
+      "introducedIn": 6,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Southern tech; wiki fetch inconclusive."
+    },
+    {
+      "term": "ReLuur",
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "ReLuur's spike",
+      "introducedIn": 6,
+      "type": "concept",
+      "confidence": "high",
+      "wikiChecked": false,
+      "notes": "Key BoM MacGuffin; ReLuur itself already listed. Not wiki-checked separately."
+    },
+    {
+      "term": "Southern Continent",
+      "aliases": [
+        "Southern Scadrial",
+        "Southern Scadrian",
+        "Southern Scadrians"
+      ],
+      "introducedIn": 6,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Existence of the inhabited South is a book-6 reveal."
+    },
+    {
+      "term": "Tellingdwar",
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Telsin Ladrian",
+      "aliases": [
+        "Telsin",
+        "Lady Sequence"
+      ],
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Wiki also lists titles Sequence and Key."
+    },
+    {
+      "term": "Templeton Fig",
+      "introducedIn": 6,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "New Seran cemetery manager working for the Set."
+    },
+    {
+      "term": "the Sovereign",
+      "aliases": [
+        "Sovereign's Temple"
+      ],
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Southern name for the Lord Ruler."
+    },
+    {
+      "term": "Unsealed metalmind",
+      "aliases": [
+        "unkeyed metalmind",
+        "unsealed metalminds"
+      ],
+      "introducedIn": 6,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Southern medallion tech; not fetched."
+    },
+    {
+      "term": "VenDell",
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Sixth Generation kandra. Confirmed book 6, not 5."
+    },
+    {
+      "term": "Wilg",
+      "introducedIn": 6,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Southern skimmer airship."
+    },
+    {
+      "term": "Ati",
+      "introducedIn": 7,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Case-sensitive to avoid 'ATI'."
+    },
+    {
+      "term": "Cephandrius",
+      "introducedIn": 7,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "low",
+      "wikiChecked": false,
+      "notes": "Hoid alias used in Secret History; also in Stormlight. Later alias of a book-1 character."
+    },
+    {
+      "term": "Cognitive Realm",
+      "introducedIn": 7,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Not fetched."
+    },
+    {
+      "term": "Cognitive Shadow",
+      "aliases": [
+        "Kelsier's cognitive shadow"
+      ],
+      "introducedIn": 7,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Cosmere-wide term."
+    },
+    {
+      "term": "Fuzz",
+      "introducedIn": 7,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Capitalized only; 'fuzz' is a word."
+    },
+    {
+      "term": "Leras",
+      "introducedIn": 7,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Name-based spoiler; set to 7."
+    },
+    {
+      "term": "Nazh",
+      "introducedIn": 7,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Non-Mistborn intro; first Mistborn appearance Secret History pt3 ch2."
+    },
+    {
+      "term": "Perpendicularity",
+      "aliases": [
+        "Perpendicularities"
+      ],
+      "introducedIn": 7,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "low",
+      "wikiChecked": false,
+      "notes": "Well as perpendicularity in Secret History; also used in book 8. Not fetched."
+    },
+    {
+      "term": "Spiritual Realm",
+      "introducedIn": 7,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Adawathwyn",
+      "introducedIn": 8,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Aetherbound",
+      "introducedIn": 8,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Allomantic grenade",
+      "aliases": [
+        "Malwish grenade"
+      ],
+      "introducedIn": 8,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "low",
+      "wikiChecked": false,
+      "notes": "May appear in book 6; chose later."
+    },
+    {
+      "term": "Allriandre Durkel",
+      "aliases": [
+        "Allriandre"
+      ],
+      "introducedIn": 8,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Ruri's mother, Wayne's payments."
+    },
+    {
+      "term": "Armal Harms",
+      "aliases": [
+        "Armal"
+      ],
+      "introducedIn": 8,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Marasi's cousin abducted by the Vanishers."
+    },
+    {
+      "term": "Autonomy",
+      "introducedIn": 8,
+      "type": "concept",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Bavadin",
+      "introducedIn": 8,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Daal",
+      "aliases": [
+        "Admiral Daal"
+      ],
+      "introducedIn": 8,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Malwish admiral/ambassador."
+    },
+    {
+      "term": "Dawnshot",
+      "introducedIn": 8,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Wax's alias in book 8 (per LM summary)."
+    },
+    {
+      "term": "Dlavil",
+      "introducedIn": 8,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Dupon Melstrom",
+      "introducedIn": 8,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Garisel Daring",
+      "introducedIn": 8,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Ghostbloods",
+      "aliases": [
+        "Ghostblood"
+      ],
+      "introducedIn": 8,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Stormlight origin; first Mistborn appearance book 8. Not fetched."
+    },
+    {
+      "term": "Harmonium",
+      "introducedIn": 8,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Iyatil",
+      "introducedIn": 8,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Non-Mistborn intro; first Mistborn appearance LM epilogue."
+    },
+    {
+      "term": "Maraga Dulcet",
+      "introducedIn": 8,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Maxillium Ladrian",
+      "aliases": [
+        "Max Ladrian",
+        "Maxillium"
+      ],
+      "introducedIn": 8,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Wan ShaiLu",
+      "aliases": [
+        "Shay-I"
+      ],
+      "introducedIn": 8,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": false,
+      "notes": "Shai from The Emperor's Soul; first Mistborn appearance book 8. Wiki fetch failed."
+    },
+    {
+      "term": "Pewternauts A16",
+      "aliases": [
+        "Pewternauts"
+      ],
+      "introducedIn": 8,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Bilming warship carrying the bomb."
+    },
+    {
+      "term": "Prasanva",
+      "aliases": [
+        "TwinSoul"
+      ],
+      "introducedIn": 8,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Ruri",
+      "introducedIn": 8,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Shaw Tower",
+      "aliases": [
+        "the Shaw"
+      ],
+      "introducedIn": 8,
+      "type": "place",
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Silajana",
+      "introducedIn": 8,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Aether bound to Prasanva; not fetched."
+    },
+    {
+      "term": "Silverlight Mercantile",
+      "introducedIn": 8,
+      "type": "place",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Cosmere city in the Cognitive Realm."
+    },
+    {
+      "term": "Soulstamp",
+      "aliases": [
+        "soulstamps"
+      ],
+      "introducedIn": 8,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Emperor's Soul term, via Moonlight."
+    },
+    {
+      "term": "Tarcsel Electric",
+      "introducedIn": 8,
+      "type": "concept",
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Sophi Tarcsel herself is book 5."
+    },
+    {
+      "term": "Thaidakar",
+      "introducedIn": 8,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "low",
+      "wikiChecked": false,
+      "notes": "Kelsier's Ghostblood alias (Stormlight); Kelsier-as-Ghostblood leader confirmed in book 8. Later alias of a book-1 character."
+    },
+    {
+      "term": "Tindwyl Ladrian",
+      "introducedIn": 8,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Not Era-1 Tindwyl; only the full name is used."
+    },
+    {
+      "term": "Trellium",
+      "introducedIn": 8,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Wiki page not reachable."
+    },
+    {
+      "term": "Vanishers",
+      "introducedIn": 8,
+      "type": "concept",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Varlance",
+      "aliases": [
+        "Governor Varlance"
+      ],
+      "introducedIn": 8,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Governor in book 8."
+    },
+    {
+      "term": "Wayne's death",
+      "aliases": [
+        "death of Wayne",
+        "Wayne dies",
+        "Wayne died"
+      ],
+      "introducedIn": 8,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": false,
+      "notes": "From LM summary ('Wayne's death')."
+    }
+  ]
+}

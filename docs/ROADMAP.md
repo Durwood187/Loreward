@@ -13,7 +13,7 @@
 ## Series order (revised Oct 2026)
 Ongoing series (new books coming, active fandoms) first; long-finished classics last.
 1. The Stormlight Archive ✅
-2. Mistborn
+2. Mistborn ✅ (0.2.0)
 3. Rest of the Cosmere (each book/series gets its own progress setting)
 4. Fourth Wing (The Empyrean). Eric hasn't read it, so the review list leans on the wiki check.
 5. Dungeon Crawler Carl

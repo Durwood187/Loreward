@@ -44,7 +44,8 @@ More sites are coming.
 
 SERIES
 • The Stormlight Archive
-More series are coming, starting with Mistborn.
+• Mistborn (both eras, including Secret History)
+More series are on the way.
 
 PRIVATE BY DESIGN
 • Everything runs in your browser. No accounts, no tracking, no data sent anywhere.
