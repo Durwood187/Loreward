@@ -22,6 +22,10 @@ export interface Settings {
    * own this later; until then it only gates "more than one series".
    */
   isPro: boolean;
+  /** When Loreward was installed (ms since 1970), set by the background worker. 0 = unknown. */
+  installedAt: number;
+  /** The one-time "leave a rating" prompt: still to show, or already clicked/dismissed. */
+  ratingPrompt: 'pending' | 'done';
 }
 
 export const DEFAULT_SETTINGS: Settings = {
@@ -29,11 +33,27 @@ export const DEFAULT_SETTINGS: Settings = {
   active: [],
   disabledSites: [],
   isPro: false,
+  installedAt: 0,
+  ratingPrompt: 'pending',
 };
+
+/**
+ * Payments aren't live yet. Until they are, the "one series at a time" note stays
+ * hidden, so nobody is told about an upgrade they can't buy. Flip with ExtensionPay.
+ */
+export const PAYMENTS_ENABLED = false;
 
 /** The paid-tier gate. Free users shield one series at a time. */
 export function maxActiveSeries(isPro: boolean): number {
   return isPro ? Infinity : 1;
+}
+
+/** Show the rating prompt only once, to people who have used Loreward for a week. */
+export const RATING_PROMPT_AFTER_DAYS = 7;
+export function shouldShowRatingPrompt(settings: Settings, now: number): boolean {
+  if (settings.ratingPrompt !== 'pending' || !settings.installedAt) return false;
+  if (settings.active.length === 0) return false; // hasn't set up yet; nothing to rate
+  return now - settings.installedAt >= RATING_PROMPT_AFTER_DAYS * 24 * 60 * 60 * 1000;
 }
 
 export function findSeries(id: string, all: SeriesData[] = ALL_SERIES): SeriesData | undefined {

@@ -2,7 +2,8 @@
 // and "reveal all on this page".
 
 import { ALL_SERIES } from '../generated/series-index';
-import { loadSettings, saveSettings, findSeries, maxActiveSeries, type Settings } from '../core/settings';
+import { loadSettings, saveSettings, findSeries, maxActiveSeries, shouldShowRatingPrompt, PAYMENTS_ENABLED, type Settings } from '../core/settings';
+import { REVIEWS_URL } from '../core/links';
 import { renderPickers, pickSeries, pickBook } from '../ui/pickers';
 import type { Request, StatusReply, RevealAllReply } from '../core/messages';
 
@@ -12,6 +13,10 @@ const seriesEl = $<HTMLSelectElement>('series');
 const bookEl = $<HTMLSelectElement>('book');
 const draftNote = $('draft-note');
 const tierNote = $('tier-note');
+const rateEl = $('rate');
+const rateLink = $<HTMLAnchorElement>('rate-link');
+const rateDismiss = $<HTMLButtonElement>('rate-dismiss');
+rateLink.href = REVIEWS_URL;
 const siteStatus = $('site-status');
 const siteControls = $('site-controls');
 const siteName = $('site-name');
@@ -31,7 +36,8 @@ function render() {
   const series = current ? findSeries(current.seriesId) : undefined;
 
   draftNote.hidden = !series || series.verified;
-  tierNote.hidden = ALL_SERIES.length < 2 || maxActiveSeries(settings.isPro) > 1;
+  tierNote.hidden = !PAYMENTS_ENABLED || ALL_SERIES.length < 2 || maxActiveSeries(settings.isPro) > 1;
+  rateEl.hidden = !shouldShowRatingPrompt(settings, Date.now());
 
   if (site) {
     siteName.textContent = site.siteName;
@@ -81,6 +87,10 @@ siteEnabled.addEventListener('change', () => {
   const others = settings.disabledSites.filter((s) => s !== site!.siteId);
   save({ disabledSites: siteEnabled.checked ? others : [...others, site.siteId] });
 });
+
+// Either choice retires the rating prompt for good.
+rateLink.addEventListener('click', () => save({ ratingPrompt: 'done' }));
+rateDismiss.addEventListener('click', () => save({ ratingPrompt: 'done' }));
 
 revealBtn.addEventListener('click', async () => {
   await sendToTab<RevealAllReply>({ type: 'ss:revealAll' });

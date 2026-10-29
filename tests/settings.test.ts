@@ -38,3 +38,23 @@ describe('effectiveActive cleanup', () => {
     expect(effectiveActive(s, all)[0].currentBook).toBe(3);
   });
 });
+
+import { shouldShowRatingPrompt } from '../src/core/settings';
+
+describe('rating prompt timing', () => {
+  const DAY = 24 * 60 * 60 * 1000;
+  const base = { ...DEFAULT_SETTINGS, active: [{ seriesId: 'a', currentBook: 1 }], installedAt: 1_000_000 };
+  it('waits a week after install', () => {
+    expect(shouldShowRatingPrompt(base, base.installedAt + 6 * DAY)).toBe(false);
+    expect(shouldShowRatingPrompt(base, base.installedAt + 7 * DAY)).toBe(true);
+  });
+  it('never shows again once clicked or dismissed', () => {
+    expect(shouldShowRatingPrompt({ ...base, ratingPrompt: 'done' }, base.installedAt + 30 * DAY)).toBe(false);
+  });
+  it('not for people who never set up a series', () => {
+    expect(shouldShowRatingPrompt({ ...base, active: [] }, base.installedAt + 30 * DAY)).toBe(false);
+  });
+  it('not when the install date is unknown', () => {
+    expect(shouldShowRatingPrompt({ ...base, installedAt: 0 }, 30 * DAY)).toBe(false);
+  });
+});
