@@ -66,6 +66,12 @@ for a later-book name.
 - [ ] Picking a series + book there shows "✓ Saved", and Reddit/Google blur immediately (no reload needed).
 - [ ] Reloading an already-installed extension does **not** open the welcome tab again.
 
+### Second series and context-only names (0.2.0)
+
+- [ ] Popup and welcome page list both series; switching series takes effect without a reload.
+- [ ] Mistborn on book 1: a post naming a later Mistborn character is blurred; "Kelsier" (book 1) is not.
+- [ ] "Zane" is blurred on r/Mistborn, but not in an unrelated subreddit (e.g. a post about Zane Lowe).
+
 ### Popup
 
 - [ ] Series → book → the blur updates **without reloading** the page.

@@ -152,12 +152,13 @@ export class Shield {
   private judge(unit: Element, text: string): Verdict {
     const verdict = (kind: Kind, m: ActiveMatcher) => ({ kind, text: LABELS[kind](m) });
     // Labels never name the matched term or book: that would be the spoiler.
+    const context = this.pageContext();
     for (const m of this.matchers) {
-      if (m.matcher.findSpoiler(text)) return verdict('term', m);
+      const inContext = m.isRelevant(context) || m.isRelevant(text);
+      if (m.matcher.findSpoiler(text, inContext)) return verdict('term', m);
     }
     const books = this.adapter.bookMentionSelector;
     if (books && unit.matches(books)) {
-      const context = this.pageContext();
       for (const m of this.matchers) {
         // Only on pages/units about the series, so "OB" in "OB/GYN" never counts.
         if (!m.isRelevant(context) && !m.isRelevant(text)) continue;
@@ -170,7 +171,6 @@ export class Shield {
     // Empty AI containers (not loaded / not expanded yet) are left alone;
     // they're checked the moment text arrives (see onMutations).
     if (ai && unit.matches(ai) && text.trim()) {
-      const context = this.pageContext();
       for (const m of this.matchers) {
         if (m.isRelevant(context) || m.isRelevant(text)) return verdict('maybe', m);
       }

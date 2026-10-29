@@ -23,6 +23,12 @@ export interface Term {
   caseSensitive?: boolean;
   /** How sure we are about introducedIn. Every term needs human review before release. */
   confidence: Confidence;
+  /**
+   * Only match on pages clearly about the series (a series subreddit, a search about it,
+   * or text that also names another term/character/book). For names that are also
+   * common words or names elsewhere, e.g. "Zane".
+   */
+  needsContext?: boolean;
   /** True when introducedIn was checked against the series wiki. */
   wikiChecked?: boolean;
   notes?: string;

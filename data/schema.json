@@ -115,6 +115,10 @@
             "type": "boolean",
             "description": "Defaults to true for character/place, false for event/concept. Set true for names that are also everyday words (e.g. 'Veil'); set false for distinctive names fans often type in lowercase."
           },
+          "needsContext": {
+            "type": "boolean",
+            "description": "Only match on pages clearly about the series: a series subreddit, a search about it, or text that also names another term, character or book. Use for names that are common words or names elsewhere (e.g. 'Zane')."
+          },
           "confidence": {
             "enum": [
               "high",

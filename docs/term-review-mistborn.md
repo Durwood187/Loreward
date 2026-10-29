@@ -1,6 +1,6 @@
 # Mistborn term list: review notes
 
-**Status:** 170 terms across Era 1 and Era 2, drafted by AI and checked against the Coppermind wiki
+**Status (verified):** 170 terms across Era 1 and Era 2, drafted by AI and checked against the Coppermind wiki
 (115 confirmed by the wiki's "Introduced In" field; the rest placed from the pages and summaries the wiki
 cites). Same rules as Stormlight (`docs/term-review.md`): when unsure, the later book; "mentioned early, matters
 later" uses the book where it matters; names revealed later use the book where the *name* appears.
@@ -15,7 +15,7 @@ Terms per book: The Well of Ascension 17, The Hero of Ages 24, The Alloy of Law 
 - Dropped alias **Roughs** from The Roughs (everyday word)
 - Moved **Trell** 4 → 6 (named in passing in book 4; matters from book 6, per rule 2)
 - Dropped alias **Wax** from Waxillium Ladrian (everyday word)
-- Dropped **Wayne**: common first name (John Wayne, Bruce Wayne)
+- **Wayne**: first dropped as a common name; restored as context-only (see below)
 - Dropped **Rian**: common first name
 - Dropped **Shayna**: common first name
 - Dropped alias **Devlin** from Devlin Airs (everyday word)
@@ -27,12 +27,17 @@ Terms per book: The Well of Ascension 17, The Hero of Ages 24, The Alloy of Law 
 - Narrowed **Silverlight** to "Silverlight Mercantile" (bare word is a Microsoft product)
 - **Harmony** is left out: it's on the allowlist (too common a word on its own).
 
-## Your calls (2)
+## Decided by Eric (Oct 2026)
 
-1. **Zane** (*The Well of Ascension*): a major book-2 character, but also a common first name, so posts
-   about any Zane would be blurred for readers on book 1. Keep or drop?
-2. **Daal** (*The Lost Metal*): a book-8 name, but also a common spelling of the lentil dish (recipe titles
-   start with "Daal…"). Keep or drop?
+Both names became **context-only** terms (new `needsContext` setting): they only blur on pages clearly
+about Mistborn, i.e. a Mistborn/Cosmere subreddit, a search about the series, or a post that also names
+another Mistborn term, character or book.
+
+1. **Zane:** kept, context-only.
+2. **Daal:** kept, context-only (instead of dropping it), so recipe pages are safe.
+3. **Wayne** (dropped earlier as a common name) is back, context-only.
+
+With these settled, the file is marked `"verified": true`.
 
 ## Conflicts resolved by the later-book rule (no action needed)
 

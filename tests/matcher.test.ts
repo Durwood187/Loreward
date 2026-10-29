@@ -245,3 +245,35 @@ describe('compileBookMentions (which books does this text name?)', () => {
     expect(named("Oathbringer's ending")).toEqual([3]);
   });
 });
+
+describe('needsContext terms (common names elsewhere)', () => {
+  const s: SeriesData = {
+    ...series,
+    allowlist: [],
+    keywords: ['Mistborn'],
+    terms: [
+      { term: 'Zane', introducedIn: 2, type: 'character', needsContext: true, confidence: 'high' },
+      { term: 'Elend', introducedIn: 1, type: 'character', confidence: 'high' },
+      { term: 'Raboniel', introducedIn: 3, type: 'character', confidence: 'high' },
+    ],
+  };
+  const m = compileMatcher(s, 1);
+  const about = compileRelevance(s);
+  it('does not match without context', () => {
+    expect(m.findSpoiler('Zane Lowe has a new show')).toBeNull();
+    expect(m.findSpoiler('Zane Lowe has a new show', false)).toBeNull();
+  });
+  it('matches when the caller says the page is about the series', () => {
+    expect(m.findSpoiler('Zane is my favorite villain', true)?.term).toBe('Zane');
+  });
+  it('ordinary terms still match without context', () => {
+    expect(m.findSpoiler('Raboniel')?.term).toBe('Raboniel');
+  });
+  it('a context-only term does not make text "about the series" by itself', () => {
+    expect(about('Zane is great')).toBe(false);
+    expect(about('Zane and Elend')).toBe(true); // another series name provides the context
+  });
+  it('counts context-only terms as blocked terms', () => {
+    expect(m.blockedTermCount).toBe(2);
+  });
+});

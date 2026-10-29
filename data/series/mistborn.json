@@ -3,7 +3,7 @@
   "id": "mistborn",
   "name": "Mistborn (compatible)",
   "shortName": "Mistborn",
-  "verified": false,
+  "verified": true,
   "books": [
     {
       "index": 1,
@@ -291,9 +291,10 @@
       "introducedIn": 2,
       "type": "character",
       "caseSensitive": true,
+      "needsContext": true,
       "confidence": "high",
       "wikiChecked": true,
-      "notes": "Wiki alias 'The Watcher' omitted (too generic)."
+      "notes": "Wiki alias 'The Watcher' omitted (too generic). Context-only (Eric, Oct 2026): common name elsewhere, so it only blurs on pages about Mistborn."
     },
     {
       "term": "Aradan Yomen",
@@ -805,18 +806,6 @@
       "wikiChecked": true
     },
     {
-      "term": "Trell",
-      "aliases": [
-        "Trellism",
-        "Trellist"
-      ],
-      "introducedIn": 6,
-      "type": "concept",
-      "caseSensitive": true,
-      "confidence": "medium",
-      "wikiChecked": true
-    },
-    {
       "term": "Twinborn",
       "introducedIn": 4,
       "type": "concept",
@@ -836,6 +825,16 @@
       "caseSensitive": true,
       "confidence": "high",
       "wikiChecked": true
+    },
+    {
+      "term": "Wayne",
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": false,
+      "notes": "Era 2 main character. Context-only: Wayne is a common name (John Wayne, Bruce Wayne)."
     },
     {
       "term": "Words of Founding",
@@ -1400,6 +1399,18 @@
       "notes": "Southern name for the Lord Ruler."
     },
     {
+      "term": "Trell",
+      "aliases": [
+        "Trellism",
+        "Trellist"
+      ],
+      "introducedIn": 6,
+      "type": "concept",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
       "term": "Unsealed metalmind",
       "aliases": [
         "unkeyed metalmind",
@@ -1591,9 +1602,10 @@
       "introducedIn": 8,
       "type": "character",
       "caseSensitive": true,
+      "needsContext": true,
       "confidence": "medium",
       "wikiChecked": false,
-      "notes": "Malwish admiral/ambassador."
+      "notes": "Malwish admiral/ambassador. Context-only (Eric, Oct 2026): common name elsewhere, so it only blurs on pages about Mistborn."
     },
     {
       "term": "Dawnshot",
@@ -1673,18 +1685,6 @@
       "caseSensitive": false,
       "confidence": "high",
       "wikiChecked": true
-    },
-    {
-      "term": "Wan ShaiLu",
-      "aliases": [
-        "Shay-I"
-      ],
-      "introducedIn": 8,
-      "type": "character",
-      "caseSensitive": true,
-      "confidence": "high",
-      "wikiChecked": false,
-      "notes": "Shai from The Emperor's Soul; first Mistborn appearance book 8. Wiki fetch failed."
     },
     {
       "term": "Pewternauts A16",
@@ -1809,6 +1809,18 @@
       "confidence": "medium",
       "wikiChecked": false,
       "notes": "Governor in book 8."
+    },
+    {
+      "term": "Wan ShaiLu",
+      "aliases": [
+        "Shay-I"
+      ],
+      "introducedIn": 8,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": false,
+      "notes": "Shai from The Emperor's Soul; first Mistborn appearance book 8. Wiki fetch failed."
     },
     {
       "term": "Wayne's death",

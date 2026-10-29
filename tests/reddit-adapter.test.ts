@@ -240,3 +240,37 @@ describe.each([
       .toBe(' r Stormlight Archive comments 1x i cant understand ');
   });
 });
+
+describe('context-only terms on Reddit (reader on book 1)', () => {
+  const mb: SeriesData = {
+    id: 'mb', name: 'MB', verified: true, allowlist: [], keywords: ['Mistborn', 'Elend'],
+    books: [1, 2, 3].map((index) => ({ index, title: `MB Book ${index}` })),
+    terms: [{ term: 'Zane', introducedIn: 2, type: 'character', needsContext: true, confidence: 'high' }],
+  };
+  const on1 = [{
+    bookTitle: 'MB Book 1', currentBook: 1, seriesName: 'MB',
+    matcher: compileMatcher(mb, 1), isRelevant: compileRelevance(mb), booksMentioned: compileBookMentions(mb),
+  }];
+  let shield: Shield;
+  function load(text: string, path: string) {
+    useDocument(loadFixture('reddit-new.html'));
+    unitOf('c-parent-safe').querySelector('p')!.textContent = text;
+    const context = redditAdapter.pageContext!({ pathname: path } as Location);
+    shield = new Shield(redditAdapter, document, () => context);
+    shield.configure(on1, true);
+  }
+  afterEach(() => shield.stop());
+
+  it('blurs "Zane" in a Mistborn subreddit', () => {
+    load('Zane is my favorite villain', '/r/Mistborn/comments/abc/x/');
+    expect(unitOf('c-parent-safe').getAttribute('data-ss-state')).toBe('blocked');
+  });
+  it('blurs "Zane" anywhere when the comment also mentions the series', () => {
+    load('Zane vs Elend was the best fight', '/r/Fantasy/comments/abc/x/');
+    expect(unitOf('c-parent-safe').getAttribute('data-ss-state')).toBe('blocked');
+  });
+  it('leaves other Zanes alone', () => {
+    load('Zane Lowe interviewed them last week', '/r/Music/comments/abc/x/');
+    expect(unitOf('c-parent-safe').getAttribute('data-ss-state')).toBe(null);
+  });
+});

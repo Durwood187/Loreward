@@ -25,8 +25,12 @@ export interface MatchHit {
 }
 
 export interface CompiledMatcher {
-  /** Returns the first blocked term found in the text, or null if the text is safe. */
-  findSpoiler(text: string): MatchHit | null;
+  /**
+   * Returns the first blocked term found in the text, or null if the text is safe.
+   * Terms marked needsContext only count when `inContext` is true (the page or
+   * text is clearly about the series).
+   */
+  findSpoiler(text: string, inContext?: boolean): MatchHit | null;
   /** How many terms are being blocked at this setting (handy for tests and the popup). */
   blockedTermCount: number;
 }
@@ -73,17 +77,34 @@ function buildRegex(variants: string[], caseSensitive: boolean): RegExp | null {
  */
 export function compileMatcher(series: SeriesData, currentBook: number): CompiledMatcher {
   const allow = new Set(series.allowlist.map((w) => w.toLowerCase()));
+  const blocked = series.terms.filter((t) => t.introducedIn > currentBook);
 
+  // Two groups: ordinary terms, and "needsContext" terms that only count on a
+  // page that's clearly about the series (e.g. "Zane", also a common first name).
+  const plain = buildGroup(blocked.filter((t) => !t.needsContext), allow);
+  const contextual = buildGroup(blocked.filter((t) => t.needsContext), allow);
+
+  return {
+    blockedTermCount: plain.usableTerms + contextual.usableTerms,
+    findSpoiler(text: string, inContext = false): MatchHit | null {
+      if (!text) return null;
+      const normalized = text.normalize('NFC');
+      return plain.find(normalized) ?? (inContext ? contextual.find(normalized) : null);
+    },
+  };
+}
+
+/** Compiles a set of terms into (at most) two regexes: case-sensitive and not. */
+function buildGroup(terms: Term[], allow: Set<string>) {
   // Lookup from the matched text back to its term. Keys are normalized:
   // exact spelling for case-sensitive variants, lowercase for the rest.
   const exactLookup = new Map<string, Term>();
   const foldedLookup = new Map<string, Term>();
   const exactVariants: string[] = [];
   const foldedVariants: string[] = [];
-  let blockedTermCount = 0;
+  let usableTerms = 0;
 
-  for (const term of series.terms) {
-    if (term.introducedIn <= currentBook) continue;
+  for (const term of terms) {
     const cs = isCaseSensitive(term);
     let usable = 0;
     for (const raw of [term.term, ...(term.aliases ?? [])]) {
@@ -98,7 +119,7 @@ export function compileMatcher(series: SeriesData, currentBook: number): Compile
       if (!existing || term.introducedIn < existing.introducedIn) lookup.set(key, term);
       list.push(variant);
     }
-    if (usable > 0) blockedTermCount++;
+    if (usable > 0) usableTerms++;
   }
 
   const exactRe = buildRegex(exactVariants, true);
@@ -116,15 +137,8 @@ export function compileMatcher(series: SeriesData, currentBook: number): Compile
   }
 
   return {
-    blockedTermCount,
-    findSpoiler(text: string): MatchHit | null {
-      if (!text) return null;
-      const normalized = text.normalize('NFC');
-      return (
-        firstHit(exactRe, normalized, exactLookup, false) ??
-        firstHit(foldedRe, normalized, foldedLookup, true)
-      );
-    },
+    usableTerms,
+    find: (text: string) => firstHit(exactRe, text, exactLookup, false) ?? firstHit(foldedRe, text, foldedLookup, true),
   };
 }
 
@@ -139,7 +153,8 @@ export function compileRelevance(series: SeriesData): (text: string) => boolean 
   const words = [
     ...(series.keywords ?? []),
     ...series.books.flatMap((b) => [b.title, b.title.replace(/^the\s+/i, '')]),
-    ...series.terms.flatMap((t) => [t.term, ...(t.aliases ?? [])]),
+    // needsContext terms are left out: otherwise "Zane" would vouch for itself.
+    ...series.terms.filter((t) => !t.needsContext).flatMap((t) => [t.term, ...(t.aliases ?? [])]),
   ]
     .map(normalizeSpaces)
     .filter((w) => w && !allow.has(w.toLowerCase()));
