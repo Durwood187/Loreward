@@ -1,0 +1,9 @@
+# GitHub Pages settings (Settings → Pages → Deploy from branch → main /docs).
+title: Loreward
+description: Book spoiler blocker for Reddit and Google, including Google's AI answers.
+# Internal project notes stay on GitHub but aren't part of the public site.
+exclude:
+  - PUBLISHING.md
+  - ROADMAP.md
+  - term-review.md
+  - store/listing.md

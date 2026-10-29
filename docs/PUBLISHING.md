@@ -71,3 +71,25 @@ The listing text you'll paste is in `docs/store/listing.md`, and the images are 
 2. `npm run package` → upload the new zip on the item's **Package** tab → **Submit for review**.
 3. Adding a new site (YouTube, say) adds a permission. Chrome will ask existing users to approve it,
    and some will skip that, so batch new sites into fewer releases.
+
+## Microsoft Edge (same zip, free)
+
+1. Go to Microsoft Partner Center (https://partner.microsoft.com/dashboard/microsoftedge/overview)
+   and register as an Edge extension developer. It's free; use durwood.extensions@gmail.com.
+2. **Create new extension** → upload the same `loreward-<version>.zip`.
+3. Fill in the listing from `docs/store/listing.md`. The fields are nearly the same as Chrome's, and
+   the same screenshots and icon work.
+4. Submit. Edge reviews separately, so expect a few business days. Updates work the same way:
+   upload the new zip and resubmit.
+
+## Website (GitHub Pages, free)
+
+The `docs/` folder doubles as a small public site: a landing page and the
+"How to stop Google's AI from spoiling books" article, which can bring in readers through Google search.
+
+1. Replace `STORE_LINK` and `<your-username>` in `docs/index.md` and `docs/stop-google-ai-spoilers.md`
+   (Claude can do this once you share the links).
+2. On GitHub: **Settings → Pages → Build and deployment → Deploy from a branch** → `main` / `/docs` → Save.
+3. After a minute or two, the site is at `https://<your-username>.github.io/Loreward/`, and the article
+   at `.../stop-google-ai-spoilers`.
+4. Put the site address in the Chrome listing's **Homepage URL**.
