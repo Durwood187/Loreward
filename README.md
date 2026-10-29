@@ -1,11 +1,15 @@
 # Loreward
 
-A Chrome extension (Manifest V3) for fantasy readers. You pick a series and the
-book you're on, and it blurs posts and comments on supported sites that mention
-names, places or events from *later* books.
+**Book spoiler shield for Reddit and Google, including Google's AI answers.**
+Pick your series and the book you're on, and Loreward blurs anything online that could spoil
+what comes next. Everything runs in your browser ([privacy policy](PRIVACY.md)).
 
-v1: one series (compatible with *The Stormlight Archive*), one site (Reddit).
-100% local: no network calls, no analytics, no remote code.
+*Chrome Web Store link: coming soon.*
+
+- **Sites:** Reddit (new and old), Google search (results, AI Overview, People also ask).
+- **Series:** The Stormlight Archive. More are planned (see `docs/ROADMAP.md`).
+- **How it's built:** Chrome extension (Manifest V3), plain TypeScript, esbuild. 100% local:
+  no network calls, no analytics, no remote code.
 
 ## Setup
 
@@ -34,8 +38,8 @@ icon on the extension's card.
 | `scripts/build.mjs` | The whole build: bundles data, bundles scripts with esbuild, copies files to `dist/`. |
 | `tests/` | Vitest tests; `tests/fixtures/` holds saved HTML so adapters can be tested offline. |
 
-See `TESTING.md` for the manual checklist and `PERMISSIONS.md` for the store-listing
-permission justifications.
+See `TESTING.md` for the manual checklist, `PERMISSIONS.md` for the permission justifications,
+and `docs/PUBLISHING.md` for how to ship a release (`npm run package` builds the zip).
 
 ## About the term data
 

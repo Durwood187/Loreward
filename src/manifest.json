@@ -3,7 +3,7 @@
   "name": "Loreward: Book Spoiler Shield",
   "short_name": "Loreward",
   "version": "0.1.0",
-  "description": "Blurs posts that may spoil the book series you're reading, based on how far you've read. Works offline; no data leaves your browser.",
+  "description": "Hides book spoilers on Reddit and Google search, including Google's AI answers, based on how far you've read. 100% private.",
   "permissions": [
     "storage"
   ],

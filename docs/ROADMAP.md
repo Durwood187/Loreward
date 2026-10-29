@@ -1,9 +1,9 @@
 # Roadmap
 
 ## Now: first release (free, one series)
-1. ✅ Name: **Loreward** (store title "Loreward: Book Spoiler Shield"). Icon to match.
-2. First-run setup, so a new install asks for series + book instead of silently doing nothing.
-3. Chrome Web Store listing: description, screenshots, privacy section (see PERMISSIONS.md).
+1. ✅ Name: **Loreward** (store title "Loreward: Book Spoiler Shield"). ✅ Icon.
+2. ✅ First-run setup: a welcome tab on install.
+3. ✅ Store listing package: `docs/store/` + `docs/PUBLISHING.md`.
 4. Submit. While it's in review, start the next series.
 
 ## Then
