@@ -3,7 +3,7 @@
   "id": "realm-of-the-elderlings",
   "name": "Realm of the Elderlings (compatible)",
   "shortName": "Realm of the Elderlings",
-  "verified": false,
+  "verified": true,
   "books": [
     {
       "index": 1,

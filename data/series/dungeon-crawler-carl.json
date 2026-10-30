@@ -3,7 +3,7 @@
   "id": "dungeon-crawler-carl",
   "name": "Dungeon Crawler Carl (compatible)",
   "shortName": "Dungeon Crawler Carl",
-  "verified": false,
+  "verified": true,
   "books": [
     {
       "index": 1,
