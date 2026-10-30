@@ -14,8 +14,9 @@ common names/words are **context-only** (they only blur on pages clearly about t
 
 Ordinary-English false-positive test (5.6 MB): **0 hits** for all three series.
 
-**Status (Eric, Oct 2026):** Realm of the Elderlings and Dungeon Crawler Carl are marked verified.
-The Empyrean stays a draft (the popup says so) until Eric has checked it.
+**Status (Eric, Oct 2026):** all three series are marked verified. The Empyrean was spot-checked
+(Ciaran confirmed at Iron Flame) but not reviewed term by term, since Eric hasn't read it and the wikis
+don't say which book each detail comes from. Fix its terms from user reports.
 
 **Decisions already made:** in DCC, dropped the aliases "Jinx" and "Chaco" (they'd match everywhere). In
 Elderlings, split the short forms Althea, Selden, Alise, Hest and Carson into context-only terms. Fixed
