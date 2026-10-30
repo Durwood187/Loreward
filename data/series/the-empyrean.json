@@ -132,8 +132,9 @@
       "type": "character",
       "caseSensitive": true,
       "needsContext": true,
-      "confidence": "low",
-      "wikiChecked": true
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Background in Fourth Wing; dies early in Iron Flame (checked by Eric against the fan wiki)"
     },
     {
       "term": "Cliffsbane",
