@@ -14,9 +14,12 @@ common names/words are **context-only** (they only blur on pages clearly about t
 
 Ordinary-English false-positive test (5.6 MB): **0 hits** for all three series.
 
-**Status (Eric, Oct 2026):** all three series are marked verified. The Empyrean was spot-checked
-(Ciaran confirmed at Iron Flame) but not reviewed term by term, since Eric hasn't read it and the wikis
-don't say which book each detail comes from. Fix its terms from user reports.
+**Status (Eric, Oct 2026):** all three series are marked verified. The Empyrean was checked against
+the-empyrean-series.fandom.com (each page's "appears in" list and per-book sections). That moved
+Quinn, Cruth, Grady, Trager and Berwyn to Onyx Storm (their deaths or survival are Onyx Storm
+spoilers); moved Lynx, Avalynn and Kiandra to Iron Flame; moved Fitzgibbons, Afendra and Asher
+Sorrengail to Fourth Wing (named there, nothing to spoil); and added "Duchess of Tyrrendor" to Violet
+Riorson. Hedley, Iris Drue, Dalton Sisneros, Kaveh and criterion have no wiki page and are unchecked.
 
 **Decisions already made:** in DCC, dropped the aliases "Jinx" and "Chaco" (they'd match everywhere). In
 Elderlings, split the short forms Althea, Selden, Alise, Hest and Carson into context-only terms. Fixed

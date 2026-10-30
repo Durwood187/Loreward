@@ -106,12 +106,12 @@
     },
     {
       "term": "Berwyn",
-      "introducedIn": 2,
+      "introducedIn": 3,
       "type": "character",
       "caseSensitive": false,
-      "confidence": "medium",
+      "confidence": "high",
       "wikiChecked": true,
-      "notes": "Venin Sage; IF; survival + Xaden's Sage revealed OS"
+      "notes": "The Sage; at Resson in FW, his survival is revealed in OS (checked against the-empyrean-series.fandom.com, Oct 2026)"
     },
     {
       "term": "Catriona",
@@ -159,12 +159,12 @@
     },
     {
       "term": "Cruth",
-      "introducedIn": 2,
+      "introducedIn": 3,
       "type": "character",
       "caseSensitive": false,
-      "confidence": "low",
-      "wikiChecked": false,
-      "notes": "Quinn's dragon"
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Quinn's dragon; mostly discussed around Quinn's death in OS (checked against the-empyrean-series.fandom.com, Oct 2026)"
     },
     {
       "term": "Drake Cordella",
@@ -192,13 +192,13 @@
       "aliases": [
         "Professor Grady"
       ],
-      "introducedIn": 2,
+      "introducedIn": 3,
       "type": "character",
       "caseSensitive": true,
       "needsContext": true,
-      "confidence": "medium",
-      "wikiChecked": false,
-      "notes": "RSC professor; dies in OS"
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "RSC professor from IF; burned to death by Aura in OS (checked against the-empyrean-series.fandom.com, Oct 2026)"
     },
     {
       "term": "Halden",
@@ -305,12 +305,13 @@
       "aliases": [
         "Quinn Hollis"
       ],
-      "introducedIn": 2,
+      "introducedIn": 3,
       "type": "character",
       "caseSensitive": true,
       "needsContext": true,
-      "confidence": "medium",
-      "wikiChecked": false
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "In FW and IF; killed in the Battle of Draithus in Onyx Storm (checked against the-empyrean-series.fandom.com, Oct 2026)"
     },
     {
       "term": "Riorson House",
@@ -404,13 +405,13 @@
     },
     {
       "term": "Trager",
-      "introducedIn": 2,
+      "introducedIn": 3,
       "type": "character",
       "caseSensitive": true,
       "needsContext": true,
-      "confidence": "medium",
-      "wikiChecked": false,
-      "notes": "Flier mender, Maren's brother; dies in OS"
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Flier mender from IF; shot and killed in OS (checked against the-empyrean-series.fandom.com, Oct 2026)"
     },
     {
       "term": "Trissa",
@@ -435,12 +436,12 @@
     },
     {
       "term": "Asher Sorrengail",
-      "introducedIn": 3,
+      "introducedIn": 1,
       "type": "character",
       "caseSensitive": false,
-      "confidence": "medium",
+      "confidence": "high",
       "wikiChecked": true,
-      "notes": "Violet's father named"
+      "notes": "Violet's late father, named in Fourth Wing (checked against the-empyrean-series.fandom.com, Oct 2026)"
     },
     {
       "term": "asim",
@@ -457,19 +458,21 @@
     },
     {
       "term": "Avalynn",
-      "introducedIn": 3,
+      "introducedIn": 2,
       "type": "character",
       "caseSensitive": false,
-      "confidence": "low",
-      "wikiChecked": true
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "First-year in Iron Flame; bonds at Threshing (checked against the-empyrean-series.fandom.com, Oct 2026)"
     },
     {
       "term": "Captain Fitzgibbons",
-      "introducedIn": 3,
+      "introducedIn": 1,
       "type": "character",
       "caseSensitive": false,
-      "confidence": "low",
-      "wikiChecked": true
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Minor figure already in Fourth Wing; nothing to spoil (checked against the-empyrean-series.fandom.com, Oct 2026)"
     },
     {
       "term": "Caroline Ashton",
@@ -638,12 +641,12 @@
       "aliases": [
         "Professor Kiandra"
       ],
-      "introducedIn": 3,
+      "introducedIn": 2,
       "type": "character",
       "caseSensitive": false,
-      "confidence": "low",
+      "confidence": "high",
       "wikiChecked": true,
-      "notes": "Flier professor"
+      "notes": "Flier professor from Iron Flame (checked against the-empyrean-series.fandom.com, Oct 2026)"
     },
     {
       "term": "King Tecarus",
@@ -664,12 +667,13 @@
     },
     {
       "term": "Lynx",
-      "introducedIn": 3,
+      "introducedIn": 2,
       "type": "character",
       "caseSensitive": true,
       "needsContext": true,
-      "confidence": "medium",
-      "wikiChecked": true
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "First-year in Iron Flame (checked against the-empyrean-series.fandom.com, Oct 2026)"
     },
     {
       "term": "Lyron Panchek",
@@ -682,11 +686,12 @@
     },
     {
       "term": "Major Afendra",
-      "introducedIn": 3,
+      "introducedIn": 1,
       "type": "character",
       "caseSensitive": false,
-      "confidence": "low",
-      "wikiChecked": true
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Author of the Riders Quadrant guide, quoted from Fourth Wing (checked against the-empyrean-series.fandom.com, Oct 2026)"
     },
     {
       "term": "Maven",
@@ -752,7 +757,10 @@
       "caseSensitive": false,
       "confidence": "medium",
       "wikiChecked": false,
-      "notes": "Marriage reveal at OS end"
+      "notes": "Marriage reveal at OS end",
+      "aliases": [
+        "Duchess of Tyrrendor"
+      ]
     },
     {
       "term": "Zehyllna",
