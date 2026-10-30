@@ -14,9 +14,10 @@
 Ongoing series (new books coming, active fandoms) first; long-finished classics last.
 1. The Stormlight Archive ✅
 2. Mistborn ✅ (0.2.0)
-3. Rest of the Cosmere (each book/series gets its own progress setting)
-4. Fourth Wing (The Empyrean). Eric hasn't read it, so the review list leans on the wiki check.
-5. Dungeon Crawler Carl
+3. Rest of the Cosmere: deferred. Mostly standalones, which need chapter-level progress to protect well.
+   Realm of the Elderlings ✅ (0.3.0, requested by a creator)
+4. Fourth Wing (The Empyrean) ✅ (0.3.0)
+5. Dungeon Crawler Carl ✅ (0.3.0)
 6. Red Rising
 7. Empire of the Vampire
 8. Harry Potter

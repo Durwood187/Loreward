@@ -1,0 +1,1324 @@
+{
+  "$schema": "../schema.json",
+  "id": "dungeon-crawler-carl",
+  "name": "Dungeon Crawler Carl (compatible)",
+  "shortName": "Dungeon Crawler Carl",
+  "verified": false,
+  "books": [
+    {
+      "index": 1,
+      "title": "Dungeon Crawler Carl",
+      "kind": "novel"
+    },
+    {
+      "index": 2,
+      "title": "Carl's Doomsday Scenario",
+      "kind": "novel"
+    },
+    {
+      "index": 3,
+      "title": "The Dungeon Anarchist's Cookbook",
+      "kind": "novel"
+    },
+    {
+      "index": 4,
+      "title": "The Gate of the Feral Gods",
+      "kind": "novel"
+    },
+    {
+      "index": 5,
+      "title": "The Butcher's Masquerade",
+      "kind": "novel"
+    },
+    {
+      "index": 6,
+      "title": "The Eye of the Bedlam Bride",
+      "kind": "novel"
+    },
+    {
+      "index": 7,
+      "title": "This Inevitable Ruin",
+      "kind": "novel"
+    },
+    {
+      "index": 8,
+      "title": "A Parade of Horribles",
+      "kind": "novel"
+    }
+  ],
+  "allowlist": [
+    "Crawler",
+    "Crawlers",
+    "Floor",
+    "Level",
+    "Boss",
+    "Princess",
+    "Donut",
+    "Dungeon",
+    "System",
+    "Show",
+    "Sponsor",
+    "Sponsors",
+    "Guild",
+    "Club",
+    "Stairwell",
+    "Safe Room"
+  ],
+  "keywords": [
+    "Dungeon Crawler Carl",
+    "Princess Donut",
+    "Carl and Donut",
+    "Matt Dinniman",
+    "Dinniman",
+    "Borant",
+    "Borant Corporation",
+    "Kua-tin",
+    "Hob-lobber",
+    "Brindle Grub",
+    "Crawler Assisted Outreach Program"
+  ],
+  "terms": [
+    {
+      "term": "Brynhild's Daughters",
+      "introducedIn": 2,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Compensated Anarchist",
+      "introducedIn": 2,
+      "type": "concept",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Carl's class (classes chosen at floor 3)."
+    },
+    {
+      "term": "Daniel Bautista",
+      "aliases": [
+        "Bautista"
+      ],
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Desperado Club",
+      "introducedIn": 2,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Former Child Actor",
+      "introducedIn": 2,
+      "type": "concept",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Donut's class."
+    },
+    {
+      "term": "Grimaldi",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Common surname (clown, Monaco royals)."
+    },
+    {
+      "term": "GumGum",
+      "aliases": [
+        "Gum Gum"
+      ],
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Heather the Bear",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Hekla",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Also an Icelandic volcano. Dies in book 3."
+    },
+    {
+      "term": "Katia Grim",
+      "aliases": [
+        "Katia"
+      ],
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Doppelganger; joins party in book 2. 'Katia' alone is a common name."
+    },
+    {
+      "term": "King Rust",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Krasue",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Thai folklore spirit; monsters made from murdered sex workers."
+    },
+    {
+      "term": "Lucia Mar",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Not in book-1 guide; possibly leaderboard-mentioned in book 1."
+    },
+    {
+      "term": "Magistrate Featherfall",
+      "aliases": [
+        "Featherfall"
+      ],
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Miss Quill",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Secret killer in the skyfowl settlement."
+    },
+    {
+      "term": "Monster Truck Driver",
+      "introducedIn": 2,
+      "type": "concept",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Over City",
+      "introducedIn": 2,
+      "type": "place",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Floor 3."
+    },
+    {
+      "term": "Prince Stalwart",
+      "aliases": [
+        "Stalwart"
+      ],
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Remex",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Also an ornithology term (flight feather)."
+    },
+    {
+      "term": "Ripper Wonton",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Signet",
+      "aliases": [
+        "Tsarina Signet"
+      ],
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Skull Empire",
+      "introducedIn": 2,
+      "type": "concept",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Book 1 calls the Maestro's people the Skull Clan; 'Skull Empire' appears from book 2."
+    },
+    {
+      "term": "Vengeance of the Daughter",
+      "introducedIn": 2,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Signet's scripted storyline."
+    },
+    {
+      "term": "Banshee Station",
+      "introducedIn": 3,
+      "type": "place",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Chaco the Bard",
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Death Challenge",
+      "introducedIn": 3,
+      "type": "concept",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Drek",
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Eva Sigrid",
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Brynhild's Daughter; could be named in book 2 Hekla scenes; killed by Katia in book 5."
+    },
+    {
+      "term": "Frost Maiden",
+      "introducedIn": 3,
+      "type": "concept",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Elle McGibbons' new form; she may have picked it at floor 3 (book 2), chose later book."
+    },
+    {
+      "term": "Grull",
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "War god Carl summons."
+    },
+    {
+      "term": "Iron Tangle",
+      "introducedIn": 3,
+      "type": "place",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Floor 4 subway."
+    },
+    {
+      "term": "Jikininki",
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Japanese folklore ghoul."
+    },
+    {
+      "term": "Limp Richard",
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Loita",
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "PR agent; killed in book 4."
+    },
+    {
+      "term": "Nightmare Express",
+      "introducedIn": 3,
+      "type": "concept",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Train Carl hijacks."
+    },
+    {
+      "term": "Princess D'nadia",
+      "aliases": [
+        "D'nadia",
+        "D'Nadia"
+      ],
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Donut's sponsor; becomes Empress in book 7."
+    },
+    {
+      "term": "Princess Formidable",
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Katia's sponsor; King Rust's daughter."
+    },
+    {
+      "term": "Ring of Divine Suffering",
+      "introducedIn": 3,
+      "type": "concept",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Cursed ring from Frank Q."
+    },
+    {
+      "term": "Silfa",
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Tserendolgor",
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Book-4 guide says she was 'met on the previous floor' (book 3)."
+    },
+    {
+      "term": "Valtay",
+      "aliases": [
+        "Valtay Corporation"
+      ],
+      "introducedIn": 3,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Carl's sponsor; later involved in Borant takeover (book 5)."
+    },
+    {
+      "term": "Vernon",
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Dwarf conductor; dies in book 3."
+    },
+    {
+      "term": "Dirigible Gnomes",
+      "introducedIn": 4,
+      "type": "concept",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Previewed at end of book 3."
+    },
+    {
+      "term": "Dromedarian",
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Camel-folk species."
+    },
+    {
+      "term": "Emberus",
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Firas",
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Dies in book 5."
+    },
+    {
+      "term": "Florin",
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Gate of the Feral Gods",
+      "introducedIn": 4,
+      "type": "concept",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Also the book title."
+    },
+    {
+      "term": "Gwen Duet",
+      "aliases": [
+        "Gwendolyn Duet"
+      ],
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Dies in book 5."
+    },
+    {
+      "term": "Henrik",
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Hump Town",
+      "introducedIn": 4,
+      "type": "place",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Juice Box",
+      "aliases": [
+        "Juicebox"
+      ],
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Changeling in Hump Town; co-leads Team Retribution in book 7."
+    },
+    {
+      "term": "Langley",
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Larracos",
+      "introducedIn": 4,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Louis",
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Major ally (flying house the Twister)."
+    },
+    {
+      "term": "Lusca",
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Also a Caribbean cryptid name."
+    },
+    {
+      "term": "Maggie My",
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Book-1 Maggie's later identity as an Infiltrator parasite."
+    },
+    {
+      "term": "Mrs. Ghazi",
+      "aliases": [
+        "Ghazi"
+      ],
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Orthrus",
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": false,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Greek-myth name; Emberus's dog."
+    },
+    {
+      "term": "Pawna's Tears",
+      "introducedIn": 4,
+      "type": "concept",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Prepotente",
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": false,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Goat crawler; first shown on the recap in book 4, major from book 5."
+    },
+    {
+      "term": "Psamathe",
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": false,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Greek mythological name."
+    },
+    {
+      "term": "Quan Ch",
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Samantha",
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Doll head housing Psamathe."
+    },
+    {
+      "term": "Skarn",
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Agent Provocateur",
+      "introducedIn": 5,
+      "type": "concept",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Big Tina",
+      "introducedIn": 5,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Butcher's Masquerade",
+      "introducedIn": 5,
+      "type": "event",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Also the book title."
+    },
+    {
+      "term": "Circe Took",
+      "introducedIn": 5,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "CrawlCon",
+      "introducedIn": 5,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Crown of the Sepsis Whore",
+      "introducedIn": 5,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Diwata",
+      "introducedIn": 5,
+      "type": "character",
+      "caseSensitive": false,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Philippine-myth term."
+    },
+    {
+      "term": "Faction Wars",
+      "introducedIn": 5,
+      "type": "event",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Ferdinand",
+      "aliases": [
+        "Gravy Boat"
+      ],
+      "introducedIn": 5,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Imogen's familiar, formerly Donut's companion Gravy Boat."
+    },
+    {
+      "term": "Gehenna Brambles",
+      "introducedIn": 5,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Hunting Grounds",
+      "introducedIn": 5,
+      "type": "place",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Floor 6."
+    },
+    {
+      "term": "Kiwi",
+      "introducedIn": 5,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Miriam Dom",
+      "introducedIn": 5,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Prepotente's mother; may be named in book 4 but unverified."
+    },
+    {
+      "term": "Nullian",
+      "introducedIn": 5,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Popov brothers",
+      "aliases": [
+        "Popov twins"
+      ],
+      "introducedIn": 5,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Princess Posse",
+      "introducedIn": 5,
+      "type": "concept",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Quasar",
+      "introducedIn": 5,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Queen Imogen",
+      "aliases": [
+        "Imogen"
+      ],
+      "introducedIn": 5,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Safehome Yolanda",
+      "introducedIn": 5,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Vrah",
+      "introducedIn": 5,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Zerzura",
+      "introducedIn": 5,
+      "type": "concept",
+      "caseSensitive": false,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Also a legendary oasis name."
+    },
+    {
+      "term": "Zockau",
+      "introducedIn": 5,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Amayon",
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Anton Lopez",
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": false,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Asher",
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Carl's half-brother (memory construct)."
+    },
+    {
+      "term": "Asojano",
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": false,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Real orisha name."
+    },
+    {
+      "term": "Astrid",
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Desperado Club staff; may appear earlier; killed in book 6."
+    },
+    {
+      "term": "Bedlam Bride",
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Shi Maria's title; also in book title."
+    },
+    {
+      "term": "Chowder War",
+      "introducedIn": 6,
+      "type": "event",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Damascus Steel",
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Deckmaster",
+      "introducedIn": 6,
+      "type": "concept",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Eileithyia",
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": false,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Greek goddess name."
+    },
+    {
+      "term": "Ghosts of Earth",
+      "introducedIn": 6,
+      "type": "place",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Floor 8."
+    },
+    {
+      "term": "Guild of Suffering",
+      "introducedIn": 6,
+      "type": "concept",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Huanxin Jinx",
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Bare 'Jinx' risky; consider dropping alias."
+    },
+    {
+      "term": "Minge",
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Ogun",
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Real orisha; also a Nigerian state."
+    },
+    {
+      "term": "Orchid of Eileithyia's Grace",
+      "introducedIn": 6,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Paz Lo",
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Reminiscence Hydra",
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Shi Maria",
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": false,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Sister Ines",
+      "aliases": [
+        "Ines Quiteria",
+        "Sister Ines Quiteria"
+      ],
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "T'Ghee",
+      "introducedIn": 6,
+      "type": "concept",
+      "caseSensitive": false,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Tami-Lynn",
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Yemaya",
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": false,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Real orisha name."
+    },
+    {
+      "term": "Ysalte",
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Architect Houston",
+      "introducedIn": 7,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Beautiful Place",
+      "introducedIn": 7,
+      "type": "concept",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Commander Stockade",
+      "aliases": [
+        "Stockade"
+      ],
+      "introducedIn": 7,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Containment Interface",
+      "introducedIn": 7,
+      "type": "concept",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Deathbed Hellcat",
+      "introducedIn": 7,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Empress D'Nadia",
+      "introducedIn": 7,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Later title of book-3 Princess D'nadia."
+    },
+    {
+      "term": "Epitome Tagg",
+      "introducedIn": 7,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Homecoming Queen",
+      "introducedIn": 7,
+      "type": "place",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Justice Light",
+      "introducedIn": 7,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Lemig Sortition",
+      "introducedIn": 7,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Li Na",
+      "introducedIn": 7,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Li Jun (book 1) dies in book 7."
+    },
+    {
+      "term": "Pacifist Network",
+      "aliases": [
+        "Open Intellect Pacifist Action Network"
+      ],
+      "introducedIn": 7,
+      "type": "concept",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Paulie",
+      "introducedIn": 7,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Prism Kingdom",
+      "introducedIn": 7,
+      "type": "concept",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Residual",
+      "introducedIn": 7,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Rosetta Thag",
+      "introducedIn": 7,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Cookbook author; may be referenced earlier via the Cookbook."
+    },
+    {
+      "term": "Scolopendra",
+      "introducedIn": 7,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Also a centipede genus; final dungeon boss."
+    },
+    {
+      "term": "Team Retribution",
+      "introducedIn": 7,
+      "type": "concept",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "The Sledge",
+      "introducedIn": 7,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Tummy Acher",
+      "introducedIn": 7,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Volteeg",
+      "introducedIn": 7,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Cookbook author; may be referenced earlier via the Cookbook."
+    }
+  ]
+}

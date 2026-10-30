@@ -45,6 +45,9 @@ More sites are coming.
 SERIES
 • The Stormlight Archive
 • Mistborn (both eras, including Secret History)
+• Realm of the Elderlings (all 16 books)
+• The Empyrean (Fourth Wing, Iron Flame, Onyx Storm)
+• Dungeon Crawler Carl
 More series are on the way.
 
 PRIVATE BY DESIGN

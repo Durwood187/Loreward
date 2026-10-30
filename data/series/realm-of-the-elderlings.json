@@ -1,0 +1,2051 @@
+{
+  "$schema": "../schema.json",
+  "id": "realm-of-the-elderlings",
+  "name": "Realm of the Elderlings (compatible)",
+  "shortName": "Realm of the Elderlings",
+  "verified": false,
+  "books": [
+    {
+      "index": 1,
+      "title": "Assassin's Apprentice",
+      "kind": "novel"
+    },
+    {
+      "index": 2,
+      "title": "Royal Assassin",
+      "kind": "novel"
+    },
+    {
+      "index": 3,
+      "title": "Assassin's Quest",
+      "kind": "novel"
+    },
+    {
+      "index": 4,
+      "title": "Ship of Magic",
+      "kind": "novel"
+    },
+    {
+      "index": 5,
+      "title": "The Mad Ship",
+      "kind": "novel"
+    },
+    {
+      "index": 6,
+      "title": "Ship of Destiny",
+      "kind": "novel"
+    },
+    {
+      "index": 7,
+      "title": "Fool's Errand",
+      "kind": "novel"
+    },
+    {
+      "index": 8,
+      "title": "The Golden Fool",
+      "kind": "novel"
+    },
+    {
+      "index": 9,
+      "title": "Fool's Fate",
+      "kind": "novel"
+    },
+    {
+      "index": 10,
+      "title": "Dragon Keeper",
+      "kind": "novel"
+    },
+    {
+      "index": 11,
+      "title": "Dragon Haven",
+      "kind": "novel"
+    },
+    {
+      "index": 12,
+      "title": "City of Dragons",
+      "kind": "novel"
+    },
+    {
+      "index": 13,
+      "title": "Blood of Dragons",
+      "kind": "novel"
+    },
+    {
+      "index": 14,
+      "title": "Fool's Assassin",
+      "kind": "novel"
+    },
+    {
+      "index": 15,
+      "title": "Fool's Quest",
+      "kind": "novel"
+    },
+    {
+      "index": 16,
+      "title": "Assassin's Fate",
+      "kind": "novel"
+    }
+  ],
+  "allowlist": [
+    "Skill",
+    "Wit",
+    "Fool",
+    "King",
+    "Queen",
+    "Prince",
+    "Princess",
+    "Dragon",
+    "Dragons",
+    "Elderling",
+    "Elderlings",
+    "Ship",
+    "Liveship",
+    "Trader",
+    "Traders",
+    "Keeper",
+    "Keepers",
+    "Witted",
+    "Skilled",
+    "Bastard"
+  ],
+  "keywords": [
+    "Realm of the Elderlings",
+    "Robin Hobb",
+    "Farseer",
+    "FitzChivalry",
+    "Fitz",
+    "Buckkeep",
+    "Chade",
+    "Kettricken",
+    "Burrich",
+    "Six Duchies",
+    "Bingtown",
+    "Rain Wilds",
+    "Rain Wild",
+    "Liveship Traders",
+    "Tawny Man",
+    "Skill-pillar",
+    "Farseer trilogy"
+  ],
+  "terms": [
+    {
+      "term": "Antler Island",
+      "introducedIn": 2,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "low",
+      "wikiChecked": false,
+      "notes": "Defensive tower site in the Red Ship war."
+    },
+    {
+      "term": "Duke Brawndy",
+      "aliases": [
+        "Brawndy"
+      ],
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "low",
+      "wikiChecked": false
+    },
+    {
+      "term": "Hod",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Buckkeep weaponsmistress who goes with Kettricken; dies in AQ."
+    },
+    {
+      "term": "Kettricken's miscarriage",
+      "aliases": [
+        "Kettricken's stillborn"
+      ],
+      "introducedIn": 2,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Wiki mentions only an attempt on the heir; AQ summary confirms the child was lost."
+    },
+    {
+      "term": "King-in-Waiting Regal",
+      "aliases": [
+        "King Regal"
+      ],
+      "introducedIn": 2,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Regal seizes power claiming Verity is dead. 'King Regal' title used from end of RA."
+    },
+    {
+      "term": "Lady Celerity",
+      "aliases": [
+        "Celerity"
+      ],
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Brawndy's daughter Fitz is promised to. Bare alias 'Celerity' must be case-sensitive; consider dropping it."
+    },
+    {
+      "term": "Lady Grace",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "low",
+      "wikiChecked": false,
+      "notes": "Duchess of Rippon whom Fitz coaches."
+    },
+    {
+      "term": "Nighteyes",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Fitz's wolf; Wit-bond forms in RA."
+    },
+    {
+      "term": "Rosemary",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Kettricken's child attendant / Regal's spy. Common name + herb."
+    },
+    {
+      "term": "Serene and Justin",
+      "introducedIn": 2,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Fitz kills them after learning they drained Shrewd; the names alone are book 1."
+    },
+    {
+      "term": "Shrewd's death",
+      "aliases": [
+        "death of King Shrewd"
+      ],
+      "introducedIn": 2,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Verity's quest",
+      "introducedIn": 2,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Verity leaves for the Mountains to seek the Elderlings."
+    },
+    {
+      "term": "Wallace",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Shrewd's servant who doses him with Smoke."
+    },
+    {
+      "term": "Black Rolf",
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Old Blood teacher; Holly is his wife."
+    },
+    {
+      "term": "Burrich and Molly",
+      "aliases": [
+        "Molly and Burrich"
+      ],
+      "introducedIn": 3,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "They raise Fitz's daughter together and marry."
+    },
+    {
+      "term": "Fitz's daughter",
+      "introducedIn": 3,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Girl-on-a-Dragon",
+      "aliases": [
+        "Girl on a Dragon"
+      ],
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": false,
+      "notes": "The Fool wakes the incomplete dragon."
+    },
+    {
+      "term": "Kettle",
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Old woman, last of an ancient coterie."
+    },
+    {
+      "term": "Lord Bright",
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Regal's cousin left to hold Buckkeep."
+    },
+    {
+      "term": "Moonseye",
+      "introducedIn": 3,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Mountain town on Fitz's route."
+    },
+    {
+      "term": "Nettle",
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Fitz and Molly's daughter."
+    },
+    {
+      "term": "Regal's fate",
+      "aliases": [
+        "Regal's death"
+      ],
+      "introducedIn": 3,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Fitz imprints loyalty on Regal; he dies soon after."
+    },
+    {
+      "term": "Skill road",
+      "aliases": [
+        "Skill pillar",
+        "Skill pillars",
+        "Skill-pillar"
+      ],
+      "introducedIn": 3,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Possessive/plural handled automatically; plural kept only for the hyphen variant."
+    },
+    {
+      "term": "Starling Birdsong",
+      "aliases": [
+        "Starling"
+      ],
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Bare 'Starling' is a bird; make alias caseSensitive / needsContext."
+    },
+    {
+      "term": "stone dragons",
+      "aliases": [
+        "stone dragon",
+        "garden of stone dragons"
+      ],
+      "introducedIn": 3,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Tradeford",
+      "introducedIn": 3,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Verity-as-Dragon",
+      "aliases": [
+        "Verity as Dragon"
+      ],
+      "introducedIn": 3,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "White Prophet",
+      "introducedIn": 3,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "AQ summary names the Fool as the White Prophet."
+    },
+    {
+      "term": "Althea",
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Short form of Althea Vestrit. Context-only: also a common name."
+    },
+    {
+      "term": "Althea Vestrit",
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Amber",
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Bingtown woodcarver; implied to be the Fool, confirmed in Tawny Man. Big identity term."
+    },
+    {
+      "term": "Bingtown",
+      "introducedIn": 4,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Brashen Trell",
+      "aliases": [
+        "Brashen"
+      ],
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Davad Restart",
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Divvytown",
+      "introducedIn": 4,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Etta",
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Grag Tenira",
+      "aliases": [
+        "Tenira"
+      ],
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Jamaillia",
+      "aliases": [
+        "Jamaillian",
+        "Jamailia"
+      ],
+      "introducedIn": 4,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Kennit",
+      "aliases": [
+        "Captain Kennit"
+      ],
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Kyle Haven",
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Malta Vestrit",
+      "aliases": [
+        "Malta Haven"
+      ],
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Bare 'Malta' is the country; keep only full names unless context gating is used."
+    },
+    {
+      "term": "Maulkin",
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Serpent tangle leader; serpent POV chapters start in SoM."
+    },
+    {
+      "term": "Ophelia",
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Tenira family liveship."
+    },
+    {
+      "term": "Paragon",
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "The mad liveship; appears in SoM though wiki plot names him in Mad Ship."
+    },
+    {
+      "term": "Rain Wilds",
+      "aliases": [
+        "Rain Wild",
+        "Rain Wild Traders",
+        "Rain Wild River"
+      ],
+      "introducedIn": 4,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Reyn Khuprus",
+      "aliases": [
+        "Reyn",
+        "Khuprus"
+      ],
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Bare 'Reyn' could need context."
+    },
+    {
+      "term": "Selden",
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Short form of Selden Vestrit. Context-only: also a common name."
+    },
+    {
+      "term": "Selden Vestrit",
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Malta's younger brother."
+    },
+    {
+      "term": "She Who Remembers",
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Sorcor",
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Vestrit",
+      "introducedIn": 4,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Family name: Ephron, Ronica, Keffria."
+    },
+    {
+      "term": "Vivacia",
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Vestrit liveship."
+    },
+    {
+      "term": "Wintrow",
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "wizardwood",
+      "introducedIn": 4,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "buried city",
+      "introducedIn": 5,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Elderling city under Trehaug. Lowercase generic phrase; consider caseSensitive or needsContext."
+    },
+    {
+      "term": "Chalcedean invasion of Bingtown",
+      "aliases": [
+        "burning of Bingtown"
+      ],
+      "introducedIn": 5,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Mad Ship; continues into SoD."
+    },
+    {
+      "term": "Clef",
+      "introducedIn": 5,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "low",
+      "wikiChecked": false,
+      "notes": "Paragon's ship-boy. Common word; possibly drop."
+    },
+    {
+      "term": "Igrot",
+      "aliases": [
+        "Igrot the Terrible"
+      ],
+      "introducedIn": 5,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Pirate tied to Kennit's past and Paragon."
+    },
+    {
+      "term": "Jek",
+      "introducedIn": 5,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "low",
+      "wikiChecked": true,
+      "notes": "Six Duchies sailor; wiki names her as Amber's guard."
+    },
+    {
+      "term": "Kendry",
+      "introducedIn": 5,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "low",
+      "wikiChecked": true,
+      "notes": "Rain Wild liveship. Not in plot summaries; book placement from memory."
+    },
+    {
+      "term": "Kennit's leg",
+      "introducedIn": 5,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Wintrow amputates it."
+    },
+    {
+      "term": "King of the Pirate Isles",
+      "introducedIn": 5,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Lavoy",
+      "introducedIn": 5,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "low",
+      "wikiChecked": false,
+      "notes": "Paragon's mate. Not in wiki summary."
+    },
+    {
+      "term": "Pirate Isles",
+      "introducedIn": 5,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Name may appear in SoM; matters as Kennit's kingdom."
+    },
+    {
+      "term": "Satrap Cosgo",
+      "aliases": [
+        "Cosgo"
+      ],
+      "introducedIn": 5,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "'Satrap' alone is too generic; Satrap is mentioned in SoM, travels in Mad Ship."
+    },
+    {
+      "term": "Serilla",
+      "aliases": [
+        "Companion Serilla"
+      ],
+      "introducedIn": 5,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Tintaglia",
+      "introducedIn": 5,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Dragon freed from the wizardwood log; Malta learns her name in Mad Ship ch. 36."
+    },
+    {
+      "term": "Trehaug",
+      "introducedIn": 5,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Rain Wild treetop city; may be named in passing in SoM."
+    },
+    {
+      "term": "wizardwood is dragon cocoons",
+      "aliases": [
+        "dragon cocoon",
+        "dragon cocoons",
+        "cocooning grounds"
+      ],
+      "introducedIn": 5,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Liveships-are-dragons reveal. First term is a sentence; reviewer may drop it and keep the aliases."
+    },
+    {
+      "term": "Bolt",
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Vivacia's dragon-self."
+    },
+    {
+      "term": "Kennit Ludluck",
+      "aliases": [
+        "Kennit is a Ludluck"
+      ],
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Kennit's lineage reveal. 'Ludluck' alone is a SoM term (Paragon's family); keep it unlisted or at 4."
+    },
+    {
+      "term": "Kennit's death",
+      "introducedIn": 6,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Kyle's death",
+      "introducedIn": 6,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Malta Khuprus",
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Malta marries Reyn; transformed into Elderlings at SoD's end."
+    },
+    {
+      "term": "Paragon's new face",
+      "introducedIn": 6,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Amber carves Paragon a new face."
+    },
+    {
+      "term": "Pirate Queen",
+      "aliases": [
+        "Queen Etta"
+      ],
+      "introducedIn": 6,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Rache",
+      "introducedIn": 6,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Tattooed",
+      "introducedIn": 6,
+      "type": "concept",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Freed slaves. May appear in Mad Ship."
+    },
+    {
+      "term": "Civil Bresinga",
+      "aliases": [
+        "Bresinga",
+        "Bresingas",
+        "Lady Bresinga"
+      ],
+      "introducedIn": 7,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Hap",
+      "aliases": [
+        "Mishap",
+        "Hap Gladheart"
+      ],
+      "introducedIn": 7,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Jinna",
+      "introducedIn": 7,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "hedge witch; wiki gives no book, memory says Fool's Errand"
+    },
+    {
+      "term": "Laudwine",
+      "introducedIn": 7,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Piebald leader"
+    },
+    {
+      "term": "Laurel",
+      "introducedIn": 7,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Queen's huntswoman; common name"
+    },
+    {
+      "term": "Lord Golden",
+      "introducedIn": 7,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "The Fool's noble identity; avoid bare 'Golden'"
+    },
+    {
+      "term": "Old Blood",
+      "introducedIn": 7,
+      "type": "concept",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Witted traditionalists' self-name"
+    },
+    {
+      "term": "Peladine",
+      "introducedIn": 7,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "dead Witted woman inhabiting Dutiful's cat"
+    },
+    {
+      "term": "Piebalds",
+      "aliases": [
+        "the Piebald",
+        "Piebald Prince"
+      ],
+      "introducedIn": 7,
+      "type": "concept",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Witted extremists"
+    },
+    {
+      "term": "Prince Dutiful",
+      "aliases": [
+        "Dutiful"
+      ],
+      "introducedIn": 7,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Tom Badgerlock",
+      "aliases": [
+        "Badgerlock"
+      ],
+      "introducedIn": 7,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Fitz's alias/identity in Tawny Man"
+    },
+    {
+      "term": "Arkon Bloodblade",
+      "aliases": [
+        "Bloodblade"
+      ],
+      "introducedIn": 8,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Aslevjal",
+      "introducedIn": 8,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Elliania",
+      "aliases": [
+        "Narcheska",
+        "Narcheska Elliania"
+      ],
+      "introducedIn": 8,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Hetgurd",
+      "introducedIn": 8,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "low",
+      "wikiChecked": false,
+      "notes": "Outislander clan council"
+    },
+    {
+      "term": "Icefyre",
+      "aliases": [
+        "IceFyre"
+      ],
+      "introducedIn": 8,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Pale Woman",
+      "aliases": [
+        "the Pale Woman"
+      ],
+      "introducedIn": 8,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "false White Prophet; plot revealed in 8, appears in 9"
+    },
+    {
+      "term": "Peottre Blackwater",
+      "aliases": [
+        "Peottre"
+      ],
+      "introducedIn": 8,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Shadow Wolf",
+      "introducedIn": 8,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "low",
+      "wikiChecked": false,
+      "notes": "Nettle's dream-name for Fitz; book 8 from memory"
+    },
+    {
+      "term": "Svanja",
+      "aliases": [
+        "Svanja Hartshorn"
+      ],
+      "introducedIn": 8,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Hap's love interest"
+    },
+    {
+      "term": "Swift",
+      "introducedIn": 8,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Burrich's son"
+    },
+    {
+      "term": "Thick",
+      "introducedIn": 8,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "may be glimpsed in book 7; matters from 8"
+    },
+    {
+      "term": "Web",
+      "aliases": [
+        "Witmaster Web"
+      ],
+      "introducedIn": 8,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Witness Stones",
+      "introducedIn": 8,
+      "type": "place",
+      "caseSensitive": true,
+      "confidence": "low",
+      "wikiChecked": true
+    },
+    {
+      "term": "Burrich's death",
+      "introducedIn": 9,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Kebal Rawbread",
+      "aliases": [
+        "Rawbread"
+      ],
+      "introducedIn": 9,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Lady Shine",
+      "aliases": [
+        "Shine Fallstar"
+      ],
+      "introducedIn": 9,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "low",
+      "wikiChecked": false,
+      "notes": "Chade's daughter; renamed Shun in 14. Could be 8"
+    },
+    {
+      "term": "Oerttre",
+      "aliases": [
+        "Oerttre Blackwater"
+      ],
+      "introducedIn": 9,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Elliania's mother, Forged by the Pale Woman"
+    },
+    {
+      "term": "Prilkop",
+      "aliases": [
+        "the Black Man"
+      ],
+      "introducedIn": 9,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Rooster crown",
+      "aliases": [
+        "Rooster King crown"
+      ],
+      "introducedIn": 9,
+      "type": "concept",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Skillmistress Nettle",
+      "aliases": [
+        "Skillmistress"
+      ],
+      "introducedIn": 9,
+      "type": "event",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Nettle (book 3) named Skillmistress at end of 9"
+    },
+    {
+      "term": "Steady",
+      "introducedIn": 9,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "low",
+      "wikiChecked": false,
+      "notes": "Burrich's son on Aslevjal"
+    },
+    {
+      "term": "Alise",
+      "introducedIn": 10,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Short form of Alise Kincarron. Context-only: also a common name."
+    },
+    {
+      "term": "Alise Kincarron",
+      "aliases": [
+        "Alise Finbok"
+      ],
+      "introducedIn": 10,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Cassarick",
+      "aliases": [
+        "Cassarack"
+      ],
+      "introducedIn": 10,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Greft",
+      "introducedIn": 10,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Harrikin",
+      "introducedIn": 10,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "low",
+      "wikiChecked": false
+    },
+    {
+      "term": "Heeby",
+      "introducedIn": 10,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Hest",
+      "introducedIn": 10,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Short form of Hest Finbok. Context-only: also a common name."
+    },
+    {
+      "term": "Hest Finbok",
+      "introducedIn": 10,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Jerd",
+      "introducedIn": 10,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Kalo",
+      "introducedIn": 10,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Kelsingra",
+      "introducedIn": 10,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Leftrin",
+      "aliases": [
+        "Captain Leftrin"
+      ],
+      "introducedIn": 10,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Mercor",
+      "introducedIn": 10,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "golden dragon; reborn serpent Maulkin (book 4) — identity reveal"
+    },
+    {
+      "term": "Ranculos",
+      "introducedIn": 10,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "low",
+      "wikiChecked": false
+    },
+    {
+      "term": "Rapskal",
+      "aliases": [
+        "Rapscal"
+      ],
+      "introducedIn": 10,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Sedric Meldar",
+      "aliases": [
+        "Sedric"
+      ],
+      "introducedIn": 10,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Sinad Arich",
+      "introducedIn": 10,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Sintara",
+      "aliases": [
+        "Sisarqua"
+      ],
+      "introducedIn": 10,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Swarge",
+      "introducedIn": 10,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Sylve",
+      "introducedIn": 10,
+      "type": "character",
+      "caseSensitive": false,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Tarman",
+      "introducedIn": 10,
+      "type": "concept",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Leftrin's liveship barge"
+    },
+    {
+      "term": "Tats",
+      "introducedIn": 10,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Thymara",
+      "introducedIn": 10,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Carson",
+      "introducedIn": 11,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Short form of Carson Lupskip. Context-only: also a common name."
+    },
+    {
+      "term": "Carson Lupskip",
+      "introducedIn": 11,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "may appear late in 10"
+    },
+    {
+      "term": "Davvie",
+      "introducedIn": 11,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Greft's death",
+      "introducedIn": 11,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Jess",
+      "introducedIn": 11,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Chalcedean-hired hunter; may appear late in 10"
+    },
+    {
+      "term": "Relpda",
+      "introducedIn": 11,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "copper dragon, unnamed in 10"
+    },
+    {
+      "term": "Spit",
+      "introducedIn": 11,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "silver dragon names himself in 11"
+    },
+    {
+      "term": "Phron",
+      "aliases": [
+        "Ephron"
+      ],
+      "introducedIn": 12,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Malta and Reyn's son, born in 12 (wiki unnamed)"
+    },
+    {
+      "term": "Selden's captivity",
+      "introducedIn": 12,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "silver well",
+      "aliases": [
+        "Elderling silver"
+      ],
+      "introducedIn": 12,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "low",
+      "wikiChecked": false,
+      "notes": "Kelsingra's silver; may be 13"
+    },
+    {
+      "term": "Amarinda",
+      "introducedIn": 13,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "low",
+      "wikiChecked": false,
+      "notes": "Elderling woman from Rapskal's memories; may start in 12"
+    },
+    {
+      "term": "Chassim",
+      "introducedIn": 13,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "low",
+      "wikiChecked": false,
+      "notes": "Duke of Chalced's daughter; heir plot referenced in 12 unnamed"
+    },
+    {
+      "term": "Tellator",
+      "introducedIn": 13,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "low",
+      "wikiChecked": false,
+      "notes": "Elderling memory-persona Rapskal adopts; may start in 12"
+    },
+    {
+      "term": "Tintaglia's death",
+      "introducedIn": 13,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Tintaglia wounded in 12, dies in 13"
+    },
+    {
+      "term": "Bee",
+      "aliases": [
+        "Bee Farseer",
+        "Bee Badgerlock"
+      ],
+      "introducedIn": 14,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Fitz and Molly's late-born daughter; plain word, so needsContext."
+    },
+    {
+      "term": "FitzVigilant",
+      "aliases": [
+        "Lant"
+      ],
+      "introducedIn": 14,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "'Lant' alias should be case-sensitive in matcher."
+    },
+    {
+      "term": "fog-man",
+      "aliases": [
+        "fog man"
+      ],
+      "introducedIn": 14,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Bee's name for Vindeliar during the raid."
+    },
+    {
+      "term": "Molly's death",
+      "aliases": [
+        "death of Molly",
+        "Molly dies"
+      ],
+      "introducedIn": 14,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Oaksbywater",
+      "introducedIn": 14,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "pale messenger",
+      "aliases": [
+        "pale messengers",
+        "pale people"
+      ],
+      "introducedIn": 14,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Perseverance",
+      "introducedIn": 14,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Prince Prosper",
+      "aliases": [
+        "Prince Integrity"
+      ],
+      "introducedIn": 14,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "low",
+      "wikiChecked": false,
+      "notes": "Dutiful and Elliania's sons; could be named earlier only in passing."
+    },
+    {
+      "term": "Revel",
+      "introducedIn": 14,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Shun",
+      "introducedIn": 14,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Chade's ward/daughter sent to Withywoods."
+    },
+    {
+      "term": "Unexpected Son",
+      "aliases": [
+        "the Unexpected Son"
+      ],
+      "introducedIn": 14,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Withywoods",
+      "aliases": [
+        "Withywood"
+      ],
+      "introducedIn": 14,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Withywoods raid",
+      "aliases": [
+        "raid on Withywoods",
+        "attack on Withywoods"
+      ],
+      "introducedIn": 14,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Bee in the Skill-pillar",
+      "aliases": [
+        "Bee lost in the pillar"
+      ],
+      "introducedIn": 15,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Clerres",
+      "introducedIn": 15,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Dwalia",
+      "introducedIn": 15,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Ellik",
+      "aliases": [
+        "Duke Ellik"
+      ],
+      "introducedIn": 15,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Hogen",
+      "introducedIn": 15,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Kerf",
+      "introducedIn": 15,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Chalcedean soldier who befriends captive Bee."
+    },
+    {
+      "term": "luriks",
+      "aliases": [
+        "lurik"
+      ],
+      "introducedIn": 15,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Dwalia's followers."
+    },
+    {
+      "term": "Motley",
+      "introducedIn": 15,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Odessa",
+      "introducedIn": 15,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "low",
+      "wikiChecked": false,
+      "notes": "Servant/lurik in Dwalia's party; also a real city."
+    },
+    {
+      "term": "Prince FitzChivalry",
+      "aliases": [
+        "Prince Fitz",
+        "Prince FitzChivalry Farseer"
+      ],
+      "introducedIn": 15,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Fitz publicly recognized at Winterfest."
+    },
+    {
+      "term": "Shine Falseborn",
+      "aliases": [
+        "Shine"
+      ],
+      "introducedIn": 15,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Shun's real name/identity as Chade's daughter."
+    },
+    {
+      "term": "Spark",
+      "aliases": [
+        "Ash"
+      ],
+      "introducedIn": 15,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "the Servants",
+      "aliases": [
+        "Servants of the Archive",
+        "Servants of Clerres"
+      ],
+      "introducedIn": 15,
+      "type": "concept",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Vindeliar",
+      "introducedIn": 15,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Wolf Father",
+      "aliases": [
+        "Wolf-Father"
+      ],
+      "introducedIn": 15,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Boy-o",
+      "introducedIn": 16,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Althea and Brashen's son."
+    },
+    {
+      "term": "Capra",
+      "introducedIn": 16,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Clerres library fire",
+      "aliases": [
+        "library of Clerres burns"
+      ],
+      "introducedIn": 16,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Coultrie",
+      "introducedIn": 16,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Dwalia's death",
+      "aliases": [
+        "death of Dwalia"
+      ],
+      "introducedIn": 16,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "fall of Clerres",
+      "aliases": [
+        "destruction of Clerres",
+        "Clerres destroyed",
+        "Clerres burns"
+      ],
+      "introducedIn": 16,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Fellowdy",
+      "introducedIn": 16,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Fitz's death",
+      "aliases": [
+        "death of Fitz",
+        "Fitz dies",
+        "FitzChivalry's death"
+      ],
+      "introducedIn": 16,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Fitz's parasites",
+      "aliases": [
+        "Skill parasites"
+      ],
+      "introducedIn": 16,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Fool's death",
+      "aliases": [
+        "death of the Fool",
+        "the Fool dies"
+      ],
+      "introducedIn": 16,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Kennitsson",
+      "aliases": [
+        "Kennit's son"
+      ],
+      "introducedIn": 16,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Paragon's transformation",
+      "aliases": [
+        "Paragon becomes dragons"
+      ],
+      "introducedIn": 16,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Liveship Paragon becomes dragons; unsure whether Vivacia does too."
+    },
+    {
+      "term": "stone wolf",
+      "aliases": [
+        "Fitz's wolf carving",
+        "wolf carving"
+      ],
+      "introducedIn": 16,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Symphe",
+      "introducedIn": 16,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "the Four of Clerres",
+      "aliases": [
+        "the Four"
+      ],
+      "introducedIn": 16,
+      "type": "concept",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": true
+    }
+  ]
+}

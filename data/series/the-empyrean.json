@@ -1,0 +1,765 @@
+{
+  "$schema": "../schema.json",
+  "id": "the-empyrean",
+  "name": "The Empyrean / Fourth Wing (compatible)",
+  "shortName": "The Empyrean",
+  "verified": false,
+  "books": [
+    {
+      "index": 1,
+      "title": "Fourth Wing",
+      "kind": "novel"
+    },
+    {
+      "index": 2,
+      "title": "Iron Flame",
+      "kind": "novel"
+    },
+    {
+      "index": 3,
+      "title": "Onyx Storm",
+      "kind": "novel"
+    }
+  ],
+  "allowlist": [
+    "Rider",
+    "Riders",
+    "Scribe",
+    "Scribes",
+    "Dragon",
+    "Dragons",
+    "Wing",
+    "Wingleader",
+    "Squad",
+    "Signet",
+    "Relic",
+    "Storm",
+    "Flame",
+    "Iron",
+    "Onyx",
+    "Fourth",
+    "Violet"
+  ],
+  "keywords": [
+    "The Empyrean",
+    "Empyrean",
+    "Rebecca Yarros",
+    "Yarros",
+    "Violet Sorrengail",
+    "Sorrengail",
+    "Xaden",
+    "Xaden Riorson",
+    "Basgiath",
+    "Basgiath War College",
+    "Tairn",
+    "Tairneanach",
+    "Andarna",
+    "Andarnaurram",
+    "Sgaeyl",
+    "Dain Aetos",
+    "Liam Mairi",
+    "Rhiannon Matthias",
+    "Jack Barlowe",
+    "Poromiel",
+    "Tyrrendor",
+    "Aretia",
+    "Riders Quadrant",
+    "venin"
+  ],
+  "terms": [
+    {
+      "term": "Aaric",
+      "aliases": [
+        "Aaric Graycastle",
+        "Graycastle",
+        "Prince Aaric",
+        "Cam Tauri",
+        "Prince Cam"
+      ],
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Prince hiding under a false name; identity reveal"
+    },
+    {
+      "term": "Aisereigh",
+      "aliases": [
+        "Lieutenant Colonel Aisereigh"
+      ],
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Brennan's alias"
+    },
+    {
+      "term": "Battle of Basgiath",
+      "introducedIn": 2,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "IF finale"
+    },
+    {
+      "term": "Berwyn",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Venin Sage; IF; survival + Xaden's Sage revealed OS"
+    },
+    {
+      "term": "Catriona",
+      "aliases": [
+        "Catriona Cordella",
+        "Cat Cordella"
+      ],
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Flier; Xaden's former betrothed; bare 'Cat' omitted"
+    },
+    {
+      "term": "Ciaran",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "low",
+      "wikiChecked": true
+    },
+    {
+      "term": "Cliffsbane",
+      "aliases": [
+        "Cliffsbane Academy"
+      ],
+      "introducedIn": 2,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Poromish flier academy"
+    },
+    {
+      "term": "Cordyn",
+      "introducedIn": 2,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Tecarus's city"
+    },
+    {
+      "term": "Cruth",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "low",
+      "wikiChecked": false,
+      "notes": "Quinn's dragon"
+    },
+    {
+      "term": "Drake Cordella",
+      "aliases": [
+        "Captain Cordella"
+      ],
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Felix",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Violet's lightning mentor in Aretia"
+    },
+    {
+      "term": "Grady",
+      "aliases": [
+        "Professor Grady"
+      ],
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "RSC professor; dies in OS"
+    },
+    {
+      "term": "Halden",
+      "aliases": [
+        "Prince Halden",
+        "Halden Tauri"
+      ],
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Crown prince; prominent in OS"
+    },
+    {
+      "term": "inntinnsic",
+      "aliases": [
+        "intinnsic"
+      ],
+      "introducedIn": 2,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "King of Tyrrendor",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "low",
+      "wikiChecked": false,
+      "notes": "Xaden's claim revealed in IF"
+    },
+    {
+      "term": "Kylynn",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "low",
+      "wikiChecked": true
+    },
+    {
+      "term": "Lyra's journal",
+      "introducedIn": 2,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "low",
+      "wikiChecked": false,
+      "notes": "First Six journal; wardstone research"
+    },
+    {
+      "term": "Major Ferris",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "low",
+      "wikiChecked": true
+    },
+    {
+      "term": "Maren",
+      "aliases": [
+        "Maren Zina"
+      ],
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Gryphon flier"
+    },
+    {
+      "term": "Masen",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "low",
+      "wikiChecked": true
+    },
+    {
+      "term": "Molvic",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Aaric's blue clubtail"
+    },
+    {
+      "term": "Nora",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "low",
+      "wikiChecked": true,
+      "notes": "Truth-sayer signet"
+    },
+    {
+      "term": "Quinn",
+      "aliases": [
+        "Quinn Hollis"
+      ],
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Riorson House",
+      "introducedIn": 2,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Samara",
+      "introducedIn": 2,
+      "type": "place",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Also a Russian city"
+    },
+    {
+      "term": "Sloane",
+      "aliases": [
+        "Sloane Mairi"
+      ],
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Liam's sister; siphon signet"
+    },
+    {
+      "term": "Solas",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Varrish's one-eyed dragon; also a Dragon Age character name"
+    },
+    {
+      "term": "Suri",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Aretia council member"
+    },
+    {
+      "term": "Tecarus",
+      "aliases": [
+        "Viscount Tecarus"
+      ],
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Becomes king in OS (see King Tecarus)"
+    },
+    {
+      "term": "the luminary",
+      "introducedIn": 2,
+      "type": "concept",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "the Sage",
+      "introducedIn": 2,
+      "type": "concept",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "low",
+      "wikiChecked": false,
+      "notes": "Venin rank"
+    },
+    {
+      "term": "Thoirt",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Sloane's dragon"
+    },
+    {
+      "term": "Trager",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Flier mender, Maren's brother; dies in OS"
+    },
+    {
+      "term": "Trissa",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "low",
+      "wikiChecked": true
+    },
+    {
+      "term": "Varrish",
+      "aliases": [
+        "Major Varrish",
+        "Burton Varrish"
+      ],
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "IF villain; killed in IF"
+    },
+    {
+      "term": "Asher Sorrengail",
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Violet's father named"
+    },
+    {
+      "term": "asim",
+      "aliases": [
+        "venin asim"
+      ],
+      "introducedIn": 3,
+      "type": "concept",
+      "caseSensitive": false,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Xaden's venin status"
+    },
+    {
+      "term": "Avalynn",
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "low",
+      "wikiChecked": true
+    },
+    {
+      "term": "Captain Fitzgibbons",
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "low",
+      "wikiChecked": true
+    },
+    {
+      "term": "Caroline Ashton",
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "low",
+      "wikiChecked": true
+    },
+    {
+      "term": "Courtlyn",
+      "aliases": [
+        "King Courtlyn"
+      ],
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "criterion",
+      "introducedIn": 3,
+      "type": "concept",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "low",
+      "wikiChecked": false
+    },
+    {
+      "term": "Dalton Sisneros",
+      "aliases": [
+        "Major Sisneros"
+      ],
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "low",
+      "wikiChecked": true
+    },
+    {
+      "term": "Dasyn",
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Irid"
+    },
+    {
+      "term": "Deverelli",
+      "introducedIn": 3,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Draithus",
+      "introducedIn": 3,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "dream-walking",
+      "aliases": [
+        "dreamwalking",
+        "dream-walker",
+        "dreamwalker"
+      ],
+      "introducedIn": 3,
+      "type": "concept",
+      "caseSensitive": false,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Violet's second signet"
+    },
+    {
+      "term": "Duke of Tyrrendor",
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Dunne's dagger",
+      "introducedIn": 3,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Kills Theophanie"
+    },
+    {
+      "term": "Ewan Faber",
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "low",
+      "wikiChecked": true
+    },
+    {
+      "term": "Hedley",
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "low",
+      "wikiChecked": true
+    },
+    {
+      "term": "Hedotis",
+      "introducedIn": 3,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "irid",
+      "aliases": [
+        "irids"
+      ],
+      "introducedIn": 3,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Andarna's true breed; biggest OS dragon reveal"
+    },
+    {
+      "term": "Iris Drue",
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "low",
+      "wikiChecked": true
+    },
+    {
+      "term": "Isle Kingdoms",
+      "aliases": [
+        "the Isles"
+      ],
+      "introducedIn": 3,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "'the Isles' is case-sensitive-risky; reviewer may drop"
+    },
+    {
+      "term": "Kaveh",
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "low",
+      "wikiChecked": true
+    },
+    {
+      "term": "Kiandra",
+      "aliases": [
+        "Professor Kiandra"
+      ],
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "low",
+      "wikiChecked": true,
+      "notes": "Flier professor"
+    },
+    {
+      "term": "King Tecarus",
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Leothan",
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Irid"
+    },
+    {
+      "term": "Lynx",
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Lyron Panchek",
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "low",
+      "wikiChecked": false,
+      "notes": "Panchek is FW; first name/traitor reveal OS"
+    },
+    {
+      "term": "Major Afendra",
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "low",
+      "wikiChecked": true
+    },
+    {
+      "term": "Maven",
+      "introducedIn": 3,
+      "type": "concept",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Queen Maraya",
+      "aliases": [
+        "Maraya"
+      ],
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "low",
+      "wikiChecked": false,
+      "notes": "Poromish queen killed in OS; may be named earlier"
+    },
+    {
+      "term": "Senarium",
+      "introducedIn": 3,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "low",
+      "wikiChecked": true,
+      "notes": "Ruling council; may be mentioned earlier"
+    },
+    {
+      "term": "Talia",
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Xaden's mother, on Hedotis"
+    },
+    {
+      "term": "Theophanie",
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Killed by Violet in OS"
+    },
+    {
+      "term": "Unnbriel",
+      "introducedIn": 3,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Violet Riorson",
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Marriage reveal at OS end"
+    },
+    {
+      "term": "Zehyllna",
+      "introducedIn": 3,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    }
+  ]
+}

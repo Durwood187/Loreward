@@ -281,3 +281,14 @@ describe('needsContext terms (common names elsewhere)', () => {
     expect(m.blockedTermCount).toBe(2);
   });
 });
+
+describe('compileRelevance: run-together names (subreddits, hashtags)', () => {
+  const s: SeriesData = { ...series, keywords: ['Dungeon Crawler Carl', 'Robin Hobb'], books: [{ index: 1, title: 'Fourth Wing' }] };
+  const about = compileRelevance(s);
+  it.each(['r DungeonCrawlerCarl comments', 'r dungeoncrawlercarl', '#fourthwing', 'r robinhobb'])('related: %s', (t) => {
+    expect(about(t)).toBe(true);
+  });
+  it('still needs the whole squashed name', () => {
+    expect(about('dungeoncrawler')).toBe(false);
+  });
+});

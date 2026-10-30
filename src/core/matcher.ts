@@ -159,10 +159,18 @@ export function compileRelevance(series: SeriesData): (text: string) => boolean 
     .map(normalizeSpaces)
     .filter((w) => w && !allow.has(w.toLowerCase()));
   const re = buildRegex(words, false);
+  // Multi-word names also count when run together, as in subreddit names and hashtags:
+  // "r/DungeonCrawlerCarl", "#fourthwing", "r/robinhobb".
+  const squash = (w: string) => w.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, '');
+  const squashed = new Set(words.filter((w) => /\s/.test(w)).map(squash).filter((w) => w.length >= 6));
   return (text: string) => {
-    if (!re || !text) return false;
-    re.lastIndex = 0;
-    return re.test(text.normalize('NFC'));
+    if (!text) return false;
+    const normalized = text.normalize('NFC');
+    if (re) {
+      re.lastIndex = 0;
+      if (re.test(normalized)) return true;
+    }
+    return normalized.toLowerCase().split(/[^\p{L}\p{N}]+/u).some((token) => squashed.has(token));
   };
 }
 
