@@ -190,6 +190,10 @@ describe('everyday-word terms in the real series data', () => {
   ])('ignores everyday use: %s', (text) => {
     expect(m.findSpoiler(text)).toBeNull();
   });
+  it('Pattern is context-only: blurred on Stormlight pages, not in ordinary text', () => {
+    expect(m.findSpoiler('Pattern matching in Rust', false)).toBeNull();
+    expect(m.findSpoiler('Shallan and Pattern', true)?.term).toBe('Pattern');
+  });
   it.each([
     ['what does the Sibling want', 'the Sibling'],
     ['The Sibling withdrew', 'the Sibling'],

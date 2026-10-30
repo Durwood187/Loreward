@@ -26,8 +26,8 @@ Terms per book: Words of Radiance 43, Edgedancer 8, Oathbringer 50, Dawnshard 9,
 ## Decided by Eric (Oct 2026)
 
 1. Rule 2 ("mentioned early, matters later" → the book where it matters): **agreed**.
-2. **Pattern: dropped.** It was the only term that misfired in ordinary text (table headings).
-   Pattern-the-spren is no longer blurred for book-1 readers. That's an accepted miss.
+2. **Pattern: dropped**, because it was the only term that misfired in ordinary text (table headings).
+   **Restored in 0.3.0 as context-only:** it now only blurs on pages about Stormlight.
 3. **Testament → Rhythm of War** stays. If the name is really revealed earlier, the only effect is
    over-blurring for Oathbringer readers (the safe side of rule 1).
 4. **Wandersail → Dawnshard: kept**, even though it also blurs talk of Wit's book-1 story.

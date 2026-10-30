@@ -327,6 +327,16 @@
       "wikiChecked": true
     },
     {
+      "term": "Pattern",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Shallan's spren, named in book 2. Context-only (Eric, Oct 2026): dropped in 0.1 because 'Pattern' misfired on ordinary text; now only blurs on pages about Stormlight."
+    },
+    {
       "term": "Relis Ruthar",
       "aliases": [
         "Relis"
@@ -583,15 +593,6 @@
       "wikiChecked": true
     },
     {
-      "term": "Captain Azure",
-      "introducedIn": 4,
-      "type": "character",
-      "caseSensitive": true,
-      "confidence": "high",
-      "wikiChecked": true,
-      "notes": "Vivenna (Warbreaker) appears as Azure in OB. Don't add 'Vivenna': it would blur Warbreaker discussion. Bare \"Azure\" left out: matches Microsoft Azure and the colour."
-    },
-    {
       "term": "Ba-Ado-Mishram",
       "introducedIn": 4,
       "type": "character",
@@ -608,6 +609,15 @@
       "type": "event",
       "confidence": "high",
       "wikiChecked": false
+    },
+    {
+      "term": "Captain Azure",
+      "introducedIn": 4,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Vivenna (Warbreaker) appears as Azure in OB. Don't add 'Vivenna': it would blur Warbreaker discussion. Bare \"Azure\" left out: matches Microsoft Azure and the colour."
     },
     {
       "term": "Celebrant",
