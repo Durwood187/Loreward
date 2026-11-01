@@ -1,0 +1,760 @@
+{
+  "$schema": "../schema.json",
+  "id": "empire-of-the-vampire",
+  "name": "Empire of the Vampire (compatible)",
+  "shortName": "Empire of the Vampire",
+  "verified": false,
+  "books": [
+    {
+      "index": 1,
+      "title": "Empire of the Vampire",
+      "kind": "novel"
+    },
+    {
+      "index": 2,
+      "title": "Empire of the Damned",
+      "kind": "novel"
+    },
+    {
+      "index": 3,
+      "title": "Empire of the Dawn",
+      "kind": "novel"
+    }
+  ],
+  "allowlist": [
+    "Saint",
+    "Saints",
+    "Grail",
+    "Vampire",
+    "Vampires",
+    "Empire",
+    "Damned",
+    "Dawn",
+    "Blood",
+    "Silver",
+    "Dark",
+    "Night",
+    "Kin",
+    "Holy",
+    "Faith",
+    "Order"
+  ],
+  "keywords": [
+    "Empire of the Vampire",
+    "Jay Kristoff",
+    "Kristoff",
+    "Gabriel de León",
+    "Gabriel de Leon",
+    "silversaint",
+    "silversaints",
+    "San Michon",
+    "Jean-François",
+    "Dior Lachance",
+    "Ashdrinker",
+    "Celene",
+    "Elidaen",
+    "daysdeath",
+    "Ordo Argent"
+  ],
+  "terms": [
+    {
+      "term": "Alba Voss",
+      "aliases": [
+        "Alba"
+      ],
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": false,
+      "notes": "One of 'the Terrors', daughters of Fabién."
+    },
+    {
+      "term": "Aléne Voss",
+      "aliases": [
+        "Aléne",
+        "Alene Voss"
+      ],
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": false
+    },
+    {
+      "term": "Arash Sa-Pashin",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "low",
+      "wikiChecked": false
+    },
+    {
+      "term": "Cairnhaem",
+      "introducedIn": 2,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": false,
+      "notes": "Esani citadel; bridge betrayal/fall."
+    },
+    {
+      "term": "Cinna á Dúnnsair",
+      "aliases": [
+        "Cinna",
+        "Cinna a Dunnsair"
+      ],
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": false
+    },
+    {
+      "term": "Connor á Lachlainn",
+      "aliases": [
+        "Connor a Lachlainn"
+      ],
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Phoebe's late husband (book 2); revealed as Dior's father in book 3. Bare 'Connor' omitted."
+    },
+    {
+      "term": "Dior's resurrection",
+      "aliases": [
+        "Dior resurrected",
+        "Dior resurrects"
+      ],
+      "introducedIn": 2,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Dior dies and opens her eyes at end of book 2."
+    },
+    {
+      "term": "Dún Maergenn",
+      "aliases": [
+        "Dun Maergenn"
+      ],
+      "introducedIn": 2,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Fivefold Throne",
+      "introducedIn": 2,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Prophecy verses found in book 2 crypt; pursued in book 3."
+    },
+    {
+      "term": "Isla á Cuinn",
+      "aliases": [
+        "Isla a Cuinn"
+      ],
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": false,
+      "notes": "Bare 'Isla' omitted (common name)."
+    },
+    {
+      "term": "Joaquin Marenn",
+      "aliases": [
+        "Joaquin",
+        "Marenn"
+      ],
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": false
+    },
+    {
+      "term": "Jènoah",
+      "aliases": [
+        "Jenoah"
+      ],
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Kane Dyvok",
+      "aliases": [
+        "Kane"
+      ],
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "low",
+      "wikiChecked": false
+    },
+    {
+      "term": "Keylan á Meyrick",
+      "aliases": [
+        "Keylan",
+        "Keylan a Meyrick"
+      ],
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Kiara Dyvok",
+      "aliases": [
+        "Kiara",
+        "the Wolfmother"
+      ],
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Lady Arlynn",
+      "aliases": [
+        "Arlynn"
+      ],
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "low",
+      "wikiChecked": false
+    },
+    {
+      "term": "Lilidh Dyvok",
+      "aliases": [
+        "Lilidh",
+        "Lilidh the Heartless"
+      ],
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": false,
+      "notes": "Kills Dior at end of book 2."
+    },
+    {
+      "term": "Mother Maryn",
+      "aliases": [
+        "Maryn",
+        "Maryn Esana",
+        "Mother of Monsters"
+      ],
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": false,
+      "notes": "Esani Priori awakened at end of book 2; 'Mother of Monsters' epithet may be book 3."
+    },
+    {
+      "term": "Niamh Nineswords",
+      "aliases": [
+        "Nineswords"
+      ],
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Nightstone Mountains",
+      "aliases": [
+        "Nightstones"
+      ],
+      "introducedIn": 2,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Nikita Dyvok",
+      "aliases": [
+        "Nikita",
+        "the Blackheart"
+      ],
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Redwatch",
+      "aliases": [
+        "Redwatch Priory"
+      ],
+      "introducedIn": 2,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Reyne á Maergenn",
+      "aliases": [
+        "Reyne",
+        "Reyne a Maergenn"
+      ],
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Sepulcher of the Mothermaid",
+      "introducedIn": 2,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": false
+    },
+    {
+      "term": "Siege of Dún Maergenn",
+      "aliases": [
+        "Battle of Dún Maergenn",
+        "Battle of Dun Maergenn",
+        "Siege of Dun Maergenn"
+      ],
+      "introducedIn": 2,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": false
+    },
+    {
+      "term": "slaughterfarm",
+      "aliases": [
+        "slaughterfarms"
+      ],
+      "introducedIn": 2,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Soraya Dyvok",
+      "aliases": [
+        "Soraya"
+      ],
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "low",
+      "wikiChecked": false
+    },
+    {
+      "term": "Stormbringer",
+      "introducedIn": 2,
+      "type": "concept",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Gabriel's name for Phoebe; also Elric's sword elsewhere."
+    },
+    {
+      "term": "Sœur Fiona",
+      "aliases": [
+        "Soeur Fiona"
+      ],
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "low",
+      "wikiChecked": false
+    },
+    {
+      "term": "the Terrors",
+      "introducedIn": 2,
+      "type": "concept",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Worm",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Wulfric",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": false,
+      "notes": "Esani elder; Gabriel and Celene's father; Celene murdered him (book 2 reveal).",
+      "aliases": [
+        "Wulfric Esana"
+      ]
+    },
+    {
+      "term": "Xavier Pérez",
+      "aliases": [
+        "Xavier Perez"
+      ],
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "low",
+      "wikiChecked": false,
+      "notes": "Only 'named in relationships' in recap; could be book 1."
+    },
+    {
+      "term": "Baron Gerrard",
+      "aliases": [
+        "Gerrard",
+        "Baron of León",
+        "Baron of Leon"
+      ],
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Gabriel's grandfather; dies vs Ilon."
+    },
+    {
+      "term": "Battle of Augustin",
+      "aliases": [
+        "Siege of Augustin"
+      ],
+      "introducedIn": 3,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Augustin itself is book 1, not listed."
+    },
+    {
+      "term": "Bouclier Mountains",
+      "aliases": [
+        "Bouclier"
+      ],
+      "introducedIn": 3,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "low",
+      "wikiChecked": false
+    },
+    {
+      "term": "Charbourg",
+      "introducedIn": 3,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": false,
+      "notes": "Site of Redeemer's murder and Voss's ritual/death."
+    },
+    {
+      "term": "Charlotte de León",
+      "aliases": [
+        "Charlotte de Leon",
+        "Ashen Lioness",
+        "Damsel of Lionsmouth"
+      ],
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Appears in Empire of the Dawn (fan wiki). Bare \"Charlotte\" dropped: a different Charlotte (the Prioress) is in book 1."
+    },
+    {
+      "term": "Château Durand",
+      "aliases": [
+        "Chateau Durand",
+        "Durand Estate"
+      ],
+      "introducedIn": 3,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Dawnseeker",
+      "introducedIn": 3,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Ship."
+    },
+    {
+      "term": "Duke Maarten",
+      "aliases": [
+        "Maarten"
+      ],
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Ettiene Voss",
+      "aliases": [
+        "Ettiene"
+      ],
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "low",
+      "wikiChecked": false
+    },
+    {
+      "term": "First of the Whispers",
+      "aliases": [
+        "Priori Ilon"
+      ],
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Ilon as a person (Priori). Bare 'Ilon' is the book-1 bloodline name, so omitted."
+    },
+    {
+      "term": "Forge of San Javon",
+      "aliases": [
+        "San Javon"
+      ],
+      "introducedIn": 3,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Kestrel Voss",
+      "aliases": [
+        "Kestrel"
+      ],
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Lastbridge",
+      "introducedIn": 3,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Laurent Durand",
+      "aliases": [
+        "Laurent"
+      ],
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": false
+    },
+    {
+      "term": "Maidsfeast",
+      "introducedIn": 3,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Moonsthrone",
+      "introducedIn": 3,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "low",
+      "wikiChecked": false
+    },
+    {
+      "term": "Morgane",
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "low",
+      "wikiChecked": false
+    },
+    {
+      "term": "Nicolette Chastain",
+      "aliases": [
+        "Nicolette"
+      ],
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Oleander the Wise",
+      "aliases": [
+        "Oleander"
+      ],
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Prince Philippe",
+      "aliases": [
+        "Philippe",
+        "Phillipe",
+        "Prince Phillipe"
+      ],
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Rive Cœur",
+      "aliases": [
+        "Rive Coeur"
+      ],
+      "introducedIn": 3,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "River Béni",
+      "aliases": [
+        "Béni",
+        "River Beni"
+      ],
+      "introducedIn": 3,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "low",
+      "wikiChecked": false
+    },
+    {
+      "term": "Roisin the Red",
+      "aliases": [
+        "Roisin"
+      ],
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Rousseau Gambit",
+      "introducedIn": 3,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "low",
+      "wikiChecked": false
+    },
+    {
+      "term": "San Maximille",
+      "introducedIn": 3,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": false
+    },
+    {
+      "term": "San Yves",
+      "introducedIn": 3,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "the Unbound",
+      "introducedIn": 3,
+      "type": "concept",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Tolman the Scarred",
+      "aliases": [
+        "Tolman"
+      ],
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "needsContext": true,
+      "confidence": "low",
+      "wikiChecked": false
+    },
+    {
+      "term": "Tower of Tears",
+      "introducedIn": 3,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Victorine",
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": false
+    }
+  ]
+}

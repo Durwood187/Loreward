@@ -18,8 +18,8 @@ Ongoing series (new books coming, active fandoms) first; long-finished classics 
    Realm of the Elderlings ✅ (0.3.0, requested by a creator)
 4. Fourth Wing (The Empyrean) ✅ (0.3.0)
 5. Dungeon Crawler Carl ✅ (0.3.0)
-6. Red Rising
-7. Empire of the Vampire
+6. Empire of the Vampire ✅ (0.4.0)
+7. Red Rising
 8. Harry Potter
 9. Eragon (Inheritance Cycle)
 10. Percy Jackson
@@ -29,3 +29,10 @@ Ongoing series (new books coming, active fandoms) first; long-finished classics 
 
 Each series: AI-drafted terms per book, checked against the series wiki, short review list of
 judgment calls for Eric (see docs/term-review.md for the Stormlight example).
+
+## Site ideas (Nov 2026)
+- Google AI Mode ✅ (0.4.0)
+- Web versions of AI chats (gemini.google.com, chatgpt.com, claude.ai): blur replies that name later-book
+  terms. Needs new host permissions; replies stream in; layouts change often. Gauge demand first.
+- Discord in the browser: book-club servers. New host permission.
+- Text messages / phone chat apps: not possible (iOS and Android don't let extensions or apps read other apps).

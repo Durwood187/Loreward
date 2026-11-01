@@ -106,6 +106,8 @@ Labels (strongest first):
 - [ ] **People also ask:** questions with a later-book name are blurred; other questions are readable.
 - [ ] Opening a question: its answer appears **already blurred** (no flash), with a label. Closed questions show no labels.
 - [ ] Revealing a question does **not** reveal its answer.
+- [ ] **AI Mode** (the "AI Mode" tab at the top of results): on a series search the answer is blurred with the outlined label; the question stays readable.
+- [ ] AI Mode follow-up: ask a second question in the same conversation; the new answer is blurred as it appears.
 - [ ] Clicking a blurred result reveals it and does **not** open the link.
 - [ ] Popup on a Google results page says "Shield on Google Search", and switching it off clears blurs on Google only.
 - [ ] Other Google pages (Gmail, Maps, google.com home page) are untouched.

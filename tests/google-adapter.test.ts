@@ -258,3 +258,48 @@ describe('reading text from pages with no whitespace between elements', () => {
     expect(readableText(document.getElementById('x')!)).toBe("Kaladin's bridgecrew");
   });
 });
+
+describe('Google AI Mode (the chat-style tab)', () => {
+  let shield: Shield;
+  beforeEach(() => {
+    useDocument(loadFixture('google-ai-mode.html'));
+    shield = new Shield(googleAdapter, document, () => 'what happens to kaladin');
+    shield.configure(matchers, true);
+    shield.start();
+  });
+  afterEach(() => shield.stop());
+
+  it('holds back an AI Mode answer on a search about the series', () => {
+    const a = el('answer-1');
+    expect(stateOf(a)).toBe('blocked');
+    expect(labelOf(a)!.getAttribute('data-kind')).toBe('maybe');
+  });
+
+  it('leaves the question itself readable', () => {
+    expect(stateOf(el('turn-1'))).toBe(null);
+    expect(stateOf(el('turn-1').querySelector('.query')!)).toBe(null);
+  });
+
+  it('blurs a follow-up answer right away, as it arrives', async () => {
+    el('conversation').innerHTML =
+      '<div data-xid="aim-mars-turn-root"><div class="query">and then?</div>' +
+      '<div data-subtree="aimc" data-test="answer-2"><span>Later, Raboniel arrives.</span></div></div>';
+    await tick();
+    expect(stateOf(el('answer-2'))).toBe('blocked');
+    expect(labelOf(el('answer-2'))!.getAttribute('data-kind')).toBe('term');
+  });
+});
+
+describe('Google AI Overview with an AI Mode block inside it', () => {
+  it('blurs the AI Overview once, not a box inside a box', () => {
+    useDocument(loadFixture('google-search.html'));
+    const shield = new Shield(googleAdapter, document, () => SERIES_QUERY);
+    shield.configure(matchers, true);
+    shield.start();
+    const inner = el('ai-overview').querySelector('[data-subtree="aimc"]')!;
+    expect(stateOf(el('ai-overview'))).toBe('blocked');
+    expect(inner.hasAttribute('data-ss-state')).toBe(false);
+    expect(el('ai-overview').querySelectorAll('.ss-label')).toHaveLength(0);
+    shield.stop();
+  });
+});

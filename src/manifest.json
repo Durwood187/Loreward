@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Loreward: Book Spoiler Blocker for Reddit & Google AI",
   "short_name": "Loreward",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Hides book spoilers on Reddit and Google search, including Google's AI answers, based on how far you've read. 100% private.",
   "permissions": [
     "storage"

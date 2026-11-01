@@ -28,7 +28,7 @@ Loreward knows how far you've read. Pick your series and the book you're on, and
 
 WHAT IT BLURS
 • Posts, comments and search results that mention characters, places or events from books you haven't reached yet
-• Google's AI Overview and "People also ask" answers on searches about your series. AI answers spoil with facts, not just names, so Loreward holds them back until you click
+• Google's AI Overview, AI Mode and "People also ask" answers on searches about your series. AI answers spoil with facts, not just names, so Loreward holds them back until you click
 • Search results and posts about the book you're reading right now, which could give away its ending
 
 CLEAR LABELS, SO YOU CAN DECIDE
@@ -39,7 +39,7 @@ CLEAR LABELS, SO YOU CAN DECIDE
 
 WORKS ON
 • Reddit (new and old)
-• Google search (results, AI Overview, People also ask)
+• Google search (results, AI Overview, AI Mode, People also ask)
 More sites are coming.
 
 SERIES
@@ -48,6 +48,7 @@ SERIES
 • Realm of the Elderlings (all 16 books)
 • The Empyrean (Fourth Wing, Iron Flame, Onyx Storm)
 • Dungeon Crawler Carl
+• Empire of the Vampire
 More series are on the way.
 
 PRIVATE BY DESIGN

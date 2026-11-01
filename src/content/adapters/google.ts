@@ -4,6 +4,9 @@
 // scrambled and change often, so we lean on ids, jscontroller/jsname values
 // and long-lived class names instead:
 //   #eKIzJc                    the AI Overview block (heading "AI Overview")
+//   [data-subtree="aimc"]      one AI Mode answer (the chat-style "AI Mode" tab, udm=50);
+//                              one per conversation turn. The AI Overview contains one
+//                              too, so those are excluded to avoid a box inside a box.
 //   [jscontroller="SC7lYd"]    one regular web result (title + snippet)
 //   .related-question-pair     one "People also ask" item, in two parts:
 //     [role="button"][aria-expanded]   the question (normal checking)
@@ -18,7 +21,11 @@
 
 import type { SiteAdapter } from './types';
 
-const AI_ANSWERS = ['#eKIzJc', '.related-question-pair [jsname="NRdf4c"]'];
+const AI_ANSWERS = [
+  '#eKIzJc',
+  '[data-subtree="aimc"]:not(#eKIzJc *)',
+  '.related-question-pair [jsname="NRdf4c"]',
+];
 const UNITS = [
   ...AI_ANSWERS,
   '.related-question-pair [role="button"][aria-expanded]',
