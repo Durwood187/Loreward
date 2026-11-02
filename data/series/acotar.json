@@ -1,0 +1,1208 @@
+{
+  "$schema": "../schema.json",
+  "id": "acotar",
+  "name": "A Court of Thorns and Roses (compatible)",
+  "shortName": "A Court of Thorns and Roses",
+  "verified": false,
+  "books": [
+    {
+      "index": 1,
+      "title": "A Court of Thorns and Roses",
+      "kind": "novel",
+      "aliases": [
+        "ACOTAR"
+      ]
+    },
+    {
+      "index": 2,
+      "title": "A Court of Mist and Fury",
+      "kind": "novel",
+      "aliases": [
+        "ACOMAF"
+      ]
+    },
+    {
+      "index": 3,
+      "title": "A Court of Wings and Ruin",
+      "kind": "novel",
+      "aliases": [
+        "ACOWAR"
+      ]
+    },
+    {
+      "index": 4,
+      "title": "A Court of Frost and Starlight",
+      "kind": "novella",
+      "aliases": [
+        "ACOFAS"
+      ]
+    },
+    {
+      "index": 5,
+      "title": "A Court of Silver Flames",
+      "kind": "novel",
+      "aliases": [
+        "ACOSF"
+      ]
+    },
+    {
+      "index": 6,
+      "title": "A Court of Splintered Harmony",
+      "kind": "novel",
+      "aliases": [
+        "ACOSH"
+      ]
+    }
+  ],
+  "allowlist": [
+    "Court",
+    "Courts",
+    "Night",
+    "Day",
+    "Dawn",
+    "Spring",
+    "Summer",
+    "Autumn",
+    "Winter",
+    "Fae",
+    "Faerie",
+    "Lord",
+    "Lady",
+    "High Lord",
+    "Mate",
+    "Mates",
+    "Wall",
+    "King",
+    "Queen",
+    "Prince",
+    "Princess",
+    "Mist",
+    "Fury",
+    "Wings",
+    "Ruin",
+    "Frost",
+    "Starlight",
+    "Silver",
+    "Flames",
+    "Thorns",
+    "Roses",
+    "Harmony"
+  ],
+  "keywords": [
+    "Sarah J. Maas",
+    "SJM",
+    "Feyre",
+    "Feyre Archeron",
+    "Tamlin",
+    "Lucien",
+    "Prythian",
+    "Amarantha",
+    "Rhysand",
+    "Rhys",
+    "Nesta",
+    "Elain",
+    "Spring Court",
+    "Under the Mountain",
+    "Archeron",
+    "Calanmai"
+  ],
+  "terms": [
+    {
+      "term": "Adriata",
+      "introducedIn": 2,
+      "type": "place",
+      "caseSensitive": false,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Similar to Adriatic; whole-word match should avoid it"
+    },
+    {
+      "term": "Amren",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "attack on Velaris",
+      "aliases": [
+        "Velaris attack"
+      ],
+      "introducedIn": 2,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Azriel",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "'Az' alias is short; reviewer may drop"
+    },
+    {
+      "term": "Blood Ruby",
+      "introducedIn": 2,
+      "type": "concept",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Tarquin's declaration of enmity"
+    },
+    {
+      "term": "Bone Carver",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Book of Breathings",
+      "introducedIn": 2,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Cassian",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Illyrian general of the Inner Circle; also a real-world name"
+    },
+    {
+      "term": "Court of Dreams",
+      "introducedIn": 2,
+      "type": "concept",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": false,
+      "notes": "Rhys's name for the Inner Circle"
+    },
+    {
+      "term": "Court of Nightmares",
+      "introducedIn": 2,
+      "type": "place",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Cresseida",
+      "aliases": [
+        "Cresseda",
+        "Princess Cresseida"
+      ],
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Devlon",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Windhaven camp lord; memory says ACOMAF visit"
+    },
+    {
+      "term": "Elucien",
+      "aliases": [
+        "Lucien's mate",
+        "Lucien and Elain mates",
+        "Elain is Lucien's mate"
+      ],
+      "introducedIn": 2,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": false,
+      "notes": "Revealed at Hybern, end of ACOMAF"
+    },
+    {
+      "term": "Feysand",
+      "aliases": [
+        "Rhysand's mate",
+        "Feyre's mate",
+        "Feyre and Rhysand are mates",
+        "Rhys and Feyre mates"
+      ],
+      "introducedIn": 2,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Mate-bond reveal"
+    },
+    {
+      "term": "Hewn City",
+      "introducedIn": 2,
+      "type": "place",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": false
+    },
+    {
+      "term": "High Lady of the Night Court",
+      "aliases": [
+        "High Lady Feyre",
+        "Lady of the Night Court",
+        "High Lady of Night"
+      ],
+      "introducedIn": 2,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Feyre made High Lady at end of ACOMAF"
+    },
+    {
+      "term": "House of Wind",
+      "introducedIn": 2,
+      "type": "place",
+      "caseSensitive": true,
+      "confidence": "high",
+      "wikiChecked": false
+    },
+    {
+      "term": "Ianthe",
+      "aliases": [
+        "High Priestess Ianthe"
+      ],
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Illyrian",
+      "aliases": [
+        "Illyrians",
+        "half-Illyrian"
+      ],
+      "introducedIn": 2,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Inner Circle",
+      "aliases": [
+        "Rhysand's Inner Circle",
+        "Night Court Inner Circle"
+      ],
+      "introducedIn": 2,
+      "type": "concept",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Generic phrase; only blur on series pages"
+    },
+    {
+      "term": "Keir",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Mor's father, Steward of the Hewn City; first in ACOMAF Court of Nightmares visit (memory); also a real name"
+    },
+    {
+      "term": "King of Hybern",
+      "aliases": [
+        "Hybern's king"
+      ],
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Made by the Cauldron",
+      "aliases": [
+        "Nesta and Elain made Fae",
+        "Cauldron-Made",
+        "sisters made High Fae"
+      ],
+      "introducedIn": 2,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Sisters thrown into the Cauldron at end of ACOMAF"
+    },
+    {
+      "term": "Morrigan",
+      "aliases": [
+        "Mor"
+      ],
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Rhysand's cousin; 'Mor' and 'Morrigan' (Irish myth) need context"
+    },
+    {
+      "term": "mortal queens",
+      "aliases": [
+        "human queens",
+        "the five queens"
+      ],
+      "introducedIn": 2,
+      "type": "concept",
+      "caseSensitive": false,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Rainbow of Velaris",
+      "introducedIn": 2,
+      "type": "place",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Artists' quarter; 'the Rainbow' alias is risky, reviewer may drop"
+    },
+    {
+      "term": "shadowsinger",
+      "introducedIn": 2,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Azriel's title"
+    },
+    {
+      "term": "Sidra",
+      "aliases": [
+        "Sidra River"
+      ],
+      "introducedIn": 2,
+      "type": "place",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Velaris river; also a first name"
+    },
+    {
+      "term": "Siphon",
+      "aliases": [
+        "Siphons"
+      ],
+      "introducedIn": 2,
+      "type": "concept",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Starfall",
+      "introducedIn": 2,
+      "type": "event",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Stryga",
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Weaver's real name / Bone Carver's sister"
+    },
+    {
+      "term": "Tarquin",
+      "aliases": [
+        "High Lord of Summer",
+        "High Lord of the Summer Court"
+      ],
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": false,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Real-world name (Tarquin the Proud)"
+    },
+    {
+      "term": "the Prison",
+      "introducedIn": 2,
+      "type": "place",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "the Weaver",
+      "aliases": [
+        "Weaver in the Wood"
+      ],
+      "introducedIn": 2,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "'Weaver' alone is an everyday word; phrase form"
+    },
+    {
+      "term": "Truth-Teller",
+      "aliases": [
+        "Truth Teller"
+      ],
+      "introducedIn": 2,
+      "type": "concept",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Azriel's blade"
+    },
+    {
+      "term": "Velaris",
+      "aliases": [
+        "City of Starlight"
+      ],
+      "introducedIn": 2,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Windhaven",
+      "aliases": [
+        "Windhaven Camp"
+      ],
+      "introducedIn": 2,
+      "type": "place",
+      "caseSensitive": false,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Amren's true form",
+      "aliases": [
+        "Amren's sacrifice"
+      ],
+      "introducedIn": 3,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Beron",
+      "aliases": [
+        "Beron Vanserra",
+        "High Lord of Autumn"
+      ],
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Brannagh",
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Hybern twin royal"
+    },
+    {
+      "term": "Bryaxis",
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Cretea",
+      "introducedIn": 3,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Cursebreaker",
+      "aliases": [
+        "Feyre Cursebreaker"
+      ],
+      "introducedIn": 3,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "low",
+      "wikiChecked": false
+    },
+    {
+      "term": "Dagdan",
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Hybern twin royal"
+    },
+    {
+      "term": "Darkbringer",
+      "aliases": [
+        "Darkbringers"
+      ],
+      "introducedIn": 3,
+      "type": "concept",
+      "caseSensitive": true,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Keir's legion"
+    },
+    {
+      "term": "Drakon",
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Elain's visions",
+      "aliases": [
+        "Elain the Seer",
+        "Elain's prophecies"
+      ],
+      "introducedIn": 3,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Elriel",
+      "aliases": [
+        "Elain and Azriel"
+      ],
+      "introducedIn": 3,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Ship name; tension starts book 3"
+    },
+    {
+      "term": "Eris",
+      "aliases": [
+        "Eris Vanserra"
+      ],
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Greek goddess name"
+    },
+    {
+      "term": "Feyre's return to the Spring Court",
+      "aliases": [
+        "Feyre spies on Tamlin",
+        "Feyre the spy",
+        "Feyre destroys the Spring Court"
+      ],
+      "introducedIn": 3,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Graysen",
+      "aliases": [
+        "Graysen Nolan"
+      ],
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Helion",
+      "aliases": [
+        "Helion Spell-Cleaver",
+        "High Lord of Day",
+        "High Lord of the Day Court"
+      ],
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Greek sun name"
+    },
+    {
+      "term": "Helion is Lucien's father",
+      "aliases": [
+        "Lucien's real father",
+        "Helion's son",
+        "son of Helion"
+      ],
+      "introducedIn": 3,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Ianthe's death",
+      "aliases": [
+        "Ianthe dies"
+      ],
+      "introducedIn": 3,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Jurian's death",
+      "aliases": [
+        "Jurian dies"
+      ],
+      "introducedIn": 3,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Koschei",
+      "aliases": [
+        "Koschei the Deathless"
+      ],
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "May duplicate 4-6 helper; keep earliest (3)"
+    },
+    {
+      "term": "meeting of the High Lords",
+      "aliases": [
+        "High Lords meeting"
+      ],
+      "introducedIn": 3,
+      "type": "event",
+      "caseSensitive": false,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": false
+    },
+    {
+      "term": "Miryam",
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Mor's sexuality",
+      "aliases": [
+        "Mor is gay",
+        "Mor is bisexual",
+        "Mor loves women"
+      ],
+      "introducedIn": 3,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Mor's reveal to Feyre in ACOWAR (memory)"
+    },
+    {
+      "term": "Nessian",
+      "aliases": [
+        "Nesta and Cassian"
+      ],
+      "introducedIn": 3,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Ship builds book 3; mate reveal is book 5 (other helper)"
+    },
+    {
+      "term": "Nesta kills the King of Hybern",
+      "aliases": [
+        "death of the King of Hybern",
+        "King of Hybern dies",
+        "Nesta beheads the King"
+      ],
+      "introducedIn": 3,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": false
+    },
+    {
+      "term": "Nesta's power",
+      "aliases": [
+        "Nesta's Cauldron power",
+        "Nesta stole from the Cauldron"
+      ],
+      "introducedIn": 3,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Ouroboros",
+      "aliases": [
+        "Ouroboros mirror"
+      ],
+      "introducedIn": 3,
+      "type": "concept",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Also a common symbol"
+    },
+    {
+      "term": "Rhysand's death",
+      "aliases": [
+        "Rhys dies",
+        "Rhysand dies",
+        "death of Rhysand"
+      ],
+      "introducedIn": 3,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": false,
+      "notes": "Rhys dies in final battle and is revived"
+    },
+    {
+      "term": "Rhysand's resurrection",
+      "aliases": [
+        "High Lords revive Rhysand",
+        "Tamlin brings Rhys back",
+        "Tamlin's spark"
+      ],
+      "introducedIn": 3,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": false
+    },
+    {
+      "term": "Seraphim",
+      "introducedIn": 3,
+      "type": "concept",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Varian",
+      "aliases": [
+        "Prince Varian"
+      ],
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Vassa",
+      "aliases": [
+        "firebird queen"
+      ],
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Human queen cursed as firebird"
+    },
+    {
+      "term": "Viviane",
+      "aliases": [
+        "Lady of Winter"
+      ],
+      "introducedIn": 3,
+      "type": "character",
+      "caseSensitive": false,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Kallias himself is book 1 per wiki, so excluded"
+    },
+    {
+      "term": "war with Hybern",
+      "aliases": [
+        "Hybern war",
+        "the war against Hybern"
+      ],
+      "introducedIn": 3,
+      "type": "event",
+      "caseSensitive": false,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Feyre's Studio",
+      "aliases": [
+        "Feyre's art studio"
+      ],
+      "introducedIn": 4,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Children's art studio Feyre opens with Ressina in ACOFAS. Wiki page exists; book from recap."
+    },
+    {
+      "term": "Void fabric",
+      "introducedIn": 4,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "low",
+      "wikiChecked": true,
+      "notes": "Grief-fabric woven by a widowed weaver in ACOFAS (recap only). Low-value term."
+    },
+    {
+      "term": "Ataraxia",
+      "introducedIn": 5,
+      "type": "concept",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Nesta's sword. Also a philosophy term, so case-sensitive plus context."
+    },
+    {
+      "term": "Bellius",
+      "introducedIn": 5,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Abusive Illyrian male from Windhaven."
+    },
+    {
+      "term": "Blood Rite",
+      "introducedIn": 5,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Bog of Oorid",
+      "aliases": [
+        "Oorid"
+      ],
+      "introducedIn": 5,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Nesta claims the Mask here."
+    },
+    {
+      "term": "Cassian's mate",
+      "aliases": [
+        "Nesta's mate",
+        "Nesta and Cassian are mates",
+        "Nesta and Cassian mates"
+      ],
+      "introducedIn": 5,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Nesta/Cassian mating bond confirmed in ACOSF. Pre-ACOSF fan speculation used these phrases too, so blurring them for books 1-4 is right."
+    },
+    {
+      "term": "Clotho",
+      "introducedIn": 5,
+      "type": "character",
+      "caseSensitive": false,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Mute High Priestess of the library. Also a Greek Fate, so needsContext."
+    },
+    {
+      "term": "Dread Trove",
+      "introducedIn": 5,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Mask, Harp, Crown (and Horn). Wiki page has no first-appearance field; ACOSF from memory and recap."
+    },
+    {
+      "term": "Emerie",
+      "introducedIn": 5,
+      "type": "character",
+      "caseSensitive": false,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Feyre's pregnancy",
+      "aliases": [
+        "Feyre is pregnant",
+        "Feyre pregnant",
+        "Feyre's baby",
+        "Feyre's birth"
+      ],
+      "introducedIn": 5,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Winged baby nearly kills Feyre and Rhys; Nesta trades her Cauldron power to save them."
+    },
+    {
+      "term": "Gwydion",
+      "introducedIn": 5,
+      "type": "concept",
+      "caseSensitive": false,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Sword, twin of Truth-Teller; also carried by Bryce in Crescent City (HOSAB, published after ACOSF). Wiki gives no ACOTAR first appearance."
+    },
+    {
+      "term": "Gwyneth Berdara",
+      "aliases": [
+        "Gwyn",
+        "Gwyneth"
+      ],
+      "introducedIn": 5,
+      "type": "character",
+      "caseSensitive": false,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Library priestess; Valkyrie trainee. Gwyn is a real name, so needsContext."
+    },
+    {
+      "term": "Gwynriel",
+      "introducedIn": 5,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": false,
+      "notes": "Azriel x Gwyn ship name; only exists after ACOSF."
+    },
+    {
+      "term": "Lanthys",
+      "introducedIn": 5,
+      "type": "character",
+      "caseSensitive": false,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Shapeshifting Prison inmate."
+    },
+    {
+      "term": "Merrill",
+      "introducedIn": 5,
+      "type": "character",
+      "caseSensitive": false,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Library scholar researching the Valkyries."
+    },
+    {
+      "term": "Mind-Stilling",
+      "aliases": [
+        "Mind Stilling"
+      ],
+      "introducedIn": 5,
+      "type": "concept",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Valkyrie meditation technique taught in ACOSF; from memory."
+    },
+    {
+      "term": "Nyx",
+      "aliases": [
+        "Feyre's son",
+        "Rhysand's son",
+        "Rhys's son",
+        "Feyre and Rhysand's son"
+      ],
+      "introducedIn": 5,
+      "type": "character",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Born near the end of ACOSF. Nyx is also a goddess and a common brand."
+    },
+    {
+      "term": "Ramiel",
+      "introducedIn": 5,
+      "type": "place",
+      "caseSensitive": false,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Roslin",
+      "introducedIn": 5,
+      "type": "character",
+      "caseSensitive": false,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Gwyn's twin sister, killed at Sangravah; from memory."
+    },
+    {
+      "term": "Sangravah",
+      "introducedIn": 5,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Temple where Gwyn and Roslin were attacked; from memory."
+    },
+    {
+      "term": "ten thousand steps",
+      "aliases": [
+        "10,000 steps",
+        "10000 steps"
+      ],
+      "introducedIn": 5,
+      "type": "event",
+      "caseSensitive": false,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Nesta's House of Wind stairs."
+    },
+    {
+      "term": "the Harp",
+      "introducedIn": 5,
+      "type": "concept",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "the Mask",
+      "aliases": [
+        "Death's Mask"
+      ],
+      "introducedIn": 5,
+      "type": "concept",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Valkyrie",
+      "aliases": [
+        "Valkyrie training",
+        "Valkyries"
+      ],
+      "introducedIn": 5,
+      "type": "concept",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Book 6 is subtitled 'The Valkyrie Cycle', so pages about book 6 will also hit."
+    },
+    {
+      "term": "Azriel and Elain's affair",
+      "aliases": [
+        "Elain and Azriel's affair",
+        "Elain cheated on Lucien",
+        "Azriel and Elain hooked up",
+        "Elain and Azriel hooked up"
+      ],
+      "introducedIn": 6,
+      "type": "event",
+      "caseSensitive": false,
+      "confidence": "low",
+      "wikiChecked": true,
+      "notes": "SYFY: Lucien catches them and leaves; they are not mates. Lucien-Elain bond reaffirmed (that bond itself is book 2)."
+    },
+    {
+      "term": "Montesere",
+      "introducedIn": 6,
+      "type": "place",
+      "caseSensitive": false,
+      "confidence": "low",
+      "wikiChecked": true,
+      "notes": "Continental kingdom seeking the old human lands. Two early AI-style summaries (ursummary, bookishelf)."
+    },
+    {
+      "term": "Naming Day",
+      "aliases": [
+        "Nyx's Naming Day"
+      ],
+      "introducedIn": 6,
+      "type": "event",
+      "caseSensitive": true,
+      "needsContext": true,
+      "confidence": "low",
+      "wikiChecked": true,
+      "notes": "Bryaxis attacks Nyx's Naming Day. Two early summaries."
+    }
+  ]
+}

@@ -19,6 +19,7 @@ Ongoing series (new books coming, active fandoms) first; long-finished classics 
 4. Fourth Wing (The Empyrean) ✅ (0.3.0)
 5. Dungeon Crawler Carl ✅ (0.3.0)
 6. Empire of the Vampire ✅ (0.4.0)
+   A Court of Thorns and Roses ✅ (0.4.1, timed for the book 6 release)
 7. Red Rising
 8. Harry Potter
 9. Eragon (Inheritance Cycle)
