@@ -36,3 +36,18 @@ judgment calls for Eric (see docs/term-review.md for the Stormlight example).
   terms. Needs new host permissions; replies stream in; layouts change often. Gauge demand first.
 - Discord in the browser: book-club servers. New host permission.
 - Text messages / phone chat apps: not possible (iOS and Android don't let extensions or apps read other apps).
+
+## Pricing plan (decided Nov 2026, Eric)
+Nothing here is built yet. Payments wait for real traction (roughly 100+ weekly users).
+
+- **Free forever:** one series, with everything Loreward does: every supported site, every new series as
+  it's added. (Promised publicly to a creator: "the first series stays free".)
+- **Pro (once a paywall exists):** any additional series, protecting several at once, a "haven't started
+  yet" reading list, and new tools (chapter-level progress, AI chat sites, Discord).
+- **Until the paywall exists:** free switching between series for everyone. Pro-only features are not
+  built before then; releases in the meantime improve the free version (more series, YouTube, the
+  "ending/last chapter" Reddit rule).
+- **When the paywall launches, existing users:** the series each person has selected at that moment
+  becomes their free series. Say so plainly in the update notes. (Alternative considered: let existing
+  users keep free switching as a thank-you.)
+- **Picking the wrong series:** one free change of series within the first month after install.
