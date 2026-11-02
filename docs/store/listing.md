@@ -19,6 +19,9 @@ Upload `loreward-<version>.zip` (made by `npm run package`).
 
 **Description** (paste everything between the lines):
 
+> Don't list series names here. Version 0.4.0 was rejected (Nov 2026) for "excessive and/or irrelevant
+> keywords", pointing at the series list. The list lives on the website (docs/index.md) and in the popup.
+
 ---
 Google's AI answers spoil books. Loreward stops them.
 
@@ -42,20 +45,14 @@ WORKS ON
 • Google search (results, AI Overview, AI Mode, People also ask)
 More sites are coming.
 
-SERIES
-• The Stormlight Archive
-• Mistborn (both eras, including Secret History)
-• Realm of the Elderlings (all 16 books)
-• The Empyrean (Fourth Wing, Iron Flame, Onyx Storm)
-• Dungeon Crawler Carl
-• Empire of the Vampire
-More series are on the way.
+WHICH SERIES?
+Loreward covers a growing list of popular fantasy series. Open the extension to see the full list and pick yours. The list is also on the homepage linked from this page.
 
 PRIVATE BY DESIGN
 • Everything runs in your browser. No accounts, no tracking, no data sent anywhere.
 • Only two permissions: storage for your settings, and access to the sites it protects.
 
-Loreward is an independent project and isn't affiliated with any author or publisher. Series names are used only to describe compatibility.
+Loreward is an independent project and isn't affiliated with any author or publisher.
 ---
 
 **Category:** Lifestyle → Entertainment
