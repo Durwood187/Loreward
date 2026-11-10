@@ -22,6 +22,7 @@ When unsure, the later book is the safe choice: it blurs for more readers.
 | Xaden leads a rebellion | Xaden | rebellion, revolution*, smuggl*, weapons, traitor, treason, marked ones | high |  |
 | Dain reads Violet's memories | Dain | memories, memory, betray*, signet, read her | high |  |
 | Andarna stops time | Andarna | stop* time, stopped time, time, feathertail, golden | medium |  |
+| Jack Barlowe dies<br><sub>Wiki: Violet's lightning kills him in Fourth Wing. 'Jack' is a common name, so context-only.</sub> | Jack, Barlowe *(context)* | death words, turret, rubble, lightning | high | ✓ |
 
 ## 2. Iron Flame
 
@@ -32,18 +33,21 @@ When unsure, the later book is the safe choice: it blurs for more readers.
 | Xaden becomes a venin initiate | Xaden | venin, initiate, turned, turns, channel*, eyes | high | ✓ |
 | Ciaran dies | Ciaran | death words | high | ✓ |
 | Xaden and Violet's fights in Iron Flame | Xaden, Violet | break up, broke up, breakup, lied, secrets | medium |  |
+| Lilith Sorrengail dies<br><sub>Wiki: siphoned by Sloane Mairi; Onyx Storm opens with Aetos in 'her mother's former position', so it happens by the end of Iron Flame.</sub> | Lilith, General Sorrengail, Violet's mother, Sloane | death words, siphon* | high | ✓ |
+| Varrish's fate<br><sub>Wiki (Iron Flame summary): Varrish dies at Violet's hand.</sub> | Varrish | death words | high | ✓ |
+| Jack Barlowe comes back<br><sub>Wiki: 'Jack Barlowe's resurrection' in Iron Flame.</sub> | Jack, Barlowe *(context)* | resurrect*, alive, back, venin, returns, memory wiped | high | ✓ |
 
 ## 3. Onyx Storm
 
 | Event | Subjects | Cues | Confidence | Wiki |
 |---|---|---|---|---|
 | Violet and Xaden marry<br><sub>Xaden is Duke of Tyrrendor in Onyx Storm (wiki).</sub> | Violet, Xaden | marr*, wedding, wed, husband, wife, Duchess, Duke | medium |  |
-| Lilith Sorrengail dies<br><sub>Wiki: deceased, siphoned by Sloane Mairi. Book not stated; Onyx Storm = safe.</sub> | Lilith, General Sorrengail, Violet's mother, Sloane | death words, siphon* | medium | ✓ |
 | Andarna's second signet and the Irids | Andarna, Violet | Irid*, seventh breed, Dreamwalk*, dreamwalking, second signet, leaves, Leothan | high | ✓ |
 | Theophanie dies | Theophanie | death words | high | ✓ |
-| Xaden's venin fate | Xaden | cure*, cured, Sage, full venin, lost him | medium |  |
-| Varrish's fate<br><sub>Not confirmed on the wiki; put late to be safe.</sub> | Varrish | death words | low |  |
+| Xaden's venin fate | Xaden | cure*, cured, Sage, full venin, lost him, no cure | medium |  |
 | Colonel Aetos's fate<br><sub>Not confirmed on the wiki; put late to be safe.</sub> | Colonel Aetos, Dain's father | death words | low |  |
+| Professor Grady and Aura die | Grady, Aura *(context)* | death words | high | ✓ |
+| Halden joins the quest | Halden | quest, mission, Irid*, joins | high | ✓ |
 | Main character deaths (catch-all)<br><sub>Backstop: a main character + a death word blurs until the reader finishes the series (Onyx Storm, until book 4 is out).</sub> | Violet, Xaden, Tairn, Andarna, Sgaeyl, Rhiannon, Ridoc, Sawyer, Imogen, Bodhi, Garrick, Mira, Brennan, Dain, Liam, Sloane *(context)* | death words | medium |  |
 
 ## Known gaps

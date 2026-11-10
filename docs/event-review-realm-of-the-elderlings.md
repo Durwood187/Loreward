@@ -26,7 +26,7 @@ When unsure, the later book is the safe choice: it blurs for more readers.
 | Event | Subjects | Cues | Confidence | Wiki |
 |---|---|---|---|---|
 | Fitz bonds Nighteyes | Fitz, FitzChivalry | Nighteyes, wolf, Wit bond, Wit-bond, bonds a | high | ✓ |
-| King Shrewd dies | Shrewd, King Shrewd *(context)* | death words | high |  |
+| King Shrewd dies | Shrewd, King Shrewd *(context)* | death words | high | ✓ |
 | Fitz dies in Regal's dungeon and is brought back<br><sub>Assassin's Quest opens with Fitz resurrected (Wikipedia).</sub> | Fitz, FitzChivalry | death words, resurrect*, dungeon, grave, buried, brought back, into the wolf | high | ✓ |
 | Molly leaves Fitz | Molly *(context)* | leaves him, left him, rejects, for another | high | ✓ |
 | Verity leaves on his quest | Verity *(context)* | quest, Elderlings, leaves, alive | medium | ✓ |
@@ -39,10 +39,11 @@ When unsure, the later book is the safe choice: it blurs for more readers.
 | Burrich and Molly marry | Burrich | Molly, marr*, wed | high |  |
 | The White Prophet is the Fool | White Prophet | Fool | high | ✓ |
 | Verity becomes a dragon | Verity *(context)* | dragon, stone dragon, carv*, becomes a dragon, Verity-as-Dragon | high |  |
-| Kettle dies | Kettle, Kestrel *(context)* | death words, dragon | high |  |
+| Kettle dies | Kettle, Kestrel *(context)* | death words, dragon | high | ✓ |
 | Kettricken takes Nettle as heir | Kettricken | Nettle, heir | high | ✓ |
-| Galen's fate<br><sub>Not confirmed; put late to be safe.</sub> | Galen | death words | low |  |
-| Regal's fate | Regal *(context)* | death words, Skill-command*, loyal | medium |  |
+| Galen's fate<br><sub>Wiki: deceased, book not stated; book 3 to be safe.</sub> | Galen | death words | low |  |
+| Regal's fate<br><sub>Checked on the Robin Hobb fandom wiki. Dies in Assassin's Quest.</sub> | Regal *(context)* | death words, Skill-command*, loyal | high | ✓ |
+| Will dies<br><sub>Checked on the Robin Hobb fandom wiki. 'Will' is an everyday word, so context-only.</sub> | Will *(context)* | death words | high | ✓ |
 
 ## 4. Ship of Magic
 
@@ -58,6 +59,7 @@ When unsure, the later book is the safe choice: it blurs for more readers.
 |---|---|---|---|---|
 | Kennit's past with Igrot | Kennit | Igrot, abuse*, his father, prisoner | high | ✓ |
 | The dragon in the wizardwood (Tintaglia) | Reyn, Tintaglia | dragon, wizardwood, freed, free* | high | ✓ |
+| Kennit nearly dies after the amputation<br><sub>Checked on the Robin Hobb fandom wiki. He dies for real in Ship of Destiny (separate event).</sub> | Kennit | death words, reviv*, brought back, amputat* | high | ✓ |
 
 ## 6. Ship of Destiny
 
@@ -85,7 +87,7 @@ When unsure, the later book is the safe choice: it blurs for more readers.
 | Event | Subjects | Cues | Confidence | Wiki |
 |---|---|---|---|---|
 | The Fool dies and Fitz brings him back | Fool, Beloved *(context)* | death words, revive*, resurrect*, brought back, Pale Woman, tortur* | high |  |
-| Burrich dies | Burrich | death words | high |  |
+| Burrich dies | Burrich | death words | high | ✓ |
 | Fitz and Molly reunite | Fitz, FitzChivalry, Molly | reunite*, marr*, wed, back together, Tom Badgerlock | medium |  |
 | Icefyre and Elliania's betrothal | Dutiful, Elliania | Icefyre, betroth*, marr*, slay | high | ✓ |
 
@@ -101,8 +103,10 @@ When unsure, the later book is the safe choice: it blurs for more readers.
 
 | Event | Subjects | Cues | Confidence | Wiki |
 |---|---|---|---|---|
-| Tintaglia's fate<br><sub>Not confirmed; put late to be safe.</sub> | Tintaglia | death words, wound* | low |  |
-| Selden and the Duke of Chalced<br><sub>Not confirmed; put late to be safe.</sub> | Selden | Duke, Chalced, captive, prisoner, dragon blood | low |  |
+| Tintaglia's fate<br><sub>Wiki: alive at the end. Event kept so talk of her wounds/dying stays blurred until book 13.</sub> | Tintaglia | death words, wound* | low |  |
+| Selden and the Duke of Chalced<br><sub>Checked on the Robin Hobb fandom wiki. The Duke drinks Selden's blood (City of Dragons / Blood of Dragons); the Duke dies in Blood of Dragons.</sub> | Selden | Duke, Chalced, captive, prisoner, dragon blood, blood | high | ✓ |
+| The Duke of Chalced dies | Duke of Chalced | death words, perish* | high | ✓ |
+| Hest's fate<br><sub>Wiki: deceased, book not stated; end of the Rain Wild Chronicles to be safe.</sub> | Hest | death words | low | ✓ |
 
 ## 14. Fool's Assassin
 
@@ -127,8 +131,8 @@ When unsure, the later book is the safe choice: it blurs for more readers.
 | Dwalia dies | Dwalia | death words | high | ✓ |
 | Fitz dies carving the wolf | Fitz, FitzChivalry | death words, wolf, carv*, quarry, stone | high | ✓ |
 | The Fool's final fate | Fool, Beloved *(context)* | death words, wolf, carv*, stone | medium |  |
-| Chade's fate<br><sub>Not confirmed; put late to be safe.</sub> | Chade | death words | low |  |
-| Bee's fate<br><sub>Not confirmed; put late to be safe.</sub> | Bee *(context)* | death words, Clerres, returns, home | low |  |
+| Chade's fate<br><sub>Wiki: deceased, book not stated; last book to be safe.</sub> | Chade | death words | low |  |
+| Bee's fate<br><sub>Wiki: alive at the end of the series.</sub> | Bee *(context)* | death words, Clerres, returns, home | medium |  |
 | Main character deaths (catch-all)<br><sub>Backstop: a main character + a death word blurs until the reader finishes the series.</sub> | Fitz, FitzChivalry, Fool, Beloved, Nighteyes, Molly, Burrich, Chade, Verity, Kettricken, Nettle, Bee, Kennit, Althea, Brashen, Wintrow, Malta, Reyn, Thymara, Patience, Dutiful, Riddle *(context)* | death words | medium |  |
 
 ## Known gaps

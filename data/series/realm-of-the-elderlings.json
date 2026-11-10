@@ -2169,7 +2169,8 @@
       ],
       "happensIn": 2,
       "confidence": "high",
-      "needsContext": true
+      "needsContext": true,
+      "wikiChecked": true
     },
     {
       "id": "Fitz dies in Regal's dungeon and is brought back",
@@ -2317,7 +2318,8 @@
       ],
       "happensIn": 3,
       "confidence": "high",
-      "needsContext": true
+      "needsContext": true,
+      "wikiChecked": true
     },
     {
       "id": "Kettricken takes Nettle as heir",
@@ -2353,7 +2355,7 @@
       ],
       "happensIn": 3,
       "confidence": "low",
-      "notes": "Not confirmed; put late to be safe."
+      "notes": "Wiki: deceased, book not stated; book 3 to be safe."
     },
     {
       "id": "Regal's fate",
@@ -2377,8 +2379,35 @@
         "loyal"
       ],
       "happensIn": 3,
-      "confidence": "medium",
-      "needsContext": true
+      "confidence": "high",
+      "needsContext": true,
+      "wikiChecked": true,
+      "notes": "Checked on the Robin Hobb fandom wiki. Dies in Assassin's Quest."
+    },
+    {
+      "id": "Will dies",
+      "subjects": [
+        "Will"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 3,
+      "confidence": "high",
+      "needsContext": true,
+      "wikiChecked": true,
+      "notes": "Checked on the Robin Hobb fandom wiki. 'Will' is an everyday word, so context-only."
     },
     {
       "id": "Ephron Vestrit dies and Vivacia quickens",
@@ -2465,6 +2494,33 @@
       "happensIn": 5,
       "confidence": "high",
       "wikiChecked": true
+    },
+    {
+      "id": "Kennit nearly dies after the amputation",
+      "subjects": [
+        "Kennit"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "reviv*",
+        "brought back",
+        "amputat*"
+      ],
+      "happensIn": 5,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Checked on the Robin Hobb fandom wiki. He dies for real in Ship of Destiny (separate event)."
     },
     {
       "id": "Paragon was Igrot's ship; Kennit is a Ludluck",
@@ -2626,7 +2682,8 @@
         "executed"
       ],
       "happensIn": 9,
-      "confidence": "high"
+      "confidence": "high",
+      "wikiChecked": true
     },
     {
       "id": "Fitz and Molly reunite",
@@ -2728,7 +2785,7 @@
       ],
       "happensIn": 13,
       "confidence": "low",
-      "notes": "Not confirmed; put late to be safe."
+      "notes": "Wiki: alive at the end. Event kept so talk of her wounds/dying stays blurred until book 13."
     },
     {
       "id": "Selden and the Duke of Chalced",
@@ -2740,11 +2797,61 @@
         "Chalced",
         "captive",
         "prisoner",
-        "dragon blood"
+        "dragon blood",
+        "blood"
+      ],
+      "happensIn": 13,
+      "confidence": "high",
+      "notes": "Checked on the Robin Hobb fandom wiki. The Duke drinks Selden's blood (City of Dragons / Blood of Dragons); the Duke dies in Blood of Dragons.",
+      "wikiChecked": true
+    },
+    {
+      "id": "The Duke of Chalced dies",
+      "subjects": [
+        "Duke of Chalced"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "perish*"
+      ],
+      "happensIn": 13,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Hest's fate",
+      "subjects": [
+        "Hest"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
       ],
       "happensIn": 13,
       "confidence": "low",
-      "notes": "Not confirmed; put late to be safe."
+      "wikiChecked": true,
+      "notes": "Wiki: deceased, book not stated; end of the Rain Wild Chronicles to be safe."
     },
     {
       "id": "Bee is born",
@@ -2955,7 +3062,7 @@
       ],
       "happensIn": 16,
       "confidence": "low",
-      "notes": "Not confirmed; put late to be safe."
+      "notes": "Wiki: deceased, book not stated; last book to be safe."
     },
     {
       "id": "Bee's fate",
@@ -2980,9 +3087,9 @@
         "home"
       ],
       "happensIn": 16,
-      "confidence": "low",
+      "confidence": "medium",
       "needsContext": true,
-      "notes": "Not confirmed; put late to be safe."
+      "notes": "Wiki: alive at the end of the series."
     },
     {
       "id": "Main character deaths (catch-all)",

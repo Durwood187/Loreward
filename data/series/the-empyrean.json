@@ -931,6 +931,35 @@
       "confidence": "medium"
     },
     {
+      "id": "Jack Barlowe dies",
+      "subjects": [
+        "Jack",
+        "Barlowe"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "turret",
+        "rubble",
+        "lightning"
+      ],
+      "happensIn": 1,
+      "confidence": "high",
+      "needsContext": true,
+      "wikiChecked": true,
+      "notes": "Wiki: Violet's lightning kills him in Fourth Wing. 'Jack' is a common name, so context-only."
+    },
+    {
       "id": "Andarna becomes an adolescent black dragon",
       "subjects": [
         "Andarna"
@@ -1018,25 +1047,6 @@
       "confidence": "medium"
     },
     {
-      "id": "Violet and Xaden marry",
-      "subjects": [
-        "Violet",
-        "Xaden"
-      ],
-      "cues": [
-        "marr*",
-        "wedding",
-        "wed",
-        "husband",
-        "wife",
-        "Duchess",
-        "Duke"
-      ],
-      "happensIn": 3,
-      "confidence": "medium",
-      "notes": "Xaden is Duke of Tyrrendor in Onyx Storm (wiki)."
-    },
-    {
       "id": "Lilith Sorrengail dies",
       "subjects": [
         "Lilith",
@@ -1059,10 +1069,73 @@
         "executed",
         "siphon*"
       ],
+      "happensIn": 2,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Wiki: siphoned by Sloane Mairi; Onyx Storm opens with Aetos in 'her mother's former position', so it happens by the end of Iron Flame."
+    },
+    {
+      "id": "Varrish's fate",
+      "subjects": [
+        "Varrish"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 2,
+      "confidence": "high",
+      "notes": "Wiki (Iron Flame summary): Varrish dies at Violet's hand.",
+      "wikiChecked": true
+    },
+    {
+      "id": "Jack Barlowe comes back",
+      "subjects": [
+        "Jack",
+        "Barlowe"
+      ],
+      "cues": [
+        "resurrect*",
+        "alive",
+        "back",
+        "venin",
+        "returns",
+        "memory wiped"
+      ],
+      "happensIn": 2,
+      "confidence": "high",
+      "needsContext": true,
+      "wikiChecked": true,
+      "notes": "Wiki: 'Jack Barlowe's resurrection' in Iron Flame."
+    },
+    {
+      "id": "Violet and Xaden marry",
+      "subjects": [
+        "Violet",
+        "Xaden"
+      ],
+      "cues": [
+        "marr*",
+        "wedding",
+        "wed",
+        "husband",
+        "wife",
+        "Duchess",
+        "Duke"
+      ],
       "happensIn": 3,
       "confidence": "medium",
-      "wikiChecked": true,
-      "notes": "Wiki: deceased, siphoned by Sloane Mairi. Book not stated; Onyx Storm = safe."
+      "notes": "Xaden is Duke of Tyrrendor in Onyx Storm (wiki)."
     },
     {
       "id": "Andarna's second signet and the Irids",
@@ -1116,33 +1189,11 @@
         "cured",
         "Sage",
         "full venin",
-        "lost him"
+        "lost him",
+        "no cure"
       ],
       "happensIn": 3,
       "confidence": "medium"
-    },
-    {
-      "id": "Varrish's fate",
-      "subjects": [
-        "Varrish"
-      ],
-      "cues": [
-        "die",
-        "dies",
-        "died",
-        "dying",
-        "dead",
-        "death",
-        "killed",
-        "kills",
-        "killing",
-        "murder*",
-        "slain",
-        "executed"
-      ],
-      "happensIn": 3,
-      "confidence": "low",
-      "notes": "Not confirmed on the wiki; put late to be safe."
     },
     {
       "id": "Colonel Aetos's fate",
@@ -1167,6 +1218,46 @@
       "happensIn": 3,
       "confidence": "low",
       "notes": "Not confirmed on the wiki; put late to be safe."
+    },
+    {
+      "id": "Professor Grady and Aura die",
+      "subjects": [
+        "Grady",
+        "Aura"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 3,
+      "confidence": "high",
+      "needsContext": true,
+      "wikiChecked": true
+    },
+    {
+      "id": "Halden joins the quest",
+      "subjects": [
+        "Halden"
+      ],
+      "cues": [
+        "quest",
+        "mission",
+        "Irid*",
+        "joins"
+      ],
+      "happensIn": 3,
+      "confidence": "high",
+      "wikiChecked": true
     },
     {
       "id": "Main character deaths (catch-all)",
