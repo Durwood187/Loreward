@@ -1,5 +1,7 @@
 # Stormlight event review
 
+**Reviewed by Eric, 2026-11-10** (books 1–5 from memory; books 6–7 leaned on the wiki checks).
+
 Events catch spoilers written in plain words: a **subject** (usually a character) within 20 words of a **cue** word, e.g. "Teft" near "died".
 An event is blurred for readers **on its book or any earlier book** (unlike terms, the current book counts too).
 
