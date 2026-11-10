@@ -20,7 +20,7 @@ Ongoing series (new books coming, active fandoms) first; long-finished classics 
 5. Dungeon Crawler Carl ✅ (0.3.0)
 6. Empire of the Vampire ✅ (0.4.0)
    A Court of Thorns and Roses ✅ (0.4.1, timed for the book 6 release)
-7. Red Rising
+7. Red Rising ✅ (0.5.0, draft: terms + events from the fandom wiki; BookTok demand)
 8. Harry Potter
 9. Eragon (Inheritance Cycle)
 10. Percy Jackson

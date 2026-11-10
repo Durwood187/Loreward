@@ -1,0 +1,1900 @@
+{
+  "$schema": "../schema.json",
+  "id": "red-rising",
+  "name": "Red Rising Saga (compatible)",
+  "shortName": "Red Rising",
+  "verified": false,
+  "books": [
+    {
+      "index": 1,
+      "title": "Red Rising",
+      "kind": "novel",
+      "aliases": [
+        "RR"
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Golden Son",
+      "kind": "novel",
+      "aliases": [
+        "GS"
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Morning Star",
+      "kind": "novel",
+      "aliases": [
+        "MS"
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Iron Gold",
+      "kind": "novel",
+      "aliases": [
+        "IG"
+      ]
+    },
+    {
+      "index": 5,
+      "title": "Dark Age",
+      "kind": "novel"
+    },
+    {
+      "index": 6,
+      "title": "Light Bringer",
+      "kind": "novel",
+      "aliases": [
+        "LB"
+      ]
+    }
+  ],
+  "allowlist": [
+    "Gold",
+    "Golds",
+    "Red",
+    "Reds",
+    "Rising",
+    "Golden",
+    "Morning",
+    "Star",
+    "Iron",
+    "Dark",
+    "Age",
+    "Light",
+    "Bringer",
+    "Sovereign",
+    "Society",
+    "Republic"
+  ],
+  "keywords": [
+    "Red Rising",
+    "Red Rising Saga",
+    "Pierce Brown",
+    "Darrow",
+    "Darrow of Lykos",
+    "Sevro",
+    "Virginia au Augustus",
+    "Bloodydamn",
+    "Howlers",
+    "Howler",
+    "the Institute",
+    "Lykos",
+    "Sons of Ares",
+    "Kavax",
+    "Ragnar"
+  ],
+  "terms": [
+    {
+      "term": "Aja au Grimmus",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "aliases": [
+        "Aja"
+      ],
+      "needsContext": true
+    },
+    {
+      "term": "Brutus au Arcos",
+      "introducedIn": 6,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "First name alone is a common/classical name, so only the full name is matched."
+    },
+    {
+      "term": "Apollonius au Valii-Rath",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "aliases": [
+        "Apollonius"
+      ]
+    },
+    {
+      "term": "Alia Volarus",
+      "introducedIn": 3,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "aliases": [
+        "Alia"
+      ]
+    },
+    {
+      "term": "Bellerephon au Raa",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "aliases": [
+        "Bellerephon"
+      ]
+    },
+    {
+      "term": "Akari au Raa",
+      "introducedIn": 6,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "aliases": [
+        "Akari"
+      ]
+    },
+    {
+      "term": "Cagney au Bellona",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "aliases": [
+        "Cagney"
+      ]
+    },
+    {
+      "term": "Alexandar au Arcos",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "aliases": [
+        "Alexandar"
+      ],
+      "needsContext": true
+    },
+    {
+      "term": "Ajax au Grimmus",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "aliases": [
+        "Ajax"
+      ],
+      "needsContext": true
+    },
+    {
+      "term": "Cadus Harnassus",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "aliases": [
+        "Cadus"
+      ]
+    },
+    {
+      "term": "Atlas au Raa",
+      "introducedIn": 6,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "First name alone is a common/classical name, so only the full name is matched."
+    },
+    {
+      "term": "Asmodeus au Carthii",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "First name alone is a common/classical name, so only the full name is matched."
+    },
+    {
+      "term": "Britannia ag Krieg",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "First name alone is a common/classical name, so only the full name is matched."
+    },
+    {
+      "term": "Ava of Lagalos",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "aliases": [
+        "Ava"
+      ],
+      "needsContext": true
+    },
+    {
+      "term": "Bellagra au Raa",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "aliases": [
+        "Bellagra"
+      ]
+    },
+    {
+      "term": "Arminius",
+      "introducedIn": 6,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true
+    },
+    {
+      "term": "Agala si Ken",
+      "introducedIn": 6,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "aliases": [
+        "Agala"
+      ]
+    },
+    {
+      "term": "Aevius",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Aruka",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Daxo au Telemanus",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "aliases": [
+        "Daxo"
+      ]
+    },
+    {
+      "term": "Cyra si Lamensis",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "aliases": [
+        "Cyra"
+      ]
+    },
+    {
+      "term": "Diomedes au Raa",
+      "introducedIn": 3,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "First name alone is a common/classical name, so only the full name is matched."
+    },
+    {
+      "term": "Dido au Raa",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "First name alone is a common/classical name, so only the full name is matched."
+    },
+    {
+      "term": "Dano Sunshine",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "aliases": [
+        "Dano"
+      ]
+    },
+    {
+      "term": "Colloway xe Char",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "aliases": [
+        "Colloway"
+      ]
+    },
+    {
+      "term": "Cedric cu Platuu",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "First name alone is a common/classical name, so only the full name is matched."
+    },
+    {
+      "term": "Cormac O'Vadros",
+      "introducedIn": 5,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "aliases": [
+        "Cormac"
+      ]
+    },
+    {
+      "term": "Drusilla au Arcos",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "aliases": [
+        "Drusilla"
+      ],
+      "needsContext": true
+    },
+    {
+      "term": "Cicero au Votum",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "First name alone is a common/classical name, so only the full name is matched."
+    },
+    {
+      "term": "Demetrius ti Interimo",
+      "introducedIn": 6,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "First name alone is a common/classical name, so only the full name is matched."
+    },
+    {
+      "term": "Cornelius au Carthii",
+      "introducedIn": 6,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "First name alone is a common/classical name, so only the full name is matched."
+    },
+    {
+      "term": "Dagan of Lagalos",
+      "introducedIn": 5,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "aliases": [
+        "Dagan"
+      ],
+      "needsContext": true
+    },
+    {
+      "term": "Julia au Bellona",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "First name alone is a common/classical name, so only the full name is matched."
+    },
+    {
+      "term": "Ephraim ti Horn",
+      "introducedIn": 3,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "aliases": [
+        "Ephraim"
+      ],
+      "needsContext": true
+    },
+    {
+      "term": "Electra au Barca",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "First name alone is a common/classical name, so only the full name is matched."
+    },
+    {
+      "term": "Gaia au Raa",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "First name alone is a common/classical name, so only the full name is matched."
+    },
+    {
+      "term": "Helios au Lux",
+      "introducedIn": 3,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "First name alone is a common/classical name, so only the full name is matched."
+    },
+    {
+      "term": "Felix au Daan",
+      "introducedIn": 5,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "First name alone is a common/classical name, so only the full name is matched."
+    },
+    {
+      "term": "Glirastes",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Duncan O'Cyros",
+      "introducedIn": 5,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "First name alone is a common/classical name, so only the full name is matched."
+    },
+    {
+      "term": "Goroth",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true
+    },
+    {
+      "term": "Gregarius",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Fabera au Raa",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "aliases": [
+        "Fabera"
+      ],
+      "needsContext": true
+    },
+    {
+      "term": "Horatia au Votum",
+      "introducedIn": 5,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "First name alone is a common/classical name, so only the full name is matched."
+    },
+    {
+      "term": "Magnus au Grimmus",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "First name alone is a common/classical name, so only the full name is matched."
+    },
+    {
+      "term": "Lysander au Lune",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "aliases": [
+        "Lysander"
+      ]
+    },
+    {
+      "term": "Moira au Grimmus",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "First name alone is a common/classical name, so only the full name is matched."
+    },
+    {
+      "term": "Karnus au Bellona",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "aliases": [
+        "Karnus"
+      ],
+      "needsContext": true
+    },
+    {
+      "term": "Leto au Augustus",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "First name alone is a common/classical name, so only the full name is matched."
+    },
+    {
+      "term": "Lyria of Lagalos",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "aliases": [
+        "Lyria"
+      ],
+      "needsContext": true
+    },
+    {
+      "term": "Niobe au Telemanus",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "aliases": [
+        "Niobe"
+      ],
+      "needsContext": true
+    },
+    {
+      "term": "Marius au Raa",
+      "introducedIn": 3,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "First name alone is a common/classical name, so only the full name is matched."
+    },
+    {
+      "term": "Liam of Lagalos",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "aliases": [
+        "Liam"
+      ],
+      "needsContext": true
+    },
+    {
+      "term": "Min-Min",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Kalindora au San",
+      "introducedIn": 3,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "aliases": [
+        "Kalindora"
+      ]
+    },
+    {
+      "term": "Kobachi",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Lucius au Sejanus",
+      "introducedIn": 3,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "First name alone is a common/classical name, so only the full name is matched."
+    },
+    {
+      "term": "Kal ag Roduko",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "First name alone is a common/classical name, so only the full name is matched."
+    },
+    {
+      "term": "Kora O’Lykos",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "First name alone is a common/classical name, so only the full name is matched."
+    },
+    {
+      "term": "Murani Legard",
+      "introducedIn": 6,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "aliases": [
+        "Murani"
+      ]
+    },
+    {
+      "term": "Markus ti Lacrima",
+      "introducedIn": 6,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "First name alone is a common/classical name, so only the full name is matched."
+    },
+    {
+      "term": "Orion xe Aquarii",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "First name alone is a common/classical name, so only the full name is matched."
+    },
+    {
+      "term": "Regulus ag Sun",
+      "introducedIn": 3,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "First name alone is a common/classical name, so only the full name is matched."
+    },
+    {
+      "term": "Pliny au Velocitor",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "First name alone is a common/classical name, so only the full name is matched."
+    },
+    {
+      "term": "Pax Augustus",
+      "introducedIn": 3,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "aliases": [
+        "Pax"
+      ],
+      "needsContext": true
+    },
+    {
+      "term": "Publius cu Caraval",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "First name alone is a common/classical name, so only the full name is matched."
+    },
+    {
+      "term": "Rhonna O'Lykos",
+      "introducedIn": 3,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "aliases": [
+        "Rhonna"
+      ]
+    },
+    {
+      "term": "Pytha xe Virgus",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "aliases": [
+        "Pytha"
+      ]
+    },
+    {
+      "term": "Rhone ti Flavinius",
+      "introducedIn": 3,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "First name alone is a common/classical name, so only the full name is matched."
+    },
+    {
+      "term": "Rollo O'Sicyon",
+      "introducedIn": 3,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "aliases": [
+        "Rollo"
+      ],
+      "needsContext": true
+    },
+    {
+      "term": "Ozgard",
+      "introducedIn": 5,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Paleron au Raa",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "aliases": [
+        "Paleron"
+      ]
+    },
+    {
+      "term": "Oro Sculpturus",
+      "introducedIn": 6,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "aliases": [
+        "Oro"
+      ]
+    },
+    {
+      "term": "Ophelia au Zagria",
+      "introducedIn": 6,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "First name alone is a common/classical name, so only the full name is matched."
+    },
+    {
+      "term": "Scipio au Falthe",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "First name alone is a common/classical name, so only the full name is matched."
+    },
+    {
+      "term": "Pallas au Grecca",
+      "introducedIn": 6,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "First name alone is a common/classical name, so only the full name is matched."
+    },
+    {
+      "term": "Pertinax au Thorne",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "aliases": [
+        "Pertinax"
+      ]
+    },
+    {
+      "term": "Victra au Julii",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "aliases": [
+        "Victra"
+      ],
+      "needsContext": true
+    },
+    {
+      "term": "Sefi Volarus",
+      "introducedIn": 3,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "aliases": [
+        "Sefi"
+      ]
+    },
+    {
+      "term": "Trigg ti Nakamura",
+      "introducedIn": 3,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "aliases": [
+        "Trigg"
+      ],
+      "needsContext": true
+    },
+    {
+      "term": "Tharsus au Valii-Rath",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "First name alone is a common/classical name, so only the full name is matched."
+    },
+    {
+      "term": "Seraphina au Raa",
+      "introducedIn": 3,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "aliases": [
+        "Seraphina"
+      ],
+      "needsContext": true
+    },
+    {
+      "term": "Thraxa au Telemanus",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "aliases": [
+        "Thraxa"
+      ]
+    },
+    {
+      "term": "Timony cu Podginus",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "aliases": [
+        "Timony"
+      ]
+    },
+    {
+      "term": "Vela au Raa",
+      "introducedIn": 3,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "First name alone is a common/classical name, so only the full name is matched."
+    },
+    {
+      "term": "Vagnar Hefga",
+      "introducedIn": 5,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "aliases": [
+        "Vagnar"
+      ]
+    },
+    {
+      "term": "Seneca au Cern",
+      "introducedIn": 5,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "First name alone is a common/classical name, so only the full name is matched."
+    },
+    {
+      "term": "Valdir",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true
+    },
+    {
+      "term": "Stefano ti Gregorovich",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "First name alone is a common/classical name, so only the full name is matched."
+    },
+    {
+      "term": "Skarde Olsgur",
+      "introducedIn": 5,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "aliases": [
+        "Skarde"
+      ],
+      "needsContext": true
+    },
+    {
+      "term": "Sigurd Olsgur",
+      "introducedIn": 5,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "aliases": [
+        "Sigurd"
+      ],
+      "needsContext": true
+    },
+    {
+      "term": "Valeria au Carthii",
+      "introducedIn": 6,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "First name alone is a common/classical name, so only the full name is matched."
+    },
+    {
+      "term": "Thalia au Raa",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "First name alone is a common/classical name, so only the full name is matched."
+    },
+    {
+      "term": "Virany",
+      "introducedIn": 3,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true
+    },
+    {
+      "term": "Wulfgar",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Volga Fjorgan",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "aliases": [
+        "Volga"
+      ],
+      "needsContext": true
+    },
+    {
+      "term": "Xana au Telemanus",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "aliases": [
+        "Xana"
+      ]
+    },
+    {
+      "term": "Xenophon",
+      "introducedIn": 5,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true
+    },
+    {
+      "term": "Vorkian ti Hadriana",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "aliases": [
+        "Vorkian"
+      ]
+    },
+    {
+      "term": "Iron Rain",
+      "introducedIn": 2,
+      "type": "event",
+      "confidence": "medium",
+      "notes": "The Golden Son assault; 'iron rain' is rare in ordinary text."
+    },
+    {
+      "term": "Ascomanni",
+      "introducedIn": 4,
+      "type": "concept",
+      "confidence": "low",
+      "notes": "Obsidian raiders; first book not confirmed, placed late."
+    }
+  ],
+  "events": [
+    {
+      "id": "Eo is hanged",
+      "subjects": [
+        "Eo"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "hang*",
+        "hanged",
+        "gallows"
+      ],
+      "happensIn": 1,
+      "confidence": "high",
+      "needsContext": true,
+      "wikiChecked": true,
+      "notes": "Death date from the wiki mapped to the book's years."
+    },
+    {
+      "id": "Darrow is carved into a Gold",
+      "subjects": [
+        "Darrow"
+      ],
+      "cues": [
+        "carved",
+        "Carving",
+        "Carver",
+        "becomes a Gold",
+        "made Gold"
+      ],
+      "happensIn": 1,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Julian dies",
+      "subjects": [
+        "Julian"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 1,
+      "confidence": "high",
+      "needsContext": true,
+      "wikiChecked": true,
+      "notes": "Death date from the wiki mapped to the book's years."
+    },
+    {
+      "id": "Quinn dies",
+      "subjects": [
+        "Quinn"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 2,
+      "confidence": "high",
+      "needsContext": true,
+      "wikiChecked": true,
+      "notes": "Death date from the wiki mapped to the book's years."
+    },
+    {
+      "id": "Tactus dies",
+      "subjects": [
+        "Tactus"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 2,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Death date from the wiki mapped to the book's years."
+    },
+    {
+      "id": "Karnus dies",
+      "subjects": [
+        "Karnus"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 2,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Death date from the wiki mapped to the book's years."
+    },
+    {
+      "id": "Fitchner dies",
+      "subjects": [
+        "Fitchner"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 2,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Death date from the wiki mapped to the book's years."
+    },
+    {
+      "id": "Fitchner was Ares",
+      "subjects": [
+        "Fitchner"
+      ],
+      "cues": [
+        "Ares",
+        "was Ares",
+        "is Ares"
+      ],
+      "happensIn": 2,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "id": "Lorn dies",
+      "subjects": [
+        "Lorn"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 2,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Wiki: deceased; Golden Son by the timeline."
+    },
+    {
+      "id": "Roque betrays Darrow",
+      "subjects": [
+        "Roque"
+      ],
+      "cues": [
+        "betray*",
+        "traitor",
+        "Triumph"
+      ],
+      "happensIn": 2,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "id": "Darrow is captured at the end of Golden Son",
+      "subjects": [
+        "Darrow"
+      ],
+      "cues": [
+        "captured",
+        "entombed",
+        "Jackal's table",
+        "tortur*",
+        "box"
+      ],
+      "happensIn": 2,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "id": "Sevro becomes Ares",
+      "subjects": [
+        "Sevro"
+      ],
+      "cues": [
+        "Ares",
+        "is Ares",
+        "new Ares"
+      ],
+      "happensIn": 2,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "id": "Roque dies",
+      "subjects": [
+        "Roque"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 3,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Death date from the wiki mapped to the book's years."
+    },
+    {
+      "id": "Ragnar dies",
+      "subjects": [
+        "Ragnar"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 3,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Death date from the wiki mapped to the book's years."
+    },
+    {
+      "id": "The Jackal dies",
+      "subjects": [
+        "Jackal",
+        "Adrius"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 3,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Death date from the wiki mapped to the book's years.",
+      "needsContext": true
+    },
+    {
+      "id": "Octavia dies",
+      "subjects": [
+        "Octavia"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 3,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Death date from the wiki mapped to the book's years."
+    },
+    {
+      "id": "Aja dies",
+      "subjects": [
+        "Aja"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 3,
+      "confidence": "high",
+      "needsContext": true,
+      "wikiChecked": true,
+      "notes": "Death date from the wiki mapped to the book's years."
+    },
+    {
+      "id": "Trigg dies",
+      "subjects": [
+        "Trigg"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 3,
+      "confidence": "high",
+      "needsContext": true,
+      "wikiChecked": true,
+      "notes": "Death date from the wiki mapped to the book's years."
+    },
+    {
+      "id": "Antonia dies",
+      "subjects": [
+        "Antonia"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 3,
+      "confidence": "medium",
+      "needsContext": true,
+      "wikiChecked": true
+    },
+    {
+      "id": "Mustang becomes Sovereign",
+      "subjects": [
+        "Mustang",
+        "Virginia"
+      ],
+      "cues": [
+        "Sovereign"
+      ],
+      "happensIn": 3,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "id": "Darrow and Mustang marry; Pax",
+      "subjects": [
+        "Darrow",
+        "Mustang",
+        "Virginia"
+      ],
+      "cues": [
+        "marr*",
+        "wedding",
+        "wife",
+        "husband",
+        "Pax",
+        "son"
+      ],
+      "happensIn": 4,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "By Iron Gold they are married with a son; book 4 = safe. Context-only: the name also appears in classical texts / everyday words.",
+      "needsContext": true
+    },
+    {
+      "id": "Romulus dies",
+      "subjects": [
+        "Romulus"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 4,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Death date from the wiki mapped to the book's years."
+    },
+    {
+      "id": "Pax and Electra are taken",
+      "subjects": [
+        "Pax",
+        "Electra"
+      ],
+      "cues": [
+        "kidnap*",
+        "taken",
+        "abduct*",
+        "stolen"
+      ],
+      "happensIn": 4,
+      "confidence": "medium",
+      "needsContext": true,
+      "wikiChecked": true
+    },
+    {
+      "id": "Daxo dies",
+      "subjects": [
+        "Daxo"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 5,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Death date from the wiki mapped to the book's years."
+    },
+    {
+      "id": "Harmony dies",
+      "subjects": [
+        "Harmony"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 5,
+      "confidence": "high",
+      "needsContext": true,
+      "wikiChecked": true,
+      "notes": "Death date from the wiki mapped to the book's years."
+    },
+    {
+      "id": "Dancer dies",
+      "subjects": [
+        "Dancer"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 5,
+      "confidence": "high",
+      "needsContext": true,
+      "wikiChecked": true,
+      "notes": "Death date from the wiki mapped to the book's years."
+    },
+    {
+      "id": "Sefi dies",
+      "subjects": [
+        "Sefi"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 5,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Death date from the wiki mapped to the book's years."
+    },
+    {
+      "id": "Ephraim dies",
+      "subjects": [
+        "Ephraim"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 5,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Death date from the wiki mapped to the book's years. Context-only: the name also appears in classical texts / everyday words.",
+      "needsContext": true
+    },
+    {
+      "id": "Alexandar dies",
+      "subjects": [
+        "Alexandar"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 5,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Death date from the wiki mapped to the book's years."
+    },
+    {
+      "id": "Ajax dies",
+      "subjects": [
+        "Ajax"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 6,
+      "confidence": "high",
+      "needsContext": true,
+      "wikiChecked": true,
+      "notes": "Late 754 PCE: end of Dark Age or Light Bringer; book 6 to be safe."
+    },
+    {
+      "id": "Cassius dies",
+      "subjects": [
+        "Cassius"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 6,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Death date from the wiki mapped to the book's years. Context-only: the name also appears in classical texts / everyday words.",
+      "needsContext": true
+    },
+    {
+      "id": "Dido dies",
+      "subjects": [
+        "Dido"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 6,
+      "confidence": "high",
+      "needsContext": true,
+      "wikiChecked": true,
+      "notes": "Death date from the wiki mapped to the book's years."
+    },
+    {
+      "id": "Kalindora's fate",
+      "subjects": [
+        "Kalindora"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 6,
+      "confidence": "low",
+      "wikiChecked": true,
+      "notes": "Wiki: deceased, date unclear. Placed late to be safe."
+    },
+    {
+      "id": "Magnus's fate",
+      "subjects": [
+        "Magnus",
+        "Ash Lord"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 6,
+      "confidence": "low",
+      "wikiChecked": true,
+      "notes": "Wiki: deceased, date unclear. Placed late to be safe."
+    },
+    {
+      "id": "Orion's fate",
+      "subjects": [
+        "Orion"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 6,
+      "confidence": "low",
+      "needsContext": true,
+      "wikiChecked": true,
+      "notes": "Wiki: deceased, date unclear. Placed late to be safe."
+    },
+    {
+      "id": "Narol's fate",
+      "subjects": [
+        "Narol",
+        "Uncle Narol"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 6,
+      "confidence": "low",
+      "wikiChecked": true,
+      "notes": "Wiki: deceased, date unclear. Placed late to be safe."
+    },
+    {
+      "id": "Main character deaths (catch-all)",
+      "subjects": [
+        "Darrow",
+        "Sevro",
+        "Mustang",
+        "Virginia",
+        "Victra",
+        "Cassius",
+        "Kavax",
+        "Lysander",
+        "Pax",
+        "Holiday",
+        "Mickey",
+        "Lyria",
+        "Volga",
+        "Thraxa",
+        "Atalantia",
+        "Apollonius",
+        "Kieran",
+        "Electra",
+        "Ragnar",
+        "Roque"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 6,
+      "confidence": "medium",
+      "needsContext": true,
+      "wikiChecked": true,
+      "notes": "Backstop: a main character + a death word blurs until the reader finishes the series (book 6 until Red God is out)."
+    }
+  ]
+}
