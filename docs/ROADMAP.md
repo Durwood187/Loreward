@@ -61,5 +61,6 @@ Catch plain-word spoilers about early characters ("Carl gets convicted", "Teft d
 - [ ] Eric reviews Stormlight events; test on r/Stormlight_Archive for false blurs
 - [ ] Popup: "finished the series" option (otherwise last-book events stay blurred)
 - [x] Mistborn (29 events, needs review: docs/event-review-mistborn.md)
+- [x] The Empyrean (22 events, needs review: docs/event-review-the-empyrean.md)
 - [ ] Roll out to other series. Note: Eric can't review events for series he hasn't finished (the list IS the spoilers).
 - [ ] Generic backstop: series name + "ending / last chapter / final scene"

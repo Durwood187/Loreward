@@ -770,5 +770,442 @@
       "confidence": "high",
       "wikiChecked": true
     }
+  ],
+  "events": [
+    {
+      "id": "Violet bonds Tairn and Andarna",
+      "subjects": [
+        "Violet"
+      ],
+      "cues": [
+        "Tairn",
+        "Andarna",
+        "bonds two",
+        "bonded two",
+        "two dragons"
+      ],
+      "happensIn": 1,
+      "confidence": "high"
+    },
+    {
+      "id": "Violet and Xaden get together",
+      "subjects": [
+        "Violet",
+        "Xaden"
+      ],
+      "cues": [
+        "kiss*",
+        "slept together",
+        "sleep together",
+        "hook* up",
+        "together",
+        "relationship",
+        "dating",
+        "in love"
+      ],
+      "happensIn": 1,
+      "confidence": "medium",
+      "notes": "Widely known from marketing, but still blurred for book-1 readers."
+    },
+    {
+      "id": "Violet's signet is lightning",
+      "subjects": [
+        "Violet"
+      ],
+      "cues": [
+        "lightning",
+        "signet",
+        "wield*"
+      ],
+      "happensIn": 1,
+      "confidence": "high"
+    },
+    {
+      "id": "Venin and wyvern are real",
+      "subjects": [
+        "Violet",
+        "Xaden",
+        "Navarre",
+        "Basgiath",
+        "Fourth Wing",
+        "Empyrean"
+      ],
+      "cues": [
+        "venin",
+        "wyvern*",
+        "dark wielder*",
+        "dark magic"
+      ],
+      "happensIn": 1,
+      "confidence": "high",
+      "notes": "The big Fourth Wing twist."
+    },
+    {
+      "id": "Liam dies",
+      "subjects": [
+        "Liam",
+        "Deigh"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 1,
+      "confidence": "high",
+      "needsContext": true,
+      "wikiChecked": true,
+      "notes": "'Liam' is a common name, so context-only."
+    },
+    {
+      "id": "Brennan is alive",
+      "subjects": [
+        "Brennan"
+      ],
+      "cues": [
+        "alive",
+        "survive*",
+        "not dead",
+        "resurrect*",
+        "Aisereigh"
+      ],
+      "happensIn": 1,
+      "confidence": "high",
+      "needsContext": true,
+      "wikiChecked": true
+    },
+    {
+      "id": "Xaden leads a rebellion",
+      "subjects": [
+        "Xaden"
+      ],
+      "cues": [
+        "rebellion",
+        "revolution*",
+        "smuggl*",
+        "weapons",
+        "traitor",
+        "treason",
+        "marked ones"
+      ],
+      "happensIn": 1,
+      "confidence": "high"
+    },
+    {
+      "id": "Dain reads Violet's memories",
+      "subjects": [
+        "Dain"
+      ],
+      "cues": [
+        "memories",
+        "memory",
+        "betray*",
+        "signet",
+        "read her"
+      ],
+      "happensIn": 1,
+      "confidence": "high"
+    },
+    {
+      "id": "Andarna stops time",
+      "subjects": [
+        "Andarna"
+      ],
+      "cues": [
+        "stop* time",
+        "stopped time",
+        "time",
+        "feathertail",
+        "golden"
+      ],
+      "happensIn": 1,
+      "confidence": "medium"
+    },
+    {
+      "id": "Andarna becomes an adolescent black dragon",
+      "subjects": [
+        "Andarna"
+      ],
+      "cues": [
+        "black",
+        "adolescent",
+        "adult",
+        "Dreamless Sleep",
+        "grown"
+      ],
+      "happensIn": 2,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Violet is tortured by Varrish",
+      "subjects": [
+        "Violet"
+      ],
+      "cues": [
+        "tortur*",
+        "Varrish",
+        "interrogat*",
+        "imprison*"
+      ],
+      "happensIn": 2,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Xaden becomes a venin initiate",
+      "subjects": [
+        "Xaden"
+      ],
+      "cues": [
+        "venin",
+        "initiate",
+        "turned",
+        "turns",
+        "channel*",
+        "eyes"
+      ],
+      "happensIn": 2,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Ciaran dies",
+      "subjects": [
+        "Ciaran"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 2,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Xaden and Violet's fights in Iron Flame",
+      "subjects": [
+        "Xaden",
+        "Violet"
+      ],
+      "cues": [
+        "break up",
+        "broke up",
+        "breakup",
+        "lied",
+        "secrets"
+      ],
+      "happensIn": 2,
+      "confidence": "medium"
+    },
+    {
+      "id": "Violet and Xaden marry",
+      "subjects": [
+        "Violet",
+        "Xaden"
+      ],
+      "cues": [
+        "marr*",
+        "wedding",
+        "wed",
+        "husband",
+        "wife",
+        "Duchess",
+        "Duke"
+      ],
+      "happensIn": 3,
+      "confidence": "medium",
+      "notes": "Xaden is Duke of Tyrrendor in Onyx Storm (wiki)."
+    },
+    {
+      "id": "Lilith Sorrengail dies",
+      "subjects": [
+        "Lilith",
+        "General Sorrengail",
+        "Violet's mother",
+        "Sloane"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "siphon*"
+      ],
+      "happensIn": 3,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Wiki: deceased, siphoned by Sloane Mairi. Book not stated; Onyx Storm = safe."
+    },
+    {
+      "id": "Andarna's second signet and the Irids",
+      "subjects": [
+        "Andarna",
+        "Violet"
+      ],
+      "cues": [
+        "Irid*",
+        "seventh breed",
+        "Dreamwalk*",
+        "dreamwalking",
+        "second signet",
+        "leaves",
+        "Leothan"
+      ],
+      "happensIn": 3,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Theophanie dies",
+      "subjects": [
+        "Theophanie"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 3,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Xaden's venin fate",
+      "subjects": [
+        "Xaden"
+      ],
+      "cues": [
+        "cure*",
+        "cured",
+        "Sage",
+        "full venin",
+        "lost him"
+      ],
+      "happensIn": 3,
+      "confidence": "medium"
+    },
+    {
+      "id": "Varrish's fate",
+      "subjects": [
+        "Varrish"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 3,
+      "confidence": "low",
+      "notes": "Not confirmed on the wiki; put late to be safe."
+    },
+    {
+      "id": "Colonel Aetos's fate",
+      "subjects": [
+        "Colonel Aetos",
+        "Dain's father"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 3,
+      "confidence": "low",
+      "notes": "Not confirmed on the wiki; put late to be safe."
+    },
+    {
+      "id": "Main character deaths (catch-all)",
+      "subjects": [
+        "Violet",
+        "Xaden",
+        "Tairn",
+        "Andarna",
+        "Sgaeyl",
+        "Rhiannon",
+        "Ridoc",
+        "Sawyer",
+        "Imogen",
+        "Bodhi",
+        "Garrick",
+        "Mira",
+        "Brennan",
+        "Dain",
+        "Liam",
+        "Sloane"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 3,
+      "confidence": "medium",
+      "needsContext": true,
+      "notes": "Backstop: a main character + a death word blurs until the reader finishes the series (Onyx Storm, until book 4 is out)."
+    }
   ]
 }
