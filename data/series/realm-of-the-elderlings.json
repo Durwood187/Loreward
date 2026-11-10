@@ -2047,5 +2047,987 @@
       "confidence": "medium",
       "wikiChecked": true
     }
+  ],
+  "events": [
+    {
+      "id": "Chivalry dies",
+      "subjects": [
+        "Chivalry"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "thrown from",
+        "assassinat*"
+      ],
+      "happensIn": 1,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Checked against Wikipedia's plot summary."
+    },
+    {
+      "id": "Rurisk is poisoned",
+      "subjects": [
+        "Rurisk"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "poison*"
+      ],
+      "happensIn": 1,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Verity marries Kettricken",
+      "subjects": [
+        "Verity",
+        "Kettricken"
+      ],
+      "cues": [
+        "marr*",
+        "wedding",
+        "wed",
+        "betroth*"
+      ],
+      "happensIn": 1,
+      "confidence": "high",
+      "needsContext": true,
+      "wikiChecked": true,
+      "notes": "Common word or name, so context-only."
+    },
+    {
+      "id": "Fitz is poisoned by Regal",
+      "subjects": [
+        "Fitz",
+        "FitzChivalry"
+      ],
+      "cues": [
+        "poison*",
+        "Regal tried"
+      ],
+      "happensIn": 1,
+      "confidence": "medium"
+    },
+    {
+      "id": "Fitz bonds Nighteyes",
+      "subjects": [
+        "Fitz",
+        "FitzChivalry"
+      ],
+      "cues": [
+        "Nighteyes",
+        "wolf",
+        "Wit bond",
+        "Wit-bond",
+        "bonds a"
+      ],
+      "happensIn": 2,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "King Shrewd dies",
+      "subjects": [
+        "Shrewd",
+        "King Shrewd"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 2,
+      "confidence": "high",
+      "needsContext": true
+    },
+    {
+      "id": "Fitz dies in Regal's dungeon and is brought back",
+      "subjects": [
+        "Fitz",
+        "FitzChivalry"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "resurrect*",
+        "dungeon",
+        "grave",
+        "buried",
+        "brought back",
+        "into the wolf"
+      ],
+      "happensIn": 2,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Assassin's Quest opens with Fitz resurrected (Wikipedia)."
+    },
+    {
+      "id": "Molly leaves Fitz",
+      "subjects": [
+        "Molly"
+      ],
+      "cues": [
+        "leaves him",
+        "left him",
+        "rejects",
+        "for another"
+      ],
+      "happensIn": 2,
+      "confidence": "high",
+      "needsContext": true,
+      "wikiChecked": true
+    },
+    {
+      "id": "Verity leaves on his quest",
+      "subjects": [
+        "Verity"
+      ],
+      "cues": [
+        "quest",
+        "Elderlings",
+        "leaves",
+        "alive"
+      ],
+      "happensIn": 2,
+      "confidence": "medium",
+      "needsContext": true,
+      "wikiChecked": true
+    },
+    {
+      "id": "Molly is pregnant with Fitz's child (Nettle)",
+      "subjects": [
+        "Molly",
+        "Nettle"
+      ],
+      "cues": [
+        "pregnant",
+        "daughter",
+        "baby",
+        "child",
+        "Burrich"
+      ],
+      "happensIn": 3,
+      "confidence": "high",
+      "needsContext": true,
+      "wikiChecked": true,
+      "notes": "Checked against Wikipedia's plot summary. Common word or name, so context-only."
+    },
+    {
+      "id": "Burrich and Molly marry",
+      "subjects": [
+        "Burrich"
+      ],
+      "cues": [
+        "Molly",
+        "marr*",
+        "wed"
+      ],
+      "happensIn": 3,
+      "confidence": "high"
+    },
+    {
+      "id": "The White Prophet is the Fool",
+      "subjects": [
+        "White Prophet"
+      ],
+      "cues": [
+        "Fool"
+      ],
+      "happensIn": 3,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Verity becomes a dragon",
+      "subjects": [
+        "Verity"
+      ],
+      "cues": [
+        "dragon",
+        "stone dragon",
+        "carv*",
+        "becomes a dragon",
+        "Verity-as-Dragon"
+      ],
+      "happensIn": 3,
+      "confidence": "high",
+      "needsContext": true
+    },
+    {
+      "id": "Kettle dies",
+      "subjects": [
+        "Kettle",
+        "Kestrel"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "dragon"
+      ],
+      "happensIn": 3,
+      "confidence": "high",
+      "needsContext": true
+    },
+    {
+      "id": "Kettricken takes Nettle as heir",
+      "subjects": [
+        "Kettricken"
+      ],
+      "cues": [
+        "Nettle",
+        "heir"
+      ],
+      "happensIn": 3,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Galen's fate",
+      "subjects": [
+        "Galen"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 3,
+      "confidence": "low",
+      "notes": "Not confirmed; put late to be safe."
+    },
+    {
+      "id": "Regal's fate",
+      "subjects": [
+        "Regal"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "Skill-command*",
+        "loyal"
+      ],
+      "happensIn": 3,
+      "confidence": "medium",
+      "needsContext": true
+    },
+    {
+      "id": "Ephron Vestrit dies and Vivacia quickens",
+      "subjects": [
+        "Ephron",
+        "Vivacia"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "quicken*",
+        "wakes",
+        "awakens"
+      ],
+      "happensIn": 4,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Kennit loses his leg",
+      "subjects": [
+        "Kennit"
+      ],
+      "cues": [
+        "leg",
+        "amputat*",
+        "sever*"
+      ],
+      "happensIn": 4,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Kennit takes Vivacia",
+      "subjects": [
+        "Kennit"
+      ],
+      "cues": [
+        "Vivacia",
+        "capture*",
+        "board*"
+      ],
+      "happensIn": 4,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Kennit's past with Igrot",
+      "subjects": [
+        "Kennit"
+      ],
+      "cues": [
+        "Igrot",
+        "abuse*",
+        "his father",
+        "prisoner"
+      ],
+      "happensIn": 5,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "The dragon in the wizardwood (Tintaglia)",
+      "subjects": [
+        "Reyn",
+        "Tintaglia"
+      ],
+      "cues": [
+        "dragon",
+        "wizardwood",
+        "freed",
+        "free*"
+      ],
+      "happensIn": 5,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Paragon was Igrot's ship; Kennit is a Ludluck",
+      "subjects": [
+        "Paragon",
+        "Kennit"
+      ],
+      "cues": [
+        "Igrot",
+        "Ludluck",
+        "family ship",
+        "descend*"
+      ],
+      "happensIn": 6,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Kennit dies",
+      "subjects": [
+        "Kennit"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 6,
+      "confidence": "high"
+    },
+    {
+      "id": "Reyn and Selden change like Elderlings",
+      "subjects": [
+        "Reyn",
+        "Selden"
+      ],
+      "cues": [
+        "Elderling*",
+        "chang*",
+        "scales"
+      ],
+      "happensIn": 6,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Nighteyes dies",
+      "subjects": [
+        "Nighteyes"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "passed away"
+      ],
+      "happensIn": 7,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Amber is the Fool",
+      "subjects": [
+        "Amber"
+      ],
+      "cues": [
+        "Fool",
+        "Beloved",
+        "same person",
+        "was the Fool"
+      ],
+      "happensIn": 7,
+      "confidence": "high",
+      "needsContext": true,
+      "wikiChecked": true,
+      "notes": "Wikipedia: Fitz learns this in the Tawny Man trilogy. Common word or name, so context-only."
+    },
+    {
+      "id": "The Fool foresees his death",
+      "subjects": [
+        "Fool",
+        "Beloved"
+      ],
+      "cues": [
+        "foresaw",
+        "foresees",
+        "his death",
+        "his own death"
+      ],
+      "happensIn": 8,
+      "confidence": "high",
+      "needsContext": true,
+      "wikiChecked": true
+    },
+    {
+      "id": "The Fool dies and Fitz brings him back",
+      "subjects": [
+        "Fool",
+        "Beloved"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "revive*",
+        "resurrect*",
+        "brought back",
+        "Pale Woman",
+        "tortur*"
+      ],
+      "happensIn": 9,
+      "confidence": "high",
+      "needsContext": true
+    },
+    {
+      "id": "Burrich dies",
+      "subjects": [
+        "Burrich"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 9,
+      "confidence": "high"
+    },
+    {
+      "id": "Fitz and Molly reunite",
+      "subjects": [
+        "Fitz",
+        "FitzChivalry",
+        "Molly"
+      ],
+      "cues": [
+        "reunite*",
+        "marr*",
+        "wed",
+        "back together",
+        "Tom Badgerlock"
+      ],
+      "happensIn": 9,
+      "confidence": "medium"
+    },
+    {
+      "id": "Icefyre and Elliania's betrothal",
+      "subjects": [
+        "Dutiful",
+        "Elliania"
+      ],
+      "cues": [
+        "Icefyre",
+        "betroth*",
+        "marr*",
+        "slay"
+      ],
+      "happensIn": 9,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "The dragons reach Kelsingra",
+      "subjects": [
+        "Kelsingra"
+      ],
+      "cues": [
+        "found",
+        "reach*",
+        "arriv*",
+        "fly"
+      ],
+      "happensIn": 12,
+      "confidence": "low",
+      "notes": "Not confirmed; put late to be safe."
+    },
+    {
+      "id": "Alise leaves Hest",
+      "subjects": [
+        "Alise"
+      ],
+      "cues": [
+        "Leftrin",
+        "Hest",
+        "leaves",
+        "divorc*"
+      ],
+      "happensIn": 12,
+      "confidence": "low",
+      "notes": "Not confirmed; put late to be safe."
+    },
+    {
+      "id": "Sedric and Carson",
+      "subjects": [
+        "Sedric"
+      ],
+      "cues": [
+        "Carson",
+        "Relpda",
+        "love*"
+      ],
+      "happensIn": 12,
+      "confidence": "low",
+      "notes": "Not confirmed; put late to be safe."
+    },
+    {
+      "id": "Tintaglia's fate",
+      "subjects": [
+        "Tintaglia"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "wound*",
+        "dying"
+      ],
+      "happensIn": 13,
+      "confidence": "low",
+      "notes": "Not confirmed; put late to be safe."
+    },
+    {
+      "id": "Selden and the Duke of Chalced",
+      "subjects": [
+        "Selden"
+      ],
+      "cues": [
+        "Duke",
+        "Chalced",
+        "captive",
+        "prisoner",
+        "dragon blood"
+      ],
+      "happensIn": 13,
+      "confidence": "low",
+      "notes": "Not confirmed; put late to be safe."
+    },
+    {
+      "id": "Bee is born",
+      "subjects": [
+        "Molly",
+        "Bee"
+      ],
+      "cues": [
+        "pregnant",
+        "born",
+        "baby",
+        "birth"
+      ],
+      "happensIn": 14,
+      "confidence": "high",
+      "needsContext": true,
+      "wikiChecked": true
+    },
+    {
+      "id": "Molly dies",
+      "subjects": [
+        "Molly"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "heart"
+      ],
+      "happensIn": 14,
+      "confidence": "high",
+      "needsContext": true,
+      "wikiChecked": true
+    },
+    {
+      "id": "Bee is taken from Withywoods",
+      "subjects": [
+        "Bee"
+      ],
+      "cues": [
+        "kidnap*",
+        "taken",
+        "abduct*",
+        "stolen",
+        "captured",
+        "Servants",
+        "Dwalia"
+      ],
+      "happensIn": 14,
+      "confidence": "high",
+      "needsContext": true
+    },
+    {
+      "id": "Shine and Lant are Chade's children",
+      "subjects": [
+        "Shine",
+        "Shun",
+        "Lant"
+      ],
+      "cues": [
+        "Chade's",
+        "daughter",
+        "son",
+        "children"
+      ],
+      "happensIn": 15,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Nettle marries Riddle",
+      "subjects": [
+        "Nettle",
+        "Riddle"
+      ],
+      "cues": [
+        "marr*",
+        "wed",
+        "pregnant",
+        "baby"
+      ],
+      "happensIn": 15,
+      "confidence": "high",
+      "needsContext": true,
+      "wikiChecked": true
+    },
+    {
+      "id": "Fitz is recognised at court",
+      "subjects": [
+        "Fitz",
+        "FitzChivalry"
+      ],
+      "cues": [
+        "recogni*",
+        "acknowledg*",
+        "Prince FitzChivalry",
+        "named"
+      ],
+      "happensIn": 15,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Dwalia dies",
+      "subjects": [
+        "Dwalia"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 16,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Fitz dies carving the wolf",
+      "subjects": [
+        "Fitz",
+        "FitzChivalry"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "wolf",
+        "carv*",
+        "quarry",
+        "stone"
+      ],
+      "happensIn": 16,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "The Fool's final fate",
+      "subjects": [
+        "Fool",
+        "Beloved"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "wolf",
+        "carv*",
+        "stone"
+      ],
+      "happensIn": 16,
+      "confidence": "medium",
+      "needsContext": true
+    },
+    {
+      "id": "Chade's fate",
+      "subjects": [
+        "Chade"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 16,
+      "confidence": "low",
+      "notes": "Not confirmed; put late to be safe."
+    },
+    {
+      "id": "Bee's fate",
+      "subjects": [
+        "Bee"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "Clerres",
+        "returns",
+        "home"
+      ],
+      "happensIn": 16,
+      "confidence": "low",
+      "needsContext": true,
+      "notes": "Not confirmed; put late to be safe."
+    },
+    {
+      "id": "Main character deaths (catch-all)",
+      "subjects": [
+        "Fitz",
+        "FitzChivalry",
+        "Fool",
+        "Beloved",
+        "Nighteyes",
+        "Molly",
+        "Burrich",
+        "Chade",
+        "Verity",
+        "Kettricken",
+        "Nettle",
+        "Bee",
+        "Kennit",
+        "Althea",
+        "Brashen",
+        "Wintrow",
+        "Malta",
+        "Reyn",
+        "Thymara",
+        "Patience",
+        "Dutiful",
+        "Riddle"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 16,
+      "confidence": "medium",
+      "needsContext": true,
+      "notes": "Backstop: a main character + a death word blurs until the reader finishes the series."
+    }
   ]
 }
