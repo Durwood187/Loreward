@@ -4,3 +4,4 @@ src/generated/
 *.zip
 .DS_Store
 marketing/
+xcuserdata/
