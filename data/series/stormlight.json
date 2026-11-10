@@ -1819,5 +1819,951 @@
       "wikiChecked": true,
       "notes": "Szeth's mother"
     }
+  ],
+  "events": [
+    {
+      "id": "Tien dies",
+      "subjects": [
+        "Tien"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 1,
+      "confidence": "high"
+    },
+    {
+      "id": "Sadeas betrays Dalinar at the Tower",
+      "subjects": [
+        "Sadeas"
+      ],
+      "cues": [
+        "betray*",
+        "abandon*",
+        "traitor",
+        "treacher*",
+        "the Tower"
+      ],
+      "happensIn": 1,
+      "confidence": "high"
+    },
+    {
+      "id": "Dalinar trades his Shardblade for the bridgemen",
+      "subjects": [
+        "Dalinar"
+      ],
+      "cues": [
+        "trade*",
+        "traded",
+        "gave up his",
+        "gives up his",
+        "Shardblade for"
+      ],
+      "happensIn": 1,
+      "confidence": "high"
+    },
+    {
+      "id": "Kaladin speaks the Second Ideal",
+      "subjects": [
+        "Kaladin"
+      ],
+      "cues": [
+        "first ideal",
+        "second ideal",
+        "surgebind*",
+        "Windrunner*",
+        "glowing"
+      ],
+      "happensIn": 1,
+      "confidence": "high"
+    },
+    {
+      "id": "The Almighty (Honor) is dead",
+      "subjects": [
+        "Honor",
+        "Almighty",
+        "Tanavast"
+      ],
+      "cues": [
+        "dead",
+        "died",
+        "dies",
+        "death",
+        "splinter*",
+        "shattered"
+      ],
+      "happensIn": 1,
+      "confidence": "high",
+      "needsContext": true,
+      "notes": "'Honor' is an everyday word, so context-only."
+    },
+    {
+      "id": "Shallan plans to steal the Soulcaster",
+      "subjects": [
+        "Shallan"
+      ],
+      "cues": [
+        "steal*",
+        "stole",
+        "thief",
+        "poison*"
+      ],
+      "happensIn": 1,
+      "confidence": "high"
+    },
+    {
+      "id": "Amaram betrayed Kaladin and took the Shardblade",
+      "subjects": [
+        "Amaram"
+      ],
+      "cues": [
+        "betray*",
+        "stole",
+        "steal*",
+        "slaughter*",
+        "traitor",
+        "lied",
+        "liar",
+        "his men"
+      ],
+      "happensIn": 1,
+      "confidence": "high"
+    },
+    {
+      "id": "Kaladin swears the Third Ideal (Syl as a Blade)",
+      "subjects": [
+        "Kaladin",
+        "Syl"
+      ],
+      "cues": [
+        "third ideal",
+        "Sylblade",
+        "Syl becomes",
+        "turns into a Shardblade"
+      ],
+      "happensIn": 2,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Syl fades when Kaladin breaks his oaths",
+      "subjects": [
+        "Syl",
+        "Sylphrena"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "fades",
+        "fading",
+        "bond breaks",
+        "broken bond"
+      ],
+      "happensIn": 2,
+      "confidence": "high"
+    },
+    {
+      "id": "Jasnah's apparent death and return",
+      "subjects": [
+        "Jasnah"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "stab*",
+        "alive",
+        "return*",
+        "survive*",
+        "comes back",
+        "came back"
+      ],
+      "happensIn": 2,
+      "confidence": "high"
+    },
+    {
+      "id": "Shallan killed her parents",
+      "subjects": [
+        "Shallan"
+      ],
+      "cues": [
+        "kill*",
+        "murder*",
+        "patricide",
+        "matricide"
+      ],
+      "happensIn": 2,
+      "confidence": "high"
+    },
+    {
+      "id": "Pattern is Shallan's Shardblade",
+      "subjects": [
+        "Shallan"
+      ],
+      "cues": [
+        "Shardblade",
+        "Patternblade",
+        "her Blade"
+      ],
+      "happensIn": 2,
+      "confidence": "high",
+      "notes": "Shallan's family Shardblade is hinted in book 1; this over-blurs for book-1 readers (safe direction)."
+    },
+    {
+      "id": "Moash joins the plot against the king",
+      "subjects": [
+        "Moash"
+      ],
+      "cues": [
+        "betray*",
+        "traitor",
+        "assassin*",
+        "Graves",
+        "kill the king"
+      ],
+      "happensIn": 2,
+      "confidence": "high"
+    },
+    {
+      "id": "Szeth is killed and revived",
+      "subjects": [
+        "Szeth"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "reviv*",
+        "resurrect*",
+        "brought back"
+      ],
+      "happensIn": 2,
+      "confidence": "high"
+    },
+    {
+      "id": "Eshonai dies",
+      "subjects": [
+        "Eshonai"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "drown*"
+      ],
+      "happensIn": 2,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Dies at the Battle of Narak (book 2); details only revealed in Rhythm of War."
+    },
+    {
+      "id": "Dalinar becomes a Bondsmith",
+      "subjects": [
+        "Dalinar"
+      ],
+      "cues": [
+        "Bondsmith*",
+        "bonds the",
+        "bonded the"
+      ],
+      "happensIn": 2,
+      "confidence": "medium",
+      "notes": "Bond with the Stormfather is revealed at the end of book 2; 'Bondsmith' named in book 4. Book 2 = blurred longer (safe)."
+    },
+    {
+      "id": "Renarin is a Truthwatcher",
+      "subjects": [
+        "Renarin"
+      ],
+      "cues": [
+        "Truthwatcher*",
+        "Glys",
+        "surgebind*"
+      ],
+      "happensIn": 2,
+      "confidence": "high"
+    },
+    {
+      "id": "Shallan and Adolin are betrothed",
+      "subjects": [
+        "Shallan",
+        "Adolin"
+      ],
+      "cues": [
+        "betroth*",
+        "causal",
+        "fiance*",
+        "fiancé*"
+      ],
+      "happensIn": 2,
+      "confidence": "high"
+    },
+    {
+      "id": "Lift swears the Second and Third Ideals",
+      "subjects": [
+        "Lift"
+      ],
+      "cues": [
+        "second ideal",
+        "third ideal"
+      ],
+      "happensIn": 3,
+      "confidence": "medium",
+      "needsContext": true,
+      "notes": "'Lift' is an everyday word, so context-only."
+    },
+    {
+      "id": "Dalinar killed Evi at the Rift",
+      "subjects": [
+        "Dalinar",
+        "Blackthorn"
+      ],
+      "cues": [
+        "Rathalas",
+        "the Rift",
+        "burn*",
+        "Tanalan",
+        "killed his wife"
+      ],
+      "happensIn": 4,
+      "confidence": "high"
+    },
+    {
+      "id": "Sadeas is killed by Adolin",
+      "subjects": [
+        "Sadeas"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "stab*"
+      ],
+      "happensIn": 4,
+      "confidence": "high",
+      "notes": "Coppermind: murdered by Adolin shortly after arriving in Urithiru (start of book 4)."
+    },
+    {
+      "id": "Adolin kills Sadeas",
+      "subjects": [
+        "Adolin"
+      ],
+      "cues": [
+        "murder*",
+        "killed Sadeas",
+        "kills Sadeas",
+        "stabbed Sadeas"
+      ],
+      "happensIn": 4,
+      "confidence": "high"
+    },
+    {
+      "id": "Elhokar is killed by Moash",
+      "subjects": [
+        "Elhokar"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "assassinat*",
+        "stab*"
+      ],
+      "happensIn": 4,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Moash kills Elhokar and Jezrien",
+      "subjects": [
+        "Moash"
+      ],
+      "cues": [
+        "kill*",
+        "killed",
+        "murder*",
+        "Jezrien",
+        "Elhokar",
+        "the king"
+      ],
+      "happensIn": 4,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Jezrien is killed",
+      "subjects": [
+        "Jezrien",
+        "Yaezir"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "stab*"
+      ],
+      "happensIn": 4,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Stabbed by Moash in Oathbringer ch.121; fully gone in Wind and Truth."
+    },
+    {
+      "id": "Amaram dies at Thaylen Field",
+      "subjects": [
+        "Amaram"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "Yelig-nar",
+        "Yelignar",
+        "Unmade"
+      ],
+      "happensIn": 4,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Killed by Lunamor (Rock), Oathbringer ch.120."
+    },
+    {
+      "id": "Dalinar unites at Thaylen Field",
+      "subjects": [
+        "Dalinar"
+      ],
+      "cues": [
+        "unite them",
+        "I am Unity",
+        "Thaylen Field",
+        "take responsibility"
+      ],
+      "happensIn": 4,
+      "confidence": "high"
+    },
+    {
+      "id": "Dalinar and Navani marry",
+      "subjects": [
+        "Dalinar",
+        "Navani"
+      ],
+      "cues": [
+        "marr*",
+        "wedding",
+        "wed"
+      ],
+      "happensIn": 4,
+      "confidence": "high"
+    },
+    {
+      "id": "Jasnah becomes queen",
+      "subjects": [
+        "Jasnah"
+      ],
+      "cues": [
+        "queen",
+        "crowned",
+        "coronation"
+      ],
+      "happensIn": 4,
+      "confidence": "high"
+    },
+    {
+      "id": "Szeth becomes a Skybreaker",
+      "subjects": [
+        "Szeth"
+      ],
+      "cues": [
+        "Skybreaker*"
+      ],
+      "happensIn": 4,
+      "confidence": "high"
+    },
+    {
+      "id": "Taravangian joins Odium",
+      "subjects": [
+        "Taravangian"
+      ],
+      "cues": [
+        "Odium",
+        "betray*",
+        "deal with"
+      ],
+      "happensIn": 4,
+      "confidence": "high"
+    },
+    {
+      "id": "Teft becomes a Windrunner",
+      "subjects": [
+        "Teft"
+      ],
+      "cues": [
+        "Windrunner*",
+        "Phendorana",
+        "first ideal",
+        "Radiant"
+      ],
+      "happensIn": 4,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Rysn becomes a Dawnshard",
+      "subjects": [
+        "Rysn"
+      ],
+      "cues": [
+        "Dawnshard",
+        "Command"
+      ],
+      "happensIn": 5,
+      "confidence": "medium"
+    },
+    {
+      "id": "Teft dies",
+      "subjects": [
+        "Teft"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 6,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Navani bonds the Sibling",
+      "subjects": [
+        "Navani"
+      ],
+      "cues": [
+        "Sibling",
+        "Bondsmith*",
+        "bonded",
+        "ideal*",
+        "Radiant"
+      ],
+      "happensIn": 6,
+      "confidence": "high"
+    },
+    {
+      "id": "Kaladin swears the Fourth Ideal",
+      "subjects": [
+        "Kaladin"
+      ],
+      "cues": [
+        "fourth ideal"
+      ],
+      "happensIn": 6,
+      "confidence": "high"
+    },
+    {
+      "id": "Taravangian becomes Odium",
+      "subjects": [
+        "Taravangian"
+      ],
+      "cues": [
+        "Odium",
+        "Rayse",
+        "Vessel",
+        "Ascend*",
+        "becomes Odium"
+      ],
+      "happensIn": 6,
+      "confidence": "high"
+    },
+    {
+      "id": "Rayse dies",
+      "subjects": [
+        "Rayse",
+        "Odium"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "splinter*",
+        "shattered"
+      ],
+      "happensIn": 6,
+      "confidence": "high"
+    },
+    {
+      "id": "Adolin's trial at Lasting Integrity",
+      "subjects": [
+        "Adolin"
+      ],
+      "cues": [
+        "trial",
+        "Lasting Integrity",
+        "Maya"
+      ],
+      "happensIn": 6,
+      "confidence": "medium"
+    },
+    {
+      "id": "Venli becomes a Willshaper",
+      "subjects": [
+        "Venli"
+      ],
+      "cues": [
+        "Willshaper*",
+        "Radiant",
+        "Timbre",
+        "ideal*",
+        "surgebind*"
+      ],
+      "happensIn": 6,
+      "confidence": "medium"
+    },
+    {
+      "id": "Jasnah and Wit are together",
+      "subjects": [
+        "Jasnah"
+      ],
+      "cues": [
+        "Wit",
+        "Hoid",
+        "dating",
+        "lover*",
+        "romance",
+        "relationship"
+      ],
+      "happensIn": 6,
+      "confidence": "medium"
+    },
+    {
+      "id": "Dalinar dies and Ascends",
+      "subjects": [
+        "Dalinar"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "ascend*",
+        "Vessel",
+        "sacrific*",
+        "soulcast*",
+        "statue",
+        "becomes Honor",
+        "new Honor",
+        "god",
+        "godhood",
+        "became a Shard"
+      ],
+      "happensIn": 7,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Taravangian becomes Retribution",
+      "subjects": [
+        "Taravangian",
+        "Odium"
+      ],
+      "cues": [
+        "Retribution",
+        "composite",
+        "absorbs Honor",
+        "takes Honor"
+      ],
+      "happensIn": 7,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "The contest of champions",
+      "subjects": [
+        "Dalinar",
+        "Odium",
+        "Taravangian",
+        "Kaladin",
+        "Szeth"
+      ],
+      "cues": [
+        "contest of champions",
+        "champion*"
+      ],
+      "happensIn": 7,
+      "confidence": "high",
+      "notes": "Agreed in earlier books, decided in book 7: book 7 = blurred for everyone not finished (safe)."
+    },
+    {
+      "id": "Adolin loses his leg",
+      "subjects": [
+        "Adolin"
+      ],
+      "cues": [
+        "leg",
+        "legs",
+        "amputat*",
+        "prosthetic"
+      ],
+      "happensIn": 7,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Jasnah and Wit break up",
+      "subjects": [
+        "Jasnah",
+        "Hoid"
+      ],
+      "cues": [
+        "break up",
+        "broke up",
+        "breakup",
+        "split up"
+      ],
+      "happensIn": 7,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Leyten dies",
+      "subjects": [
+        "Leyten"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 7,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Szeth and his father",
+      "subjects": [
+        "Szeth"
+      ],
+      "cues": [
+        "Neturo",
+        "Ishar",
+        "his father"
+      ],
+      "happensIn": 7,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Kaladin's final arc",
+      "subjects": [
+        "Kaladin"
+      ],
+      "cues": [
+        "fifth ideal",
+        "Herald*"
+      ],
+      "happensIn": 7,
+      "confidence": "medium",
+      "notes": "Over-blurs Kaladin/Herald talk from earlier books (safe direction)."
+    },
+    {
+      "id": "Gavinor survives",
+      "subjects": [
+        "Gavinor"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "protect*",
+        "survive*"
+      ],
+      "happensIn": 7,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Odium leaves Roshar",
+      "subjects": [
+        "Taravangian",
+        "Odium"
+      ],
+      "cues": [
+        "defeat*",
+        "flee*",
+        "fled",
+        "hiding",
+        "leaves Roshar"
+      ],
+      "happensIn": 7,
+      "confidence": "medium"
+    },
+    {
+      "id": "Main character deaths (catch-all)",
+      "subjects": [
+        "Kaladin",
+        "Shallan",
+        "Dalinar",
+        "Adolin",
+        "Navani",
+        "Jasnah",
+        "Renarin",
+        "Szeth",
+        "Moash",
+        "Syl",
+        "Hoid",
+        "Lopen",
+        "Lunamor",
+        "Sigzil",
+        "Venli",
+        "Rlain",
+        "Taravangian",
+        "Pattern",
+        "Wit",
+        "Lift"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 7,
+      "confidence": "medium",
+      "needsContext": true,
+      "notes": "Backstop: any main character + a death word blurs until the reader finishes the series. Context-only because Pattern/Wit/Lift are everyday words. Biggest source of false blurs; tune here first."
+    }
   ]
 }

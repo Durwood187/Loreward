@@ -52,3 +52,13 @@ Nothing here is built yet. Payments wait for real traction (roughly 100+ weekly 
   becomes their free series. Say so plainly in the update notes. (Alternative considered: let existing
   users keep free switching as a thank-you.)
 - **Picking the wrong series:** one free change of series within the first month after install.
+
+## Event rules (in progress)
+
+Catch plain-word spoilers about early characters ("Carl gets convicted", "Teft dies"): a subject name near a cue word, tagged to the book it happens in. Blurred for readers on that book or earlier.
+- [x] Matcher support + tests
+- [x] Stormlight pilot catalog (52 events) — review: docs/event-review-stormlight.md
+- [ ] Eric reviews Stormlight events; test on r/Stormlight_Archive for false blurs
+- [ ] Popup: "finished the series" option (otherwise last-book events stay blurred)
+- [ ] Roll out to other series. Note: Eric can't review events for series he hasn't finished (the list IS the spoilers).
+- [ ] Generic backstop: series name + "ending / last chapter / final scene"
