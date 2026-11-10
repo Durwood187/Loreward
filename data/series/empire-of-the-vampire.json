@@ -756,5 +756,436 @@
       "confidence": "medium",
       "wikiChecked": false
     }
+  ],
+  "events": [
+    {
+      "id": "Astrid and Patience are murdered by Fabién",
+      "subjects": [
+        "Astrid",
+        "Patience"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "Fabién",
+        "Fabien",
+        "Forever King"
+      ],
+      "happensIn": 1,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "'Patience' is also an everyday word, but capitalised mid-sentence it's rare."
+    },
+    {
+      "id": "Celene is Gabriel's sister, turned vampire",
+      "subjects": [
+        "Celene"
+      ],
+      "cues": [
+        "sister",
+        "vampire",
+        "Liathe",
+        "Wraith in Red",
+        "resurrect*",
+        "turned",
+        "Esani"
+      ],
+      "happensIn": 1,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Danton dies",
+      "subjects": [
+        "Danton"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 1,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Dior is the Grail",
+      "subjects": [
+        "Dior"
+      ],
+      "cues": [
+        "Grail",
+        "Redeemer",
+        "divine blood",
+        "descend*",
+        "bloodline"
+      ],
+      "happensIn": 1,
+      "confidence": "medium"
+    },
+    {
+      "id": "Aaron dies and becomes a vampire",
+      "subjects": [
+        "Aaron"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "vampire",
+        "highblood*",
+        "turned",
+        "enthrall*",
+        "thrall"
+      ],
+      "happensIn": 2,
+      "confidence": "high",
+      "needsContext": true,
+      "wikiChecked": true,
+      "notes": "'Aaron' is a common name, so context-only."
+    },
+    {
+      "id": "Baptiste dies and becomes a vampire",
+      "subjects": [
+        "Baptiste"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "vampire",
+        "paleblood",
+        "turned",
+        "enthrall*",
+        "thrall"
+      ],
+      "happensIn": 2,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Nikita Dyvok is killed",
+      "subjects": [
+        "Nikita"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 2,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Gabriel kills the Forever King",
+      "subjects": [
+        "Gabriel",
+        "Fabién",
+        "Fabien",
+        "Forever King"
+      ],
+      "cues": [
+        "kill*",
+        "killed",
+        "murder*",
+        "slay*",
+        "slew",
+        "murderer"
+      ],
+      "happensIn": 3,
+      "confidence": "medium",
+      "notes": "Wiki calls Gabriel 'the murderer of the Forever King' without saying when; last book to be safe."
+    },
+    {
+      "id": "Gabriel becomes a vampire",
+      "subjects": [
+        "Gabriel"
+      ],
+      "cues": [
+        "Esani",
+        "turned into a vampire",
+        "becomes a vampire",
+        "became a vampire",
+        "fully vampire"
+      ],
+      "happensIn": 3,
+      "confidence": "low",
+      "notes": "Not confirmed on the wiki (it mostly covers book 1); put in the last book to be safe."
+    },
+    {
+      "id": "Kiara Dyvok dies",
+      "subjects": [
+        "Kiara"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 3,
+      "confidence": "medium",
+      "notes": "Wiki mentions 'Kiara's death' without the book; last book to be safe."
+    },
+    {
+      "id": "Chloe's fate",
+      "subjects": [
+        "Chloe"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "betray*",
+        "sacrific*"
+      ],
+      "happensIn": 3,
+      "confidence": "low",
+      "needsContext": true,
+      "notes": "Not confirmed on the wiki (it mostly covers book 1); put in the last book to be safe."
+    },
+    {
+      "id": "Greyhand's fate",
+      "subjects": [
+        "Greyhand"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 3,
+      "confidence": "low",
+      "notes": "Not confirmed on the wiki (it mostly covers book 1); put in the last book to be safe."
+    },
+    {
+      "id": "Lachlan's fate",
+      "subjects": [
+        "Lachlan"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 3,
+      "confidence": "low",
+      "notes": "Not confirmed on the wiki (it mostly covers book 1); put in the last book to be safe."
+    },
+    {
+      "id": "Phoebe's fate",
+      "subjects": [
+        "Phoebe"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 3,
+      "confidence": "low",
+      "needsContext": true,
+      "notes": "Not confirmed on the wiki (it mostly covers book 1); put in the last book to be safe."
+    },
+    {
+      "id": "Bellamy's fate",
+      "subjects": [
+        "Bellamy"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 3,
+      "confidence": "low",
+      "needsContext": true,
+      "notes": "Not confirmed on the wiki (it mostly covers book 1); put in the last book to be safe."
+    },
+    {
+      "id": "Dior's fate",
+      "subjects": [
+        "Dior"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "turned",
+        "vampire",
+        "sacrific*"
+      ],
+      "happensIn": 3,
+      "confidence": "low",
+      "notes": "Not confirmed on the wiki (it mostly covers book 1); put in the last book to be safe."
+    },
+    {
+      "id": "Celene's fate",
+      "subjects": [
+        "Celene"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "betray*"
+      ],
+      "happensIn": 3,
+      "confidence": "low",
+      "notes": "Not confirmed on the wiki (it mostly covers book 1); put in the last book to be safe."
+    },
+    {
+      "id": "Main character deaths (catch-all)",
+      "subjects": [
+        "Gabriel",
+        "Dior",
+        "Celene",
+        "Chloe",
+        "Bellamy",
+        "Aaron",
+        "Baptiste",
+        "Lachlan",
+        "Phoebe",
+        "Kestrel",
+        "Jean-François",
+        "Margot"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 3,
+      "confidence": "medium",
+      "needsContext": true,
+      "notes": "Backstop: a main character + a death word blurs until the reader finishes the series."
+    }
   ]
 }

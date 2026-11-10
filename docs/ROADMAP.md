@@ -62,5 +62,6 @@ Catch plain-word spoilers about early characters ("Carl gets convicted", "Teft d
 - [ ] Popup: "finished the series" option (otherwise last-book events stay blurred)
 - [x] Mistborn (29 events, needs review: docs/event-review-mistborn.md)
 - [x] The Empyrean (22 events, needs review: docs/event-review-the-empyrean.md)
+- [x] Empire of the Vampire (18 events, DRAFT: no reviewer; wiki covers book 1 only, so unconfirmed events sit in book 3)
 - [ ] Roll out to other series. Note: Eric can't review events for series he hasn't finished (the list IS the spoilers).
 - [ ] Generic backstop: series name + "ending / last chapter / final scene"
