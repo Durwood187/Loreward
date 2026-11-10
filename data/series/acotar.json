@@ -1204,5 +1204,535 @@
       "wikiChecked": true,
       "notes": "Bryaxis attacks Nyx's Naming Day. Two early summaries."
     }
+  ],
+  "events": [
+    {
+      "id": "Tamlin is cursed by Amarantha",
+      "subjects": [
+        "Tamlin"
+      ],
+      "cues": [
+        "curse*",
+        "mask",
+        "Amarantha"
+      ],
+      "happensIn": 1,
+      "confidence": "high"
+    },
+    {
+      "id": "Feyre dies and is remade High Fae",
+      "subjects": [
+        "Feyre"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "resurrect*",
+        "High Fae",
+        "remade",
+        "made Fae",
+        "immortal"
+      ],
+      "happensIn": 1,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Feyre's bargain with Rhysand",
+      "subjects": [
+        "Feyre",
+        "Rhysand",
+        "Rhys"
+      ],
+      "cues": [
+        "bargain",
+        "tattoo",
+        "one week",
+        "deal"
+      ],
+      "happensIn": 1,
+      "confidence": "high"
+    },
+    {
+      "id": "Clare Beddor dies",
+      "subjects": [
+        "Clare"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 1,
+      "confidence": "high",
+      "needsContext": true,
+      "wikiChecked": true,
+      "notes": "'Clare' is a common name, so context-only."
+    },
+    {
+      "id": "Amarantha dies",
+      "subjects": [
+        "Amarantha"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 1,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Feyre and Rhysand are mates",
+      "subjects": [
+        "Feyre",
+        "Rhysand",
+        "Rhys"
+      ],
+      "cues": [
+        "mate",
+        "mates",
+        "mating bond",
+        "mated"
+      ],
+      "happensIn": 2,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Wiki: the bond snaps into place when she's resurrected in book 1, but it's revealed in book 2."
+    },
+    {
+      "id": "Feyre leaves Tamlin",
+      "subjects": [
+        "Feyre",
+        "Tamlin"
+      ],
+      "cues": [
+        "leaves",
+        "left him",
+        "rescue*",
+        "wedding",
+        "takes her"
+      ],
+      "happensIn": 2,
+      "confidence": "high"
+    },
+    {
+      "id": "The Night Court is not what it seems",
+      "subjects": [
+        "Rhysand",
+        "Rhys"
+      ],
+      "cues": [
+        "Velaris",
+        "City of Starlight",
+        "pretend*",
+        "act*",
+        "mask"
+      ],
+      "happensIn": 2,
+      "confidence": "high"
+    },
+    {
+      "id": "Feyre becomes High Lady",
+      "subjects": [
+        "Feyre"
+      ],
+      "cues": [
+        "High Lady"
+      ],
+      "happensIn": 2,
+      "confidence": "high"
+    },
+    {
+      "id": "Chapter 54",
+      "subjects": [
+        "Feyre",
+        "Rhysand",
+        "Rhys",
+        "ACOMAF"
+      ],
+      "cues": [
+        "chapter 54",
+        "ch 54",
+        "ch. 54",
+        "Starfall"
+      ],
+      "happensIn": 2,
+      "confidence": "high",
+      "notes": "The fandom shorthand for a big romantic moment."
+    },
+    {
+      "id": "Nesta and Elain are made Fae in the Cauldron",
+      "subjects": [
+        "Nesta",
+        "Elain"
+      ],
+      "cues": [
+        "Cauldron",
+        "Fae",
+        "made Fae",
+        "turned",
+        "immortal"
+      ],
+      "happensIn": 2,
+      "confidence": "high"
+    },
+    {
+      "id": "Lucien and Elain are mates",
+      "subjects": [
+        "Lucien",
+        "Elain"
+      ],
+      "cues": [
+        "mate",
+        "mates",
+        "mating bond"
+      ],
+      "happensIn": 2,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Tamlin allies with Hybern as a spy",
+      "subjects": [
+        "Tamlin"
+      ],
+      "cues": [
+        "Hybern",
+        "spy",
+        "betray*",
+        "ally",
+        "allies"
+      ],
+      "happensIn": 2,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Rhysand's family history with Tamlin",
+      "subjects": [
+        "Rhysand",
+        "Rhys",
+        "Tamlin"
+      ],
+      "cues": [
+        "his mother",
+        "his sister",
+        "his father",
+        "brothers"
+      ],
+      "happensIn": 2,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "id": "Amren becomes High Fae",
+      "subjects": [
+        "Amren"
+      ],
+      "cues": [
+        "High Fae",
+        "gave up",
+        "her form",
+        "sacrific*",
+        "unbind*",
+        "freed"
+      ],
+      "happensIn": 3,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Feyre's father dies",
+      "subjects": [
+        "Feyre's father",
+        "Isaac Archeron",
+        "Papa Archeron"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 3,
+      "confidence": "medium"
+    },
+    {
+      "id": "Rhysand dies and is brought back",
+      "subjects": [
+        "Rhysand",
+        "Rhys"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "revive*",
+        "resurrect*",
+        "brought back",
+        "High Lords"
+      ],
+      "happensIn": 3,
+      "confidence": "medium"
+    },
+    {
+      "id": "The King of Hybern dies",
+      "subjects": [
+        "King of Hybern"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "behead*"
+      ],
+      "happensIn": 3,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Ianthe dies",
+      "subjects": [
+        "Ianthe"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 3,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Lucien is Helion's son",
+      "subjects": [
+        "Lucien"
+      ],
+      "cues": [
+        "Helion",
+        "Day Court",
+        "real father",
+        "his father"
+      ],
+      "happensIn": 5,
+      "confidence": "medium",
+      "notes": "Hinted in book 3; book 5 to be safe."
+    },
+    {
+      "id": "Nesta becomes a Valkyrie",
+      "subjects": [
+        "Nesta"
+      ],
+      "cues": [
+        "Valkyrie*",
+        "Blood Rite",
+        "Emerie",
+        "Gwyn"
+      ],
+      "happensIn": 5,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Nesta and Cassian are mates",
+      "subjects": [
+        "Nesta",
+        "Cassian"
+      ],
+      "cues": [
+        "mate",
+        "mates",
+        "mating bond",
+        "mated"
+      ],
+      "happensIn": 5,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Feyre's pregnancy and Nyx",
+      "subjects": [
+        "Feyre",
+        "Rhysand",
+        "Rhys"
+      ],
+      "cues": [
+        "pregnan*",
+        "baby",
+        "Nyx",
+        "born",
+        "birth",
+        "childbirth"
+      ],
+      "happensIn": 5,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Wiki: Nyx born early in A Court of Silver Flames; a high-risk birth."
+    },
+    {
+      "id": "Elain and Azriel",
+      "subjects": [
+        "Elain",
+        "Azriel"
+      ],
+      "cues": [
+        "mate*",
+        "kiss*",
+        "together",
+        "end up",
+        "love"
+      ],
+      "happensIn": 6,
+      "confidence": "low",
+      "notes": "Book 6 is new and the wiki has no plot yet; romance talk about them stays blurred until it's filled in."
+    },
+    {
+      "id": "Gwyn and Azriel",
+      "subjects": [
+        "Gwyn",
+        "Azriel"
+      ],
+      "cues": [
+        "mate*",
+        "kiss*",
+        "together",
+        "end up",
+        "love"
+      ],
+      "happensIn": 6,
+      "confidence": "low",
+      "notes": "As above."
+    },
+    {
+      "id": "Koschei's return",
+      "subjects": [
+        "Koschei"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "free*",
+        "return*",
+        "released",
+        "defeat*"
+      ],
+      "happensIn": 6,
+      "confidence": "medium",
+      "notes": "From the book 6 blurb; outcome unknown."
+    },
+    {
+      "id": "Main character deaths (catch-all)",
+      "subjects": [
+        "Feyre",
+        "Rhysand",
+        "Rhys",
+        "Tamlin",
+        "Nesta",
+        "Elain",
+        "Cassian",
+        "Azriel",
+        "Lucien",
+        "Amren",
+        "Mor",
+        "Nyx",
+        "Gwyn",
+        "Emerie",
+        "Eris"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 6,
+      "confidence": "medium",
+      "needsContext": true,
+      "notes": "Backstop: a main character + a death word blurs until the reader finishes the series."
+    }
   ]
 }
