@@ -34,6 +34,31 @@ export interface Term {
   notes?: string;
 }
 
+/**
+ * A plot event, caught when a subject (usually a character) and a cue word appear
+ * close together, e.g. "Szeth" near "dies". Catches spoilers written in plain words
+ * about early characters, which term lists can't see.
+ */
+export interface SpoilerEvent {
+  /** Short reviewer label, e.g. "Sadeas is killed". Never shown to readers (that would be the spoiler). */
+  id: string;
+  /** Names the event is about. Case-sensitive, whole words, possessives/plurals allowed. */
+  subjects: string[];
+  /**
+   * Words that describe what happens. Case-insensitive, whole words, possessives/plurals
+   * allowed. A trailing * matches any ending: "convict*" → convicted, conviction.
+   */
+  cues: string[];
+  /** Book index where it happens. Blurred for readers on this book or an earlier one. */
+  happensIn: number;
+  /** Only match on pages clearly about the series (see Term.needsContext). For common names like "Carl". */
+  needsContext?: boolean;
+  confidence: Confidence;
+  /** True when happensIn was checked against the series wiki. */
+  wikiChecked?: boolean;
+  notes?: string;
+}
+
 export interface SeriesData {
   id: string;
   name: string;
@@ -50,4 +75,6 @@ export interface SeriesData {
    */
   keywords?: string[];
   terms: Term[];
+  /** Plot events (subject + cue word close together). Optional. */
+  events?: SpoilerEvent[];
 }

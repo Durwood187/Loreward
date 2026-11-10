@@ -27,7 +27,7 @@
     },
     "shortName": {
       "type": "string",
-      "description": "Plain series name used in on-page labels, e.g. 'May contain spoilers for …'. Defaults to name."
+      "description": "Plain series name used in on-page labels, e.g. 'May contain spoilers for \u2026'. Defaults to name."
     },
     "verified": {
       "type": "boolean",
@@ -144,6 +144,65 @@
         "type": "string"
       },
       "description": "Words that show a search or page is about this series (series name, main characters, places). Matched case-insensitively as whole words. Book titles and every term are included automatically, so don't repeat them. Used to decide when to hold back AI answers on search pages."
+    },
+    "events": {
+      "type": "array",
+      "description": "Plot events: blurred when a subject and a cue word appear within 20 words of each other. Blocked for readers ON the event's book or earlier (unlike terms).",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "subjects",
+          "cues",
+          "happensIn",
+          "confidence"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Short reviewer label, e.g. 'Sadeas is killed'. Never shown to readers."
+          },
+          "subjects": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            },
+            "description": "Names the event is about. Case-sensitive whole words; possessives/plurals handled."
+          },
+          "cues": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            },
+            "description": "Words describing what happens. Case-insensitive whole words; a trailing * matches any ending ('convict*')."
+          },
+          "happensIn": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "Book index where it happens."
+          },
+          "needsContext": {
+            "type": "boolean",
+            "description": "Only on pages clearly about the series (for common names)."
+          },
+          "confidence": {
+            "enum": [
+              "high",
+              "medium",
+              "low"
+            ]
+          },
+          "wikiChecked": {
+            "type": "boolean"
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      }
     }
   }
 }

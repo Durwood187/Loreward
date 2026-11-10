@@ -292,3 +292,54 @@ describe('compileRelevance: run-together names (subreddits, hashtags)', () => {
     expect(about('dungeoncrawler')).toBe(false);
   });
 });
+
+describe('events (subject + cue close together)', () => {
+  const withEvents: SeriesData = {
+    ...series,
+    events: [
+      { id: 'Kadash is convicted', subjects: ['Kadash'], cues: ['convict*', 'sentenced'], happensIn: 3, confidence: 'high' },
+      { id: 'Lirin dies', subjects: ['Lirin', 'Lord Lirin'], cues: ['dies', 'died', 'death'], happensIn: 5, confidence: 'high' },
+      { id: 'Carl wins', subjects: ['Carl'], cues: ['wins'], happensIn: 4, needsContext: true, confidence: 'high' },
+    ],
+  };
+  const ev = (book: number, text: string, ctx = false) => compileMatcher(withEvents, book).findSpoiler(text, ctx)?.term ?? null;
+
+  it('fires when a subject and a cue are close', () => {
+    expect(ev(1, 'Did Kadash get convicted in the end?')).toBe('Kadash is convicted');
+  });
+  it('matches cue word forms through the trailing *', () => {
+    expect(ev(1, "Kadash's conviction was brutal")).toBe('Kadash is convicted');
+  });
+  it('needs both: a subject alone or a cue alone is safe', () => {
+    expect(ev(1, 'Kadash is my favourite')).toBeNull();
+    expect(ev(1, 'he was convicted of fraud')).toBeNull();
+  });
+  it('ignores pairs more than 20 words apart', () => {
+    const filler = Array(25).fill('word').join(' ');
+    expect(ev(1, `Kadash ${filler} convicted`)).toBeNull();
+    expect(ev(1, `Kadash ${Array(15).fill('word').join(' ')} convicted`)).toBe('Kadash is convicted');
+  });
+  it('blocks events in the CURRENT book too, but not earlier ones', () => {
+    expect(ev(3, 'Kadash was convicted')).toBe('Kadash is convicted');
+    expect(ev(4, 'Kadash was convicted')).toBeNull();
+  });
+  it('subjects are case-sensitive, cues are not', () => {
+    expect(ev(1, 'the lirin died down')).toBeNull();
+    expect(ev(1, 'Lirin DIED')).toBe('Lirin dies');
+  });
+  it('cues match whole words only', () => {
+    expect(ev(1, 'Lirin studies hard')).toBeNull();
+  });
+  it('needsContext events only count on pages about the series', () => {
+    expect(ev(1, 'Carl wins the lottery')).toBeNull();
+    expect(ev(1, 'Carl wins the lottery', true)).toBe('Carl wins');
+  });
+  it('counts blocked events', () => {
+    expect(compileMatcher(withEvents, 1).blockedEventCount).toBe(3);
+    expect(compileMatcher(withEvents, 5).blockedEventCount).toBe(1);
+    expect(compileMatcher(series, 1).blockedEventCount).toBe(0);
+  });
+  it('terms still win when both match', () => {
+    expect(ev(1, 'Raboniel died near Kadash, convicted')).toBe('Raboniel');
+  });
+});

@@ -13,8 +13,13 @@
 //
 // For speed, all blocked terms for a (series, book) setting are compiled into
 // at most two regular expressions (one case-sensitive, one not), once.
+//
+// Events (see SpoilerEvent) are a second, separate check: a subject name and a cue
+// word within EVENT_WINDOW words of each other, e.g. "Szeth ... dies". Unlike terms,
+// events from the reader's CURRENT book are blocked too: you meet a book's
+// characters as you read it, but its plot twists are still ahead of you.
 
-import type { SeriesData, Term } from './types';
+import type { SeriesData, SpoilerEvent, Term } from './types';
 
 export interface MatchHit {
   /** The term's main spelling (not the alias that matched). */
@@ -33,7 +38,12 @@ export interface CompiledMatcher {
   findSpoiler(text: string, inContext?: boolean): MatchHit | null;
   /** How many terms are being blocked at this setting (handy for tests and the popup). */
   blockedTermCount: number;
+  /** How many events are being blocked at this setting. */
+  blockedEventCount: number;
 }
+
+/** How close (in words) a subject and a cue must be for an event to count. */
+export const EVENT_WINDOW = 20;
 
 // Letters, digits, combining marks and underscore count as "part of a word".
 const WORD_CHAR = '[\\p{L}\\p{N}\\p{M}_]';
@@ -84,12 +94,75 @@ export function compileMatcher(series: SeriesData, currentBook: number): Compile
   const plain = buildGroup(blocked.filter((t) => !t.needsContext), allow);
   const contextual = buildGroup(blocked.filter((t) => t.needsContext), allow);
 
+  const events = buildEvents((series.events ?? []).filter((e) => e.happensIn >= currentBook));
+
   return {
     blockedTermCount: plain.usableTerms + contextual.usableTerms,
+    blockedEventCount: events.count,
     findSpoiler(text: string, inContext = false): MatchHit | null {
       if (!text) return null;
       const normalized = text.normalize('NFC');
-      return plain.find(normalized) ?? (inContext ? contextual.find(normalized) : null);
+      return (
+        plain.find(normalized) ??
+        (inContext ? contextual.find(normalized) : null) ??
+        events.find(normalized, inContext)
+      );
+    },
+  };
+}
+
+/** A cue like "convict*" matches any word starting with "convict". */
+function cuePattern(cue: string): string {
+  const c = cue.trim();
+  return c.endsWith('*') ? `${toPattern(c.slice(0, -1))}${WORD_CHAR}*` : toPattern(c);
+}
+
+function buildFromPatterns(patterns: string[], caseSensitive: boolean): RegExp | null {
+  if (patterns.length === 0) return null;
+  const alternation = [...new Set(patterns)].sort((a, b) => b.length - a.length).join('|');
+  return new RegExp(`(?<!${WORD_CHAR})(${alternation})${SUFFIX}(?!${WORD_CHAR})`, caseSensitive ? 'gu' : 'giu');
+}
+
+/** Word number of each match: the count of words that start before it. */
+function wordPositions(re: RegExp, text: string, wordStarts: number[]): number[] {
+  const out: number[] = [];
+  re.lastIndex = 0;
+  for (const m of text.matchAll(re)) {
+    let lo = 0, hi = wordStarts.length; // binary search: first word starting after the match
+    while (lo < hi) { const mid = (lo + hi) >> 1; if (wordStarts[mid] <= m.index!) lo = mid + 1; else hi = mid; }
+    out.push(lo);
+  }
+  return out;
+}
+
+function buildEvents(list: SpoilerEvent[]) {
+  const compiled = list
+    .map((e) => ({
+      e,
+      subjects: buildRegex(e.subjects.map(normalizeSpaces).filter(Boolean), true),
+      cues: buildFromPatterns(e.cues.filter((c) => c.trim()).map(cuePattern), false),
+    }))
+    .filter((c) => c.subjects && c.cues);
+  // Quick pre-check: most text names no subject at all, so skip the per-event work.
+  const anySubject = buildRegex(list.flatMap((e) => e.subjects).map(normalizeSpaces).filter(Boolean), true);
+
+  return {
+    count: compiled.length,
+    find(text: string, inContext: boolean): MatchHit | null {
+      if (!anySubject) return null;
+      anySubject.lastIndex = 0;
+      if (!anySubject.test(text)) return null;
+      const wordStarts = [...text.matchAll(new RegExp(`${WORD_CHAR}+`, 'gu'))].map((m) => m.index!);
+      for (const { e, subjects, cues } of compiled) {
+        if (e.needsContext && !inContext) continue;
+        const s = wordPositions(subjects!, text, wordStarts);
+        if (s.length === 0) continue;
+        const c = wordPositions(cues!, text, wordStarts);
+        if (s.some((i) => c.some((j) => Math.abs(i - j) <= EVENT_WINDOW))) {
+          return { term: e.id, matched: `${e.subjects[0]} … ${e.cues[0]}`, introducedIn: e.happensIn };
+        }
+      }
+      return null;
     },
   };
 }

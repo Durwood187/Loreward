@@ -52,6 +52,22 @@ describe.each(files)('%s', (file) => {
     expect((s.keywords ?? []).filter((k) => allow.has(k.toLowerCase()))).toEqual([]);
   });
 
+  it('gives every event a real book, subjects, cues, a confidence and a unique id', () => {
+    const ev = s.events ?? [];
+    const bad = ev.filter(
+      (e) => e.happensIn < 1 || e.happensIn > s.books.length || !e.subjects.length || !e.cues.length ||
+        !['high', 'medium', 'low'].includes(e.confidence),
+    );
+    expect(bad.map((e) => e.id)).toEqual([]);
+    const ids = ev.map((e) => e.id);
+    expect(ids.filter((id, i) => ids.indexOf(id) !== i)).toEqual([]);
+  });
+
+  it('has no event cue so short or bare that it matches almost anything', () => {
+    const bad = (s.events ?? []).flatMap((e) => e.cues).filter((c) => c.replace('*', '').trim().length < 3);
+    expect(bad).toEqual([]);
+  });
+
   it('blocks something for a book-1 reader and nothing for a last-book reader', () => {
     expect(compileMatcher(s, 1).blockedTermCount).toBeGreaterThan(0);
     expect(compileMatcher(s, s.books.length).blockedTermCount).toBe(0);
