@@ -34,7 +34,7 @@ Death words used below ("death words"): die, dies, died, dying, dead, death, kil
 | Syl fades when Kaladin breaks his oaths | Syl, Sylphrena | death words, fades, fading, bond breaks, broken bond | high |  |
 | Jasnah's apparent death and return | Jasnah | death words, stab*, alive, return*, survive*, comes back, came back | high |  |
 | Shallan killed her parents | Shallan | kill*, patricide, matricide | high |  |
-| Pattern is Shallan's Shardblade<br><sub>Shallan's family Shardblade is hinted in book 1; this over-blurs for book-1 readers (safe direction).</sub> | Shallan | Shardblade, Patternblade, her Blade | high |  |
+| Pattern is Shallan's Shardblade<br><sub>Book 1 hints she has a Shardblade; book 2 shows it is Pattern and that she killed with it. Over-blurs for book-1 readers (safe).</sub> | Shallan | Shardblade, Patternblade, her Blade | high | ✓ |
 | Moash joins the plot against the king | Moash | betray*, traitor, assassin*, Graves, kill the king | high |  |
 | Szeth is killed and revived | Szeth | death words, reviv*, resurrect*, brought back | high |  |
 | Eshonai dies<br><sub>Dies at the Battle of Narak (book 2); details only revealed in Rhythm of War.</sub> | Eshonai | death words, drown* | high | ✓ |
@@ -81,6 +81,7 @@ Death words used below ("death words"): die, dies, died, dying, dead, death, kil
 | Kaladin swears the Fourth Ideal | Kaladin | fourth ideal | high |  |
 | Taravangian becomes Odium | Taravangian | Odium, Rayse, Vessel, Ascend*, becomes Odium | high |  |
 | Rayse dies | Rayse, Odium | death words, splinter*, shattered | high |  |
+| Shallan's first spren was Testament<br><sub>Book 2 lets readers assume the Blade she killed with was Pattern; Rhythm of War reveals an earlier spren, Testament.</sub> | Shallan, Veil, Radiant | Testament, first spren, deadeye, first Blade, Mayalaran | high | ✓ |
 | Adolin's trial at Lasting Integrity | Adolin | trial, Lasting Integrity, Maya | medium |  |
 | Venli becomes a Willshaper | Venli | Willshaper*, Radiant, Timbre, ideal*, surgebind* | medium |  |
 | Jasnah and Wit are together | Jasnah | Wit, Hoid, dating, lover*, romance, relationship | medium |  |

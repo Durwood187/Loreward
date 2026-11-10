@@ -2037,7 +2037,8 @@
       ],
       "happensIn": 2,
       "confidence": "high",
-      "notes": "Shallan's family Shardblade is hinted in book 1; this over-blurs for book-1 readers (safe direction)."
+      "notes": "Book 1 hints she has a Shardblade (she tries to summon it, Coppermind WoK ch.45); book 2 shows it is Pattern (WoR ch.34) and that she killed with it (ch.88). Over-blurs for book-1 readers (safe).",
+      "wikiChecked": true
     },
     {
       "id": "Moash joins the plot against the king",
@@ -2489,6 +2490,25 @@
       ],
       "happensIn": 6,
       "confidence": "high"
+    },
+    {
+      "id": "Shallan's first spren was Testament",
+      "subjects": [
+        "Shallan",
+        "Veil",
+        "Radiant"
+      ],
+      "cues": [
+        "Testament",
+        "first spren",
+        "deadeye",
+        "first Blade",
+        "Mayalaran"
+      ],
+      "happensIn": 6,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Book 2 lets readers assume the Blade she killed with was Pattern; Rhythm of War reveals it was an earlier spren, Testament (Coppermind: Testament, RoW ch.115). Veil/Radiant are case-sensitive subjects here (her personas)."
     },
     {
       "id": "Adolin's trial at Lasting Integrity",
