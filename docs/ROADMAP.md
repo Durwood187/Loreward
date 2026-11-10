@@ -58,8 +58,8 @@ Nothing here is built yet. Payments wait for real traction (roughly 100+ weekly 
 Catch plain-word spoilers about early characters ("Carl gets convicted", "Teft dies"): a subject name near a cue word, tagged to the book it happens in. Blurred for readers on that book or earlier.
 - [x] Matcher support + tests
 - [x] Stormlight pilot catalog (52 events) — review: docs/event-review-stormlight.md
-- [x] Eric reviewed Stormlight events (2026-11-10)
-- [ ] Test on r/Stormlight_Archive for false blurs
+- [ ] Eric reviews Stormlight events; test on r/Stormlight_Archive for false blurs
 - [ ] Popup: "finished the series" option (otherwise last-book events stay blurred)
+- [x] Mistborn (29 events, needs review: docs/event-review-mistborn.md)
 - [ ] Roll out to other series. Note: Eric can't review events for series he hasn't finished (the list IS the spoilers).
 - [ ] Generic backstop: series name + "ending / last chapter / final scene"

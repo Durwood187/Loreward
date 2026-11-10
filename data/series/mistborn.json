@@ -1836,5 +1836,592 @@
       "wikiChecked": false,
       "notes": "From LM summary ('Wayne's death')."
     }
+  ],
+  "events": [
+    {
+      "id": "Kelsier dies",
+      "subjects": [
+        "Kelsier",
+        "the Survivor"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "sacrific*",
+        "martyr*"
+      ],
+      "happensIn": 1,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Vin kills the Lord Ruler",
+      "subjects": [
+        "Lord Ruler"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "defeat*",
+        "overthrow*"
+      ],
+      "happensIn": 1,
+      "confidence": "high"
+    },
+    {
+      "id": "The Lord Ruler is Rashek",
+      "subjects": [
+        "Lord Ruler"
+      ],
+      "cues": [
+        "Rashek",
+        "Terrisman",
+        "packman",
+        "not Alendi",
+        "wasn't Alendi"
+      ],
+      "happensIn": 1,
+      "confidence": "high"
+    },
+    {
+      "id": "Marsh becomes an Inquisitor",
+      "subjects": [
+        "Marsh"
+      ],
+      "cues": [
+        "Inquisitor*",
+        "spikes",
+        "spiked"
+      ],
+      "happensIn": 1,
+      "confidence": "high",
+      "needsContext": true,
+      "notes": "'Marsh' is an everyday word, so context-only."
+    },
+    {
+      "id": "Vin releases Ruin at the Well",
+      "subjects": [
+        "Vin"
+      ],
+      "cues": [
+        "Ruin",
+        "release*",
+        "freed",
+        "the power at the Well"
+      ],
+      "happensIn": 2,
+      "confidence": "high",
+      "needsContext": true,
+      "notes": "'Vin' is also a word/name elsewhere (Vin Diesel), so context-only."
+    },
+    {
+      "id": "Elend becomes a Mistborn",
+      "subjects": [
+        "Elend"
+      ],
+      "cues": [
+        "becomes a Mistborn",
+        "became a Mistborn",
+        "becomes Mistborn",
+        "became Mistborn",
+        "Allomancer",
+        "bead",
+        "dying",
+        "stabbed"
+      ],
+      "happensIn": 2,
+      "confidence": "high"
+    },
+    {
+      "id": "Vin and Elend marry",
+      "subjects": [
+        "Vin",
+        "Elend"
+      ],
+      "cues": [
+        "marr*",
+        "wedding",
+        "wed"
+      ],
+      "happensIn": 2,
+      "confidence": "high"
+    },
+    {
+      "id": "Zane dies",
+      "subjects": [
+        "Zane"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 2,
+      "confidence": "high",
+      "needsContext": true
+    },
+    {
+      "id": "Tindwyl dies",
+      "subjects": [
+        "Tindwyl"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 2,
+      "confidence": "high"
+    },
+    {
+      "id": "OreSeur was TenSoon",
+      "subjects": [
+        "OreSeur"
+      ],
+      "cues": [
+        "TenSoon",
+        "impostor",
+        "imposter",
+        "replaced"
+      ],
+      "happensIn": 2,
+      "confidence": "high"
+    },
+    {
+      "id": "Straff is killed by Vin",
+      "subjects": [
+        "Straff"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 2,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Elend dies",
+      "subjects": [
+        "Elend"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 3,
+      "confidence": "high"
+    },
+    {
+      "id": "Vin dies and becomes Preservation",
+      "subjects": [
+        "Vin"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "Preservation",
+        "Ascend*",
+        "kills Ruin",
+        "killed Ruin"
+      ],
+      "happensIn": 3,
+      "confidence": "high",
+      "needsContext": true,
+      "notes": "'Vin' is also a word/name elsewhere (Vin Diesel), so context-only."
+    },
+    {
+      "id": "Sazed becomes Harmony",
+      "subjects": [
+        "Sazed"
+      ],
+      "cues": [
+        "Harmony",
+        "Ascend*",
+        "Hero of Ages",
+        "god",
+        "Shard*"
+      ],
+      "happensIn": 3,
+      "confidence": "high"
+    },
+    {
+      "id": "Marsh's fate",
+      "subjects": [
+        "Marsh"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "Ruin"
+      ],
+      "happensIn": 3,
+      "confidence": "high",
+      "needsContext": true
+    },
+    {
+      "id": "Spook becomes a Mistborn-like Allomancer",
+      "subjects": [
+        "Spook"
+      ],
+      "cues": [
+        "Survivor",
+        "pewter",
+        "spike*",
+        "Hemalur*"
+      ],
+      "happensIn": 3,
+      "confidence": "medium",
+      "needsContext": true
+    },
+    {
+      "id": "Lessie dies",
+      "subjects": [
+        "Lessie"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 4,
+      "confidence": "high",
+      "notes": "Happens in the Alloy of Law prologue; book 5 reveals more (separate event)."
+    },
+    {
+      "id": "Miles Hundredlives is executed",
+      "subjects": [
+        "Miles",
+        "Hundredlives"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "hang*",
+        "hanged"
+      ],
+      "happensIn": 4,
+      "confidence": "high",
+      "needsContext": true
+    },
+    {
+      "id": "Mister Suit is Wax's uncle",
+      "subjects": [
+        "Mister Suit",
+        "Edwarn"
+      ],
+      "cues": [
+        "uncle",
+        "Ladrian",
+        "Wax's uncle"
+      ],
+      "happensIn": 4,
+      "confidence": "high"
+    },
+    {
+      "id": "Lessie was a kandra (the Bleeder)",
+      "subjects": [
+        "Lessie"
+      ],
+      "cues": [
+        "kandra",
+        "Bleeder",
+        "Paalm",
+        "alive",
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 5,
+      "confidence": "high",
+      "notes": "Covers 'Wax kills Lessie' too: blurs Lessie + death words through book 5."
+    },
+    {
+      "id": "Wax and Steris marry",
+      "subjects": [
+        "Wax",
+        "Waxillium",
+        "Steris"
+      ],
+      "cues": [
+        "marr*",
+        "wedding",
+        "wed"
+      ],
+      "happensIn": 6,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Wedding interrupted at the start of book 6; they marry during it. Book 6 = safe."
+    },
+    {
+      "id": "Telsin is in the Set",
+      "subjects": [
+        "Telsin"
+      ],
+      "cues": [
+        "Set",
+        "Sequence",
+        "betray*",
+        "traitor",
+        "villain"
+      ],
+      "happensIn": 6,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Kelsier is alive",
+      "subjects": [
+        "Kelsier"
+      ],
+      "cues": [
+        "alive",
+        "survive*",
+        "Cognitive Realm",
+        "comes back",
+        "came back",
+        "returns"
+      ],
+      "happensIn": 7,
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Hinted in the Bands of Mourning epilogue (book 6), told in Secret History (book 7). Book 7 = safe."
+    },
+    {
+      "id": "Kelsier and Preservation",
+      "subjects": [
+        "Kelsier"
+      ],
+      "cues": [
+        "Preservation",
+        "Ruin",
+        "Beyond"
+      ],
+      "happensIn": 7,
+      "confidence": "medium"
+    },
+    {
+      "id": "Wayne dies",
+      "subjects": [
+        "Wayne"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "sacrific*",
+        "bomb",
+        "explosion"
+      ],
+      "happensIn": 8,
+      "confidence": "high",
+      "needsContext": true,
+      "wikiChecked": true,
+      "notes": "'Wayne' is a common name, so context-only."
+    },
+    {
+      "id": "Telsin becomes the Key / Trell",
+      "subjects": [
+        "Telsin"
+      ],
+      "cues": [
+        "Key",
+        "Trell",
+        "Avatar",
+        "Autonomy",
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 8,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Marasi joins the Ghostbloods",
+      "subjects": [
+        "Marasi"
+      ],
+      "cues": [
+        "Ghostblood*",
+        "Kelsier"
+      ],
+      "happensIn": 8,
+      "confidence": "medium"
+    },
+    {
+      "id": "Kelsier leads the Ghostbloods",
+      "subjects": [
+        "Kelsier"
+      ],
+      "cues": [
+        "Ghostblood*",
+        "Thaidakar"
+      ],
+      "happensIn": 8,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Main character deaths (catch-all)",
+      "subjects": [
+        "Kelsier",
+        "Vin",
+        "Elend",
+        "Sazed",
+        "Spook",
+        "Breeze",
+        "Marsh",
+        "Wax",
+        "Waxillium",
+        "Wayne",
+        "Marasi",
+        "Steris",
+        "MeLaan",
+        "TenSoon"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 8,
+      "confidence": "medium",
+      "needsContext": true,
+      "notes": "Backstop: a main character + a death word blurs until the reader finishes the series. Context-only because Vin/Wax/Ham/Marsh/Breeze are everyday words. 'Ham' left out (matched Hamlet and the Bible in testing)."
+    }
   ]
 }
