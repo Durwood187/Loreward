@@ -16,7 +16,7 @@ class ViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHan
         super.viewDidLoad()
 
         self.webView.navigationDelegate = self
-        self.webView.scrollView.isScrollEnabled = false
+        self.webView.scrollView.isScrollEnabled = true  // the welcome page is taller than a phone screen
 
         self.webView.configuration.userContentController.add(self, name: "controller")
 
