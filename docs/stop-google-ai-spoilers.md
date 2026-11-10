@@ -49,7 +49,7 @@ and which book you're on. On Google, it:
 
 It does the same for Reddit posts and comments. Everything runs in your browser; nothing is sent anywhere.
 
-**[Add Loreward to Chrome](https://chromewebstore.google.com/detail/loreward-book-spoiler-shi/lelhddhefkgdnhgkogijjikmabfhicda)**. Currently supports *The Stormlight Archive*, *Mistborn*, *Realm of the Elderlings*, *The Empyrean* (Fourth Wing), *Dungeon Crawler Carl*, *Empire of the Vampire* and *A Court of Thorns and Roses*.
+**[Add Loreward to Chrome](https://chromewebstore.google.com/detail/loreward-book-spoiler-shi/lelhddhefkgdnhgkogijjikmabfhicda)**. Currently supports *The Stormlight Archive*, *Mistborn*, *Realm of the Elderlings*, *The Empyrean* (Fourth Wing), *Dungeon Crawler Carl*, *Empire of the Vampire*, *A Court of Thorns and Roses* and *Red Rising*.
 
 ---
 

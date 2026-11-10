@@ -7,7 +7,7 @@ what comes next. Everything runs in your browser ([privacy policy](PRIVACY.md)).
 **[Add Loreward to Chrome](https://chromewebstore.google.com/detail/loreward-book-spoiler-shi/lelhddhefkgdnhgkogijjikmabfhicda)** (free)
 
 - **Sites:** Reddit (new and old), Google search (results, AI Overview, People also ask).
-- **Series:** The Stormlight Archive, Mistborn, Realm of the Elderlings, The Empyrean (Fourth Wing), Dungeon Crawler Carl, Empire of the Vampire, A Court of Thorns and Roses. More are planned (see `docs/ROADMAP.md`).
+- **Series:** The Stormlight Archive, Mistborn, Realm of the Elderlings, The Empyrean (Fourth Wing), Dungeon Crawler Carl, Empire of the Vampire, A Court of Thorns and Roses, Red Rising. More are planned (see `docs/ROADMAP.md`).
 - **How it's built:** Chrome extension (Manifest V3), plain TypeScript, esbuild. 100% local:
   no network calls, no analytics, no remote code.
 
@@ -28,13 +28,14 @@ icon on the extension's card.
 
 | Path | What it is |
 |---|---|
-| `data/series/*.json` | One file per series: books, terms, allowlist. **Adding a series = adding a file + rebuild.** |
+| `data/series/*.json` | One file per series: books, terms, plot events, allowlist. **Adding a series = adding a file + rebuild.** |
 | `data/schema.json` | Describes the series file format. |
-| `src/core/matcher.ts` | Decides whether text mentions a term from a later book. Pure logic, unit-tested. |
+| `src/core/matcher.ts` | Decides whether text mentions a term from a later book, or a plot event (a name near a cue word like "dies") from the current or a later book. Pure logic, unit-tested. |
 | `src/core/settings.ts` | What's saved in `chrome.storage` and the defaults (`isPro` lives here). |
 | `src/content/` | Runs on supported sites: finds content units, blurs them, watches for new ones. |
 | `src/content/adapters/` | One small file per site: which elements count as a "content unit". |
 | `src/popup/` | The toolbar popup. |
+| `scripts/event-review.py` | Writes `docs/event-review-<series>.md` for human review of plot events. |
 | `scripts/build.mjs` | The whole build: bundles data, bundles scripts with esbuild, copies files to `dist/`. |
 | `tests/` | Vitest tests; `tests/fixtures/` holds saved HTML so adapters can be tested offline. |
 
