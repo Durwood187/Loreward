@@ -64,5 +64,9 @@ Catch plain-word spoilers about early characters ("Carl gets convicted", "Teft d
 - [x] The Empyrean (22 events, needs review: docs/event-review-the-empyrean.md)
 - [x] Empire of the Vampire (18 events, DRAFT: no reviewer; wiki covers book 1 only, so unconfirmed events sit in book 3)
 - [x] Realm of the Elderlings (49 events, DRAFT: no reviewer; Wikipedia plot checks, Rain Wilds thin)
-- [ ] Roll out to other series (ACOTAR, DCC — DCC needs a reviewer who has finished it). Note: Eric can't review events for series he hasn't finished (the list IS the spoilers).
+- [x] ACOTAR (27 events; book 6 is new, mostly catch-all until the wiki fills in)
+- [x] Dungeon Crawler Carl (23 events, DRAFT: Eric is mid-series, can't review)
+- [x] Rechecked Empyrean (26) and Elderlings (53) against their fandom wikis
+- [ ] Revisit ACOTAR book 6 and Empire of the Vampire as their wikis fill in
+- Sources and wiki quality: docs/wiki-sources.md Note: Eric can't review events for series he hasn't finished (the list IS the spoilers).
 - [ ] Generic backstop: series name + "ending / last chapter / final scene"

@@ -1320,5 +1320,497 @@
       "wikiChecked": true,
       "notes": "Cookbook author; may be referenced earlier via the Cookbook."
     }
+  ],
+  "events": [
+    {
+      "id": "Yolanda dies",
+      "subjects": [
+        "Yolanda"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "Rage Elemental"
+      ],
+      "happensIn": 1,
+      "confidence": "medium",
+      "needsContext": true,
+      "wikiChecked": true
+    },
+    {
+      "id": "Maggie My's vendetta",
+      "subjects": [
+        "Maggie"
+      ],
+      "cues": [
+        "revenge",
+        "Yvette",
+        "vow*"
+      ],
+      "happensIn": 1,
+      "confidence": "high",
+      "needsContext": true,
+      "wikiChecked": true
+    },
+    {
+      "id": "Katia joins the Royal Court",
+      "subjects": [
+        "Katia"
+      ],
+      "cues": [
+        "Royal Court",
+        "joins",
+        "new member"
+      ],
+      "happensIn": 2,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Donut, Ferdinand and Gravy Boat",
+      "subjects": [
+        "Donut",
+        "Princess Donut"
+      ],
+      "cues": [
+        "Ferdinand",
+        "Gravy Boat",
+        "love of her life"
+      ],
+      "happensIn": 2,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Brandon dies holding off the gremlins",
+      "subjects": [
+        "Brandon"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "Shade Gremlins",
+        "gremlin*"
+      ],
+      "happensIn": 3,
+      "confidence": "high",
+      "needsContext": true,
+      "wikiChecked": true,
+      "notes": "Common name, so context-only."
+    },
+    {
+      "id": "Katia kills Hekla",
+      "subjects": [
+        "Hekla",
+        "Katia"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "Rush",
+        "bounty"
+      ],
+      "happensIn": 3,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Hekla and Eva betray Katia",
+      "subjects": [
+        "Hekla",
+        "Eva"
+      ],
+      "cues": [
+        "betray*",
+        "abandon*",
+        "left her"
+      ],
+      "happensIn": 3,
+      "confidence": "high",
+      "needsContext": true,
+      "wikiChecked": true
+    },
+    {
+      "id": "Signet's fate",
+      "subjects": [
+        "Signet"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 3,
+      "confidence": "low",
+      "needsContext": true,
+      "wikiChecked": true,
+      "notes": "Wiki: deceased, book not stated. Placed late to be safe."
+    },
+    {
+      "id": "Ifechi dies",
+      "subjects": [
+        "Ifechi",
+        "Florin"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 4,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Firas and Gwen die",
+      "subjects": [
+        "Firas",
+        "Gwen"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 5,
+      "confidence": "high",
+      "needsContext": true,
+      "wikiChecked": true,
+      "notes": "Common name, so context-only."
+    },
+    {
+      "id": "Katia kills Eva",
+      "subjects": [
+        "Eva",
+        "Katia"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "Left Fang"
+      ],
+      "happensIn": 5,
+      "confidence": "high",
+      "needsContext": true,
+      "wikiChecked": true
+    },
+    {
+      "id": "Imani's sacrifice",
+      "subjects": [
+        "Imani"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "sacrific*",
+        "in his place"
+      ],
+      "happensIn": 5,
+      "confidence": "medium",
+      "needsContext": true,
+      "wikiChecked": true
+    },
+    {
+      "id": "Beatrice and Donut",
+      "subjects": [
+        "Beatrice",
+        "Miss Beatrice"
+      ],
+      "cues": [
+        "betray*",
+        "give Donut away",
+        "not my person",
+        "owner"
+      ],
+      "happensIn": 5,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Carl becomes an Agent Provocateur",
+      "subjects": [
+        "Carl"
+      ],
+      "cues": [
+        "Agent Provocateur"
+      ],
+      "happensIn": 5,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Katia leaves the Royal Court",
+      "subjects": [
+        "Katia"
+      ],
+      "cues": [
+        "leaves",
+        "left",
+        "Safehome",
+        "guild"
+      ],
+      "happensIn": 5,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Who killed Emberus's son",
+      "subjects": [
+        "Emberus",
+        "Geyrun",
+        "Samantha"
+      ],
+      "cues": [
+        "son",
+        "who killed",
+        "Geyrun"
+      ],
+      "happensIn": 5,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "id": "Maggie My's death",
+      "subjects": [
+        "Maggie"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 5,
+      "confidence": "low",
+      "needsContext": true,
+      "wikiChecked": true,
+      "notes": "Wiki: deceased, book not stated. Placed late to be safe."
+    },
+    {
+      "id": "Quan Ch dies",
+      "subjects": [
+        "Quan"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 6,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Carl's family backstory",
+      "subjects": [
+        "Carl"
+      ],
+      "cues": [
+        "his mother",
+        "his father",
+        "Boys' Ranch",
+        "Anacortes"
+      ],
+      "happensIn": 6,
+      "confidence": "high",
+      "needsContext": true,
+      "wikiChecked": true
+    },
+    {
+      "id": "Mordecai's brother and Huanxin",
+      "subjects": [
+        "Mordecai"
+      ],
+      "cues": [
+        "brother",
+        "Huanxin"
+      ],
+      "happensIn": 6,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Miriam's death",
+      "subjects": [
+        "Miriam",
+        "Prepotente"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 7,
+      "confidence": "low",
+      "wikiChecked": true,
+      "notes": "Wiki mentions it; book not stated. Placed late to be safe.",
+      "needsContext": true
+    },
+    {
+      "id": "Carl on trial",
+      "subjects": [
+        "Carl"
+      ],
+      "cues": [
+        "convict*",
+        "trial",
+        "sentenced",
+        "found guilty",
+        "prison",
+        "verdict"
+      ],
+      "happensIn": 8,
+      "confidence": "low",
+      "needsContext": true,
+      "wikiChecked": true,
+      "notes": "Placed late to be safe."
+    },
+    {
+      "id": "Main character deaths (catch-all)",
+      "subjects": [
+        "Carl",
+        "Donut",
+        "Princess Donut",
+        "Katia",
+        "Mordecai",
+        "Mongo",
+        "Bautista",
+        "Elle",
+        "Imani",
+        "Zev",
+        "Odette",
+        "Lucia Mar",
+        "Florin",
+        "Prepotente",
+        "Samantha",
+        "Louis",
+        "Agatha",
+        "Li Jun",
+        "Li Na",
+        "Tran"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 8,
+      "confidence": "medium",
+      "needsContext": true,
+      "wikiChecked": true,
+      "notes": "Backstop: a main character + a death word blurs until the reader finishes the series."
+    }
   ]
 }
