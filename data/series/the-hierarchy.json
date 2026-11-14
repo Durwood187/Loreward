@@ -1,0 +1,854 @@
+{
+  "$schema": "../schema.json",
+  "id": "the-hierarchy",
+  "name": "The Hierarchy series (compatible)",
+  "shortName": "The Will of the Many",
+  "verified": false,
+  "books": [
+    {
+      "index": 1,
+      "title": "The Will of the Many",
+      "kind": "novel",
+      "aliases": [
+        "TWOTM",
+        "WotM"
+      ]
+    },
+    {
+      "index": 2,
+      "title": "The Strength of the Few",
+      "kind": "novel",
+      "aliases": [
+        "TSOTF",
+        "SotF"
+      ]
+    },
+    {
+      "index": 3,
+      "title": "The Justice of One",
+      "kind": "novel"
+    }
+  ],
+  "allowlist": [
+    "Will",
+    "Many",
+    "Strength",
+    "Few",
+    "Justice",
+    "One",
+    "Hierarchy",
+    "Republic",
+    "Academy",
+    "Military",
+    "Governance",
+    "Religion",
+    "Res",
+    "Cataclysm",
+    "Labyrinth",
+    "Foundation",
+    "Senate",
+    "Principalis"
+  ],
+  "keywords": [
+    "The Will of the Many",
+    "Will of the Many",
+    "The Strength of the Few",
+    "Strength of the Few",
+    "The Justice of One",
+    "James Islington",
+    "Hierarchy series",
+    "Vis Telimus",
+    "Catenan",
+    "Catenan Academy",
+    "Caten",
+    "Ulciscor",
+    "Callidus",
+    "Eidhin",
+    "Anguis",
+    "Iudicium",
+    "Lanistia",
+    "Veridius"
+  ],
+  "terms": [
+    {
+      "term": "Vis Telimus",
+      "introducedIn": 1,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "aliases": [
+        "Telimus"
+      ]
+    },
+    {
+      "term": "Ulciscor",
+      "introducedIn": 1,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Lanistia",
+      "introducedIn": 1,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Callidus",
+      "introducedIn": 1,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Eidhin",
+      "introducedIn": 1,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Aequa",
+      "introducedIn": 1,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Emissa",
+      "introducedIn": 1,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Indol",
+      "introducedIn": 1,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Veridius",
+      "introducedIn": 1,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Relucia",
+      "introducedIn": 1,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Sedotia",
+      "introducedIn": 1,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Caeror",
+      "introducedIn": 1,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Diago",
+      "introducedIn": 1,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "needsContext": true
+    },
+    {
+      "term": "Anguis",
+      "introducedIn": 1,
+      "type": "concept",
+      "confidence": "high",
+      "wikiChecked": true,
+      "caseSensitive": true
+    },
+    {
+      "term": "Iudicium",
+      "introducedIn": 1,
+      "type": "event",
+      "confidence": "high",
+      "wikiChecked": true,
+      "caseSensitive": true
+    },
+    {
+      "term": "Catenicus",
+      "introducedIn": 1,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Deditia",
+      "introducedIn": 1,
+      "type": "place",
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Solivagus",
+      "introducedIn": 1,
+      "type": "place",
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Luceum",
+      "introducedIn": 1,
+      "type": "place",
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Named in book 1's ending and epilogue."
+    },
+    {
+      "term": "Obiteum",
+      "introducedIn": 1,
+      "type": "place",
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Named in book 1's ending and epilogue."
+    },
+    {
+      "term": "Synchronism",
+      "introducedIn": 1,
+      "type": "concept",
+      "confidence": "high",
+      "wikiChecked": true,
+      "caseSensitive": true,
+      "notes": "Title of book 1's epilogue."
+    },
+    {
+      "term": "Deaglán",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "aliases": [
+        "Deaglan"
+      ],
+      "notes": "Vis's name in Luceum."
+    },
+    {
+      "term": "Leathfhear",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Siamun",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "Vis's name in Obiteum."
+    },
+    {
+      "term": "Concurrence",
+      "introducedIn": 2,
+      "type": "concept",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true,
+      "caseSensitive": true
+    },
+    {
+      "term": "Loch Traenala",
+      "introducedIn": 2,
+      "type": "place",
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Duat",
+      "introducedIn": 2,
+      "type": "place",
+      "confidence": "high",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "Also a real Egyptian mythology term."
+    },
+    {
+      "term": "Qabr",
+      "introducedIn": 2,
+      "type": "place",
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Fornax",
+      "introducedIn": 2,
+      "type": "place",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "Also a constellation."
+    },
+    {
+      "term": "King Rónán",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "aliases": [
+        "King Ronan",
+        "Rónán"
+      ]
+    },
+    {
+      "term": "Gallchobhar",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Fiachra",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "needsContext": true
+    },
+    {
+      "term": "Lir",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "Also a mythological name."
+    },
+    {
+      "term": "Ruarc",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Tara",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "Common name: only on series pages."
+    },
+    {
+      "term": "Grainne",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true
+    },
+    {
+      "term": "Seanna",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true
+    },
+    {
+      "term": "Miach",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true
+    },
+    {
+      "term": "Fearghus",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true
+    },
+    {
+      "term": "Ahmose",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "Also a pharaoh's name."
+    },
+    {
+      "term": "Netiqret",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Kiya",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true
+    },
+    {
+      "term": "Nofret",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true
+    },
+    {
+      "term": "Ostius",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Wiki lists him among book 2 characters; placed in book 2 to be safe."
+    },
+    {
+      "term": "Amercus Decimus",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "low",
+      "wikiChecked": true,
+      "aliases": [
+        "Amercus"
+      ],
+      "notes": "May be named in book 1; unsure, so book 2."
+    },
+    {
+      "term": "Livia Ericius",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "low",
+      "wikiChecked": true,
+      "notes": "Callidus's sister. Possibly mentioned in book 1."
+    },
+    {
+      "term": "Cristoval",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "low",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "Vis's father. May be named in book 1."
+    },
+    {
+      "term": "Kadmos",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "low",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "Possibly appears in book 1; unsure, so book 2."
+    },
+    {
+      "term": "iunctus",
+      "introducedIn": 2,
+      "type": "concept",
+      "confidence": "low",
+      "wikiChecked": true,
+      "aliases": [
+        "iunctii"
+      ],
+      "caseSensitive": false,
+      "notes": "The beings in the other worlds. Term may first appear in book 2."
+    }
+  ],
+  "events": [
+    {
+      "id": "Callidus dies",
+      "subjects": [
+        "Callidus"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 1,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Vis loses his arm",
+      "subjects": [
+        "Vis",
+        "Vis Telimus",
+        "Catenicus"
+      ],
+      "cues": [
+        "arm",
+        "lost his arm",
+        "loses his arm",
+        "one arm",
+        "one-armed",
+        "amputat*"
+      ],
+      "happensIn": 1,
+      "confidence": "high",
+      "wikiChecked": true,
+      "needsContext": true
+    },
+    {
+      "id": "Emissa tries to kill Vis",
+      "subjects": [
+        "Emissa"
+      ],
+      "cues": [
+        "tries to kill",
+        "tried to kill",
+        "attempts to kill",
+        "stabs",
+        "stabbed",
+        "betray*",
+        "kill Vis"
+      ],
+      "happensIn": 1,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Relucia is with the Anguis",
+      "subjects": [
+        "Relucia"
+      ],
+      "cues": [
+        "Anguis",
+        "rebel",
+        "rebels",
+        "traitor",
+        "secretly",
+        "blackmail*"
+      ],
+      "happensIn": 1,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Book 2 character list calls her 'secretly' Anguis; she blackmails Vis in book 1."
+    },
+    {
+      "id": "Vis wins the Iudicium",
+      "subjects": [
+        "Vis",
+        "Vis Telimus"
+      ],
+      "cues": [
+        "wins the Iudicium",
+        "won the Iudicium",
+        "top of the class",
+        "first place",
+        "Sextus"
+      ],
+      "happensIn": 1,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true
+    },
+    {
+      "id": "Three copies of Vis (Synchronism)",
+      "subjects": [
+        "Vis",
+        "Vis Telimus"
+      ],
+      "cues": [
+        "three versions",
+        "three Vis",
+        "copies",
+        "copied",
+        "three worlds",
+        "split into",
+        "Luceum",
+        "Obiteum"
+      ],
+      "happensIn": 1,
+      "confidence": "high",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "Book 1's epilogue."
+    },
+    {
+      "id": "Caeror is alive in Obiteum",
+      "subjects": [
+        "Caeror"
+      ],
+      "cues": [
+        "alive",
+        "survived",
+        "not dead",
+        "still alive",
+        "Obiteum"
+      ],
+      "happensIn": 1,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Anguis leader's suicide at the naumachia",
+      "subjects": [
+        "Anguis"
+      ],
+      "cues": [
+        "suicide",
+        "kills himself",
+        "killed himself"
+      ],
+      "happensIn": 1,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "id": "Veridius knows about the labyrinth",
+      "subjects": [
+        "Veridius"
+      ],
+      "cues": [
+        "second Cataclysm",
+        "knew about",
+        "labyrinth",
+        "behind the accident",
+        "villain",
+        "innocent"
+      ],
+      "happensIn": 1,
+      "confidence": "low",
+      "wikiChecked": true
+    },
+    {
+      "id": "Aequa dies",
+      "subjects": [
+        "Aequa"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 2,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Caeror sacrifices himself",
+      "subjects": [
+        "Caeror"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "sacrific*"
+      ],
+      "happensIn": 2,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Ahmose dies",
+      "subjects": [
+        "Ahmose"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "suicide",
+        "jumps",
+        "jumped"
+      ],
+      "happensIn": 2,
+      "confidence": "high",
+      "wikiChecked": true,
+      "needsContext": true
+    },
+    {
+      "id": "Lir is killed",
+      "subjects": [
+        "Lir"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 2,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true
+    },
+    {
+      "id": "Ruarc is Caeror",
+      "subjects": [
+        "Ruarc"
+      ],
+      "cues": [
+        "Caeror",
+        "is actually",
+        "revealed",
+        "version of"
+      ],
+      "happensIn": 2,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "The Basilica massacre",
+      "subjects": [
+        "Ostius",
+        "Basilica"
+      ],
+      "cues": [
+        "senators",
+        "massacre",
+        "manipulat*",
+        "killed",
+        "kills"
+      ],
+      "happensIn": 2,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true
+    },
+    {
+      "id": "Eidhin's deal with Veridius",
+      "subjects": [
+        "Eidhin"
+      ],
+      "cues": [
+        "Veridius",
+        "betray*",
+        "deal",
+        "offered"
+      ],
+      "happensIn": 2,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "id": "Deaglán's silver arm",
+      "subjects": [
+        "Deaglán",
+        "Deaglan",
+        "Vis"
+      ],
+      "cues": [
+        "silver arm",
+        "new arm",
+        "statue"
+      ],
+      "happensIn": 2,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true
+    },
+    {
+      "id": "Siamun is sent to kill Ka",
+      "subjects": [
+        "Siamun",
+        "Vis"
+      ],
+      "cues": [
+        "kill Ka",
+        "Ka's pyramid",
+        "assassinate"
+      ],
+      "happensIn": 2,
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true
+    },
+    {
+      "id": "Main character deaths (book 3)",
+      "subjects": [
+        "Vis",
+        "Vis Telimus",
+        "Catenicus",
+        "Emissa",
+        "Eidhin",
+        "Indol",
+        "Ulciscor",
+        "Lanistia",
+        "Veridius",
+        "Relucia",
+        "Ostius",
+        "Deaglán",
+        "Siamun"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 3,
+      "confidence": "low",
+      "wikiChecked": false,
+      "needsContext": true,
+      "notes": "Book 3 isn't published; anything about deaths blurs until the popup has a 'finished the series' option."
+    }
+  ]
+}
