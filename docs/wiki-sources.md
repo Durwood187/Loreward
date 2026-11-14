@@ -15,3 +15,4 @@ Anything that can't be confirmed goes in the **later** book (safe direction) wit
 | Empire of the Vampire | empire-of-the-vampire.fandom.com | Thin: book pages ~400 characters, many character stubs. Mostly book 1. Events beyond book 1 rely on the catch-all. |
 | Red Rising | red-rising.fandom.com | Good: character pages with first-appearance and status. |
 | The Will of the Many (The Hierarchy) | No fan wiki found (Nov 2026). Wikipedia pages for both books + SuperSummary character analysis for book 2 | Fair: book 1 has a full plot summary; book 2 only a character list and outline. Recheck if a fandom wiki appears. |
+| Throne of Glass | throneofglass.fandom.com | Fair: ~190 character pages with Appearances lists and per-book biography sections; no detailed book plot pages. Events rely on general knowledge plus character statuses. |

@@ -1,0 +1,1759 @@
+{
+  "$schema": "../schema.json",
+  "id": "throne-of-glass",
+  "name": "Throne of Glass series (compatible)",
+  "shortName": "Throne of Glass",
+  "verified": false,
+  "books": [
+    {
+      "index": 1,
+      "title": "Throne of Glass",
+      "kind": "novel",
+      "aliases": [
+        "TOG",
+        "ToG"
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Crown of Midnight",
+      "kind": "novel",
+      "aliases": [
+        "COM",
+        "CoM"
+      ]
+    },
+    {
+      "index": 3,
+      "title": "The Assassin's Blade",
+      "kind": "novella",
+      "aliases": [
+        "TAB"
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Heir of Fire",
+      "kind": "novel",
+      "aliases": [
+        "HOF",
+        "HoF"
+      ]
+    },
+    {
+      "index": 5,
+      "title": "Queen of Shadows",
+      "kind": "novel",
+      "aliases": [
+        "QOS",
+        "QoS"
+      ]
+    },
+    {
+      "index": 6,
+      "title": "Empire of Storms",
+      "kind": "novel",
+      "aliases": [
+        "EOS",
+        "EoS"
+      ]
+    },
+    {
+      "index": 7,
+      "title": "Tower of Dawn",
+      "kind": "novel",
+      "aliases": [
+        "TOD",
+        "ToD"
+      ]
+    },
+    {
+      "index": 8,
+      "title": "Kingdom of Ash",
+      "kind": "novel",
+      "aliases": [
+        "KOA",
+        "KoA"
+      ]
+    }
+  ],
+  "allowlist": [
+    "Throne",
+    "Glass",
+    "Crown",
+    "Midnight",
+    "Assassin",
+    "Blade",
+    "Heir",
+    "Fire",
+    "Queen",
+    "Shadows",
+    "Empire",
+    "Storms",
+    "Tower",
+    "Dawn",
+    "Kingdom",
+    "Ash",
+    "King",
+    "Champion",
+    "Fae",
+    "Witch",
+    "Witches",
+    "Prince",
+    "Princess",
+    "Matron"
+  ],
+  "keywords": [
+    "Throne of Glass",
+    "Sarah J. Maas",
+    "Sarah J Maas",
+    "Celaena",
+    "Celaena Sardothien",
+    "Chaol",
+    "Dorian Havilliard",
+    "Adarlan",
+    "Rifthold",
+    "Endovier",
+    "Erilea",
+    "Crown of Midnight",
+    "Kingdom of Ash",
+    "Heir of Fire",
+    "Queen of Shadows",
+    "Empire of Storms",
+    "Tower of Dawn",
+    "Assassin's Blade"
+  ],
+  "terms": [
+    {
+      "term": "Celaena Sardothien",
+      "introducedIn": 1,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "aliases": [
+        "Celaena"
+      ]
+    },
+    {
+      "term": "Chaol Westfall",
+      "introducedIn": 1,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "aliases": [
+        "Chaol"
+      ]
+    },
+    {
+      "term": "Dorian Havilliard",
+      "introducedIn": 1,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Nehemia Ytger",
+      "introducedIn": 1,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "aliases": [
+        "Nehemia"
+      ]
+    },
+    {
+      "term": "Arobynn Hamel",
+      "introducedIn": 1,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "aliases": [
+        "Arobynn"
+      ]
+    },
+    {
+      "term": "Kaltain Rompier",
+      "introducedIn": 1,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "aliases": [
+        "Kaltain"
+      ]
+    },
+    {
+      "term": "Duke Perrington",
+      "introducedIn": 1,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Erawan",
+      "introducedIn": 1,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Elena Galathynius",
+      "introducedIn": 1,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Brannon Galathynius",
+      "introducedIn": 1,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Aelin Galathynius",
+      "introducedIn": 1,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "The lost princess is mentioned in book 1; that Celaena IS Aelin is an event (book 2)."
+    },
+    {
+      "term": "Sam Cortland",
+      "introducedIn": 1,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Philippa Spindlehead",
+      "introducedIn": 1,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Adarlan",
+      "introducedIn": 1,
+      "type": "place",
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Endovier",
+      "introducedIn": 1,
+      "type": "place",
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Rifthold",
+      "introducedIn": 1,
+      "type": "place",
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Terrasen",
+      "introducedIn": 1,
+      "type": "place",
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "term": "Erilea",
+      "introducedIn": 1,
+      "type": "place",
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "term": "Wyrdmarks",
+      "introducedIn": 1,
+      "type": "concept",
+      "confidence": "high",
+      "wikiChecked": true,
+      "aliases": [
+        "Wyrdmark"
+      ]
+    },
+    {
+      "term": "Aedion Ashryver",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "aliases": [
+        "Aedion"
+      ],
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Archer Finn",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Baba Yellowlegs",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Sorscha",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Ren Allsbrook",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Roland Havilliard",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Clarisse DuVency",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Maeve",
+      "introducedIn": 2,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections. Common name, so only on series pages."
+    },
+    {
+      "term": "Wendlyn",
+      "introducedIn": 2,
+      "type": "place",
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Celaena is sent there at the end of book 2."
+    },
+    {
+      "term": "Wyrdkeys",
+      "introducedIn": 4,
+      "type": "concept",
+      "confidence": "low",
+      "wikiChecked": false,
+      "aliases": [
+        "Wyrdkey"
+      ],
+      "notes": "Possibly first named in book 2; unsure, so book 4."
+    },
+    {
+      "term": "Lysandra",
+      "introducedIn": 3,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "Appears in The Assassin and the Underworld (wiki's own sections start at book 5)."
+    },
+    {
+      "term": "Yrene Westfall",
+      "introducedIn": 3,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "aliases": [
+        "Yrene",
+        "Yrene Towers"
+      ],
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Ansel of Briarcliff",
+      "introducedIn": 3,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Ansel",
+      "introducedIn": 3,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Rolfe",
+      "introducedIn": 3,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Madam Florine",
+      "introducedIn": 3,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Rourke Farran",
+      "introducedIn": 3,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Benzo Doneval",
+      "introducedIn": 3,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Falkan Ennar",
+      "introducedIn": 3,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "aliases": [
+        "Falkan"
+      ],
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Stygian spider",
+      "introducedIn": 3,
+      "type": "concept",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "aliases": [
+        "Stygian spiders"
+      ],
+      "caseSensitive": false,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Rowan Whitethorn",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Rowan",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "Common name/tree: only on series pages."
+    },
+    {
+      "term": "Manon Blackbeak",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Manon",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "Real first name: only on series pages."
+    },
+    {
+      "term": "Abraxos",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Asterin Blackbeak",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "aliases": [
+        "Asterin"
+      ],
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Sorrel Blackbeak",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Vesta Blackbeak",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Blackbeak Matron",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Iskra Yellowlegs",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "aliases": [
+        "Iskra"
+      ],
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Petrah Blueblood",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "aliases": [
+        "Petrah"
+      ],
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Cresseida Blueblood",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "aliases": [
+        "Cresseida"
+      ],
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Lorcan Salvaterre",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "aliases": [
+        "Lorcan"
+      ],
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Gavriel",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Fenrys Moonbeam",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "aliases": [
+        "Fenrys"
+      ],
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Vaughan",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Connall",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Elide Lochan",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "aliases": [
+        "Elide"
+      ],
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Vernon Lochan",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Murtaugh Allsbrook",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "aliases": [
+        "Murtaugh"
+      ],
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Galan Ashryver",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "aliases": [
+        "Galan"
+      ],
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Evalin Galathynius",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Narrok",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Silba",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Athril",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Lyria",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "Rowan's lost mate; her story is told in Heir of Fire (wiki sections start at 5)."
+    },
+    {
+      "term": "Narene",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Three-Faced Goddess",
+      "introducedIn": 4,
+      "type": "concept",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Ironteeth",
+      "introducedIn": 4,
+      "type": "concept",
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "Crochan",
+      "introducedIn": 4,
+      "type": "concept",
+      "confidence": "medium",
+      "wikiChecked": false,
+      "aliases": [
+        "Crochans"
+      ]
+    },
+    {
+      "term": "Rhiannon Crochan II",
+      "introducedIn": 4,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Valg",
+      "introducedIn": 4,
+      "type": "concept",
+      "confidence": "low",
+      "wikiChecked": false,
+      "notes": "Placed in Heir of Fire, where the Valg princes appear."
+    },
+    {
+      "term": "Doranelle",
+      "introducedIn": 4,
+      "type": "place",
+      "confidence": "low",
+      "wikiChecked": false
+    },
+    {
+      "term": "Mistward",
+      "introducedIn": 4,
+      "type": "place",
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "term": "the Cadre",
+      "introducedIn": 4,
+      "type": "concept",
+      "confidence": "low",
+      "wikiChecked": false,
+      "needsContext": true,
+      "caseSensitive": true
+    },
+    {
+      "term": "the Thirteen",
+      "introducedIn": 4,
+      "type": "concept",
+      "confidence": "medium",
+      "wikiChecked": false,
+      "needsContext": true,
+      "caseSensitive": true
+    },
+    {
+      "term": "Nesryn Faliq",
+      "introducedIn": 5,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "aliases": [
+        "Nesryn"
+      ],
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Evangeline",
+      "introducedIn": 5,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Cormac",
+      "introducedIn": 5,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Morath",
+      "introducedIn": 5,
+      "type": "place",
+      "confidence": "low",
+      "wikiChecked": false
+    },
+    {
+      "term": "Sartaq",
+      "introducedIn": 6,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Duva",
+      "introducedIn": 6,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Urus",
+      "introducedIn": 6,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Kyllian",
+      "introducedIn": 6,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Ilken",
+      "introducedIn": 6,
+      "type": "concept",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Weylan Darrow",
+      "introducedIn": 6,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Ellys Whitethorn",
+      "introducedIn": 6,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Endymion Whitethorn",
+      "introducedIn": 6,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Sellene Whitethorn",
+      "introducedIn": 6,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Remelle",
+      "introducedIn": 6,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Ombriel",
+      "introducedIn": 6,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Rhiannon Crochan",
+      "introducedIn": 6,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Tristan Crochan",
+      "introducedIn": 6,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Hasar",
+      "introducedIn": 7,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Arghun",
+      "introducedIn": 7,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Kashin",
+      "introducedIn": 7,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Borte",
+      "introducedIn": 7,
+      "type": "character",
+      "confidence": "high",
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Yeran",
+      "introducedIn": 7,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Houlun",
+      "introducedIn": 7,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Tumelun",
+      "introducedIn": 7,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Torre Cesme",
+      "introducedIn": 7,
+      "type": "place",
+      "confidence": "high",
+      "wikiChecked": false
+    },
+    {
+      "term": "Antica",
+      "introducedIn": 7,
+      "type": "place",
+      "confidence": "medium",
+      "wikiChecked": false,
+      "needsContext": true,
+      "notes": "Also an Italian word."
+    },
+    {
+      "term": "Glennis Crochan",
+      "introducedIn": 8,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "aliases": [
+        "Glennis"
+      ],
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    },
+    {
+      "term": "Bronwen Vanora",
+      "introducedIn": 8,
+      "type": "character",
+      "confidence": "medium",
+      "wikiChecked": true,
+      "notes": "First book from the wiki's Appearances list / per-book biography sections."
+    }
+  ],
+  "events": [
+    {
+      "id": "Celaena kills Cain",
+      "subjects": [
+        "Cain"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 1,
+      "confidence": "high",
+      "wikiChecked": true,
+      "needsContext": true
+    },
+    {
+      "id": "Celaena becomes King's Champion",
+      "subjects": [
+        "Celaena",
+        "Celaena Sardothien"
+      ],
+      "cues": [
+        "wins the competition",
+        "won the competition",
+        "King's Champion",
+        "becomes Champion",
+        "became Champion"
+      ],
+      "happensIn": 1,
+      "confidence": "high",
+      "wikiChecked": false
+    },
+    {
+      "id": "Nehemia dies",
+      "subjects": [
+        "Nehemia",
+        "Nehemia Ytger"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 2,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Archer Finn dies",
+      "subjects": [
+        "Archer Finn"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 2,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Baba Yellowlegs dies",
+      "subjects": [
+        "Baba Yellowlegs"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 2,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "id": "Celaena is Aelin",
+      "subjects": [
+        "Celaena",
+        "Celaena Sardothien"
+      ],
+      "cues": [
+        "Aelin",
+        "is the lost princess",
+        "queen of Terrasen",
+        "heir of Terrasen",
+        "true identity",
+        "real name",
+        "is Fae",
+        "Fae heritage",
+        "is actually"
+      ],
+      "happensIn": 2,
+      "confidence": "high",
+      "wikiChecked": false
+    },
+    {
+      "id": "Dorian has magic",
+      "subjects": [
+        "Dorian",
+        "Dorian Havilliard"
+      ],
+      "cues": [
+        "has magic",
+        "his magic",
+        "raw magic",
+        "magic",
+        "powers"
+      ],
+      "happensIn": 2,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "needsContext": true
+    },
+    {
+      "id": "Chaol and Celaena break up",
+      "subjects": [
+        "Chaol",
+        "Chaol Westfall"
+      ],
+      "cues": [
+        "break up",
+        "broke up",
+        "breakup",
+        "betray*",
+        "Celaena"
+      ],
+      "happensIn": 2,
+      "confidence": "low",
+      "wikiChecked": false
+    },
+    {
+      "id": "Arobynn sold Celaena to Endovier",
+      "subjects": [
+        "Arobynn",
+        "Arobynn Hamel"
+      ],
+      "cues": [
+        "sold her",
+        "betrayed her",
+        "betray*",
+        "Endovier",
+        "set her up"
+      ],
+      "happensIn": 3,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "notes": "Revealed at the end of The Assassin's Blade."
+    },
+    {
+      "id": "Sorscha dies",
+      "subjects": [
+        "Sorscha"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 4,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Dorian is enslaved by a Valg prince",
+      "subjects": [
+        "Dorian",
+        "Dorian Havilliard"
+      ],
+      "cues": [
+        "collar",
+        "Valg",
+        "possessed",
+        "enslaved",
+        "Valg prince"
+      ],
+      "happensIn": 4,
+      "confidence": "high",
+      "wikiChecked": false,
+      "needsContext": true
+    },
+    {
+      "id": "Aedion is captured",
+      "subjects": [
+        "Aedion",
+        "Aedion Ashryver"
+      ],
+      "cues": [
+        "captured",
+        "imprisoned",
+        "executed",
+        "execution"
+      ],
+      "happensIn": 4,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "id": "Rowan and Aelin blood oath",
+      "subjects": [
+        "Rowan",
+        "Rowan Whitethorn"
+      ],
+      "cues": [
+        "blood oath",
+        "carranam",
+        "mate",
+        "mates"
+      ],
+      "happensIn": 4,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "needsContext": true
+    },
+    {
+      "id": "Arobynn dies",
+      "subjects": [
+        "Arobynn",
+        "Arobynn Hamel"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 5,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Kaltain dies",
+      "subjects": [
+        "Kaltain",
+        "Kaltain Rompier"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 5,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Roland Havilliard dies",
+      "subjects": [
+        "Roland Havilliard"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 5,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "id": "The King of Adarlan dies",
+      "subjects": [
+        "King of Adarlan",
+        "Dorian's father"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 5,
+      "confidence": "high",
+      "wikiChecked": true,
+      "needsContext": true
+    },
+    {
+      "id": "Dorian is freed from the collar",
+      "subjects": [
+        "Dorian",
+        "Dorian Havilliard"
+      ],
+      "cues": [
+        "freed",
+        "free of the collar",
+        "collar removed",
+        "saved Dorian"
+      ],
+      "happensIn": 5,
+      "confidence": "high",
+      "wikiChecked": false,
+      "needsContext": true
+    },
+    {
+      "id": "Lysandra is a shapeshifter",
+      "subjects": [
+        "Lysandra"
+      ],
+      "cues": [
+        "shapeshift*",
+        "shifter",
+        "ghost leopard",
+        "changes shape"
+      ],
+      "happensIn": 5,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "id": "The glass castle is destroyed",
+      "subjects": [
+        "glass castle"
+      ],
+      "cues": [
+        "destroyed",
+        "shattered",
+        "explodes",
+        "exploded"
+      ],
+      "happensIn": 5,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "needsContext": true
+    },
+    {
+      "id": "Duke Perrington is Erawan",
+      "subjects": [
+        "Perrington",
+        "Duke Perrington",
+        "Erawan"
+      ],
+      "cues": [
+        "is Erawan",
+        "is actually",
+        "revealed",
+        "Perrington"
+      ],
+      "happensIn": 6,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "id": "Manon is a Crochan",
+      "subjects": [
+        "Manon",
+        "Manon Blackbeak"
+      ],
+      "cues": [
+        "Crochan",
+        "heritage",
+        "half-Crochan",
+        "Crochan queen"
+      ],
+      "happensIn": 6,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "id": "Aelin and Rowan marry",
+      "subjects": [
+        "Aelin",
+        "Rowan"
+      ],
+      "cues": [
+        "married",
+        "marry",
+        "wedding",
+        "husband",
+        "wife"
+      ],
+      "happensIn": 6,
+      "confidence": "medium",
+      "wikiChecked": false,
+      "needsContext": true
+    },
+    {
+      "id": "Maeve captures Aelin",
+      "subjects": [
+        "Aelin",
+        "Maeve"
+      ],
+      "cues": [
+        "iron coffin",
+        "coffin",
+        "captured",
+        "kidnapped",
+        "taken by Maeve",
+        "Cairn"
+      ],
+      "happensIn": 6,
+      "confidence": "high",
+      "wikiChecked": false,
+      "needsContext": true
+    },
+    {
+      "id": "Chaol is healed / walks again",
+      "subjects": [
+        "Chaol",
+        "Chaol Westfall"
+      ],
+      "cues": [
+        "walks again",
+        "walk again",
+        "healed",
+        "wheelchair",
+        "spine"
+      ],
+      "happensIn": 7,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "id": "Chaol and Yrene get together",
+      "subjects": [
+        "Chaol",
+        "Yrene"
+      ],
+      "cues": [
+        "married",
+        "together",
+        "love",
+        "wife",
+        "pregnant",
+        "wedding"
+      ],
+      "happensIn": 7,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "id": "Gavriel dies",
+      "subjects": [
+        "Gavriel"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 8,
+      "confidence": "high",
+      "wikiChecked": true,
+      "needsContext": true
+    },
+    {
+      "id": "Asterin dies",
+      "subjects": [
+        "Asterin",
+        "Asterin Blackbeak"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 8,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "The Blackbeak Matron dies",
+      "subjects": [
+        "Blackbeak Matron"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 8,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Iskra Yellowlegs dies",
+      "subjects": [
+        "Iskra",
+        "Iskra Yellowlegs"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed"
+      ],
+      "happensIn": 8,
+      "confidence": "medium",
+      "wikiChecked": true
+    },
+    {
+      "id": "The Thirteen die",
+      "subjects": [
+        "the Thirteen",
+        "Thirteen"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "sacrific*"
+      ],
+      "happensIn": 8,
+      "confidence": "high",
+      "wikiChecked": false,
+      "needsContext": true
+    },
+    {
+      "id": "Erawan dies",
+      "subjects": [
+        "Erawan"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "defeated",
+        "destroyed"
+      ],
+      "happensIn": 8,
+      "confidence": "high",
+      "wikiChecked": true
+    },
+    {
+      "id": "Maeve dies / is Valg",
+      "subjects": [
+        "Maeve"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "Valg",
+        "is Valg",
+        "Valg queen",
+        "defeated"
+      ],
+      "happensIn": 8,
+      "confidence": "high",
+      "wikiChecked": true,
+      "needsContext": true
+    },
+    {
+      "id": "Lorcan and Elide",
+      "subjects": [
+        "Lorcan",
+        "Elide"
+      ],
+      "cues": [
+        "life-bound",
+        "married",
+        "together",
+        "lifespan"
+      ],
+      "happensIn": 8,
+      "confidence": "medium",
+      "wikiChecked": false
+    },
+    {
+      "id": "Main character deaths (book 8)",
+      "subjects": [
+        "Aelin",
+        "Celaena",
+        "Rowan",
+        "Dorian",
+        "Chaol",
+        "Manon",
+        "Aedion",
+        "Lysandra",
+        "Elide",
+        "Lorcan",
+        "Fenrys",
+        "Yrene",
+        "Nesryn",
+        "Sartaq"
+      ],
+      "cues": [
+        "die",
+        "dies",
+        "died",
+        "dying",
+        "dead",
+        "death",
+        "killed",
+        "kills",
+        "killing",
+        "murder*",
+        "slain",
+        "executed",
+        "sacrific*",
+        "survive*"
+      ],
+      "happensIn": 8,
+      "confidence": "low",
+      "wikiChecked": false,
+      "needsContext": true,
+      "notes": "Catch-all for the last book. Blurs until the popup gets a 'finished the series' option."
+    }
+  ]
+}
