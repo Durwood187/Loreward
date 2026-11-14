@@ -7,7 +7,7 @@ what comes next. Everything runs in your browser ([privacy policy](PRIVACY.md)).
 **[Add Loreward to Chrome](https://chromewebstore.google.com/detail/loreward-book-spoiler-shi/lelhddhefkgdnhgkogijjikmabfhicda)** (free)
 
 - **Sites:** Reddit (new and old), Google search (results, AI Overview, People also ask).
-- **Series:** The Stormlight Archive, Mistborn, Realm of the Elderlings, The Empyrean (Fourth Wing), Dungeon Crawler Carl, Empire of the Vampire, A Court of Thorns and Roses, Red Rising. More are planned (see `docs/ROADMAP.md`).
+- **Series:** The Stormlight Archive, Mistborn, Realm of the Elderlings, The Empyrean (Fourth Wing), Dungeon Crawler Carl, Empire of the Vampire, A Court of Thorns and Roses, Red Rising, Throne of Glass, The Will of the Many. More are planned (see `docs/ROADMAP.md`).
 - **How it's built:** Chrome extension (Manifest V3), plain TypeScript, esbuild. 100% local:
   no network calls, no analytics, no remote code.
 

@@ -21,11 +21,14 @@ Ongoing series (new books coming, active fandoms) first; long-finished classics 
 6. Empire of the Vampire ✅ (0.4.0)
    A Court of Thorns and Roses ✅ (0.4.1, timed for the book 6 release)
 7. Red Rising ✅ (0.5.0, draft: terms + events from the fandom wiki; BookTok demand)
+   The Will of the Many ✅ (0.6.0, draft; no fan wiki yet, checked against Wikipedia)
+   Throne of Glass ✅ (0.6.0, draft; publication order)
 8. Harry Potter
 9. Eragon (Inheritance Cycle)
 10. Percy Jackson
 11. Sword of Truth
 12. Codex Alera
+    The Dresden Files (big Reddit/audiobook fanbase, 17 books of twists)
 13. The Lord of the Rings
 
 Each series: AI-drafted terms per book, checked against the series wiki, short review list of
