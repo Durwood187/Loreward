@@ -1,7 +1,7 @@
 {
   "$schema": "../schema.json",
   "id": "acotar",
-  "name": "A Court of Thorns and Roses (compatible)",
+  "name": "A Court of Thorns and Roses",
   "shortName": "A Court of Thorns and Roses",
   "verified": false,
   "books": [

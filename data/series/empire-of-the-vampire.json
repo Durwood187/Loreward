@@ -1,7 +1,7 @@
 {
   "$schema": "../schema.json",
   "id": "empire-of-the-vampire",
-  "name": "Empire of the Vampire (compatible)",
+  "name": "Empire of the Vampire",
   "shortName": "Empire of the Vampire",
   "verified": false,
   "books": [

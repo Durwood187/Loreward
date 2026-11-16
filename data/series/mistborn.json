@@ -1,7 +1,7 @@
 {
   "$schema": "../schema.json",
   "id": "mistborn",
-  "name": "Mistborn (compatible)",
+  "name": "Mistborn",
   "shortName": "Mistborn",
   "verified": true,
   "books": [

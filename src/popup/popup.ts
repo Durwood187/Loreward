@@ -2,7 +2,7 @@
 // and "reveal all on this page".
 
 import { ALL_SERIES } from '../generated/series-index';
-import { loadSettings, saveSettings, findSeries, maxActiveSeries, shouldShowRatingPrompt, PAYMENTS_ENABLED, type Settings } from '../core/settings';
+import { loadSettings, saveSettings, maxActiveSeries, shouldShowRatingPrompt, PAYMENTS_ENABLED, type Settings } from '../core/settings';
 import { REVIEWS_URL } from '../core/links';
 import { renderPickers, pickSeries, pickBook } from '../ui/pickers';
 import type { Request, StatusReply, RevealAllReply } from '../core/messages';
@@ -11,7 +11,6 @@ const $ = <T extends HTMLElement>(id: string) => document.getElementById(id) as 
 const enabledEl = $<HTMLInputElement>('enabled');
 const seriesEl = $<HTMLSelectElement>('series');
 const bookEl = $<HTMLSelectElement>('book');
-const draftNote = $('draft-note');
 const tierNote = $('tier-note');
 const rateEl = $('rate');
 const rateLink = $<HTMLAnchorElement>('rate-link');
@@ -32,10 +31,7 @@ function render() {
 
   // v1 UI edits one series slot. With isPro, more slots become possible later.
   renderPickers(seriesEl, bookEl, settings);
-  const current = settings.active[0];
-  const series = current ? findSeries(current.seriesId) : undefined;
 
-  draftNote.hidden = !series || series.verified;
   tierNote.hidden = !PAYMENTS_ENABLED || ALL_SERIES.length < 2 || maxActiveSeries(settings.isPro) > 1;
   rateEl.hidden = !shouldShowRatingPrompt(settings, Date.now());
 

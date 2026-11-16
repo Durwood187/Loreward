@@ -1,7 +1,7 @@
 {
   "$schema": "../schema.json",
   "id": "red-rising",
-  "name": "Red Rising Saga (compatible)",
+  "name": "Red Rising Saga",
   "shortName": "Red Rising",
   "verified": false,
   "books": [

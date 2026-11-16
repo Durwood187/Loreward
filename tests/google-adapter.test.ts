@@ -10,7 +10,7 @@ import { Shield } from '../src/content/shield';
 import { loadFixture, useDocument } from './helpers/fixture';
 
 const series: SeriesData = {
-  id: 'test', name: 'Test Series (compatible)', shortName: 'Test Series', verified: true,
+  id: 'test', name: 'Test Series', shortName: 'Test Series', verified: true,
   allowlist: ['Storm'],
   keywords: ['Kaladin', 'Shallan'],
   books: [1, 2, 3, 4, 5, 6].map((index) => ({ index, title: `Book ${index} Title` })),

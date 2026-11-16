@@ -1,7 +1,7 @@
 {
   "$schema": "../schema.json",
   "id": "stormlight",
-  "name": "The Stormlight Archive (compatible)",
+  "name": "The Stormlight Archive",
   "shortName": "The Stormlight Archive",
   "verified": true,
   "books": [

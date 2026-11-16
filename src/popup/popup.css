@@ -18,6 +18,7 @@ select { width: 100%; padding: 6px 8px; margin-bottom: 10px; font: inherit; colo
          background: var(--bg); border: 1px solid var(--line); border-radius: 6px; }
 select:disabled { opacity: .55; }
 .hint { color: var(--muted); margin: -4px 0 0; font-size: 12px; }
+.fine { color: var(--muted); margin: 0; padding: 10px 14px 12px; border-top: 1px solid var(--line); font-size: 11px; line-height: 1.35; }
 .note { background: var(--note-bg); color: var(--note-fg); padding: 6px 8px; border-radius: 6px; margin: 10px 0 0; font-size: 12px; }
 .row { display: flex; align-items: center; justify-content: space-between; font-weight: 400; margin-bottom: 10px; }
 button { width: 100%; padding: 7px 10px; font: inherit; font-weight: 600; cursor: pointer;

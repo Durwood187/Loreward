@@ -1,7 +1,7 @@
 {
   "$schema": "../schema.json",
   "id": "realm-of-the-elderlings",
-  "name": "Realm of the Elderlings / Farseer (compatible)",
+  "name": "Realm of the Elderlings / Farseer",
   "shortName": "Realm of the Elderlings",
   "verified": true,
   "books": [

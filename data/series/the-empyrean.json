@@ -1,7 +1,7 @@
 {
   "$schema": "../schema.json",
   "id": "the-empyrean",
-  "name": "The Empyrean / Fourth Wing (compatible)",
+  "name": "The Empyrean / Fourth Wing",
   "shortName": "The Empyrean",
   "verified": true,
   "books": [

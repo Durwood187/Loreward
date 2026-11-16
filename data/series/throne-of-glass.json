@@ -1,7 +1,7 @@
 {
   "$schema": "../schema.json",
   "id": "throne-of-glass",
-  "name": "Throne of Glass series (compatible)",
+  "name": "Throne of Glass",
   "shortName": "Throne of Glass",
   "verified": false,
   "books": [

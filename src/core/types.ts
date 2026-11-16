@@ -64,7 +64,7 @@ export interface SeriesData {
   name: string;
   /** Plain series name for on-page labels (defaults to name). */
   shortName?: string;
-  /** False until a human has reviewed every term. The popup shows a "draft" note while false. */
+  /** False until a reader has reviewed every term. Internal tracking only; not shown to users. */
   verified: boolean;
   books: Book[];
   /** Common words that must never match on their own, even if listed as a term or alias. */
