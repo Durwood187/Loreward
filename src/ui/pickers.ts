@@ -2,6 +2,7 @@
 
 import { ALL_SERIES } from '../generated/series-index';
 import { findSeries, type Settings } from '../core/settings';
+import { seriesLabel } from './gate';
 
 function option(value: string, label: string): HTMLOptionElement {
   const o = document.createElement('option');
@@ -13,7 +14,7 @@ function option(value: string, label: string): HTMLOptionElement {
 /** Fills both dropdowns from the current settings. v1 edits one series slot. */
 export function renderPickers(seriesEl: HTMLSelectElement, bookEl: HTMLSelectElement, settings: Settings): void {
   const current = settings.active[0];
-  seriesEl.replaceChildren(option('', 'Choose a series…'), ...ALL_SERIES.map((s) => option(s.id, s.name)));
+  seriesEl.replaceChildren(option('', 'Choose a series…'), ...ALL_SERIES.map((s) => option(s.id, seriesLabel(s))));
   seriesEl.value = current?.seriesId ?? '';
 
   const series = current ? findSeries(current.seriesId) : undefined;

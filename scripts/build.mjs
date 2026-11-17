@@ -10,6 +10,9 @@
 // Usage:  node scripts/build.mjs            one-off build
 //         node scripts/build.mjs --watch    rebuild on change
 //         node scripts/build.mjs --gen-only only step 1 (used by `npm run typecheck`)
+//         node scripts/build.mjs --safari   the iPhone/Safari build: free/Pro gate on, and the
+//                                           "nativeMessaging" permission added so the extension can
+//                                           ask the Loreward app about Pro. Chrome builds never get either.
 
 import * as esbuild from 'esbuild';
 import { readdirSync, mkdirSync, writeFileSync, copyFileSync, rmSync, readFileSync } from 'node:fs';
@@ -49,6 +52,11 @@ function copyStatic() {
   ];
   mkdirSync(join(dist, 'icons'), { recursive: true });
   for (const [from, to] of copies) copyFileSync(join(root, from), join(dist, to));
+  if (args.has('--safari')) {
+    const manifest = JSON.parse(readFileSync(join(dist, 'manifest.json'), 'utf8'));
+    manifest.permissions = [...manifest.permissions, 'nativeMessaging'];
+    writeFileSync(join(dist, 'manifest.json'), JSON.stringify(manifest, null, 2) + '\n');
+  }
   for (const icon of readdirSync(join(root, 'public', 'icons'))) {
     copyFileSync(join(root, 'public', 'icons', icon), join(dist, 'icons', icon));
   }
@@ -72,6 +80,7 @@ const options = {
   bundle: true,
   format: 'iife', // content scripts can't be ES modules; IIFE works everywhere
   target: 'chrome120',
+  define: { __SAFARI__: args.has('--safari') ? 'true' : 'false' },
   sourcemap: args.has('--watch') ? 'inline' : false,
   logLevel: 'info',
 };

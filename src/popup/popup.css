@@ -44,3 +44,10 @@ body.off section:first-of-type { opacity: .5; }
 .rate .dismiss:focus-visible { outline: 2px solid var(--accent); }
 /* "display: flex" above would otherwise override the hidden attribute. */
 .rate[hidden] { display: none; }
+
+/* Free/Pro dialog (Safari build) */
+.gate { position: fixed; inset: 0; background: rgba(0,0,0,.45); display: flex; align-items: center; justify-content: center; padding: 14px; z-index: 10; }
+.gate-box { background: var(--bg); color: var(--fg); border-radius: 10px; padding: 14px; max-width: 360px; width: 100%; display: flex; flex-direction: column; gap: 8px; box-shadow: 0 6px 24px rgba(0,0,0,.3); }
+.gate-title { font-weight: 700; font-size: 15px; margin: 0; }
+.gate-body { margin: 0 0 4px; color: var(--muted); font-size: 13px; line-height: 1.4; }
+.gate button.secondary { background: transparent; color: var(--accent); border: 1px solid var(--line); }

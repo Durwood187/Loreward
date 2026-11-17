@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "build": "node scripts/build.mjs",
+    "build:safari": "node scripts/build.mjs --safari",
     "watch": "node scripts/build.mjs --watch",
     "test": "node scripts/build.mjs --gen-only && vitest run",
     "typecheck": "node scripts/build.mjs --gen-only && tsc --noEmit",

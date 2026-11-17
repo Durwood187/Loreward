@@ -5,6 +5,7 @@ import { ALL_SERIES } from '../generated/series-index';
 import { loadSettings, saveSettings, maxActiveSeries, shouldShowRatingPrompt, PAYMENTS_ENABLED, type Settings } from '../core/settings';
 import { REVIEWS_URL } from '../core/links';
 import { renderPickers, pickSeries, pickBook } from '../ui/pickers';
+import { initGate, allowPick } from '../ui/gate';
 import type { Request, StatusReply, RevealAllReply } from '../core/messages';
 
 const $ = <T extends HTMLElement>(id: string) => document.getElementById(id) as T;
@@ -71,7 +72,11 @@ async function refreshSite() {
 
 enabledEl.addEventListener('change', () => save({ enabled: enabledEl.checked }));
 
-seriesEl.addEventListener('change', () => save(pickSeries(seriesEl.value)));
+seriesEl.addEventListener('change', async () => {
+  const picked = seriesEl.value;
+  render(); // put the dropdown back until the pick is allowed
+  if (await allowPick(picked)) save(pickSeries(picked));
+});
 
 bookEl.addEventListener('change', () => {
   const patch = pickBook(settings, Number(bookEl.value));
@@ -95,6 +100,7 @@ revealBtn.addEventListener('click', async () => {
 
 (async () => {
   settings = await loadSettings();
+  await initGate();
   render();
   await refreshSite();
 })();
