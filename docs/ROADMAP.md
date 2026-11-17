@@ -41,20 +41,31 @@ judgment calls for Eric (see docs/term-review.md for the Stormlight example).
 - Discord in the browser: book-club servers. New host permission.
 - Text messages / phone chat apps: not possible (iOS and Android don't let extensions or apps read other apps).
 
-## Pricing plan (decided Nov 2026, Eric)
-Nothing here is built yet. Payments wait for real traction (roughly 100+ weekly users).
+## Pricing plan (updated 17 Nov 2026, Eric)
+- **Chrome: free** for now (one series at a time, free switching). Revisit with usage data.
+- **iPhone/Safari: free** = one series, with everything Loreward does on every supported site.
+  (Promised publicly to a creator: "the first series stays free".) First pick is confirmed; one quiet
+  switch is offered only when someone tries another series. ✅ built (docs/ios-pro.md)
+- **Loreward Pro (iPhone): one-time $4.99**, Family Sharing on. Every series at once, "Not started yet"
+  for a TBR, and every series added later. Launch buyers keep everything even if paid bundles come
+  later (Apple's purchase date tells us who they are). ✅ built, needs Xcode build + App Store Connect
+- **Later Pro ideas:** chapter-level progress, YouTube comments and X (Safari), AI chat sites, Discord.
+- **Bundles:** revisit at ~25+ series (genre packs + an all-access option).
 
-- **Free forever:** one series, with everything Loreward does: every supported site, every new series as
-  it's added. (Promised publicly to a creator: "the first series stays free".)
-- **Pro (once a paywall exists):** any additional series, protecting several at once, a "haven't started
-  yet" reading list, and new tools (chapter-level progress, AI chat sites, Discord).
-- **Until the paywall exists:** free switching between series for everyone. Pro-only features are not
-  built before then; releases in the meantime improve the free version (more series, YouTube, the
-  "ending/last chapter" Reddit rule).
-- **When the paywall launches, existing users:** the series each person has selected at that moment
-  becomes their free series. Say so plainly in the update notes. (Alternative considered: let existing
-  users keep free switching as a thank-you.)
-- **Picking the wrong series:** one free change of series within the first month after install.
+## Growth: sharing, offer codes, reviews (planned Nov 2026)
+Word of mouth matters more than features: spoilers are a social problem, so make sharing easy.
+- [ ] **Share prompt** after setup and in the popup: "Know someone reading this series? Send them
+      Loreward." iPhone: system share sheet with the App Store link; Chrome: copy the store link.
+- [ ] **"Protect your book club"** angle in the store listings and videos.
+- [ ] **Offer codes** (App Store Connect → In-App Purchases → Offer Codes): free Pro codes for
+      BookTokers, book clubs and helpful commenters. Track who got which batch.
+- [ ] **Review prompts.** iPhone: Apple's own review prompt only (requestReview), shown at a good moment,
+      e.g. after a week of use and some blurred spoilers; Apple limits it to 3 times a year and doesn't
+      allow custom "rate us" pop-ups. Chrome: keep the existing one-time prompt after 7 days.
+      Don't ask "Enjoying Loreward?" first and send only happy users to the store ("review gating"):
+      Apple and Google both discourage it, and it can get an app rejected.
+- [ ] **Store listing refresh** with 0.7.0: lead with Reddit and Google search, Google's AI answers as one
+      part (not the headline); consider "Book Spoiler Blocker for Reddit & Google" as the Chrome title.
 
 ## Event rules (in progress)
 
