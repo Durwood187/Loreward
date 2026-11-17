@@ -1016,7 +1016,8 @@
       "caseSensitive": false,
       "confidence": "high",
       "wikiChecked": true,
-      "notes": "Major identity reveal. 'Bleeder' is a capitalized everyday word; keep case-sensitive if split out."
+      "notes": "Major identity reveal. 'Bleeder' is a capitalized everyday word; keep case-sensitive if split out. Common word or name elsewhere (e.g. the Bible), so only blurred on pages about the series.",
+      "needsContext": true
     },
     {
       "term": "Reddi",
@@ -1396,7 +1397,8 @@
       "caseSensitive": true,
       "confidence": "medium",
       "wikiChecked": false,
-      "notes": "Southern name for the Lord Ruler."
+      "notes": "Southern name for the Lord Ruler. Common word or name elsewhere (e.g. the Bible), so only blurred on pages about the series.",
+      "needsContext": true
     },
     {
       "term": "Trell",

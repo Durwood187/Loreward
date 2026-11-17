@@ -625,7 +625,8 @@
       "caseSensitive": false,
       "confidence": "medium",
       "wikiChecked": true,
-      "notes": "'the Isles' is case-sensitive-risky; reviewer may drop"
+      "notes": "'the Isles' is case-sensitive-risky; reviewer may drop Common word or name elsewhere (e.g. the Bible), so only blurred on pages about the series.",
+      "needsContext": true
     },
     {
       "term": "Kaveh",

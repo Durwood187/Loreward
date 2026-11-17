@@ -17,12 +17,21 @@
   </header>
 
   <section>
-    <label for="series">Series</label>
-    <select id="series"></select>
+    <div id="single">
+      <label for="series">Series</label>
+      <select id="series"></select>
 
-    <label for="book">Book you're reading now</label>
-    <select id="book" disabled></select>
-    <p class="hint" id="book-hint">Blurs anything from later books, plus discussion of this one.</p>
+      <label for="book">Book you're reading now</label>
+      <select id="book" disabled></select>
+      <p class="hint" id="book-hint">Blurs anything from later books, plus discussion of this one. "Not started yet" protects a series on your TBR.</p>
+    </div>
+
+    <div id="multi" hidden>
+      <label for="add-series">Your series</label>
+      <ul class="series-list" id="series-list"></ul>
+      <select id="add-series"></select>
+      <p class="hint">Pick the book you're on for each, or "Not started yet" for your TBR.</p>
+    </div>
 
     <p class="note" id="tier-note" hidden>The free version shields one series at a time.</p>
   </section>

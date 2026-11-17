@@ -235,7 +235,9 @@
       "type": "character",
       "caseSensitive": true,
       "confidence": "high",
-      "wikiChecked": true
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "Common word or name elsewhere (e.g. the Bible), so only blurred on pages about the series."
     },
     {
       "term": "Malise Gevelmar",
@@ -664,7 +666,8 @@
       "type": "character",
       "confidence": "medium",
       "wikiChecked": false,
-      "notes": "Wiki infobox has no Introduced In. Dalinar's wife's name is hidden from him in WoK; the name and her story come with the OB flashbacks."
+      "notes": "Wiki infobox has no Introduced In. Dalinar's wife's name is hidden from him in WoK; the name and her story come with the OB flashbacks. Common word or name elsewhere (e.g. the Bible), so only blurred on pages about the series.",
+      "needsContext": true
     },
     {
       "term": "Fused",
@@ -1189,7 +1192,8 @@
       "caseSensitive": true,
       "confidence": "high",
       "wikiChecked": false,
-      "notes": "Shallan's third persona; wiki page cites RoW."
+      "notes": "Shallan's third persona; wiki page cites RoW. Common word or name elsewhere (e.g. the Bible), so only blurred on pages about the series.",
+      "needsContext": true
     },
     {
       "term": "Fourth Bridge",
@@ -1381,7 +1385,9 @@
       "type": "character",
       "caseSensitive": true,
       "confidence": "medium",
-      "wikiChecked": true
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "Common word or name elsewhere (e.g. the Bible), so only blurred on pages about the series."
     },
     {
       "term": "The Dog and the Dragon",
@@ -1709,7 +1715,8 @@
       "caseSensitive": true,
       "confidence": "high",
       "wikiChecked": false,
-      "notes": "Taravangian's merged Shard (Honor+Odium)"
+      "notes": "Taravangian's merged Shard (Honor+Odium) Common word or name elsewhere (e.g. the Bible), so only blurred on pages about the series.",
+      "needsContext": true
     },
     {
       "term": "Rit-daughter-Clutio",

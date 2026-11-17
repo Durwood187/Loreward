@@ -6,7 +6,11 @@ import type { SeriesData } from './types';
 
 export interface ActiveSeries {
   seriesId: string;
-  /** The book the reader is on now. Terms from later books get blurred. */
+  /**
+   * The book the reader is on now. Terms from later books get blurred.
+   * 0 = "Not started yet" (a series on their TBR): blurs like book 1, so every
+   * plot event is hidden but book-1 names aren't.
+   */
   currentBook: number;
 }
 
@@ -18,8 +22,8 @@ export interface Settings {
   /** Site adapter ids (e.g. "reddit") where the reader turned the shield off. */
   disabledSites: string[];
   /**
-   * Paid-tier flag. Stub only: nothing sets it to true yet. ExtensionPay will
-   * own this later; until then it only gates "more than one series".
+   * Paid tier. Set by the Safari build from the App Store (Loreward Pro);
+   * never true on Chrome. Allows more than one series at once.
    */
   isPro: boolean;
   /** When Loreward was installed (ms since 1970), set by the background worker. 0 = unknown. */
@@ -64,12 +68,12 @@ export function findSeries(id: string, all: SeriesData[] = ALL_SERIES): SeriesDa
  * The series that should actually be shielded right now: known series only,
  * book number clamped to the series, and trimmed to what the tier allows.
  */
-export function effectiveActive(settings: Settings, all: SeriesData[] = ALL_SERIES): ActiveSeries[] {
+export function effectiveActive(settings: Settings, all: SeriesData[] = ALL_SERIES): (ActiveSeries & { notStarted: boolean })[] {
   return settings.active
     .filter((a) => findSeries(a.seriesId, all))
     .map((a) => {
       const books = findSeries(a.seriesId, all)!.books.length;
-      return { ...a, currentBook: Math.min(Math.max(1, a.currentBook), books) };
+      return { ...a, notStarted: a.currentBook === 0, currentBook: Math.min(Math.max(1, a.currentBook), books) };
     })
     .slice(0, maxActiveSeries(settings.isPro));
 }

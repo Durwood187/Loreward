@@ -198,10 +198,15 @@ describe('everyday-word terms in the real series data', () => {
     ['what does the Sibling want', 'the Sibling'],
     ['The Sibling withdrew', 'the Sibling'],
     ["the Diagram's plan", 'the Diagram'],
-    ['I love Lift', 'Lift'],
-    ['he drew Testament', 'Testament'],
   ])('matches the capitalized name: %s', (text, term) => {
     expect(m.findSpoiler(text)?.term).toBe(term);
+  });
+  it.each([
+    ['I love Lift', 'Lift'],
+    ['he drew Testament', 'Testament'],
+  ])('context-only names blur on Stormlight pages, not in ordinary text: %s', (text, term) => {
+    expect(m.findSpoiler(text, false)).toBeNull(); // e.g. "Lift up thine eyes", "the Old Testament"
+    expect(m.findSpoiler(text, true)?.term).toBe(term);
   });
 });
 

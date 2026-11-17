@@ -4,8 +4,9 @@
 import { ALL_SERIES } from '../generated/series-index';
 import { loadSettings, saveSettings, maxActiveSeries, shouldShowRatingPrompt, PAYMENTS_ENABLED, type Settings } from '../core/settings';
 import { REVIEWS_URL } from '../core/links';
-import { renderPickers, pickSeries, pickBook } from '../ui/pickers';
-import { initGate, allowPick } from '../ui/gate';
+import { renderPickers, renderSeriesList, pickSeries, pickBook } from '../ui/pickers';
+import { initGate, allowPick, isProUser, gateReady } from '../ui/gate';
+import { IS_SAFARI_BUILD } from '../core/native';
 import type { Request, StatusReply, RevealAllReply } from '../core/messages';
 
 const $ = <T extends HTMLElement>(id: string) => document.getElementById(id) as T;
@@ -13,6 +14,10 @@ const enabledEl = $<HTMLInputElement>('enabled');
 const seriesEl = $<HTMLSelectElement>('series');
 const bookEl = $<HTMLSelectElement>('book');
 const tierNote = $('tier-note');
+const singleEl = $('single');
+const multiEl = $('multi');
+const listEl = $('series-list');
+const addEl = $<HTMLSelectElement>('add-series');
 const rateEl = $('rate');
 const rateLink = $<HTMLAnchorElement>('rate-link');
 const rateDismiss = $<HTMLButtonElement>('rate-dismiss');
@@ -30,8 +35,12 @@ function render() {
   document.body.classList.toggle('off', !settings.enabled);
   enabledEl.checked = settings.enabled;
 
-  // v1 UI edits one series slot. With isPro, more slots become possible later.
-  renderPickers(seriesEl, bookEl, settings);
+  // Pro (Safari) gets a list of series; everyone else edits one series slot.
+  const multi = isProUser();
+  singleEl.hidden = multi;
+  multiEl.hidden = !multi;
+  if (multi) renderSeriesList(listEl, addEl, settings.active, (active) => save({ active }));
+  else renderPickers(seriesEl, bookEl, settings);
 
   tierNote.hidden = !PAYMENTS_ENABLED || ALL_SERIES.length < 2 || maxActiveSeries(settings.isPro) > 1;
   rateEl.hidden = !shouldShowRatingPrompt(settings, Date.now());
@@ -101,6 +110,9 @@ revealBtn.addEventListener('click', async () => {
 (async () => {
   settings = await loadSettings();
   await initGate();
+  // Keep the stored Pro flag in step with the App Store (it decides how many series the page shields).
+  // Only when the app answered, so an unreachable app never downgrades a Pro reader.
+  if (IS_SAFARI_BUILD && gateReady() && settings.isPro !== isProUser()) await save({ isPro: isProUser() });
   render();
   await refreshSite();
 })();

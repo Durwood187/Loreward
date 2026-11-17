@@ -27,6 +27,8 @@ export interface ActiveMatcher {
   bookTitle: string;
   /** Index of the book the reader is on. */
   currentBook: number;
+  /** A series on their TBR (not started): every label just names the series. */
+  notStarted?: boolean;
   /** Which books of the series does this text name? */
   booksMentioned: (text: string) => Set<number>;
   /** Series name for the soft label ("may contain spoilers for …"). */
@@ -40,9 +42,9 @@ type Kind = 'term' | 'later' | 'current' | 'maybe';
 type Verdict = { kind: Kind; text: string } | null;
 
 const LABELS: Record<Kind, (m: ActiveMatcher) => string> = {
-  term: (m) => `Spoilers past ${m.bookTitle} — click to reveal`,
-  later: (m) => `May spoil books after ${m.bookTitle} — click to reveal`,
-  current: (m) => `May spoil ${m.bookTitle} (the book you're reading) — click to reveal`,
+  term: (m) => m.notStarted ? `Spoilers for ${m.seriesName} (on your TBR) — click to reveal` : `Spoilers past ${m.bookTitle} — click to reveal`,
+  later: (m) => m.notStarted ? `May spoil ${m.seriesName} (on your TBR) — click to reveal` : `May spoil books after ${m.bookTitle} — click to reveal`,
+  current: (m) => m.notStarted ? `May spoil ${m.seriesName} (on your TBR) — click to reveal` : `May spoil ${m.bookTitle} (the book you're reading) — click to reveal`,
   maybe: (m) => `May contain spoilers for ${m.seriesName} — click to reveal`,
 };
 

@@ -38,3 +38,30 @@ describe('free vs Pro series rules', () => {
     expect(canUse(NO_ENTITLEMENT, 'stormlight')).toBe(false);
   });
 });
+
+import { addSeries, removeSeries, setBook } from '../src/ui/pickers';
+import { effectiveActive, DEFAULT_SETTINGS } from '../src/core/settings';
+
+describe('Pro series list', () => {
+  it('adds, removes and sets books without duplicates', () => {
+    let a = addSeries([], 'stormlight');
+    a = addSeries(a, 'red-rising');
+    a = addSeries(a, 'stormlight');
+    expect(a.map((x) => x.seriesId)).toEqual(['stormlight', 'red-rising']);
+    a = setBook(a, 'red-rising', 0);
+    expect(a[1].currentBook).toBe(0);
+    expect(removeSeries(a, 'stormlight').map((x) => x.seriesId)).toEqual(['red-rising']);
+  });
+
+  it('treats "Not started yet" (book 0) like book 1 and flags it', () => {
+    const s = { ...DEFAULT_SETTINGS, isPro: true, active: [{ seriesId: 'stormlight', currentBook: 0 }, { seriesId: 'mistborn', currentBook: 2 }] };
+    const eff = effectiveActive(s);
+    expect(eff[0]).toMatchObject({ seriesId: 'stormlight', currentBook: 1, notStarted: true });
+    expect(eff[1]).toMatchObject({ seriesId: 'mistborn', currentBook: 2, notStarted: false });
+  });
+
+  it('shields only the first series when not Pro', () => {
+    const s = { ...DEFAULT_SETTINGS, isPro: false, active: [{ seriesId: 'stormlight', currentBook: 3 }, { seriesId: 'mistborn', currentBook: 2 }] };
+    expect(effectiveActive(s).map((x) => x.seriesId)).toEqual(['stormlight']);
+  });
+});

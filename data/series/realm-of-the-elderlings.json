@@ -192,7 +192,8 @@
       "caseSensitive": false,
       "confidence": "medium",
       "wikiChecked": true,
-      "notes": "Brawndy's daughter Fitz is promised to. Bare alias 'Celerity' must be case-sensitive; consider dropping it."
+      "notes": "Brawndy's daughter Fitz is promised to. Bare alias 'Celerity' must be case-sensitive; consider dropping it. Common word or name elsewhere (e.g. the Bible), so only blurred on pages about the series.",
+      "needsContext": true
     },
     {
       "term": "Lady Grace",
@@ -377,7 +378,8 @@
       "caseSensitive": false,
       "confidence": "high",
       "wikiChecked": true,
-      "notes": "Bare 'Starling' is a bird; make alias caseSensitive / needsContext."
+      "notes": "Bare 'Starling' is a bird; make alias caseSensitive / needsContext. Common word or name elsewhere (e.g. the Bible), so only blurred on pages about the series.",
+      "needsContext": true
     },
     {
       "term": "stone dragons",
@@ -1212,7 +1214,9 @@
       "type": "character",
       "caseSensitive": false,
       "confidence": "high",
-      "wikiChecked": true
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "Common word or name elsewhere (e.g. the Bible), so only blurred on pages about the series."
     },
     {
       "term": "Rooster crown",
@@ -1532,7 +1536,8 @@
       "caseSensitive": false,
       "confidence": "medium",
       "wikiChecked": true,
-      "notes": "Malta and Reyn's son, born in 12 (wiki unnamed)"
+      "notes": "Malta and Reyn's son, born in 12 (wiki unnamed) Common word or name elsewhere (e.g. the Bible), so only blurred on pages about the series.",
+      "needsContext": true
     },
     {
       "term": "Selden's captivity",
@@ -1843,7 +1848,8 @@
       "caseSensitive": true,
       "confidence": "medium",
       "wikiChecked": true,
-      "notes": "Shun's real name/identity as Chade's daughter."
+      "notes": "Shun's real name/identity as Chade's daughter. Common word or name elsewhere (e.g. the Bible), so only blurred on pages about the series.",
+      "needsContext": true
     },
     {
       "term": "Spark",
@@ -2045,7 +2051,9 @@
       "type": "concept",
       "caseSensitive": true,
       "confidence": "medium",
-      "wikiChecked": true
+      "wikiChecked": true,
+      "needsContext": true,
+      "notes": "Common word or name elsewhere (e.g. the Bible), so only blurred on pages about the series."
     }
   ],
   "events": [
@@ -2434,7 +2442,8 @@
       ],
       "happensIn": 4,
       "confidence": "high",
-      "wikiChecked": true
+      "wikiChecked": true,
+      "needsContext": true
     },
     {
       "id": "Kennit loses his leg",

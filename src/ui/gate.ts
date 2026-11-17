@@ -13,6 +13,16 @@ export async function initGate(): Promise<void> {
   if (IS_SAFARI_BUILD) ent = await loadEntitlement();
 }
 
+/** True once the iPhone app has answered (Safari build). */
+export function gateReady(): boolean {
+  return ent !== null;
+}
+
+/** Pro on the Safari build (false on Chrome, or if the app couldn't be reached). */
+export function isProUser(): boolean {
+  return IS_SAFARI_BUILD && !!ent?.isPro;
+}
+
 /** Dropdown label: free users see "· Pro" on series they can't use once they've picked. */
 export function seriesLabel(s: SeriesData): string {
   if (!IS_SAFARI_BUILD || !ent || ent.isPro || ent.freeSeries === null) return s.name;

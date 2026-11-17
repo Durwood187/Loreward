@@ -15,11 +15,12 @@ if (adapter) {
   async function applySettings() {
     const settings = await loadSettings();
     const siteOn = settings.enabled && !settings.disabledSites.includes(adapter!.id);
-    const matchers: ActiveMatcher[] = effectiveActive(settings).map(({ seriesId, currentBook }) => {
+    const matchers: ActiveMatcher[] = effectiveActive(settings).map(({ seriesId, currentBook, notStarted }) => {
       const series = findSeries(seriesId)!;
       return {
         bookTitle: series.books[currentBook - 1].title,
         currentBook,
+        notStarted,
         booksMentioned: compileBookMentions(series),
         seriesName: series.shortName ?? series.name,
         matcher: compileMatcher(series, currentBook),
