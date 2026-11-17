@@ -45,3 +45,12 @@ Loreward works inside Safari only. It can't see inside other apps, such as the R
 
 **App Review notes** (helps first-time approval):
 This app is a Safari Web Extension. To test: open the app for setup steps, enable Loreward in Settings → Apps → Safari → Extensions (allow on all websites), then in Safari search Google for "what happens to Kaladin in Words of Radiance", open the Page Menu → Loreward, choose "The Stormlight Archive" and "The Way of Kings". The AI Overview and spoiler results are blurred; tap one to reveal it.
+
+
+## In-app purchase: Loreward Pro
+
+- **Type:** Non-Consumable · **Product ID:** `com.durwoodextensions.Loreward.pro` · **Price:** $4.99 (Tier 5)
+- **Display name:** Loreward Pro
+- **Description:** Unlock every series, including every series added later.
+- **Review note:** Free users can shield one series. Pro (one-time) unlocks all series. To test: in Safari, open the Loreward extension on google.com and pick a series (you'll be asked to confirm it as the free one), then pick a different series to see the one-time switch, then a third to see the Pro prompt. Buy Pro in the Loreward app (Unlock Pro), then any series works. Restore Purchase is on the same screen.
+- **Listing line to add to the description:** "Free: shield one series of your choice. Loreward Pro: one purchase unlocks every series, including every series we add."

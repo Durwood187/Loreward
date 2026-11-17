@@ -1,0 +1,38 @@
+{
+  "identifier" : "4C1F2A7E",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "4.99",
+      "familyShareable" : false,
+      "internalID" : "6739200001",
+      "localizations" : [
+        {
+          "description" : "Unlock every series, including every series added later.",
+          "displayName" : "Loreward Pro",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.durwoodextensions.Loreward.pro",
+      "referenceName" : "Loreward Pro",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+    "_failTransactionsEnabled" : false,
+    "_locale" : "en_US",
+    "_storefront" : "USA",
+    "_storeKitErrors" : [
+
+    ]
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 4,
+    "minor" : 0
+  }
+}

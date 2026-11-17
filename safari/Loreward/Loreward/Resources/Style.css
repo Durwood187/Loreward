@@ -29,3 +29,10 @@ ol, ul { margin: 0; padding-left: 22px; }
 li { margin: 6px 0; }
 .small { font-size: 15px; color: var(--muted); }
 .small h2 { color: var(--text); }
+
+/* Loreward Pro */
+.pro p { margin: 0 0 12px; }
+.pro button { display: block; width: 100%; font: -apple-system-headline; padding: 12px; border: 0; border-radius: 12px;
+              background: var(--accent); color: var(--bg); }
+.pro button.link { background: transparent; color: var(--accent); font: -apple-system-subheadline; padding: 10px; margin-top: 4px; }
+.pro .note { color: var(--muted); font-size: 15px; margin: 8px 0 0; text-align: center; }

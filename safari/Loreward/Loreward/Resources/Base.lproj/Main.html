@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="stylesheet" href="../Style.css">
 </head>
@@ -31,6 +31,14 @@
         </ol>
     </section>
 
+    <section class="pro" id="pro">
+        <h2>Loreward Pro</h2>
+        <p id="pro-status">Free Loreward shields one series of your choice. Pro unlocks every series, including every series we add later. One purchase, no subscription.</p>
+        <button id="buy" type="button">Unlock Pro</button>
+        <button id="restore" type="button" class="link">Restore purchase</button>
+        <p id="pro-note" class="note" hidden></p>
+    </section>
+
     <section class="small">
         <h2>Good to know</h2>
         <ul>
@@ -39,5 +47,22 @@
             <li>100% private: everything happens on your phone. No accounts, no tracking, nothing is sent anywhere.</li>
         </ul>
     </section>
+
+    <script>
+        const post = (type) => window.webkit.messageHandlers.controller.postMessage({ type });
+        document.getElementById('buy').addEventListener('click', () => post('buy'));
+        document.getElementById('restore').addEventListener('click', () => post('restore'));
+        // Called from ViewController.swift with { pro, price, note }.
+        function setProState(s) {
+            const buy = document.getElementById('buy'), restore = document.getElementById('restore');
+            if (s.price) buy.textContent = 'Unlock Pro · ' + s.price;
+            if (s.pro === true) {
+                document.getElementById('pro-status').textContent = '✓ Pro unlocked. Every series is yours, including new ones. Thank you!';
+                buy.hidden = true; restore.hidden = true;
+            }
+            const note = document.getElementById('pro-note');
+            note.hidden = !s.note; note.textContent = s.note || '';
+        }
+    </script>
 </body>
 </html>
