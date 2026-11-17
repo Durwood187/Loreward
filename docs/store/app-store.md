@@ -49,7 +49,7 @@ This app is a Safari Web Extension. To test: open the app for setup steps, enabl
 
 ## In-app purchase: Loreward Pro
 
-- **Type:** Non-Consumable · **Product ID:** `com.durwoodextensions.Loreward.pro` · **Price:** $4.99 (Tier 5)
+- **Type:** Non-Consumable · **Product ID:** `com.durwoodextensions.Loreward.pro` · **Price:** $4.99 (Tier 5) · **Family Sharing:** on (in App Store Connect this can't be turned off again once on)
 - **Display name:** Loreward Pro
 - **Description:** Unlock every series, including every series added later.
 - **Review note:** Free users can shield one series. Pro (one-time) unlocks all series. To test: in Safari, open the Loreward extension on google.com and pick a series (you'll be asked to confirm it as the free one), then pick a different series to see the one-time switch, then a third to see the Pro prompt. Buy Pro in the Loreward app (Unlock Pro), then any series works. Restore Purchase is on the same screen.
