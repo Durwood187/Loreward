@@ -5,3 +5,5 @@ src/generated/
 .DS_Store
 marketing/
 xcuserdata/
+# Internal notes: spoiler reviews, roadmap, pricing, store drafts. Never public.
+notes/

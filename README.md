@@ -7,7 +7,7 @@ what comes next. Everything runs in your browser ([privacy policy](PRIVACY.md)).
 **[Add Loreward to Chrome](https://chromewebstore.google.com/detail/loreward-book-spoiler-shi/lelhddhefkgdnhgkogijjikmabfhicda)** (free)
 
 - **Sites:** Reddit (new and old), Google search (results, AI Overview, People also ask).
-- **Series:** The Stormlight Archive, Mistborn, Realm of the Elderlings, The Empyrean (Fourth Wing), Dungeon Crawler Carl, Empire of the Vampire, A Court of Thorns and Roses, Red Rising, Throne of Glass, The Will of the Many. More are planned (see `docs/ROADMAP.md`).
+- **Series:** The Stormlight Archive, Mistborn, Realm of the Elderlings, The Empyrean (Fourth Wing), Dungeon Crawler Carl, Empire of the Vampire, A Court of Thorns and Roses, Red Rising, Throne of Glass, The Will of the Many. More are planned (see the roadmap in `notes/`, kept off GitHub).
 - **How it's built:** Chrome extension (Manifest V3), plain TypeScript, esbuild. 100% local:
   no network calls, no analytics, no remote code.
 
@@ -35,16 +35,16 @@ icon on the extension's card.
 | `src/content/` | Runs on supported sites: finds content units, blurs them, watches for new ones. |
 | `src/content/adapters/` | One small file per site: which elements count as a "content unit". |
 | `src/popup/` | The toolbar popup. |
-| `scripts/event-review.py` | Writes `docs/event-review-<series>.md` for human review of plot events. |
+| `scripts/event-review.py` | Writes `notes/event-review-<series>.md` for human review of plot events (`notes/` is git-ignored: it's full of spoilers). |
 | `scripts/build.mjs` | The whole build: bundles data, bundles scripts with esbuild, copies files to `dist/`. |
 | `tests/` | Vitest tests; `tests/fixtures/` holds saved HTML so adapters can be tested offline. |
 
 See `TESTING.md` for the manual checklist, `PERMISSIONS.md` for the permission justifications,
-and `docs/PUBLISHING.md` for how to ship a release (`npm run package` builds the zip).
+and `notes/PUBLISHING.md` (local only) for how to ship a release (`npm run package` builds the zip).
 
 ## About the term data
 
 `data/series/stormlight.json` was drafted by an AI and checked against the Coppermind wiki
 where possible (each term has `wikiChecked` and a `confidence`). It's marked
-`"verified": true` now that the review calls in `docs/term-review.md` are settled.
+`"verified": true` now that the term review calls are settled.
 The goal is a useful shield (about 90% right), not a perfect one.

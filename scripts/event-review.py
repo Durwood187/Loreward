@@ -1,4 +1,4 @@
-"""Writes docs/event-review-<id>.md from data/series/<id>.json, for human review of plot events.
+"""Writes notes/event-review-<id>.md from data/series/<id>.json, for human review of plot events.
    python3 scripts/event-review.py mistborn
    python3 scripts/event-review.py realm-of-the-elderlings --spoiler-warning   (series the reviewer hasn't read)
 """
@@ -36,7 +36,7 @@ def main(sid, warn):
     L += ["", "## Known gaps", "",
           "- Events from the last book stay blurred even after finishing it, until the popup gets a \"finished the series\" option.",
           "- The catch-all \"Main character deaths\" event is the most likely source of false blurs; tune it first.", ""]
-    out = root / 'docs' / f'event-review-{sid}.md'
+    out = root / 'notes' / f'event-review-{sid}.md'
     out.write_text("\n".join(L))
     print(out, len(d.get('events', [])), 'events')
 
